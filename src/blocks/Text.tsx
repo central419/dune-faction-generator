@@ -8,7 +8,7 @@ export const Text = styled.div<{ columns?: number; size?: number }>(
           gap: '4vw',
         }
       : {},
-  ({ size = 1.5 }) => ({
+  ({ size = 2 }) => ({
     fontSize: `${size}vw`,
     lineHeight: `${size * 1.6}vw`,
   }),
