@@ -1,5 +1,6 @@
 import { pattern1 } from '../presets/patterns';
 import {
+  FAQ,
   FactionAdvantage,
   FactionAssets,
   FactionLeader,
@@ -50,6 +51,13 @@ export const assets = (
   ...props,
   __typename: 'FactionAssets',
 });
+
+export const faq = (props: Partial<Omit<FAQ, '__typename'>>): FAQ => ({
+  answer: '',
+  question: '',
+  ...props,
+  __typename: 'FAQ',
+})
 
 export const troopSide = (
   props: DeepPartial<Omit<FactionTroopSide, '__typename'>>

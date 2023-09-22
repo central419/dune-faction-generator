@@ -103,8 +103,6 @@ export interface Ending {
 }
 
 export interface FAQ {
-  _id: Scalars['ID'];
-  _ts: Scalars['Long'];
   answer: Scalars['String'];
   question: Scalars['String'];
   __typename: 'FAQ';

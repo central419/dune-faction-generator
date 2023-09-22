@@ -17,6 +17,7 @@ import * as landsraad from './factions/landsraad';
 import { pages as rulesbook } from './books/rulesbook';
 
 import { Book } from './objects/book/book';
+import { FaqSheet } from './objects/sheet/faq';
 
 const root = createRoot(document.getElementById('app'));
 
@@ -42,6 +43,7 @@ const assetMap = {
       pages={[
         <AdvantagesSheet {...factionMap[id].sheet} />,
         <DetailsSheet {...factionMap[id].sheet} />,
+        ...(factionMap[id].sheet.faq.length > 0 ? [<FaqSheet {...factionMap[id].sheet} />] : []),
       ]}
     />
   ),
