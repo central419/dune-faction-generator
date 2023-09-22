@@ -20,8 +20,6 @@ import { Book } from './objects/book/book';
 import { FaqSheet } from './objects/sheet/faq';
 
 const root = createRoot(document.getElementById('app'));
-//hello my name is brodie
-
 const bookMap = {
   rulesbook,
 };
