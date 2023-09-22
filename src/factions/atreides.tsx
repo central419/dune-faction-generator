@@ -64,54 +64,56 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
   }),
   rules: {
     startText:
-      '10 forces in Arrakeen and 10 in reserve (*off planet*). Start with 10 spice.',
+      '10 forces in Arrakeen and 10 in reserves (*off planet*). Start with 10 spice.',
     revivalText: '2 forces.',
     advantages: [
       advantage({ body: 'You have limited prescience.' }),
       advantage({
-        title: 'bidding',
-        body: 'During each bidding round you may look at the Treachery Card that is up for purchase.',
-        karamaEffect: `You may not look at the next card up for purchase.`,
-      }),
-      advantage({
-        title: 'notes',
-        body: 'You may keep written notes about Treachery Cards',
+        title: 'bidding prescience',
+        body: 'During each bidding round you may look at each Treachery Card as it comes up for bid. You may keep records about cards.',
+        karamaEffect: `You may not look at the cards up for bid.`,
       }),
       advantage({
         title: 'spice prescience',
-        body: 'Each turn, from the movement phase onwards, you may look at the next Spice Card',
-        karamaEffect: `You are not allowed to look at the next spice prescience card. (this lasts until the card is revealed during the spice-blow phase)`,
+        body: 'During/After Ship & Move phase you may look at the next card for spice blow A and B.',
+        karamaEffect: `You are not allowed to look at the spice prescience cards. (this lasts until the card is revealed during the spice-blow phase)`,
       }),
       advantage({
         title: 'battle prescience',
-        body: 'You may force your opponent to reveal 1 part of their battle-plan to you before you commit your battle plan.',
+        body: 'During combat (step 2.2) you may force your opponent to reveal one part of their battle-plan early. (Weapon, Defense, Leader, or Dial + whether Mercenaries is being played).',
         karamaEffect: `Your battle prescience question can be ignored, your opponent is no longer required to do as was answered. Must be played before Battle Plans are revealed.`,
       }),
       advantage({
         title: 'kwisatz haderach',
-        advanced: true,
-        body: dedent`
-          After having lost 7 forces during battles you may start using your Kwisatz Haderach token in all future battles.You can use this token to accompany exactly 1 leader per turn. The token adds a strength of +2 to your battle-plan if the leader it accompanies survives the battle.
-          
-          A leader accompanied by the Kwisatz Haderach token cannot be called traitor.
-          
-          The Kwisatz Haderach token returns to you (*at the end of the Combat phase*) even if the leader it accompanied was killed, except when a lasgun/shield occurred in the territory the Kwisatz Haderach was played.
-          If the Kwisatz Haderach token is killed this way, it can be revived as a leader.`,
+        body: dedent`Once you have lost 7 or more total forces in battles you gain a token that can be played alongside leaders in battles in one territory per turn to add +2 strength to those leaders and they cannot be called traitor.
+        The token can only be lost in a lazgun-shield explosion, and can be revived like a normal leader.`,
         karamaEffect: `You may not use the Kwisatz Haderach token in 1 of your battles. Must be done before the Battle Plans are revealed`,
+      }),
+      advantage({
+        title: `Leto's Tithe`,
+        body: `During Spice Collection phase take 2 spice from the Spice Bank if you control one stronghold. Take 3 instead if you control at least two strongholds. You permanently lose this advantage once you gain the Kwisatz Haderach token.`,
+        karamaEffect: `TBD`,
+      }),
+      advantage({
+        title: ``,
+        body: ``,
+        karamaEffect: ``,
       }),
     ],
     alliance: [
       advantage({
-        body: 'You may assist your ally by forcing their opponent to show 1 element of their battle-plan, see the "battle prescience"-advantage.',
+        title: `Shared Prescience`,
+        body: 'You may allow your ally to use Battle Prescience in their battles.',
       }),
     ],
     karama: [
+    ],
+    fate: [
       advantage({
-        body: 'You may force your opponent to reveal their entire battle-plan to you.',
+        title: `Arrakis Fiefdom`,
+        body: `Play your fate card at any time before Ship & Move Phase to obtain the Carryall Tech Token, which you cannot lose. The token triggers when a spice mine sends troops to reserves. You may also spawn a 3 spice mine on any sand territory that doesn't have a Spice Blow marker.`,
       }),
     ],
-    fate: [],
-    __typename: 'FactionRules',
   },
   faq: [
     faq({
