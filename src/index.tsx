@@ -20,7 +20,6 @@ import { Book } from './objects/book/book';
 import { FaqSheet } from './objects/sheet/faq';
 
 const root = createRoot(document.getElementById('app'));
-
 const bookMap = {
   rulesbook,
 };
@@ -43,7 +42,9 @@ const assetMap = {
       pages={[
         <AdvantagesSheet {...factionMap[id].sheet} />,
         <DetailsSheet {...factionMap[id].sheet} />,
-        ...(factionMap[id].sheet.faq.length > 0 ? [<FaqSheet {...factionMap[id].sheet} />] : []),
+        ...(factionMap[id].sheet.faq.length > 0
+          ? [<FaqSheet {...factionMap[id].sheet} />]
+          : []),
       ]}
     />
   ),
