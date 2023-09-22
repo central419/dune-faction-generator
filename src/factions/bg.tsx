@@ -38,7 +38,7 @@ export const wanna = leader({
 
 export const normal = troop({
   front: troopSide({
-    variant: 'ATREIDES_TROOP',
+    variant: 'BG_TROOP',
     name: 'forces',
     description:
       'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
