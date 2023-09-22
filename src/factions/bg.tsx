@@ -23,70 +23,44 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
     __typename: 'FactionAssets',
   },
   rules: {
-    startText: `1 force in the Polar Sink, 19 in reserve (*off-planet*), Start with 5 spice.`,
+    startText: `1 force in the polar sink, 1 force in an unoccupied territory or the polar sink, 18 forces in reserves. Start with 5 spice.`,
     revivalText: '1 force.',
 
     advantages: [
       advantage({
-        body: 'You adept in the ways of mind control.',
+        body: 'You are adept at the ways of mind control.',
+      }),
+      advantage({
+        title: `Charity`,
+        body: 'You always receive CHOAM charity.',
+      }),
+      advantage({
+        title: `Worthless Karama`,
+        body: 'You may use worthless cards as Karamas. (Play to either stop the use of a faction advantage, ship forces at half price and the spice going to the Spice Bank, or purchase a Treachery Card without paying for it)',
+        karamaEffect: ``,
       }),
       advantage({
         title: 'prediction',
-        body: 'At the start of the game you secretly predict 1 faction win to win on a specific turn. If this Faction wins on the by you chosen turn you win the game instead. You cannot predict the Fremen or Spacing Guild special victory conditions.',
+        body: 'During setup secretly choose a turn number and a faction. If that faction wins the game on that turn you win instead. (Fremen Special Victory condition does not count).',
+      }),
+      advantage({
+        title: 'the voice',
+        body: dedent`During battle (step 2.1) you may force your opponent to play/not play a Treachery Card in their Battle Plan. (Projectile Weapon, Poison Defense, Worthless Card, Mercenaries, etc) Cheap Heroes may not be voiced. Special combat cards like the Lazgun and Weirding Way are immune unless voiced by name. If you force the use of a card the opponent does not have they may silently ignore the voice.`,
       }),
       advantage({
         title: 'spiritual advisors',
-        body: `Whenever any other faction ships forces from off-planet reserves, you may place 1 of your forces in the polar sink for free.`,
-      }),
-      advantage({
-        title: 'voice',
-        body: dedent`
-          In your battles, you may Voice your opponent they must play, or can not play a Treachery Card of a type you specify.
-          
-          You name a Treachery Card type such as "*projectile-weapon*", "*poison-defence*".
-          
-          You can also name these exact cards: "*lasgun*", "*artillery*", "*cheap hero*", "*worthless*".
-          
-          Your opponent must comply with your command, if they can. If they can not comply, they do not have to tell you.
-        `,
-      }),
+        body: dedent`Your forces have two sides: fighters and advisors. Fighters act like normal forces. Advisors may be moved but otherwise have no effect on the game. Advisors may coexist with allied forces. The state of your troops is tracked on a per territory basis. (Ex. If advisors move to a territory with fighters they become fighters. If forces move to a territory with no other BG forces you choose what they become.) You may ship forces as fighters or advisors.
 
-      advantage({
-        title: 'start of the game',
-        advanced: true,
-        body: `Instead of placing your 1 starting force in the polar sink, you may place an advisor in any territory as you choose. This is done after the fremen initial placement.`,
-      }),
-      advantage({
-        title: 'charity',
-        advanced: true,
-        body: `You may claim CHOAM charity of 2 spice regardless of how much spice you already have.`,
-      }),
-      advantage({
-        title: 'karama',
-        advanced: true,
-        body: `You may use a worthless Treachery Card as if it is a Karama card.`,
-      }),
-      advantage({
-        title: 'advisors',
-        advanced: true,
-        body: `Your forces have 2 sides: a (*normal*) fighter side, and an advisor side. Advisors co-exist with other faction's (*not allied to Bene Gesserit*) forces in a territory. Advisors cannot fight in battles, cannot collect spice, and do not excerpt control for purposes of gaining ornithopters or victory purposes. Advisors are susceptible to storm, family atomics, Shai-Halud and lasgun/shield explosions.`,
-      }),
-      advantage({
-        title: 'flipping',
-        advanced: true,
-        body: dedent`
-            At the start of the shipment and movement phase, you can choose flip advisors to fighters, with 2 exceptions: Advisors under storm and Advisors sharing a territory with any forces of your ally cannot flip to fighters.
-            
-            When you ship into an unoccupied territory, you must ship as fighters.
-            
-            If you move advisors into an unoccupied territory, you must flip to them fighters. If you move advisors into an occupied territory, you may keep them as advisors or flip to fighters.
-            
-            When another faction intrudes into a territory you have fighters, you may flip these fighters to advisors.
-          `,
+        At the beginning of Ship & Move Phase you may flip any advisors to fighters, they automatically become fighters if no other factions are present. This is the only way a territory with advisors can switch to fighters.
+        
+        If a faction moves into a territory where you have fighters you may flip those fighters to advisors if that faction wasn't already in that territory. (Fighters can't become advisors when a faction reinforces a territory.)
+        
+        When a faction ships from off planet you may put an advisor at their destination (if you have no fighters there) or a fighter in the polar sink.`,
       }),
     ],
     alliance: [
       advantage({
+        title: `shared voice`,
         body: `You may choose to use your "voice" ability in your ally's battles against your ally's opponent.`,
       }),
     ],
