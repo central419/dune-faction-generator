@@ -2,12 +2,48 @@ import { dedent } from 'ts-dedent';
 import {
   advantage,
   assets,
+  faq,
   leader,
   troop,
   troopSide,
 } from '../shared/generate';
 import { pattern1 } from '../presets/patterns';
 import { Faction } from '../shared/schema';
+
+export const alia = leader({
+  image: 'alia.png',
+  name: 'Alia',
+  strength: '5',
+});
+export const irulan = leader({
+  image: 'irulan.png',
+  name: 'Princess Irulan',
+  strength: '5',
+});
+export const ladyfenring = leader({
+  image: 'ladyfenring.png',
+  name: 'Lady Fenring',
+  strength: '5',
+});
+export const ramallo = leader({
+  image: 'ramallo.png',
+  name: 'Mother Ramallo',
+  strength: '5',
+});
+export const wanna = leader({
+  image: 'wanna.png',
+  name: 'Wanna Yueh',
+  strength: '5',
+});
+
+export const normal = troop({
+  front: troopSide({
+    variant: 'ATREIDES_TROOP',
+    name: 'forces',
+    description:
+      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+  }),
+});
 
 export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
   __typename: 'Faction',
@@ -17,8 +53,8 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
     logo: 'BG_LOGO',
     color: '#1D327B',
     hero: leader({ name: 'Mother Mohiam', image: '', strength: '10' }),
-    leaders: [],
-    troops: [],
+    leaders: [alia, irulan, ladyfenring, ramallo, wanna],
+    troops: [normal],
     pattern: pattern1,
     __typename: 'FactionAssets',
   },
