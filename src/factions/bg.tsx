@@ -122,16 +122,16 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
 },
 faq:[
   faq({
-    question: `Is ridwan nice?`,
-    answer: `Sometimes.`,
+    question: `lalala?`,
+    answer: `lala la`,
   }),
   faq({
-    question: `This is a really long question, with loads of ifs and elses and all sorts of sub question relly difficult to answer, luckily there's this answer given here.`,
-    answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet venenatis condimentum. Nunc laoreet, diam eget cursus pretium, lacus orci sollicitudin eros, sit amet vulputate sapien lacus quis lorem. Proin pharetra sit amet tellus at tristique. Nulla facilisi. Suspendisse eget sapien eget turpis luctus tempor non quis ipsum. Phasellus gravida egestas ullamcorper. Integer sit amet magna neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a enim at risus ultricies interdum et hendrerit leo.`,
+    question: ``,
+    answer: ``,
   }),
   faq({
-    question: `This is a really long question, with loads of ifs and elses and all sorts of sub question relly difficult to answer, luckily there's this answer given here.`,
-    answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet venenatis condimentum. Nunc laoreet, diam eget cursus pretium, lacus orci sollicitudin eros, sit amet vulputate sapien lacus quis lorem. Proin pharetra sit amet tellus at tristique. Nulla facilisi. Suspendisse eget sapien eget turpis luctus tempor non quis ipsum. Phasellus gravida egestas ullamcorper. Integer sit amet magna neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a enim at risus ultricies interdum et hendrerit leo.`,
+    question: ``,
+    answer: ``,
   })
 ],
 

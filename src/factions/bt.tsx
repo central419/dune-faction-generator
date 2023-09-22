@@ -2,12 +2,48 @@ import { dedent } from 'ts-dedent';
 import {
   advantage,
   assets,
+  faq,
   leader,
   troop,
   troopSide,
 } from '../shared/generate';
 import { pattern1 } from '../presets/patterns';
 import { Faction } from '../shared/schema';
+
+export const blin = leader({
+  image: 'blin.png',
+  name: 'Blin',
+  strength: '0',
+});
+export const zoal = leader({
+  image: 'zoal.png',
+  name: 'Zoal',
+  strength: '2',
+});
+export const wykk = leader({
+  image: 'wykk.png',
+  name: 'Wykk',
+  strength: '3',
+});
+export const zaaf = leader({
+  image: 'zaaf.png',
+  name: 'Master Zaaf',
+  strength: '4',
+});
+export const hidar = leader({
+  image: 'hidar.png',
+  name: 'Hider Fen Ajidica',
+  strength: '5',
+});
+
+export const normal = troop({
+  front: troopSide({
+    variant: 'BT_TROOP',
+    name: 'forces',
+    description:
+      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+  }),
+});
 
 export const masters = leader({ name: 'Masters', image: '', strength: '10' });
 export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
@@ -17,10 +53,10 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
   assets: assets({
     color: '#4F1683',
     hero: masters,
-    leaders: [],
+    leaders: [blin,zoal,wykk,zaaf,hidar],
     logo: 'BT_LOGO',
     pattern: pattern1,
-    troops: [],
+    troops: [normal],
   }),
   rules: {
     __typename: 'FactionRules',
