@@ -85,4 +85,6 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
     revivalText: '2 force.',
     startText: `20 forces in reserve (*off-planet*), Start with 5 spice.`,
   },
+  faq:[],
+
 };

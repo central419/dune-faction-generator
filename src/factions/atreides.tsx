@@ -112,4 +112,5 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
     fate: [],
     __typename: 'FactionRules',
   },
+  faq:[],
 };

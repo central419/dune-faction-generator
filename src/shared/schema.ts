@@ -106,9 +106,7 @@ export interface FAQ {
   _id: Scalars['ID'];
   _ts: Scalars['Long'];
   answer: Scalars['String'];
-  author: User;
   question: Scalars['String'];
-  ruleset: Ruleset;
   __typename: 'FAQ';
 }
 
@@ -127,6 +125,7 @@ export interface Faction {
   description: Scalars['String'];
   name: Scalars['String'];
   rules: FactionRules;
+  faq: FAQ[],
   ruleset: Ruleset;
   __typename: 'Faction';
 }
