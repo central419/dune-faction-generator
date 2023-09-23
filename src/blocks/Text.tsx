@@ -45,6 +45,10 @@ export const Text = styled.div<{ columns?: number; size?: number }>(
       display: 'inline-flex',
       width: 'fill-available',
     },
+    '& svg': {
+      display: 'inline-flex',
+      width: 'fill-available',
+    },
 
     '& hr': {
       borderTop: '0 none',

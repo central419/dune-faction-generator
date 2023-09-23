@@ -4,6 +4,20 @@ import { Text } from '../blocks/Text';
 import { Spaced } from '../blocks/Spaced';
 import { Outline } from '../blocks/Outline';
 import { Definitions } from '../blocks/Definitions';
+import { Wrapper } from '../components/Wrapper';
+import { FactionToken } from '../objects/disc/faction_token';
+import { size } from '../shared/disc';
+import { pattern1 } from '../presets/patterns';
+import * as emperor from '../factions/emperor';
+import * as guild from '../factions/guild';
+import * as fremen from '../factions/fremen';
+import * as atreides from '../factions/atreides';
+import * as ixian from '../factions/ixian';
+import * as bg from '../factions/bg';
+import * as bt from '../factions/bt';
+import * as harkonnen from '../factions/harkonnen';
+
+const factions = [emperor, guild, fremen, ixian, atreides, bg, bt, harkonnen];
 
 export const pages = [
   <Fragment>
@@ -100,8 +114,11 @@ export const pages = [
           scelerisque porttitor.
         </p>
       </Text>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
       <Text>
-        <hr />
         <h1>Title</h1>
       </Text>
       <Text columns={2}>
@@ -137,6 +154,28 @@ export const pages = [
           metus.
         </p>
       </Text>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <div style={{display: 'flex', gap: '1vw'}}>
+        {Object.entries(factions).map(([k, v]) => (
+          <Fragment>
+            <Wrapper
+              key={k}
+              isCircle={true}
+              size={size}
+              style={{ flex: 1, maxWidth: '100%' }}
+            >
+              <FactionToken
+                color={v.sheet.assets.color}
+                logo={v.sheet.assets.logo}
+                pattern={v.sheet.assets.pattern}
+              />
+            </Wrapper>
+          </Fragment>
+        ))}
+      </div>
     </Spaced>
   </Fragment>,
 ];
