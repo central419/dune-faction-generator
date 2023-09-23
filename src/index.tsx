@@ -1,3 +1,4 @@
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
@@ -15,9 +16,23 @@ import * as ixian from './factions/ixian';
 import * as landsraad from './factions/landsraad';
 
 import { pages as rulesbook } from './books/rulesbook';
-
+import CssBaseline from '@mui/material/CssBaseline';
 import { Book } from './objects/book/book';
 import { FaqSheet } from './objects/sheet/faq';
+import { Wrapper } from './components/Wrapper';
+import { size } from './shared/disc';
+import { FactionToken } from './objects/disc/faction_token';
+import {
+  Box,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  ThemeProvider,
+  createTheme,
+} from '@mui/material';
+import { Title } from './blocks/Title';
 
 const root = createRoot(document.getElementById('app'));
 const bookMap = {
@@ -58,26 +73,69 @@ const contentMap = {
 
 const keys = Object.keys(factionMap);
 
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 function Index() {
   return (
-    <div>
-      <h1>Factions</h1>
-      <ul>
-        {keys.map((k) => (
-          <li>
-            <a href={`sheet/?${k}`}>{k}</a>
-          </li>
-        ))}
-      </ul>
-      <h1>Books</h1>
-      <ul>
-        {Object.keys(bookMap).map((k) => (
-          <li>
-            <a href={`/book/?${k}`}>{k}</a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <Box
+        sx={{
+          marginTop: '20px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '20px',
+          justifyContent: 'center',
+          justifyItems: 'center',
+          alignItems: 'center',
+          alignContent: 'center',
+        }}
+      >
+        <Title color="#000000">Factions</Title>
+        <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'grey.900' }}>
+          <List>
+            {keys.map((k) => (
+              <ListItem disablePadding key={k}>
+                <ListItemButton component="a" href={`sheet/?${k}`}>
+                  <ListItemIcon>
+                    <Wrapper
+                      isCircle={true}
+                      size={size}
+                      style={{ display: 'inline-flex', maxWidth: '28px' }}
+                    >
+                      <FactionToken
+                        color={factionMap[k].sheet.assets.color}
+                        logo={factionMap[k].sheet.assets.logo}
+                        pattern={factionMap[k].sheet.assets.pattern}
+                      />
+                    </Wrapper>
+                  </ListItemIcon>
+                  <ListItemText primary={k} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+        </Box>
+        <Title color="#000000">Books</Title>
+        <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'grey.900' }}>
+          <List>
+            {Object.keys(bookMap).map((k) => (
+              <ListItem disablePadding key={k}>
+                <ListItemButton component="a" href={`book/?${k}`}>
+                  <ListItemIcon>
+                    <AutoStoriesIcon />
+                  </ListItemIcon>
+                  <ListItemText primary={k} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+        </Box>
+      </Box>
+    </ThemeProvider>
   );
 }
 
