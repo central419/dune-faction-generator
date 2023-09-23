@@ -17,10 +17,16 @@ import * as bg from '../factions/bg';
 import * as bt from '../factions/bt';
 import * as harkonnen from '../factions/harkonnen';
 import { TroopToken } from '../objects/disc/troop_token';
+import { Cover } from '../objects/book/cover';
+
+import coverA from '../asset/cover/cover-a.svg'
+import coverB from '../asset/cover/cover-b.svg'
+import coverC from '../asset/cover/cover-c.svg'
 
 const factions = [emperor, guild, fremen, ixian, atreides, bg, bt, harkonnen];
 
 export const pages = [
+  <Cover background={coverB} offset={80} />,
   <Fragment>
     <Spaced>
       <Title color="#1B2C43">Welcome Rulesbook</Title>
