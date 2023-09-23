@@ -93,8 +93,8 @@ export const Text = styled.div<{ columns?: number; size?: number }>(
       th: {
         border: '1px solid black',
         padding: '1vw',
-        textAlign: 'left'
-      }
-    }
+        textAlign: 'left',
+      },
+    },
   }
 );

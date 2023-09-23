@@ -14,7 +14,6 @@ interface Props {
   color: string;
   pattern: Pattern;
   modifiers: FactionTroopSideModifiers;
-  __typename: 'FactionTroopSide';
 }
 
 const foreGroundColor = '#e3dbb3';

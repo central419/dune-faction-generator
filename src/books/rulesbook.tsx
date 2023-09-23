@@ -16,6 +16,7 @@ import * as ixian from '../factions/ixian';
 import * as bg from '../factions/bg';
 import * as bt from '../factions/bt';
 import * as harkonnen from '../factions/harkonnen';
+import { TroopToken } from '../objects/disc/troop_token';
 
 const factions = [emperor, guild, fremen, ixian, atreides, bg, bt, harkonnen];
 
@@ -158,9 +159,9 @@ export const pages = [
   </Fragment>,
   <Fragment>
     <Spaced>
-      <div style={{display: 'flex', gap: '1vw'}}>
+      <div style={{ display: 'flex', gap: '1vw' }}>
         {Object.entries(factions).map(([k, v]) => (
-          <Fragment>
+          <Fragment key={k}>
             <Wrapper
               key={k}
               isCircle={true}
@@ -177,32 +178,74 @@ export const pages = [
         ))}
       </div>
       <Text>
-      <table>
-<thead>
-  <tr>
-    <th>a</th>
-    <th>b</th>
-    <th>c</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>11</td>
-    <td>12</td>
-    <td>13</td>
-  </tr>
-  <tr>
-    <td>21</td>
-    <td>22</td>
-    <td>22</td>
-  </tr>
-  <tr>
-    <td>31</td>
-    <td>32</td>
-    <td>33</td>
-  </tr>
-</tbody>
-</table>
+        <table>
+          <thead>
+            <tr>
+              <th>a</th>
+              <th>b</th>
+              <th>c</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>21</td>
+              <td>22</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>31</td>
+              <td>32</td>
+              <td>33</td>
+            </tr>
+          </tbody>
+        </table>
+        {Object.values(factions)
+          .map((f) => ({ sheet: f.sheet, tokens: f.sheet.assets.troops }))
+          .map(({ sheet, tokens: v }, i) => (
+            <Fragment key={i}>
+              {v.map((ii, iii) => (
+                <Fragment key={iii}>
+                  {ii.front && (
+                    <Fragment>
+                      <Wrapper
+                        isCircle={true}
+                        size={size}
+                        style={{ flex: 1, maxWidth: '6vw' }}
+                      >
+                        <TroopToken
+                          color={sheet.assets.color}
+                          variant={ii.front.variant}
+                          pattern={sheet.assets.pattern}
+                          modifiers={ii.front.modifiers}
+                        />
+                      </Wrapper>
+                    </Fragment>
+                  )}
+                  {ii.back && (
+                    <Fragment>
+                      <Wrapper
+                        isCircle={true}
+                        size={size}
+                        style={{ flex: 1, maxWidth: '6vw' }}
+                      >
+                        <TroopToken
+                          color={sheet.assets.color}
+                          variant={ii.back.variant}
+                          pattern={sheet.assets.pattern}
+                          modifiers={ii.back.modifiers}
+                        />
+                      </Wrapper>
+                    </Fragment>
+                  )}
+                </Fragment>
+              ))}
+            </Fragment>
+          ))}
       </Text>
     </Spaced>
   </Fragment>,
