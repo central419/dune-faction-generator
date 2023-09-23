@@ -57,7 +57,6 @@ export function SheetBlock({
   asterisk?: boolean;
   margin?: number;
 }) {
-  console.log({ body });
   return (
     <Text>
       {title ? (

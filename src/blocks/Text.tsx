@@ -21,7 +21,7 @@ export const Text = styled.div<{ columns?: number; size?: number }>(
       breakInside: 'avoid-column',
       boxSizing: 'border-box',
     },
-    '&& > * + *': {
+    '&&& > * + *': {
       marginTop: '2vw',
     },
     '&& * + p': {

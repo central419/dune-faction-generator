@@ -34,8 +34,6 @@ Then to edit:
 
 ## How to get the PDF into the TTS mod?
 
-
-
 Reach out for help to me (central419) via discord.
 
 ~ Cheers folks!

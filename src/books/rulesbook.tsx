@@ -2,6 +2,8 @@ import { Fragment } from 'react';
 import { Title } from '../blocks/Title';
 import { Text } from '../blocks/Text';
 import { Spaced } from '../blocks/Spaced';
+import { Outline } from '../blocks/Outline';
+import { Definitions } from '../blocks/Definitions';
 
 export const pages = [
   <Fragment>
@@ -19,6 +21,34 @@ export const pages = [
           tempus, bibendum urna sed, sagittis nunc. Vestibulum sed lacus ac
           justo congue rhoncus quis at arcu.
         </p>
+      </Text>
+      <Outline variant="example">
+        <Text>
+          <h1>Hi</h1>
+          <p>Hello</p>
+        </Text>
+      </Outline>
+      <Outline variant="generic">
+        <Text>
+          <h1>Hi</h1>
+          <p>Hello</p>
+        </Text>
+      </Outline>
+      <Text>
+        <Definitions>
+          <dt>Beast of Bodmin</dt>
+          <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+          <dt>Morgawr</dt>
+          <dd>A sea serpent.</dd>
+
+          <dt>Owlman</dt>
+          <dd>
+            <p>A giant owl-like creature.</p>
+            <p>A giant owl-like creature.</p>
+            <p>A giant owl-like creature.</p>
+          </dd>
+        </Definitions>
       </Text>
     </Spaced>
   </Fragment>,
