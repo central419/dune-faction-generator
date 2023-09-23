@@ -19,9 +19,9 @@ import * as harkonnen from '../factions/harkonnen';
 import { TroopToken } from '../objects/disc/troop_token';
 import { Cover } from '../objects/book/cover';
 
-import coverA from '../asset/cover/cover-a.svg'
-import coverB from '../asset/cover/cover-b.svg'
-import coverC from '../asset/cover/cover-c.svg'
+import coverA from '../asset/cover/cover-a.svg';
+import coverB from '../asset/cover/cover-b.svg';
+import coverC from '../asset/cover/cover-c.svg';
 
 const factions = [emperor, guild, fremen, ixian, atreides, bg, bt, harkonnen];
 

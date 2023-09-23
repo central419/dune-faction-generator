@@ -3,7 +3,7 @@ import logo from '../../asset/cover/dune_logo.svg';
 
 const ratio = Math.sqrt(2);
 
-export const Cover = styled.div<{ background: string, offset?: number }>(
+export const Cover = styled.div<{ background: string; offset?: number }>(
   {
     position: 'absolute',
     top: 0,
@@ -13,10 +13,10 @@ export const Cover = styled.div<{ background: string, offset?: number }>(
     width: '100vw',
     height: `calc(100vw * ${ratio})`,
     zIndex: 1,
-    
-    '::after': {     
+
+    '::after': {
       zIndex: 2,
-      content: '""', 
+      content: '""',
       position: 'absolute',
       top: '10vw',
       left: '10vw',
@@ -25,13 +25,12 @@ export const Cover = styled.div<{ background: string, offset?: number }>(
       backgroundImage: `url("${logo}")`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: `contain`,
-    }
+    },
   },
-  ({ background, offset }) =>
-    ({
-          backgroundImage: `url("${background}")`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: `cover`,
-          backgroundPosition: offset ? `${offset}%` : 'center',
-        })
+  ({ background, offset }) => ({
+    backgroundImage: `url("${background}")`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: `cover`,
+    backgroundPosition: offset ? `${offset}%` : 'center',
+  })
 );

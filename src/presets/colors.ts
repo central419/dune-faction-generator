@@ -1,6 +1,5 @@
 export const background = '#FFF9EA';
 
-
 export const tint0 = '#F1E3B8';
 export const tint1 = '#E2CC87';
 export const tint2 = '#AF9B61';
