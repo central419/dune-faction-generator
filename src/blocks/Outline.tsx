@@ -1,12 +1,13 @@
 import styled from '@emotion/styled';
+import { tint0, tint2 } from '../presets/colors';
 
 const variation = {
   generic: {
-    background: '#EFE0B3',
+    background: tint0,
   },
   example: {
     color: 'white',
-    background: '#A5955E',
+    background: tint2,
   },
 };
 
