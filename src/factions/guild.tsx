@@ -54,8 +54,7 @@ export const sheet: Faction = {
           When you ship to reserves the fee is 1 spice per 2 troops.
   
           Cross-shipping into strongholds costs 1 spice per 2 troops, Cross-shipping anywhere else costs 1 spice per 1 troop.
-  
-          You can not cross-ship into the Ixian HMS.`,
+        `,
       }),
       advantage({
         title: 'special victory',
