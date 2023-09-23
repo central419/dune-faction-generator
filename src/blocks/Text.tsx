@@ -24,13 +24,20 @@ export const Text = styled.div<{ columns?: number; size?: number }>(
     '&& > * + *': {
       marginTop: '2vw',
     },
+    '&& * + p': {
+      marginTop: '1vw',
+    },
     '& ul, & ol, & p': {
       margin: 0,
     },
     '& * + ul': {
+      marginTop: '1vw',
+      marginLeft: '0.4vw',
       paddingLeft: '1.5vw',
     },
     '& * + ol': {
+      marginTop: '1vw',
+      marginLeft: '0.4vw',
       paddingLeft: '1.5vw',
     },
 

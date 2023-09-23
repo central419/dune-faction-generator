@@ -42,6 +42,9 @@ export const sheet: Faction = {
           - **Option 2**: Cross-ship from 1 territory to any 1 other territory on the board.
           - **Option 3**: Ship forces from 1 territory on the board back to your reserves.
         `,
+        karamaEffect: dedent`
+          You can only ship normally
+        `,
       }),
       advantage({
         title: 'half price',

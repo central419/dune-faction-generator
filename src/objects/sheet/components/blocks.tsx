@@ -4,8 +4,7 @@ import { MarkdownContent } from '../../../components/MarkdownContent';
 import { Spaced } from '../../../blocks/Spaced';
 import styled from '@emotion/styled';
 import { Text } from '../../../blocks/Text';
-
-const size = 2;
+import dedent from 'ts-dedent';
 
 export const SheetAdvantages: FC<{
   advantages: FactionAdvantage[];
@@ -18,19 +17,19 @@ export const SheetAdvantages: FC<{
       <NonBreaking>
         <Spaced>
           {header}
-          <Text key="head" size={size}>
+          <Text key="head">
             {head.title ? (
               <div>
                 <AdvantageName>
-                  {head.title}
+                  {dedent(head.title)}
                   {head.karamaEffect ? '*' : ''}
                 </AdvantageName>
                 <div>
-                  <MarkdownContent>: {head.body}</MarkdownContent>
+                  <MarkdownContent>: {dedent(head.body)}</MarkdownContent>
                 </div>
               </div>
             ) : (
-              <MarkdownContent value={head.body} />
+              <MarkdownContent>{dedent(head.body)}</MarkdownContent>
             )}
           </Text>
         </Spaced>
@@ -39,9 +38,9 @@ export const SheetAdvantages: FC<{
       {rest.map((a, i) => (
         <SheetBlock
           asterisk={!!a.karamaEffect}
-          body={a.body}
+          body={dedent(a.body)}
           key={i}
-          title={a.title}
+          title={dedent(a.title)}
         />
       ))}
     </Spaced>
@@ -58,22 +57,23 @@ export function SheetBlock({
   asterisk?: boolean;
   margin?: number;
 }) {
+  console.log({ body });
   return (
-    <Text size={size}>
+    <Text>
       {title ? (
         <div>
           <AdvantageName>
             {title}
-            {asterisk ? '*' : ''}
+            {asterisk && '*'}
           </AdvantageName>
           {body && (
             <div>
-              <MarkdownContent>: {body}</MarkdownContent>
+              <MarkdownContent>: {dedent(body)}</MarkdownContent>
             </div>
           )}
         </div>
       ) : (
-        <MarkdownContent value={body} />
+        <MarkdownContent>{body}</MarkdownContent>
       )}
     </Text>
   );
@@ -138,7 +138,7 @@ export const DisplayAdvantagesDetails: FC<{
       <NonBreaking>
         <Spaced>
           {header}
-          <Text key="head" size={size}>
+          <Text key="head">
             {head.title ? (
               <div>
                 <AdvantageName>{head.title}</AdvantageName>
@@ -147,14 +147,14 @@ export const DisplayAdvantagesDetails: FC<{
                 </div>
               </div>
             ) : (
-              <MarkdownContent value={head.karamaEffect} />
+              <MarkdownContent>{head.karamaEffect}</MarkdownContent>
             )}
           </Text>
         </Spaced>
       </NonBreaking>
 
       {rest.map((a, i) => (
-        <Text key={i} size={size}>
+        <Text key={i}>
           {a.title ? (
             <div>
               <AdvantageName>{a.title}</AdvantageName>
@@ -163,7 +163,7 @@ export const DisplayAdvantagesDetails: FC<{
               </div>
             </div>
           ) : (
-            <MarkdownContent value={a.karamaEffect} />
+            <MarkdownContent>{a.karamaEffect}</MarkdownContent>
           )}
         </Text>
       ))}

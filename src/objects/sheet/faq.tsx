@@ -7,8 +7,6 @@ import { MarkdownContent } from '../../components/MarkdownContent';
 import { Text } from '../../blocks/Text';
 import styled from '@emotion/styled';
 
-const size = 2;
-
 export const AdvantageName = styled.strong({
   textTransform: 'uppercase',
 });
@@ -24,7 +22,7 @@ export const FaqSheet = ({ assets, faq }: Pick<Faction, 'assets' | 'faq'>) => {
           <ContentArea>
             <Spaced>
               {faq.map((a, i) => (
-                <Text key={i} size={size}>
+                <Text key={i}>
                   <div>
                     <AdvantageName>{a.question}</AdvantageName>
                     <div>

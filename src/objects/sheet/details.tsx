@@ -21,6 +21,7 @@ export const DetailsSheet = ({
   assets,
   rules,
 }: Pick<Faction, 'assets' | 'name' | 'rules'>) => {
+  const advantages = rules.advantages.filter((a) => a?.karamaEffect);
   const allianceAdvantages = rules.alliance.filter((a) => a?.karamaEffect);
 
   return (
@@ -33,10 +34,10 @@ export const DetailsSheet = ({
           <ContentArea>
             <Spaced>
               <DisplayAdvantagesDetails
-                advantages={rules.advantages}
+                advantages={advantages}
                 header={
                   <Title size="small" color={assets.color}>
-                    Advantage{rules.advantages.length > 1 ? 's' : ''}
+                    Advantage{advantages.length > 1 ? 's' : ''}
                   </Title>
                 }
               />
