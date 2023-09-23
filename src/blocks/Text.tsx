@@ -79,5 +79,22 @@ export const Text = styled.div<{ columns?: number; size?: number }>(
       fontFamily: 'inherit',
       textDecoration: 'underline',
     },
+
+    '& table': {
+      border: '1px solid black',
+      display: 'table',
+      width: 'fill-available',
+      borderCollapse: 'collapse',
+
+      td: {
+        border: '1px solid black',
+        padding: '1vw',
+      },
+      th: {
+        border: '1px solid black',
+        padding: '1vw',
+        textAlign: 'left'
+      }
+    }
   }
 );

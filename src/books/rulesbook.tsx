@@ -7,7 +7,7 @@ import { Definitions } from '../blocks/Definitions';
 import { Wrapper } from '../components/Wrapper';
 import { FactionToken } from '../objects/disc/faction_token';
 import { size } from '../shared/disc';
-import { pattern1 } from '../presets/patterns';
+
 import * as emperor from '../factions/emperor';
 import * as guild from '../factions/guild';
 import * as fremen from '../factions/fremen';
@@ -176,6 +176,34 @@ export const pages = [
           </Fragment>
         ))}
       </div>
+      <Text>
+      <table>
+<thead>
+  <tr>
+    <th>a</th>
+    <th>b</th>
+    <th>c</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>22</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>32</td>
+    <td>33</td>
+  </tr>
+</tbody>
+</table>
+      </Text>
     </Spaced>
   </Fragment>,
 ];
