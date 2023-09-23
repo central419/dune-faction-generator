@@ -94,7 +94,7 @@ function Index() {
           alignContent: 'center',
         }}
       >
-        <Title color="#000000">Factions</Title>
+        <Title color="#121212">Factions</Title>
         <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'grey.900' }}>
           <List>
             {keys.map((k) => (
@@ -119,7 +119,7 @@ function Index() {
             ))}
           </List>
         </Box>
-        <Title color="#000000">Books</Title>
+        <Title color="#121212">Books</Title>
         <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'grey.900' }}>
           <List>
             {Object.keys(bookMap).map((k) => (
