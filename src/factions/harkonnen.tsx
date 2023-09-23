@@ -15,7 +15,7 @@ export const baron = leader({
   strength: '10',
 });
 
-export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
+export const sheet: Faction = {
   __typename: 'Faction',
   description: '',
   name: 'House Harkonnen',
@@ -65,14 +65,8 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
         body: `Traitor cards that you hold may be used against your ally's opponent, if you so choose.`,
       }),
     ],
-    karama: [
-      advantage({
-        body: 'During the bidding phase you may target 1 other player, you take their all Treachery Cards, and add them to your own (*ignoring you hand-limit*). You then must return the same number of Treachery Cards back to them as they gave you.',
-      }),
-    ],
     fate: [],
     __typename: 'FactionRules',
   },
-  faq:[],
-
+  faq: [],
 };

@@ -1,16 +1,11 @@
 import { Fragment } from 'react';
 import { Faction } from '../../shared/schema';
-import {
-  ContentArea,
-  MainArea,
-  NonBreaking,
-} from './components/blocks';
+import { ContentArea, MainArea, NonBreaking } from './components/blocks';
 import { Spaced } from '../../blocks/Spaced';
 import { Title } from '../../blocks/Title';
 import { MarkdownContent } from '../../components/MarkdownContent';
 import { Text } from '../../blocks/Text';
 import styled from '@emotion/styled';
-
 
 const size = 2;
 
@@ -18,12 +13,7 @@ export const AdvantageName = styled.strong({
   textTransform: 'uppercase',
 });
 
-
-export const FaqSheet = ({
-  assets,
-  faq,
-}: Pick<Faction, 'assets' | 'faq'>) => {
-
+export const FaqSheet = ({ assets, faq }: Pick<Faction, 'assets' | 'faq'>) => {
   return (
     <Fragment>
       <Title color={assets.color} style={{ marginBottom: '2vw' }}>
@@ -47,7 +37,6 @@ export const FaqSheet = ({
           </ContentArea>
         </Spaced>
       </MainArea>
-
     </Fragment>
   );
 };

@@ -57,7 +57,7 @@ export const faq = (props: Partial<Omit<FAQ, '__typename'>>): FAQ => ({
   question: '',
   ...props,
   __typename: 'FAQ',
-})
+});
 
 export const troopSide = (
   props: DeepPartial<Omit<FactionTroopSide, '__typename'>>

@@ -110,16 +110,6 @@ export const AdvantagesSheet = ({
                   }
                 />
               )}
-              {rules.karama.length > 0 && (
-                <SheetAdvantages
-                  advantages={rules.karama}
-                  header={
-                    <Title color={assets.color} size="small">
-                      Advanced karama
-                    </Title>
-                  }
-                />
-              )}
               {rules.fate.length > 0 && (
                 <SheetAdvantages
                   advantages={rules.fate}

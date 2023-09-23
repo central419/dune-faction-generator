@@ -116,15 +116,11 @@ export interface FAQPage {
 }
 
 export interface Faction {
-  _id: Scalars['ID'];
-  _ts: Scalars['Long'];
   assets: FactionAssets;
-  creator: User;
   description: Scalars['String'];
   name: Scalars['String'];
   rules: FactionRules;
-  faq: FAQ[],
-  ruleset: Ruleset;
+  faq: FAQ[];
   __typename: 'Faction';
 }
 
@@ -164,7 +160,6 @@ export interface FactionRules {
   advantages: FactionAdvantage[];
   alliance: FactionAdvantage[];
   fate: FactionAdvantage[];
-  karama: FactionAdvantage[];
   revivalText: Scalars['String'];
   startText: Scalars['String'];
   __typename: 'FactionRules';
@@ -471,8 +466,6 @@ export type Placeable =
   | 'ZENOBIA';
 
 export interface Play {
-  _id: Scalars['ID'];
-  _ts: Scalars['Long'];
   ending: Ending;
   organizer: User;
   players: PlayerPage;
@@ -489,8 +482,6 @@ export interface PlayPage {
 }
 
 export interface Player {
-  _id: Scalars['ID'];
-  _ts: Scalars['Long'];
   faction: Faction;
   play?: Play;
   user: User;
@@ -524,8 +515,6 @@ export interface Query {
 }
 
 export interface Renderable {
-  _id: Scalars['ID'];
-  _ts: Scalars['Long'];
   data: Scalars['String'];
   owner: User;
   type: RenderableType;
@@ -552,8 +541,6 @@ export type RenderableType =
   | 'TroopToken';
 
 export interface Ruleset {
-  _id: Scalars['ID'];
-  _ts: Scalars['Long'];
   assets: Scalars['String'][];
   content: Scalars['String'][];
   creator: User;
@@ -594,8 +581,6 @@ export type Troop =
   | 'UNKNOWN_TROOP';
 
 export interface User {
-  _id: Scalars['ID'];
-  _ts: Scalars['Long'];
   avatar: Scalars['String'];
   discord: Scalars['String'];
   factions: FactionPage;

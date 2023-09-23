@@ -2,6 +2,26 @@
   "name": "stackblitz-starters-qqreqm",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "build": "react-scripts build",
+    "build-storybook": "storybook build",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "storybook": "storybook dev -p 6006",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@emotion/react": "^11.5.0 ^11.0.0-rc.0",
     "@emotion/styled": "^11.11.0",
@@ -14,14 +34,6 @@
     "react-children-utilities": "^2.9.0",
     "react-dom": "18.2.0",
     "ts-dedent": "^2.2.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.2",
@@ -39,17 +51,5 @@
     "storybook": "^7.4.2",
     "typescript": "^5.2.2",
     "webpack": "^5.88.2"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }

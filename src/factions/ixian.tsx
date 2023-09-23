@@ -11,7 +11,7 @@ import { Faction } from '../shared/schema';
 
 const rombert = leader({ name: 'Prince Rombert', image: '', strength: '10' });
 
-export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
+export const sheet: Faction = {
   __typename: 'Faction',
   description: '',
   name: 'Ixian',
@@ -73,11 +73,6 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
     alliance: [
       advantage({
         body: `After your ally purchased a Treachery Card during bidding, they may immediately discard their purchased card and draw a card from the top of the Treachery Deck.`,
-      }),
-    ],
-    karama: [
-      advantage({
-        body: 'At any time during your shipment & movement you may move the Hidden Mobile Stronghold 2 (*non-stronghold*) territories on your turn, in addition to your normal shipment and movement.',
       }),
     ],
     fate: [],

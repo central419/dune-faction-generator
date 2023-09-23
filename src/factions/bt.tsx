@@ -46,14 +46,14 @@ export const normal = troop({
 });
 
 export const masters = leader({ name: 'Masters', image: '', strength: '10' });
-export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
+export const sheet: Faction = {
   __typename: 'Faction',
   description: '',
   name: 'Bene Tleilaxu',
   assets: assets({
     color: '#4F1683',
     hero: masters,
-    leaders: [blin,zoal,wykk,zaaf,hidar],
+    leaders: [blin, zoal, wykk, zaaf, hidar],
     logo: 'BT_LOGO',
     pattern: pattern1,
     troops: [normal],
@@ -113,14 +113,8 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
       }),
     ],
     fate: [],
-    karama: [
-      advantage({
-        body: 'You can deny an other faction from reviving any forces or leaders for 1 turn.',
-      }),
-    ],
     revivalText: '2 force.',
     startText: `20 forces in reserve (*off-planet*), Start with 5 spice.`,
   },
-  faq:[],
-
+  faq: [],
 };

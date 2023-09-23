@@ -50,7 +50,7 @@ export const normal = troop({
   }),
 });
 
-export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
+export const sheet: Faction = {
   __typename: 'Faction',
   name: 'House Atreides',
   description: '',
@@ -63,6 +63,7 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
     troops: [normal],
   }),
   rules: {
+    __typename: 'FactionRules',
     startText:
       '10 forces in Arrakeen and 10 in reserves (*off planet*). Start with 10 spice.',
     revivalText: '2 forces.',
@@ -106,8 +107,6 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
         body: 'You may allow your ally to use Battle Prescience in their battles.',
       }),
     ],
-    karama: [
-    ],
     fate: [
       advantage({
         title: `Arrakis Fiefdom`,
@@ -127,6 +126,6 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
     faq({
       question: `This is a really long question, with loads of ifs and elses and all sorts of sub question relly difficult to answer, luckily there's this answer given here.`,
       answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet venenatis condimentum. Nunc laoreet, diam eget cursus pretium, lacus orci sollicitudin eros, sit amet vulputate sapien lacus quis lorem. Proin pharetra sit amet tellus at tristique. Nulla facilisi. Suspendisse eget sapien eget turpis luctus tempor non quis ipsum. Phasellus gravida egestas ullamcorper. Integer sit amet magna neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a enim at risus ultricies interdum et hendrerit leo.`,
-    })
+    }),
   ],
 };

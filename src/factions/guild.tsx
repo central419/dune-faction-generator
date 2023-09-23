@@ -11,7 +11,7 @@ import { Faction } from '../shared/schema';
 
 export const eldrick = leader({ name: 'Elrich', image: '', strength: '10' });
 
-export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
+export const sheet: Faction = {
   __typename: 'Faction',
   description: '',
   name: 'Spacing Guild',
@@ -72,14 +72,8 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
           If the Spacing Guild wins with their special victory condition, you win with them.`,
       }),
     ],
-    karama: [
-      advantage({
-        body: `You can deny an other faction from shipping for 1 turn.`,
-      }),
-    ],
     fate: [],
     __typename: 'FactionRules',
   },
-  faq:[],
-
+  faq: [],
 };

@@ -39,7 +39,7 @@ export const council = leader({
   strength: '10',
 });
 
-export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
+export const sheet: Faction = {
   __typename: 'Faction',
   name: 'Landsraad',
   description: '',
@@ -133,11 +133,9 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
         title: '',
       }),
     ],
-    karama: [],
     revivalText: '1 normal force, 1 peace keeper.',
     startText:
       '5 normal forces in Polar Sink and 10 normal forces + 5 peacekeepers in reserve (*off planet*). Start with 5 spice.',
   },
-  faq:[],
-
+  faq: [],
 };

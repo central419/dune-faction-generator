@@ -10,7 +10,7 @@ import { pattern1 } from '../presets/patterns';
 import { Faction } from '../shared/schema';
 
 export const shadam = leader({ name: 'Shadam IV', image: '', strength: '10' });
-export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
+export const sheet: Faction = {
   __typename: 'Faction',
   description: '',
   name: 'Emperor',
@@ -45,14 +45,8 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
         body: `You may share your great wealth with you ally at any time. You can pay to revive 3 additional troop forces for your ally, during the Revival phase.`,
       }),
     ],
-    karama: [
-      advantage({
-        body: 'You can revive a leader, at any time.',
-      }),
-    ],
     fate: [],
     __typename: 'FactionRules',
   },
-  faq:[],
-
+  faq: [],
 };

@@ -11,7 +11,7 @@ import { Faction } from '../shared/schema';
 
 export const liet = leader({ name: 'Liet Kynes', image: '', strength: '10' });
 
-export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
+export const sheet: Faction = {
   __typename: 'Faction',
   description: '',
   name: 'Fremen',
@@ -82,14 +82,8 @@ export const sheet: Omit<Faction, '_id' | '_ts' | 'creator' | 'ruleset'> = {
         body: `You may decide to protect your ally's troop forces from being devoured by a Shai-Halud. You may allow your ally to revive 3 forces for free. If you win with your special victory condition, you ally wins with you.`,
       }),
     ],
-    karama: [
-      advantage({
-        body: 'During the Spice Blow phase you may spawn a Shai-Halud on any sand territory.',
-      }),
-    ],
     fate: [],
     __typename: 'FactionRules',
   },
-  faq:[],
-
+  faq: [],
 };
