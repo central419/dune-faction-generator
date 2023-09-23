@@ -31,7 +31,7 @@ export const sheet: Faction = {
       advantage({ body: 'You are skilled in technology and production.' }),
       advantage({
         title: 'start of game',
-        body: `Before initial Treachery Cards are dealt, draw 1 Treachery Card for each faction in the game. Choose your starting Treachery Card, shuffle the remaining cards, and deal to the other players.`,
+        body: dedent`Before initial Treachery Cards are dealt, draw 1 Treachery Card for each faction in the game. Choose your starting Treachery Card, shuffle the remaining cards, and deal to the other players.`,
       }),
       advantage({
         title: 'bidding',
@@ -61,18 +61,18 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'technology',
-        advanced: true,
-        body: `Once, during the bidding round, before bidding begins on a card and before Atreides gets to look at the card, you may take the Treachery Card about to be bid on, replacing it with one from your hand.`,
+
+        body: dedent`Once, during the bidding round, before bidding begins on a card and before Atreides gets to look at the card, you may take the Treachery Card about to be bid on, replacing it with one from your hand.`,
       }),
       advantage({
         title: 'suboid strength',
-        advanced: true,
-        body: `Suboids are always considered half strength for dialing. You can’t increase the effectiveness of Suboids in battle by spending Spice.`,
+
+        body: dedent`Suboids are always considered half strength for dialing. You can’t increase the effectiveness of Suboids in battle by spending Spice.`,
       }),
     ],
     alliance: [
       advantage({
-        body: `After your ally purchased a Treachery Card during bidding, they may immediately discard their purchased card and draw a card from the top of the Treachery Deck.`,
+        body: dedent`After your ally purchased a Treachery Card during bidding, they may immediately discard their purchased card and draw a card from the top of the Treachery Deck.`,
       }),
     ],
     fate: [],

@@ -82,21 +82,10 @@ export const AdvantagesSheet = ({
           <ContentArea>
             <Spaced>
               <SheetAdvantages
-                advantages={rules.advantages.filter((a) => !a?.advanced)}
+                advantages={rules.advantages}
                 header={
                   <Title color={assets.color} size="small">
                     Advantage{rules.advantages.length > 1 ? 's' : ''}
-                  </Title>
-                }
-              />
-              <SheetAdvantages
-                advantages={rules.advantages.filter((a) => a?.advanced)}
-                header={
-                  <Title color={assets.color} size="small">
-                    Advanced advantage
-                    {rules.advantages.filter((a) => a?.advanced).length > 1
-                      ? 's'
-                      : ''}
                   </Title>
                 }
               />

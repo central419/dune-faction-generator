@@ -15,7 +15,6 @@ export type DeepPartial<T> = {
 export const advantage = (
   advantage: DeepPartial<Omit<FactionAdvantage, '__typename'>>
 ): FactionAdvantage => ({
-  advanced: false,
   body: '',
   karamaEffect: '',
   title: '',

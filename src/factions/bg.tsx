@@ -77,21 +77,31 @@ export const sheet: Faction = {
       advantage({
         title: `Charity`,
         body: 'You always receive CHOAM charity.',
-        karamaEffect: ``,
+        karamaEffect: dedent`
+          TBD
+        `,
       }),
       advantage({
         title: `Worthless Karama`,
         body: 'You may use worthless cards as Karamas. (Play to either stop the use of a faction advantage, ship forces at half price and the spice going to the Spice Bank, or purchase a Treachery Card without paying for it)',
-        karamaEffect: `You cannot play worthless cards as karamas.`,
+        karamaEffect: dedent`
+          You cannot play worthless cards as karamas.
+        `,
       }),
       advantage({
         title: 'prediction',
-        body: 'During setup secretly choose a turn number and a faction. If that faction wins the game on that turn you win instead. (Fremen Special Victory condition does not count).',
+        body: dedent`
+          During setup secretly choose a turn number and a faction. If that faction wins the game on that turn you win instead. (Fremen Special Victory condition does not count).
+        `,
       }),
       advantage({
         title: 'the voice',
-        body: dedent`During battle (step 2.1) you may force your opponent to play/not play a Treachery Card in their Battle Plan. (Projectile Weapon, Poison Defense, Worthless Card, Mercenaries, etc) Cheap Heroes may not be voiced. Special combat cards like the Lazgun and Weirding Way are immune unless voiced by name. If you force the use of a card the opponent does not have they may silently ignore the voice.`,
-        karamaEffect: `You cannot use the voice in any fights during this combat phase.`,
+        body: dedent`
+          During battle (step 2.1) you may force your opponent to play/not play a Treachery Card in their Battle Plan. (Projectile Weapon, Poison Defense, Worthless Card, Mercenaries, etc) Cheap Heroes may not be voiced. Special combat cards like the Lazgun and Weirding Way are immune unless voiced by name. If you force the use of a card the opponent does not have they may silently ignore the voice.
+        `,
+        karamaEffect: dedent`
+          You cannot use the voice in any fights during this combat phase.
+        `,
       }),
       advantage({
         title: 'spiritual advisors',
@@ -104,35 +114,45 @@ export const sheet: Faction = {
           
           When a faction ships from off planet you may put an advisor at their destination (if you have no fighters there) or a fighter in the polar sink.
         `,
-        karamaEffect: `?`,
+        karamaEffect: dedent`
+          TBD
+        `,
       }),
     ],
     alliance: [
       advantage({
         title: `shared voice`,
-        body: `You may choose to use your "voice" ability in your ally's battles against your ally's opponent.`,
+        body: dedent`
+          You may choose to use your "voice" ability in your ally's battles against your ally's opponent.
+        `,
       }),
     ],
     fate: [
       advantage({
-        title: `Political Marriages`,
-        body: `Play your fate during battle (step 2.1) to use The Voice on one side in any battles where you have advisors this turn. This Voice cannot stopped with a karama.`,
+        title: 'Political Marriages',
+        body: dedent`
+          Play your fate during battle (step 2.1) to use The Voice on one side in any battles where you have advisors this turn. This Voice cannot stopped with a karama.
+        `,
       }),
     ],
     __typename: 'FactionRules',
   },
   faq: [
     faq({
-      question: `lalala?`,
-      answer: `lala la`,
+      question: dedent`
+        lalala?
+      `,
+      answer: dedent`
+        lala la
+      `,
     }),
     faq({
-      question: ``,
-      answer: ``,
-    }),
-    faq({
-      question: ``,
-      answer: ``,
+      question: dedent`
+        TBD
+      `,
+      answer: dedent`
+        TBD
+      `,
     }),
   ],
 };

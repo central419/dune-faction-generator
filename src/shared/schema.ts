@@ -125,7 +125,6 @@ export interface Faction {
 }
 
 export interface FactionAdvantage {
-  advanced?: Scalars['Boolean'];
   body: Scalars['String'];
   karamaEffect?: Scalars['String'];
   title?: Scalars['String'];

@@ -71,34 +71,48 @@ export const sheet: Faction = {
       advantage({ body: 'You have limited prescience.' }),
       advantage({
         title: 'bidding prescience',
-        body: 'During each bidding round you may look at each Treachery Card as it comes up for bid. You may keep records about cards.',
-        karamaEffect: `You may not look at the cards up for bid.`,
+        body: dedent`
+          During each bidding round you may look at each Treachery Card as it comes up for bid. You may keep records about cards.
+        `,
+        karamaEffect: dedent`
+          You may not look at the cards up for bid.
+        `,
       }),
       advantage({
         title: 'spice prescience',
-        body: 'During/After Ship & Move phase you may look at the next card for spice blow A and B.',
-        karamaEffect: `You are not allowed to look at the spice prescience cards. (this lasts until the card is revealed during the spice-blow phase)`,
+        body: dedent`
+          During/After Ship & Move phase you may look at the next card for spice blow A and B.
+        `,
+        karamaEffect: dedent`
+          You are not allowed to look at the spice prescience cards. (this lasts until the card is revealed during the spice-blow phase)
+        `,
       }),
       advantage({
         title: 'battle prescience',
-        body: 'During combat (step 2.2) you may force your opponent to reveal one part of their battle-plan early. (Weapon, Defense, Leader, or Dial + whether Mercenaries is being played).',
-        karamaEffect: `Your battle prescience question can be ignored, your opponent is no longer required to do as was answered. Must be played before Battle Plans are revealed.`,
+        body: dedent`
+          During combat (step 2.2) you may force your opponent to reveal one part of their battle-plan early. (Weapon, Defense, Leader, or Dial + whether Mercenaries is being played).
+        `,
+        karamaEffect: dedent`
+          Your battle prescience question can be ignored, your opponent is no longer required to do as was answered. Must be played before Battle Plans are revealed.
+        `,
       }),
       advantage({
         title: 'kwisatz haderach',
-        body: dedent`Once you have lost 7 or more total forces in battles you gain a token that can be played alongside leaders in battles in one territory per turn to add +2 strength to those leaders and they cannot be called traitor.
-        The token can only be lost in a lazgun-shield explosion, and can be revived like a normal leader.`,
-        karamaEffect: `You may not use the Kwisatz Haderach token in 1 of your battles. Must be done before the Battle Plans are revealed`,
+        body: dedent`
+          Once you have lost 7 or more total forces in battles you gain a token that can be played alongside leaders in battles in one territory per turn to add +2 strength to those leaders and they cannot be called traitor.
+          The token can only be lost in a lazgun-shield explosion, and can be revived like a normal leader.
+        `,
+        karamaEffect: dedent`
+          You may not use the Kwisatz Haderach token in 1 of your battles. Must be done before the Battle Plans are revealed
+        `,
       }),
       advantage({
         title: `Leto's Tithe`,
-        body: `During Spice Collection phase take 2 spice from the Spice Bank if you control one stronghold. Take 3 instead if you control at least two strongholds. You permanently lose this advantage once you gain the Kwisatz Haderach token.`,
-        karamaEffect: `TBD`,
-      }),
-      advantage({
-        title: ``,
-        body: ``,
-        karamaEffect: ``,
+        body: dedent`
+          During Spice Collection phase take 2 spice from the Spice Bank if you control one stronghold. Take 3 instead if you control at least two strongholds. You permanently lose this advantage once you gain the Kwisatz Haderach token.`,
+        karamaEffect: dedent`
+          TBD
+        `,
       }),
     ],
     alliance: [
@@ -109,23 +123,37 @@ export const sheet: Faction = {
     ],
     fate: [
       advantage({
-        title: `Arrakis Fiefdom`,
-        body: `Play your fate card at any time before Ship & Move Phase to obtain the Carryall Tech Token, which you cannot lose. The token triggers when a spice mine sends troops to reserves. You may also spawn a 3 spice mine on any sand territory that doesn't have a Spice Blow marker.`,
+        title: 'Arrakis Fiefdom',
+        body: dedent`
+          Play your fate card at any time before Ship & Move Phase to obtain the Carryall Tech Token, which you cannot lose. The token triggers when a spice mine sends troops to reserves. You may also spawn a 3 spice mine on any sand territory that doesn't have a Spice Blow marker.
+        `,
       }),
     ],
   },
   faq: [
     faq({
-      question: `Is ridwan nice?`,
-      answer: `Sometimes.`,
+      question: dedent`
+        Is ridwan nice?
+      `,
+      answer: dedent`
+        Sometimes.
+      `,
     }),
     faq({
-      question: `This is a really long question, with loads of ifs and elses and all sorts of sub question relly difficult to answer, luckily there's this answer given here.`,
-      answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet venenatis condimentum. Nunc laoreet, diam eget cursus pretium, lacus orci sollicitudin eros, sit amet vulputate sapien lacus quis lorem. Proin pharetra sit amet tellus at tristique. Nulla facilisi. Suspendisse eget sapien eget turpis luctus tempor non quis ipsum. Phasellus gravida egestas ullamcorper. Integer sit amet magna neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a enim at risus ultricies interdum et hendrerit leo.`,
+      question: dedent`
+        This is a really long question, with loads of ifs and elses and all sorts of sub question relly difficult to answer, luckily there's this answer given here.
+      `,
+      answer: dedent`
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet venenatis condimentum. Nunc laoreet, diam eget cursus pretium, lacus orci sollicitudin eros, sit amet vulputate sapien lacus quis lorem. Proin pharetra sit amet tellus at tristique. Nulla facilisi. Suspendisse eget sapien eget turpis luctus tempor non quis ipsum. Phasellus gravida egestas ullamcorper. Integer sit amet magna neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a enim at risus ultricies interdum et hendrerit leo.
+      `,
     }),
     faq({
-      question: `This is a really long question, with loads of ifs and elses and all sorts of sub question relly difficult to answer, luckily there's this answer given here.`,
-      answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet venenatis condimentum. Nunc laoreet, diam eget cursus pretium, lacus orci sollicitudin eros, sit amet vulputate sapien lacus quis lorem. Proin pharetra sit amet tellus at tristique. Nulla facilisi. Suspendisse eget sapien eget turpis luctus tempor non quis ipsum. Phasellus gravida egestas ullamcorper. Integer sit amet magna neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a enim at risus ultricies interdum et hendrerit leo.`,
+      question: dedent`
+        This is a really long question, with loads of ifs and elses and all sorts of sub question relly difficult to answer, luckily there's this answer given here.
+      `,
+      answer: dedent`
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet venenatis condimentum. Nunc laoreet, diam eget cursus pretium, lacus orci sollicitudin eros, sit amet vulputate sapien lacus quis lorem. Proin pharetra sit amet tellus at tristique. Nulla facilisi. Suspendisse eget sapien eget turpis luctus tempor non quis ipsum. Phasellus gravida egestas ullamcorper. Integer sit amet magna neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a enim at risus ultricies interdum et hendrerit leo.
+      `,
     }),
   ],
 };

@@ -60,8 +60,8 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'ship and move when you wish',
-        advanced: true,
-        body: `You may take your shipment and move action out of the normal storm order. You decide when you interject to take your turn.`,
+
+        body: dedent`You may take your shipment and move action out of the normal storm order. You decide when you interject to take your turn.`,
       }),
     ],
     alliance: [

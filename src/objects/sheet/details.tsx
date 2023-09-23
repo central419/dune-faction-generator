@@ -21,12 +21,6 @@ export const DetailsSheet = ({
   assets,
   rules,
 }: Pick<Faction, 'assets' | 'name' | 'rules'>) => {
-  const normalAdvantages = rules.advantages.filter(
-    (a) => !a?.advanced && a?.karamaEffect
-  );
-  const advancedAdvantages = rules.advantages.filter(
-    (a) => a?.advanced && a?.karamaEffect
-  );
   const allianceAdvantages = rules.alliance.filter((a) => a?.karamaEffect);
 
   return (
@@ -39,18 +33,10 @@ export const DetailsSheet = ({
           <ContentArea>
             <Spaced>
               <DisplayAdvantagesDetails
-                advantages={normalAdvantages}
+                advantages={rules.advantages}
                 header={
                   <Title size="small" color={assets.color}>
-                    Advantage{normalAdvantages.length > 1 ? 's' : ''}
-                  </Title>
-                }
-              />
-              <DisplayAdvantagesDetails
-                advantages={advancedAdvantages}
-                header={
-                  <Title size="small" color={assets.color}>
-                    Advanced advantage{advancedAdvantages.length > 1 ? 's' : ''}
+                    Advantage{rules.advantages.length > 1 ? 's' : ''}
                   </Title>
                 }
               />
@@ -98,7 +84,7 @@ export const DetailsSheet = ({
                 </div>
               </Stack>
               {troop.back ? (
-                <Stack alignItems="center" direction="row" spacing={4}>
+                <Stack alignItems="center" direction="row" spacing={'2vw'}>
                   <Wrapper isCircle={true} size={size} style={{ width: '7vw' }}>
                     <TroopToken
                       color={assets.color}

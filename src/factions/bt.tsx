@@ -62,8 +62,9 @@ export const sheet: Faction = {
     __typename: 'FactionRules',
     advantages: [
       advantage({
-        advanced: false,
-        body: 'You have superior genetic engineering technology.',
+        body: dedent`
+          You have superior genetic engineering technology.
+        `,
       }),
       advantage({
         title: 'face dancers',
@@ -83,33 +84,47 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'tleilaxu revival',
-        body: 'You have no revival limits, you may revive any amount of leaders or forces during the Revival phase. You pay half price to the Spice Bank.',
+        body: dedent`
+          You have no revival limits, you may revive any amount of leaders or forces during the Revival phase. You pay half price to the Spice Bank.
+        `,
       }),
       advantage({
         title: 'revival payment',
-        body: 'Other factions pay for additional force and leader revival to you. For each faction reviving forces for free you gain 1 spice from the Spice Bank (*including you*). When the Tleilaxu Ghola Treachery Card is played, you gain 1 spice from the Spice Bank.',
+        body: dedent`
+          Other factions pay for additional force and leader revival to you. For each faction reviving forces for free you gain 1 spice from the Spice Bank (*including you*). When the Tleilaxu Ghola Treachery Card is played, you gain 1 spice from the Spice Bank.
+        `,
       }),
       advantage({
         title: 'increase force revival limit',
-        body: 'You may increase the maximum forces revival limit of other factions to a total of 5 forces instead of the normal 3.',
+        body: dedent`
+          You may increase the maximum forces revival limit of other factions to a total of 5 forces instead of the normal 3.
+        `,
       }),
       advantage({
         title: 'leader revival',
-        body: 'If a faction has fewer than 5 leaders in the Tleilaxu Tanks, you may offer to revive 1 leader for this faction (*face up of face down*) for a price. Circumventing the normal revival limits for leaders.',
+        body: dedent`
+          If a faction has fewer than 5 leaders in the Tleilaxu Tanks, you may offer to revive 1 leader for this faction (*face up of face down*) for a price. Circumventing the normal revival limits for leaders.
+        `,
       }),
       advantage({
         title: 'zoal',
-        body: `You leader Zoal's strength in battle matches the strength of the opponent's leader (*before Treachery Cards effects are calculated*). Zoal always costs 3 spice to revive for you.`,
+        body: dedent`
+          You leader Zoal's strength in battle matches the strength of the opponent's leader (*before Treachery Cards effects are calculated*). Zoal always costs 3 spice to revive for you.
+        `,
       }),
       advantage({
         title: 'ghola',
-        advanced: true,
-        body: `When you have fewer then 5 leaders alive, you may revive dead leaders of other factions at half price. Leaders revived this way are permanently yours. You can have at most 5 leaders in your leader pool.`,
+
+        body: dedent`
+          When you have fewer then 5 leaders alive, you may revive dead leaders of other factions at half price. Leaders revived this way are permanently yours. You can have at most 5 leaders in your leader pool.
+        `,
       }),
     ],
     alliance: [
       advantage({
-        body: `You may allow your ally to revive forces and leader at half cost (*rounded up*).`,
+        body: dedent`
+          You may allow your ally to revive forces and leader at half cost (*rounded up*).
+        `,
       }),
     ],
     fate: [],

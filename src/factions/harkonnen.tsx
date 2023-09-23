@@ -49,7 +49,7 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'captured leaders',
-        advanced: true,
+
         body: dedent`
           Every time you win a battle, you randomly select a leader from your opponent that is available for them to play in future battles (*this included the leader they played in the battle you just won, unless it was killed*). You then choose to take 1 (or none) of the following actions:
           
@@ -62,7 +62,7 @@ export const sheet: Faction = {
     ],
     alliance: [
       advantage({
-        body: `Traitor cards that you hold may be used against your ally's opponent, if you so choose.`,
+        body: dedent`Traitor cards that you hold may be used against your ally's opponent, if you so choose.`,
       }),
     ],
     fate: [],

@@ -36,13 +36,13 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'sardaukar',
-        advanced: true,
-        body: `Your 5 starred troops: Sardaukar, are worth 2 normal troops in battle and in taking losses.  They are treated as 1 force during revival. You can only revive 1 Sardaukar per turn.`,
+
+        body: dedent`Your 5 starred troops: Sardaukar, are worth 2 normal troops in battle and in taking losses.  They are treated as 1 force during revival. You can only revive 1 Sardaukar per turn.`,
       }),
     ],
     alliance: [
       advantage({
-        body: `You may share your great wealth with you ally at any time. You can pay to revive 3 additional troop forces for your ally, during the Revival phase.`,
+        body: dedent`You may share your great wealth with you ally at any time. You can pay to revive 3 additional troop forces for your ally, during the Revival phase.`,
       }),
     ],
     fate: [],
