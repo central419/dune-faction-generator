@@ -1,4 +1,4 @@
-import styled, { CSSObject } from '@emotion/styled';
+import styled from '@emotion/styled';
 
 const variation = {
   generic: {
@@ -8,7 +8,7 @@ const variation = {
     color: 'white',
     background: '#A5955E',
   },
-} satisfies Record<string, CSSObject>;
+};
 
 export const Outline = styled.div<{ variant: keyof typeof variation }>(
   {
