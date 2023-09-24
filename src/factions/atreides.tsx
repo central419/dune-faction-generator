@@ -72,7 +72,7 @@ export const sheet: Faction = {
       advantage({
         title: 'bidding prescience',
         body: dedent`
-          During each bidding round you may look at each Treachery Card as it comes up for bid. You may keep records about cards.
+          During each bidding round you may look at each Treachery Card as it comes up for bid. You may keep records about cards. Larum ipsum dolor sit amet.
         `,
         karamaEffect: dedent`
           You may not look at the cards up for bid.
