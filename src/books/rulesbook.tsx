@@ -22,12 +22,13 @@ import { Cover } from '../objects/book/cover';
 import coverA from '../asset/cover/cover-a.svg';
 import coverB from '../asset/cover/cover-b.svg';
 import coverC from '../asset/cover/cover-c.svg';
+import coverD from '../asset/cover/cover-d.svg';
 import { blue1 } from '../presets/colors';
 
 const factions = [emperor, guild, fremen, ixian, atreides, bg, bt, harkonnen];
 
 export const pages = [
-  <Cover background={coverB} offset={80} />,
+  <Cover background={coverD} offset={100} />,
   <Fragment>
     <Spaced>
       <Title color={blue1}>Welcome Rulesbook</Title>
