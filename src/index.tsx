@@ -15,7 +15,7 @@ import * as harkonnen from './factions/harkonnen';
 import * as ixian from './factions/ixian';
 import * as landsraad from './factions/landsraad';
 
-import { pages as rulesbook } from './books/rulesbook';
+import * as rulesbook from './books/rulesbook';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Book } from './objects/book/book';
 import { FaqSheet } from './objects/sheet/faq';
@@ -68,7 +68,7 @@ const assetMap = {
 const contentMap = {
   '/': () => <Index />,
   ...assetMap,
-  '/book': (id) => <Book pages={bookMap[id]} />,
+  '/book': (id) => <Book {...bookMap[id]} />,
 };
 
 const keys = Object.keys(factionMap);

@@ -10,8 +10,8 @@ export const Cover = styled.div<{ background: string; offset?: number }>(
     left: 0,
     right: 0,
     bottom: 0,
-    width: '100vw',
-    height: `calc(100vw * ${ratio})`,
+    // width: '100vw',
+    // height: `calc(100vw * ${ratio})`,
     zIndex: 1,
 
     '::after': {

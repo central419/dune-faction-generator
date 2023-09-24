@@ -27,6 +27,8 @@ import { blue1 } from '../presets/colors';
 
 const factions = [emperor, guild, fremen, ixian, atreides, bg, bt, harkonnen];
 
+export const ratio = Math.sqrt(2);
+
 export const pages = [
   <Cover background={coverB} offset={80} />,
   <Fragment>
