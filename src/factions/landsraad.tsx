@@ -9,27 +9,27 @@ import { pattern1 } from '../presets/patterns';
 import { Faction } from '../shared/schema';
 
 export const representative = leader({
-  image: '/images/leader/representative.png',
+  image: 'representative.png',
   name: 'Representative',
   strength: '1',
 });
 export const administrator = leader({
-  image: '/images/leader/administrator.png',
+  image: 'administrator.png',
   name: 'administrator',
   strength: '2',
 });
 export const commisioner = leader({
-  image: '/images/leader/commisioner.png',
+  image: 'commisioner.png',
   name: 'commisioner',
   strength: '4',
 });
 export const earl = leader({
-  image: '/images/leader/earl.png',
+  image: 'earl.png',
   name: 'Earl Viacante',
   strength: '4',
 });
 export const moat = leader({
-  image: '/images/leader/moat.png',
+  image: 'moat.png',
   name: 'lord moat',
   strength: '6',
 });
