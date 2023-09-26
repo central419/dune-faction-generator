@@ -85,27 +85,29 @@ export const sheet: Faction = {
         `,
       }),
       advantage({
-        title: 'revival payment',
+        title: 'Revival Income',
         body: dedent`
-          Other factions pay for additional force and leader revival to you. For each faction reviving forces for free you gain 1 spice from the Spice Bank (*including you*). When the Tleilaxu Ghola Treachery Card is played, you gain 1 spice from the Spice Bank.
+        Take one spice for every non-BT force revived. You collect all spice from non-BT revived leaders. You may set prices to revive any one leader per faction per turn. You may also increase any faction's troop revival limit from 3 to 5.
         `,
       }),
       advantage({
-        title: 'increase force revival limit',
+        title: 'Tleilaxu Revival',
         body: dedent`
-          You may increase the maximum forces revival limit of other factions to a total of 5 forces instead of the normal 3.
+        You have no revival limits. You pay half price (rounded up) when reviving anything except your face down leaders, which are full price.
         `,
       }),
       advantage({
-        title: 'leader revival',
+        title: 'Synthetic Spice',
         body: dedent`
-          If a faction has fewer than 5 leaders in the Tleilaxu Tanks, you may offer to revive 1 leader for this faction (*face up of face down*) for a price. Circumventing the normal revival limits for leaders.
+        Whenever you ship you may kill your forces in reserves to pay for the shipment. Each troop is worth one spice, which is taken from the Spice Bank to pay for the shipment.
         `,
       }),
       advantage({
         title: 'zoal',
         body: dedent`
-          You leader Zoal's strength in battle matches the strength of the opponent's leader (*before Treachery Cards effects are calculated*). Zoal always costs 3 spice to revive for you.
+        If Zoal is revealed in a Battle Plan (step 4.4), survives, and the opposing leader dies you may have Zoal infiltrate that faction. If so, the opponent wins the fight and loses nothing. You may keep any Treachery Cards you used. All of your troops in that territory are brought back to reserves for free. You keep any spice you used to dial.
+
+        To infiltrate set aside Zoal and the killed leader until the Storm Phase the following turn at which point put the target leader in front of its faction's Player Shield and Zoal is placed aside that faction's leaders. Zoal is considered to be the target leader in combat. Zoal or the target leader can be called traitor in combat. Otherwise follow normal Infiltration rules.
         `,
       }),
       advantage({
