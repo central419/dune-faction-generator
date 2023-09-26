@@ -2,12 +2,54 @@ import { dedent } from 'ts-dedent';
 import {
   advantage,
   assets,
+  faq,
   leader,
   troop,
   troopSide,
 } from '../shared/generate';
 import { pattern1 } from '../presets/patterns';
 import { Faction } from '../shared/schema';
+
+export const bashar = leader({
+  image: 'bashar.png',
+  name: 'Bashar',
+  strength: '2',
+});
+export const burseg = leader({
+  image: 'burseg.png',
+  name: 'Burseg',
+  strength: '3',
+});
+export const caid = leader({
+  image: 'caid.png',
+  name: 'Caid',
+  strength: '3',
+});
+export const aramsham = leader({
+  image: 'aramsham.png',
+  name: 'Captain Aramsham',
+  strength: '5',
+});
+export const hasimir = leader({
+  image: 'hasimir.png',
+  name: 'Hasimir Fenring',
+  strength: '6',
+});
+
+export const normal = troop({
+  front: troopSide({
+    variant: 'EMPEROR_TROOP',
+    name: 'forces',
+    description:
+      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+  }),
+  back: troopSide({
+    variant: 'EMPEROR_TROOP',
+    name: 'sardaukar',
+    description: '',
+    modifiers: {},
+  }),
+});
 
 export const shadam = leader({ name: 'Shadam IV', image: '', strength: '10' });
 export const sheet: Faction = {
@@ -18,8 +60,8 @@ export const sheet: Faction = {
     logo: 'EMPEROR_LOGO',
     color: '#9D2117',
     hero: shadam,
-    leaders: [],
-    troops: [],
+    leaders: [bashar,burseg,caid,aramsham,hasimir],
+    troops: [normal],
     pattern: pattern1,
   }),
   rules: {
