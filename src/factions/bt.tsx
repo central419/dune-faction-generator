@@ -67,25 +67,21 @@ export const sheet: Faction = {
         `,
       }),
       advantage({
-        title: 'face dancers',
+        title: 'Dishonorable',
         body: dedent`
-          At the start of the game you are not dealt 4 traitor cards. After other factions have chosen their traitor, shuffle the traitor deck and take 3 cards. These are your initial face dancers.  When another faction wins a battle, you may reveal the leader they committed in the battle to be a face dancer. Then the following occurs:
-          
-          1. The battle still counts as a win for the player (*they keep Treachery Cards, gain spice from dead leaders, gain Tech-tokens*).
-          2. If the leader that was revealed to be a face dancer wasn't killed during the battle, it is send to the Tleilaxu Tanks, but no spice is collected
-          3. The winner of the battle's force tokens in the territory are returned to that factions's reserve.
-          4. The Bene Tleilaxu may place forces in the territory equal to to the number that were send to the Tleilaxu Tanks in step 3.
-          5. The revealed Traitor Card is place in public.
-
-          Once a face dancer is revealed it cannot be used again. When all 3 face dancers are revealed, all 3 are reshuffled into the Traitor Deck, and you draw 3 new.
-
-          Each mentat phase you put 1 unrevealed face dancer back into the Traitor Deck, shuffle it and draw 1 new Traitor Card.
-      `,
+        You may not give/receive bribes except during Mentat Phase, or make binding deals except receiving info of cards up for bid in exchange for spice during the Bidding Phase. (You may not bindingly disclose information, including showing cards to other players.)
+        `,
       }),
       advantage({
-        title: 'tleilaxu revival',
+        title: 'Infiltration',
         body: dedent`
-          You have no revival limits, you may revive any amount of leaders or forces during the Revival phase. You pay half price to the Spice Bank.
+        During setup after each faction has selected their traitors you randomly and secretly take one Traitor Card from each player, and return the last 2 to the traitor deck. (Take a card from the unseen traitor cards instead of taking a card from Harkonnen.) Separate one of these cards to be your traitor and the rest are your face dancers.
+
+        During Storm Phase you may place a face dancer card that matches a leader in the Tleilaxu Tanks in front of your Player Shield with one of your own leaders on top of it. Revive the dead leader and give it to its faction. That faction is now infiltrated as long as the leader remains alive and you hold the face dancer card. The leader you commit may not be used in combat until the Infiltration ends. Your leader may be called traitor by the target faction to prevent the Infiltration. In combat your leader may be called traitor in place of the target leader.
+        
+        At any time you may look the the spice totals, Treachery Cards, and Battle Plans (step 3.2) of infiltrated factions. If an infiltrated faction wins the game you and that faction win together (instead of the faction's ally). Infiltration is ignored if the winning alliance controls 5+ strongholds.
+        
+        You may discard face down and redraw one face dancer from the deck during Mentat Phase. You may at any time commit that you will reshuffle a specific face dancer during Mentat Phase and it will be binding. Whenever the Infiltration ends redraw the face dancer card and kill your impersonating leader as well as the target leader face down.
         `,
       }),
       advantage({
