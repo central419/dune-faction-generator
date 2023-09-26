@@ -71,6 +71,9 @@ export const sheet: Faction = {
         body: dedent`
         You may not give/receive bribes except during Mentat Phase, or make binding deals except receiving info of cards up for bid in exchange for spice during the Bidding Phase. (You may not bindingly disclose information, including showing cards to other players.)
         `,
+        karamaEffect: dedent`
+        TBD
+      `,
       }),
       advantage({
         title: 'Infiltration',
@@ -83,24 +86,36 @@ export const sheet: Faction = {
         
         You may discard face down and redraw one face dancer from the deck during Mentat Phase. You may at any time commit that you will reshuffle a specific face dancer during Mentat Phase and it will be binding. Whenever the Infiltration ends redraw the face dancer card and kill your impersonating leader as well as the target leader face down.
         `,
+        karamaEffect: dedent`
+        TBD
+      `,
       }),
       advantage({
         title: 'Revival Income',
         body: dedent`
         Take one spice for every non-BT force revived. You collect all spice from non-BT revived leaders. You may set prices to revive any one leader per faction per turn. You may also increase any faction's troop revival limit from 3 to 5.
         `,
+        karamaEffect: dedent`
+        TBD
+      `,
       }),
       advantage({
         title: 'Tleilaxu Revival',
         body: dedent`
         You have no revival limits. You pay half price (rounded up) when reviving anything except your face down leaders, which are full price.
         `,
+        karamaEffect: dedent`
+        TBD
+      `,
       }),
       advantage({
         title: 'Synthetic Spice',
         body: dedent`
         Whenever you ship you may kill your forces in reserves to pay for the shipment. Each troop is worth one spice, which is taken from the Spice Bank to pay for the shipment.
         `,
+        karamaEffect: dedent`
+        TBD
+      `,
       }),
       advantage({
         title: 'zoal',
@@ -109,25 +124,51 @@ export const sheet: Faction = {
 
         To infiltrate set aside Zoal and the killed leader until the Storm Phase the following turn at which point put the target leader in front of its faction's Player Shield and Zoal is placed aside that faction's leaders. Zoal is considered to be the target leader in combat. Zoal or the target leader can be called traitor in combat. Otherwise follow normal Infiltration rules.
         `,
+        karamaEffect: dedent`
+        TBD
+      `,
       }),
       advantage({
-        title: 'ghola',
-
+        title: '',
         body: dedent`
-          When you have fewer then 5 leaders alive, you may revive dead leaders of other factions at half price. Leaders revived this way are permanently yours. You can have at most 5 leaders in your leader pool.
         `,
       }),
     ],
     alliance: [
       advantage({
+        title: 'Shared Revival Discount',
         body: dedent`
-          You may allow your ally to revive forces and leader at half cost (*rounded up*).
+        Your ally may revive their forces and leaders at Tleilaxu Revival prices.
         `,
       }),
     ],
-    fate: [],
-    revivalText: '2 force.',
-    startText: `20 forces in reserve (*off-planet*), Start with 5 spice.`,
+    fate: [
+      advantage({
+        title: 'Stone Burner',
+        body: dedent`
+        Play your fate card during battle (before step 3) to make all forces in a territory unable to be spice dialed this phase (Including Fremen).
+        `,
+      }),
+    ],
+    revivalText: '0 forces.',
+    startText: `20 forces in reserves (*off-planet*), Start with 10 spice.`,
   },
-  faq: [],
+  faq: [
+    faq({
+      question: dedent`
+        lalala?
+      `,
+      answer: dedent`
+        lala la
+      `,
+    }),
+    faq({
+      question: dedent`
+        TBD
+      `,
+      answer: dedent`
+        TBD
+      `,
+    }),
+  ],
 };
