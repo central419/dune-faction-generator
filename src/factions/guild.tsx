@@ -3,11 +3,47 @@ import {
   advantage,
   assets,
   leader,
+  faq,
   troop,
   troopSide,
 } from '../shared/generate';
 import { pattern1 } from '../presets/patterns';
 import { Faction } from '../shared/schema';
+
+export const guildrep = leader({
+  image: 'guildrep.png',
+  name: 'Guild Rep',
+  strength: '1',
+});
+export const soosoosook = leader({
+  image: 'soosoosook.png',
+  name: 'Soo-Soo Sook',
+  strength: '2',
+});
+export const esmar = leader({
+  image: 'esmar.png',
+  name: 'Esmar Tuek',
+  strength: '3',
+});
+export const bewt = leader({
+  image: 'bewt.png',
+  name: 'Master Bewt',
+  strength: '3',
+});
+export const staban = leader({
+  image: 'staban.png',
+  name: 'Staban Tuek',
+  strength: '5',
+});
+
+export const normal = troop({
+  front: troopSide({
+    variant: 'GUILD_TROOP',
+    name: 'forces',
+    description:
+      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+  }),
+});
 
 export const eldrick = leader({ name: 'Elrich', image: '', strength: '10' });
 
@@ -19,8 +55,8 @@ export const sheet: Faction = {
     logo: 'GUILD_LOGO',
     color: '#C74C26',
     hero: eldrick,
-    leaders: [],
-    troops: [],
+    leaders: [guildrep,soosoosook,esmar,bewt,staban],
+    troops: [normal],
     pattern: pattern1,
   }),
   rules: {
@@ -30,11 +66,19 @@ export const sheet: Faction = {
     advantages: [
       advantage({ body: 'You control all shipment unto and off Arrakis.' }),
       advantage({
-        title: 'payment for shipment',
-        body: 'When other factions ship forces from off-planet reserves, they pay you the spice to you instead of the spice bank.',
+        title: 'Shipping Payments',
+        body: 'When other factions pay to ship they pay the spice to you.',
       }),
       advantage({
-        title: '3 types of shipment',
+        title: dedent`Discount Shipping`,
+        body:`You pay only half the normal fee (rounded up) when shipping your forces.
+          
+        When you ship to reserves the fee is 1 spice per 2 troops.
+
+        Cross-shipping into strongholds costs 1 spice per 2 troops, Cross-shipping anywhere else costs 1 spice per 1 troop`,
+      }),
+      advantage({
+        title: 'Three Types of Shipment',
         body: dedent`
           During your shipment, you can choose to do 1 of 3 types of shipment:
   
@@ -43,39 +87,53 @@ export const sheet: Faction = {
           - **Option 3**: Ship forces from 1 territory on the board back to your reserves.
         `,
         karamaEffect: dedent`
-          You can only ship normally
-        `,
+          You can only ship normally`,
       }),
       advantage({
-        title: 'half price',
-        body: dedent`
-          You pay only half the normal fee (rounded up) when shipping your forces.
-          
-          When you ship to reserves the fee is 1 spice per 2 troops.
-  
-          Cross-shipping into strongholds costs 1 spice per 2 troops, Cross-shipping anywhere else costs 1 spice per 1 troop.
-        `,
-      }),
-      advantage({
-        title: 'special victory',
-        body: 'If no other faction has won the game by then end of turn 10, you win the game.',
-      }),
-      advantage({
-        title: 'ship and move when you wish',
+        title: 'Three Types of Interjection',
+        body: dedent`Once at any point during Ship & Move phase choose one to affect turn order:
 
-        body: dedent`You may take your shipment and move action out of the normal storm order. You decide when you interject to take your turn.`,
+        - Go first, last, or between any other factions.
+        - Swap your position with another faction.  (cannot be done after your normal spot in turn order)
+        - Force another player to go now, and you take their place in turn order. (cannot be done after your normal spot in turn order)`,
+      }),
+      advantage({
+        title: 'Retreat',
+        body: `Once battle plans are revealed (step 4.3) you may decide to retreat. If you retreat your opponent wins the battle as if by traitor.
+
+        Your units may be shipped back to reserves at stronghold shipping rates. Your Treachery Cards can be saved by paying spice for each equal to your leader's strength. If your leader would've been killed in combat they die. Spice you use to spice dial and retreat is paid to the spice bank. You cannot retreat if the battle is resolved with a Traitor or Break Conditioning.`,
       }),
     ],
     alliance: [
       advantage({
-        body: dedent`
-          Your ally may use your "half price" ability as well as your "3 types of shipment" ability.
-          
-          If the Spacing Guild wins with their special victory condition, you win with them.`,
+        title: `Shared Shipping Advantage`,
+        body: dedent`Your ally may use Discount Shipping. You may allow your ally to ship using Three Types of Shipment (including Fremen). You may also reveal spice from your hidden area to pay for an ally's shipment. (You don't lose the spice)`,
       }),
     ],
-    fate: [],
+    fate: [
+      advantage({
+        title: `Battle Training`,
+        body: `Play your fate card at any time before Ship & Move phase to permanently gain the ability to play two leaders per battle. (Including cheap heroes) Either leader can be called traitor. If you retreat the lowest leader is used for saving Treachery Cards. Leaders survive/die as one.`,
+      })
+    ],
     __typename: 'FactionRules',
   },
-  faq: [],
+  faq: [
+    faq({
+      question: dedent`
+        lalala?
+      `,
+      answer: dedent`
+        lala la
+      `,
+    }),
+    faq({
+      question: dedent`
+        TBD
+      `,
+      answer: dedent`
+        TBD
+      `,
+    }),
+  ],
 };
