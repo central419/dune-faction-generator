@@ -3,11 +3,55 @@ import {
   advantage,
   assets,
   leader,
+  faq,
   troop,
   troopSide,
 } from '../shared/generate';
 import { pattern1 } from '../presets/patterns';
 import { Faction } from '../shared/schema';
+
+export const cammar = leader({
+  image: 'cammar.png',
+  name: 'Cammar Pilru',
+  strength: '1',
+});
+export const kailea = leader({
+  image: 'kailea.png',
+  name: 'Kailea Vernius',
+  strength: '2',
+});
+export const dominic = leader({
+  image: 'dominic.png',
+  name: 'Dominic Vernius',
+  strength: '4',
+});
+export const tessia = leader({
+  image: 'tessia.png',
+  name: 'Tessia Vernius',
+  strength: '5',
+});
+export const ctair = leader({
+  image: 'ctair.png',
+  name: 'CTair Pilru',
+  strength: '5',
+});
+
+export const normal = troop({
+  front: troopSide({
+    variant: 'IX_TROOP',
+    name: 'suboid',
+    description:
+      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+  }),
+  back: troopSide({
+    variant: 'IX_TROOP',
+    name: 'cyborg',
+    description: ``,
+    modifiers: {
+      star: 'l1',
+    },
+  }),
+});
 
 const rombert = leader({ name: 'Prince Rombert', image: '', strength: '10' });
 
@@ -19,8 +63,8 @@ export const sheet: Faction = {
     logo: 'IX_LOGO',
     color: '#B9A452',
     hero: rombert,
-    leaders: [],
-    troops: [],
+    leaders: [cammar,kailea,dominic,tessia,ctair],
+    troops: [normal],
     pattern: pattern1,
   }),
   rules: {
