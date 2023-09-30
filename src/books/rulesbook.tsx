@@ -352,4 +352,70 @@ export const pages = [
       </Text>
     </Spaced>
   </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Text>
+        <Title color={blue1}>Dreamrules 2.0</Title>
+        <h1>The Origin!</h1>
+      </Text>
+      <Text>
+        <p>
+          Dreamrules 2.0 is the brainchild of about 6-8 Dune players each of
+          whom has hundreds of hours of game time under their belt.
+          <br />
+          <br />
+          The original Dreamrules was for the base game and it was a rather
+          simple mesh of GF9 rules and the World Boardgame Championship rules
+          where we mixed aspects we liked from both and tried to limit what we
+          consider broken mechanics. It was fun, but still had a few ‘flaws’
+          from the original Dune and the faction changes we made were not
+          balanced.
+          <br />
+          <br />
+          After the Ixian & Tleilaxu expansion that version of Dreamrules was
+          abandoned as we came to understand (and definitely not like) what the
+          game was becoming. The release of the FAQ in 2020 also changed a lot
+          of things, in our opinion not for the better. We decided that to
+          continue playing Dune we would have to revive Dreamrules, but where to
+          begin.
+          <br />
+          <br />
+          The Design Goals were as follows:
+          <br />
+          <ul>
+            <li>
+              Remove broken/unfun mechanics (Harkonnen Special Karama, Guild
+              Timeout Victory, certain Treachery cards)
+            </li>
+            <li>
+              Introduce aspects of WBC rules we enjoyed, Emperor subbing, Bene
+              Gesserit flipping
+            </li>
+            <li>
+              Keep aspects of the expansion we liked, Tech Tokens, certain
+              Treachery Cards
+            </li>
+            <li>Balance factions, especially the Fremen</li>
+            <li>Reduce the likelihood of Early Nexus’s</li>
+            <li>Make 10 turn games less likely</li>
+            <li>Make skirmishes outside strongholds more necessary and fun</li>
+            <li>
+              Treachery Deck balance, remove broken cards, but keep it Dune like
+              in power dynamics and excitement about certain cards
+            </li>
+          </ul>
+          <br />
+          Then as secondary goals:
+          <br />
+          <ul>
+            <li>Balance Ixians</li>
+            <li>
+              Overhaul Tleilaxu completely, we honestly didn’t know where to
+              begin
+            </li>
+          </ul>
+        </p>
+      </Text>
+    </Spaced>
+  </Fragment>,
 ];
