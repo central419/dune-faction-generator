@@ -70,13 +70,13 @@ export const sheet: Faction = {
     advantages: [
       advantage({ body: 'You excel in treachery.' }),
       advantage({
-        title: 'traitors',
-        body: 'At the start of the game when you draw 4 traitor cards you keep all 4.',
+        title: 'Extra Traitors',
+        body: `During setup you keep all 4 Traitor Cards. If you draw 2 (or more) of your own leaders, or draw 3 (or more) of the same faction's leaders, you may call mulligan to cause a redraw of all traitor cards.`,
       }),
       advantage({
-        title: 'treachery',
+        title: 'Extra Treachery Cards',
         body: dedent`
-          You hand limit for Treachery Cards is 8 instead of the normal 4. 
+          Your hand limit for Treachery Cards is 8 instead of the normal 4. 
           
           At the start of the game, you a dealt 2 starting cards instead of 1.
           
@@ -84,25 +84,47 @@ export const sheet: Faction = {
         `,
       }),
       advantage({
-        title: 'captured leaders',
+        title: 'Captured Leaders',
+        body: dedent`Whenever you win a battle (step 4.7) you may randomly select 1 of the loser's leaders. Leaders already used in battles elsewhere this turn are exempt. Secretly look at the leader and either put it face down in the Tleilaxu Tanks for 2 spice or keep them. You may use a kept leader once in battle after which they are returned if alive. If you own no Harkonnen leaders all captured leaders are returned.`,
+      }),
+      advantage({
+        title: `Vladimir's Spite`,
+        body: `If a leader you use in battle is killed you may remove the opponent's Treachery Cards by swapping cards between players, such as giving your opponent the worthless card you played in return for their defense. (step 4.5) The cards are then discarded or returned to the winning faction appropriately. Winning players cannot immediately discard cards you give them this way.
 
-        body: dedent`
-          Every time you win a battle, you randomly select a leader from your opponent that is available for them to play in future battles (*this included the leader they played in the battle you just won, unless it was killed*). You then choose to take 1 (or none) of the following actions:
-          
-          - **Option 1**: You kill the leader and gain 2 spice from the spice bank. Leaders killed this way are placed face-down in the Tleilaxu Tanks.
-          - **Option 2**: You steal the leader, and just use this leader exactly once in 1 of your future battles.
-    
-          Stolen leader are returned to their original faction after you have committed them in a battle-plan and they lived; or when all harkonnen leaders are dead.
-        `,
+        Dead Cheap Heroes do not trigger Spite. Battles resolved with a traitor or Break Conditioning do not trigger Spite. Cheap Hero cards and Supplies! cards cannot be swapped.`,
       }),
     ],
     alliance: [
       advantage({
+        title: `We Have a Traitor in Their Midst`,
         body: dedent`Traitor cards that you hold may be used against your ally's opponent, if you so choose.`,
       }),
     ],
-    fate: [],
+    fate: [
+      advantage({
+        title: `Blackmail`,
+        body: dedent`Play your fate card during combat (step 2.3) to force you or your ally's opponent to reveal their entire battle plan early.
+        `,
+      }),
+    ],
     __typename: 'FactionRules',
   },
-  faq: [],
+  faq: [
+    faq({
+      question: dedent`
+        lalala?
+      `,
+      answer: dedent`
+        lala la
+      `,
+    }),
+    faq({
+      question: dedent`
+        TBD
+      `,
+      answer: dedent`
+        TBD
+      `,
+    }),
+  ],
 };
