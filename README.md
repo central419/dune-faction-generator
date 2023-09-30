@@ -7,7 +7,7 @@
 
 ## How to edit the content of an asset
 
-Before you start editing, you need to follow these steps:
+Before you start editing, you need to follow these steps :
 
 1. Sign up for an account at [Github.com](https://github.com)
 2. Share your user profile of Github to the Dreamrules Discord server
