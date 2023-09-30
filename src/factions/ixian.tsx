@@ -23,7 +23,7 @@ export const kailea = leader({
 export const dominic = leader({
   image: 'dominic.png',
   name: 'Dominic Vernius',
-  strength: '4',
+  strength: '3',
 });
 export const tessia = leader({
   image: 'tessia.png',
