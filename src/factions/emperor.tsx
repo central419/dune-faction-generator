@@ -48,7 +48,7 @@ export const normal = troop({
     name: 'sardaukar',
     description: '',
     modifiers: {
-      star: true,
+      star: 'l1',
     },
   }),
 });
