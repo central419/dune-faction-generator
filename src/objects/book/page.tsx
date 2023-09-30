@@ -7,7 +7,7 @@ export const Page = styled.div<{
   ratio: number;
 }>(
   {
-    padding: '4vw 4vw 6vw 4vw',
+    padding: '4vw 4vw 9vw 4vw',
     position: 'relative',
     pageBreakBefore: 'always',
     width: '100vw',
@@ -22,10 +22,20 @@ export const Page = styled.div<{
   ({ pageNumber, background }) =>
     background
       ? {
-          backgroundImage: `url("${bottom}")`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: `200% auto`,
-          backgroundPosition: `bottom ${pageNumber % 2 ? 'left' : 'right'}`,
+          '::after': {
+            pointerEvents: 'none',
+            zIndex: 2,
+            content: '""',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: `url("${bottom}")`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: `200% auto`,
+            backgroundPosition: `bottom ${pageNumber % 2 ? 'left' : 'right'}`,
+          },
         }
       : {}
 );

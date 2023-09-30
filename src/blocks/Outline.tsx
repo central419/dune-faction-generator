@@ -11,9 +11,20 @@ const variation = {
   },
 };
 
-export const Outline = styled.div<{ variant: keyof typeof variation }>(
+export const Outline = styled.div<{
+  variant: keyof typeof variation;
+  center?: boolean;
+}>(
   {
     padding: '2vw',
   },
-  ({ variant }) => variation[variant]
+  ({ variant }) => variation[variant],
+  ({ center = false }) =>
+    center
+      ? {
+          '& h1': {
+            textAlign: 'center',
+          },
+        }
+      : {}
 );

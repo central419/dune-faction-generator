@@ -9,10 +9,8 @@ export const Definitions = styled.dl<{ size?: number }>({
   dt: {
     alignSelf: 'flex-start',
     justifySelf: 'end',
+    textAlign: 'right',
     fontWeight: '700',
-    '::after': {
-      content: "':'",
-    },
   },
   dd: {
     alignSelf: 'flex-start',

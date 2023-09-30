@@ -98,3 +98,7 @@ export const Text = styled.div<{ columns?: number; size?: number }>(
     },
   }
 );
+
+export const NonBreaking = styled.div({
+  breakInside: 'avoid-column',
+});
