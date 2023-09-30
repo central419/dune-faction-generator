@@ -29,8 +29,9 @@ const factions = [emperor, guild, fremen, ixian, atreides, bg, bt, harkonnen];
 
 export const ratio = Math.sqrt(2);
 
+export const cover = <Cover background={coverB} offset={80} />;
+
 export const pages = [
-  <Cover background={coverB} offset={80} />,
   <Fragment>
     <Spaced>
       <Title color={blue1}>Welcome Rulesbook</Title>

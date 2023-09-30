@@ -60,7 +60,7 @@ export const sheet: Faction = {
     logo: 'EMPEROR_LOGO',
     color: '#9D2117',
     hero: shadam,
-    leaders: [bashar,burseg,caid,aramsham,hasimir],
+    leaders: [bashar, burseg, caid, aramsham, hasimir],
     troops: [normal],
     pattern: pattern1,
   }),
