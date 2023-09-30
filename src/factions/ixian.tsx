@@ -41,7 +41,7 @@ export const normal = troop({
     variant: 'IX_TROOP',
     name: 'suboid',
     description:
-      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+      'Suboid forces, of strength 0.5, cannot be spice dialed.',
   }),
   back: troopSide({
     variant: 'IX_TROOP',
