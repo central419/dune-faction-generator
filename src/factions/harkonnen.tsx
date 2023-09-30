@@ -3,11 +3,47 @@ import {
   advantage,
   assets,
   leader,
+  faq,
   troop,
   troopSide,
 } from '../shared/generate';
 import { pattern1 } from '../presets/patterns';
 import { Faction } from '../shared/schema';
+
+export const uman = leader({
+  image: 'uman.png',
+  name: 'Umman Kudu',
+  strength: '1',
+});
+export const nafud = leader({
+  image: 'nafud.png',
+  name: 'Captain Iakin Nefud',
+  strength: '2',
+});
+export const piter = leader({
+  image: 'piter.png',
+  name: 'Piter De Vries',
+  strength: '3',
+});
+export const beast = leader({
+  image: 'beast.png',
+  name: 'Beast Rabban',
+  strength: '4',
+});
+export const feyd = leader({
+  image: 'feyd.png',
+  name: 'Feyd-Rautha',
+  strength: '6',
+});
+
+export const normal = troop({
+  front: troopSide({
+    variant: 'HARKONNEN_TROOP',
+    name: 'forces',
+    description:
+      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+  }),
+});
 
 export const baron = leader({
   name: 'Baron Vladamir',
@@ -23,8 +59,8 @@ export const sheet: Faction = {
     logo: 'HARKONNEN_LOGO',
     color: '#10100B',
     hero: baron,
-    leaders: [],
-    troops: [],
+    leaders: [uman,nafud,piter,beast,feyd],
+    troops: [normal],
     pattern: pattern1,
   }),
   rules: {
