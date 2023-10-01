@@ -670,10 +670,15 @@ export const pages = [
         </NonBreaking>
       </Text>
       <Text>
-        <hr/>
+        <hr />
       </Text>
       <Text>
-        <p><em>TODO: These can likely be removed, considering they really should come up in the phases explanation!</em></p>
+        <p>
+          <em>
+            TODO: These can likely be removed, considering they really should
+            come up in the phases explanation!
+          </em>
+        </p>
       </Text>
     </Spaced>
   </Fragment>,
@@ -799,132 +804,252 @@ export const pages = [
           </SideBySide>
         </FactionSynopsisBlock>
       ))}
-      <Text><em>There's room for more factions!</em></Text>
+      <Text>
+        <em>There's room for more factions!</em>
+      </Text>
     </Spaced>
   </Fragment>,
   <Fragment>
     <Spaced>
-      <Text>
-        <table>
-          <thead>
-            <tr>
-              <th>a</th>
-              <th>b</th>
-              <th>c</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>11</td>
-              <td>12</td>
-              <td>13</td>
-            </tr>
-            <tr>
-              <td>21</td>
-              <td>22</td>
-              <td>22</td>
-            </tr>
-            <tr>
-              <td>31</td>
-              <td>32</td>
-              <td>33</td>
-            </tr>
-          </tbody>
-        </table>
-
+      <Title color={blue1}>Phases</Title>
+      <Text columns={2}>
+        <NonBreaking>
+          <p>DUNE is played in turns to a maximum limit of 10 turns.</p>
+          <p>
+            Each turn is composed of nine specific phases that must be completed
+            in the exact sequence presented below.
+          </p>
+        </NonBreaking>
         <Outline variant="example">
-          <Text>
-            <h1>Hi</h1>
-            <p>Hello</p>
-          </Text>
+          Note: All factions have special advantages that may contradict these
+          rules.
+          <br />A faction’s particular advantages always have precedence.
         </Outline>
+      </Text>
+      <Title color={blue2} size="medium">
+        Storm
+      </Title>
+      <Text columns={2}>
+        <p>
+          The Storm Marker is moved around the map. The faction whose Player
+          Marker the storm next approaches will be the First Player for this
+          turn.
+        </p>
+        <p>
+          In all subsequent Storm Phases, the two players who last used the
+          Battle Wheels will independently dial a whole number from 0 to 3,
+          simultaneously reveal their numbers, add them together, and then
+          advance the Storm Marker from its current position counterclockwise
+          around the map for the sum total of sectors.
+        </p>
+        <p>When both players dial 0, the storm moves 1.</p>
+        <h1>Damage</h1>
+        <p>
+          Any forces in a sector of sand territory (except the Imperial Basin)
+          over which the storm passes or stops are killed. Place these forces in
+          the Tleilaxu Tanks. Forces that are not on a sand territory are
+          protected from the storm. In addition any spice in a sector over which
+          a storm passes or stops is removed to the Spice Bank.
+        </p>
+        <h1>Obstruction</h1>
+        <p>Forces may not move into, out of, or through a sector in storm.</p>
         <Outline variant="generic">
-          <Text>
-            <h1>Hi</h1>
-            <p>Hello</p>
-          </Text>
+          <h1>First Turn</h1>
+          <p>
+            The first time the storm is moved, the Storm Marker is placed at a
+            random location along the map edge using either a D20 dice
+            (recommended) or using the following procedure:
+          </p>
+          <ol>
+            <li>
+              The two players whose player circles are nearest on either side of
+              the Storm Start Sector will secretly dial a number from 0 to 20 on
+              the battle wheels.
+            </li>
+            <li>The two numbers are simultaneously revealed</li>
+            <li>
+              move Storm Marker from the Storm Start sector counterclockwise
+              around the map for the sum total of the 2 number.
+            </li>
+          </ol>
         </Outline>
-        <Text>
-          <Definitions>
-            <dt>Beast of Bodmin</dt>
-            <dd>A large feline inhabiting Bodmin Moor.</dd>
-
-            <dt>Morgawr</dt>
-            <dd>A sea serpent.</dd>
-
-            <dt>Owlman</dt>
-            <dd>
-              <p>A giant owl-like creature.</p>
-              <p>A giant owl-like creature.</p>
-              <p>A giant owl-like creature.</p>
-            </dd>
-          </Definitions>
-        </Text>
-
-        {Object.values(factions)
-          .map((f) => ({ sheet: f.sheet, tokens: f.sheet.assets.troops }))
-          .map(({ sheet, tokens: v }, i) => (
-            <Fragment key={i}>
-              {v.map((ii, iii) => (
-                <Fragment key={iii}>
-                  {ii.front && (
-                    <Fragment>
-                      <Wrapper
-                        isCircle={true}
-                        size={size}
-                        style={{ flex: 1, maxWidth: '6vw' }}
-                      >
-                        <TroopToken
-                          color={sheet.assets.color}
-                          variant={ii.front.variant}
-                          pattern={sheet.assets.pattern}
-                          modifiers={ii.front.modifiers}
-                        />
-                      </Wrapper>
-                    </Fragment>
-                  )}
-                  {ii.back && (
-                    <Fragment>
-                      <Wrapper
-                        isCircle={true}
-                        size={size}
-                        style={{ flex: 1, maxWidth: '6vw' }}
-                      >
-                        <TroopToken
-                          color={sheet.assets.color}
-                          variant={ii.back.variant}
-                          pattern={sheet.assets.pattern}
-                          modifiers={ii.back.modifiers}
-                        />
-                      </Wrapper>
-                    </Fragment>
-                  )}
-                </Fragment>
-              ))}
-            </Fragment>
-          ))}
-
-        <div style={{ display: 'flex', gap: '1vw' }}>
-          {Object.entries(factions).map(([k, v]) => (
-            <Fragment key={k}>
-              <Wrapper
-                key={k}
-                isCircle={true}
-                size={size}
-                style={{ flex: 1, maxWidth: '100%' }}
-              >
-                <FactionToken
-                  color={v.sheet.assets.color}
-                  logo={v.sheet.assets.logo}
-                  pattern={v.sheet.assets.pattern}
-                />
-              </Wrapper>
-            </Fragment>
-          ))}
-        </div>
       </Text>
     </Spaced>
   </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue2} size="medium">
+        Spice blow
+      </Title>
+      <Text columns={2}>
+        <ol>
+          <li>Reveal both card card A & B, simultaneously</li>
+          <li>Place spice / Shai-Halud tokens in the territory.</li>
+          <li>Draw & place extra a Spice Card(s) on any Shai-Halud card.</li>
+          <li>
+            Fremen may re-direct (if multiple) and ride the spawned Shai-Halud
+            tokens.
+          </li>
+          <li>
+            Set any 3rd Shai-Halud cards aside, shuffle them back into the deck
+            at the end of the phase.
+          </li>
+        </ol>
+        <Outline variant="generic">
+          <h1>First Turn</h1>
+          <p>
+            Any Shai-Halud cards that are drawn on turn 1, are set aside
+            instead.
+          </p>
+          <p>
+            They take no effect and are shuffled back into the Spice Deck at the
+            end of the phase.
+          </p>
+        </Outline>
+      </Text>
+      <Text>
+        <p>
+          The Spice Deck never re-shuffles. By the end of turn 10, the complete
+          Spice Deck is used.
+        </p>
+      </Text>
+      <Title color={blue2} size="medium">
+        CHOAM charity
+      </Title>
+      <Text>
+        <p>
+          Any player with 0 or 1 spice can collect spice from the spice bank to
+          bring their total to 2 by calling out “CHOAM Charity.”.
+        </p>
+        <p>
+          Players are allowed to bribe each other during the CHOAM Charity phase, to be able to use the charity.
+        </p>
+      </Text>
+    </Spaced>
+  </Fragment>,
+  // <Fragment>
+  //   <Spaced>
+  //     <Text>
+  //       <table>
+  //         <thead>
+  //           <tr>
+  //             <th>a</th>
+  //             <th>b</th>
+  //             <th>c</th>
+  //           </tr>
+  //         </thead>
+  //         <tbody>
+  //           <tr>
+  //             <td>11</td>
+  //             <td>12</td>
+  //             <td>13</td>
+  //           </tr>
+  //           <tr>
+  //             <td>21</td>
+  //             <td>22</td>
+  //             <td>22</td>
+  //           </tr>
+  //           <tr>
+  //             <td>31</td>
+  //             <td>32</td>
+  //             <td>33</td>
+  //           </tr>
+  //         </tbody>
+  //       </table>
+
+  //       <Outline variant="example">
+  //         <Text>
+  //           <h1>Hi</h1>
+  //           <p>Hello</p>
+  //         </Text>
+  //       </Outline>
+  //       <Outline variant="generic">
+  //         <Text>
+  //           <h1>Hi</h1>
+  //           <p>Hello</p>
+  //         </Text>
+  //       </Outline>
+  //       <Text>
+  //         <Definitions>
+  //           <dt>Beast of Bodmin</dt>
+  //           <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+  //           <dt>Morgawr</dt>
+  //           <dd>A sea serpent.</dd>
+
+  //           <dt>Owlman</dt>
+  //           <dd>
+  //             <p>A giant owl-like creature.</p>
+  //             <p>A giant owl-like creature.</p>
+  //             <p>A giant owl-like creature.</p>
+  //           </dd>
+  //         </Definitions>
+  //       </Text>
+
+  //       {Object.values(factions)
+  //         .map((f) => ({ sheet: f.sheet, tokens: f.sheet.assets.troops }))
+  //         .map(({ sheet, tokens: v }, i) => (
+  //           <Fragment key={i}>
+  //             {v.map((ii, iii) => (
+  //               <Fragment key={iii}>
+  //                 {ii.front && (
+  //                   <Fragment>
+  //                     <Wrapper
+  //                       isCircle={true}
+  //                       size={size}
+  //                       style={{ flex: 1, maxWidth: '6vw' }}
+  //                     >
+  //                       <TroopToken
+  //                         color={sheet.assets.color}
+  //                         variant={ii.front.variant}
+  //                         pattern={sheet.assets.pattern}
+  //                         modifiers={ii.front.modifiers}
+  //                       />
+  //                     </Wrapper>
+  //                   </Fragment>
+  //                 )}
+  //                 {ii.back && (
+  //                   <Fragment>
+  //                     <Wrapper
+  //                       isCircle={true}
+  //                       size={size}
+  //                       style={{ flex: 1, maxWidth: '6vw' }}
+  //                     >
+  //                       <TroopToken
+  //                         color={sheet.assets.color}
+  //                         variant={ii.back.variant}
+  //                         pattern={sheet.assets.pattern}
+  //                         modifiers={ii.back.modifiers}
+  //                       />
+  //                     </Wrapper>
+  //                   </Fragment>
+  //                 )}
+  //               </Fragment>
+  //             ))}
+  //           </Fragment>
+  //         ))}
+
+  //       <div style={{ display: 'flex', gap: '1vw' }}>
+  //         {Object.entries(factions).map(([k, v]) => (
+  //           <Fragment key={k}>
+  //             <Wrapper
+  //               key={k}
+  //               isCircle={true}
+  //               size={size}
+  //               style={{ flex: 1, maxWidth: '100%' }}
+  //             >
+  //               <FactionToken
+  //                 color={v.sheet.assets.color}
+  //                 logo={v.sheet.assets.logo}
+  //                 pattern={v.sheet.assets.pattern}
+  //               />
+  //             </Wrapper>
+  //           </Fragment>
+  //         ))}
+  //       </div>
+  //     </Text>
+  //   </Spaced>
+  // </Fragment>,
   <Fragment>
     <Spaced>
       <Title color={blue2}>FAQ</Title>
@@ -986,73 +1111,98 @@ export const pages = [
           </p>
         </NonBreaking>
         <NonBreaking>
-          <h2>When a battle is won by revelation of a Traitor, can the winner discard Treachery cards used in their Battle Plan?</h2>
+          <h2>
+            When a battle is won by revelation of a Traitor, can the winner
+            discard Treachery cards used in their Battle Plan?
+          </h2>
           <p>
-            Yes, you can discard Treachery Cards you played, including Cheap Hero.
+            Yes, you can discard Treachery Cards you played, including Cheap
+            Hero.
           </p>
         </NonBreaking>
         <NonBreaking>
           <h2>Can non-allies have secret communications?</h2>
           <p>
-            Yes, You can perform secret communications with anyone that agrees to it.
+            Yes, You can perform secret communications with anyone that agrees
+            to it.
           </p>
           <p>
-            The fact the 2 players are in secret communications should be public knowledge.
+            The fact the 2 players are in secret communications should be public
+            knowledge.
           </p>
         </NonBreaking>
         <NonBreaking>
-          <h2>When moving with ornithopters, can you pass THROUGH a space containing your ally’s forces without ending your move there?</h2>
+          <h2>
+            When moving with ornithopters, can you pass THROUGH a space
+            containing your ally’s forces without ending your move there?
+          </h2>
           <p>
-            Yes, you are allowed to move over your ally's troops, but you cannot end your move in the same location as where your ally has troops.
+            Yes, you are allowed to move over your ally's troops, but you cannot
+            end your move in the same location as where your ally has troops.
           </p>
         </NonBreaking>
         <NonBreaking>
-          <h2>When you call traitor, can the leader you played in that battle be used elsewhere on the board, that turn?</h2>
+          <h2>
+            When you call traitor, can the leader you played in that battle be
+            used elsewhere on the board, that turn?
+          </h2>
           <p>
-            No. The leader you committed will stay in the territory of that battle, until the collection phase.
+            No. The leader you committed will stay in the territory of that
+            battle, until the collection phase.
           </p>
         </NonBreaking>
         <NonBreaking>
-          <h2>When you played a leader against Harkonnen and lost the fight, is the leader you played in that battle subject to the random leader stealing ability?</h2>
+          <h2>
+            When you played a leader against Harkonnen and lost the fight, is
+            the leader you played in that battle subject to the random leader
+            stealing ability?
+          </h2>
+          <p>TODO: Who knows this, for real?</p>
+        </NonBreaking>
+        <NonBreaking>
+          <h2>
+            When Harkonnen plays a captured leader in a combat and it survives,
+            does it return to you instantly, or is it committed to the
+            battlefield, and then at Collection phase you collect it instead of
+            Harkonnen?
+          </h2>
+          <p>TODO: Who knows this, for real?</p>
+        </NonBreaking>
+        <NonBreaking>
+          <h2>
+            Can the Bene Gesserit flip from advisors to fighters in a territory
+            with an ally?
+          </h2>
+          <p>No.</p>
+        </NonBreaking>
+        <NonBreaking>
+          <h2>
+            When using the Voice, do the Bene Gesserit have to specify using any
+            special cards?
+          </h2>
           <p>
-            TODO: Who knows this, for real?
+            If the card says "Special", then the Bene Gesserit have to voice it
+            by name.
+          </p>
+          <p>They cannot voice you to play (or not play) a Cheap Hero.</p>
+          <p>
+            They cannot voice you to play a Treachery Card that cannot go into a
+            battle plan.
           </p>
         </NonBreaking>
         <NonBreaking>
-          <h2>When Harkonnen plays a captured leader in a combat and it survives, does it return to you instantly, or is it committed to the battlefield, and then at Collection phase you collect it instead of Harkonnen?</h2>
-          <p>
-            TODO: Who knows this, for real?
-          </p>
+          <h2>
+            Can a player ship cross-planet if either the origin territory or
+            destination territory are in the Storm?
+          </h2>
+          <p>No.</p>
         </NonBreaking>
         <NonBreaking>
-          <h2>Can the Bene Gesserit flip from advisors to fighters in a territory with an ally?</h2>
-          <p>
-            No.
-          </p>
-        </NonBreaking>
-        <NonBreaking>
-          <h2>When using the Voice, do the Bene Gesserit have to specify using any special cards?</h2>
-          <p>
-            If the card says "Special", then the Bene Gesserit have to voice it by name.
-          </p>
-          <p>
-            They cannot voice you to play (or not play) a Cheap Hero.
-          </p>
-          <p>
-            They cannot voice you to play a Treachery Card that cannot go into a battle plan.
-          </p>
-        </NonBreaking>
-        <NonBreaking>
-          <h2>Can a player ship cross-planet if either the origin territory or destination territory are in the Storm?</h2>
-          <p>
-            No.
-          </p>
-        </NonBreaking>
-        <NonBreaking>
-          <h2>When Harkonnens steal a leader with their advanced ability, can they take a look at which leader they stole before they kill them or not?</h2>
-          <p>
-            Yes.
-          </p>
+          <h2>
+            When Harkonnens steal a leader with their advanced ability, can they
+            take a look at which leader they stole before they kill them or not?
+          </h2>
+          <p>Yes.</p>
         </NonBreaking>
       </Text>
     </Spaced>
