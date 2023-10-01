@@ -328,7 +328,6 @@ export const pages = [
             <use xlinkHref={mappy + '#root'}></use>
           </svg>
         </Wrapper>
-
         <NonBreaking>
           <h1>Spice locations</h1>
           <p>
@@ -338,6 +337,32 @@ export const pages = [
           <ul>
             <li>15 "spice blows" ranging from 6 to 12 spice.</li>
             <li>5 "spice mines" ranging from 3 to 5 spice.</li>
+          </ul>
+          <p><em>TODO: the map on the left should show the locations of the spice-blows and spice-mines, clearly.</em></p>
+        </NonBreaking>
+      </Text>
+      <Text>
+        <hr />
+      </Text>
+      <Text columns={2}>
+        <NonBreaking>
+          <h1>Polar sink territory</h1>
+          <p>
+            A unique territory on dune is the polar sink. This territory is safe
+            from everything
+          </p>
+        </NonBreaking>
+        <NonBreaking>
+          <ul>
+            <li>Safe from storm.</li>
+            <li>Safe from Shai-Halud.</li>
+            <li>
+              Safe from combat.
+              <br/>
+              There are never battles here.
+              <br />
+              There is no occupancy limit for this territory.
+            </li>
           </ul>
         </NonBreaking>
       </Text>
