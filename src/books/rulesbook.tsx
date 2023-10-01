@@ -50,7 +50,7 @@ export const pages = [
               <li>Introduction</li>
               <li>The board</li>
               <li>Cards</li>
-              <li>Page 2</li>
+              <li>Factons</li>
               <li>Page 3</li>
               <li>Page 4</li>
               <li>Page 5</li>
@@ -149,7 +149,9 @@ export const pages = [
           </p>
         </NonBreaking>
       </Text>
-      <Title color={blue1} size="medium">The board</Title>
+      <Title color={blue1} size="medium">
+        The board
+      </Title>
       <Text>
         <NonBreaking>
           <p>
@@ -518,6 +520,76 @@ export const pages = [
           <li>1x Supplies!</li>
         </ul>
       </Text>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue1}>Factions</Title>
+      <Text>
+        <p>Each set is composed of the following:</p>
+        <Definitions>
+          <dt>A Faction Sheet</dt>
+          <dd>
+            <p>Describing each Faction’s Advantages.</p>
+            <p>Reference for their troops & leader strengths.</p>
+            <p>Reference for their karama effects & FAQ.</p>
+          </dd>
+          <dt>Leader discs</dt>
+          <dd>
+            <p>Each disc shows a leader and their fighting strength.</p>
+          </dd>
+          <dt>Leader traitor cards</dt>
+          <dd>
+            <p>
+              Every leader disc should have a traitor card representing the
+              leader disc.
+            </p>
+          </dd>
+          <dt>Troop tokens</dt>
+          <dd>
+            <p>A total of 20 tokens.</p>
+            <p>Troops tokens can be multi-sided.</p>
+            <p>Some factions have multiple types of troop tokens.</p>
+          </dd>
+          <dt>Starting spice</dt>
+          <dd>
+            <p>
+              This should match the starting spice specified on the faction
+              sheet.
+            </p>
+          </dd>
+          <dt>Faction specific items</dt>
+          <dd>
+            <p>
+              Some factions will have unique items, such as a Kwisatz Haderach
+              token for house Atreides.
+            </p>
+          </dd>
+        </Definitions>
+        <p>
+          All components of each player set have the same colour for easy
+          identification.
+        </p>
+      </Text>
+      <div style={{ display: 'flex', gap: '1vw' }}>
+          {Object.entries(factions).map(([k, v]) => (
+            <Fragment key={k}>
+              <Wrapper
+                key={k}
+                isCircle={true}
+                size={size}
+                style={{ flex: 1, maxWidth: '100%' }}
+              >
+                <FactionToken
+                  color={v.sheet.assets.color}
+                  logo={v.sheet.assets.logo}
+                  pattern={v.sheet.assets.pattern}
+                />
+              </Wrapper>
+            </Fragment>
+          ))}
+        </div>
+
     </Spaced>
   </Fragment>,
   <Fragment>
