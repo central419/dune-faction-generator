@@ -64,7 +64,7 @@ export const AdvantagesSheet = ({
             />
           </Wrapper>
         </LogoArea>
-        <HeadArea size={2}>
+        <HeadArea size={1.5}>
           <div>
             <div>
               <AdvantageName>AT START</AdvantageName>

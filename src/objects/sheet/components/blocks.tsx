@@ -17,7 +17,7 @@ export const SheetAdvantages: FC<{
       <NonBreaking>
         <Spaced>
           {header}
-          <Text key="head">
+          <Text key="head" size={1.5}>
             {head.title ? (
               <div>
                 <AdvantageName>
@@ -58,7 +58,7 @@ export function SheetBlock({
   margin?: number;
 }) {
   return (
-    <Text>
+    <Text size={1.5}>
       {title ? (
         <div>
           <AdvantageName>
@@ -137,7 +137,7 @@ export const DisplayAdvantagesDetails: FC<{
       <NonBreaking>
         <Spaced>
           {header}
-          <Text key="head">
+          <Text key="head" size={1.5}>
             {head.title ? (
               <div>
                 <AdvantageName>{head.title}</AdvantageName>
@@ -153,7 +153,7 @@ export const DisplayAdvantagesDetails: FC<{
       </NonBreaking>
 
       {rest.map((a, i) => (
-        <Text key={i}>
+        <Text key={i} size={1.5}>
           {a.title ? (
             <div>
               <AdvantageName>{a.title}</AdvantageName>
