@@ -48,7 +48,8 @@ export const pages = [
             <ol>
               <li>Credits</li>
               <li>Introduction</li>
-              <li>Page 1</li>
+              <li>The board</li>
+              <li>Cards</li>
               <li>Page 2</li>
               <li>Page 3</li>
               <li>Page 4</li>
@@ -148,9 +149,9 @@ export const pages = [
           </p>
         </NonBreaking>
       </Text>
+      <Title color={blue1} size="medium">The board</Title>
       <Text>
         <NonBreaking>
-          <h1>The board</h1>
           <p>
             Printed on the board is a map of the planet Dune. The map contains
             six types of territories.
@@ -411,7 +412,10 @@ export const pages = [
           </dd>
           <dt>Habanya Seitch</dt>
           <dd>
-            <p>This stronghold has no special uses, but is the hardest one to reach.</p>
+            <p>
+              This stronghold has no special uses, but is the hardest one to
+              reach.
+            </p>
           </dd>
           <dt>Tuek's Seitch</dt>
           <dd>
@@ -437,9 +441,82 @@ export const pages = [
           <li>It can still be blown up by Family Atomics.</li>
         </ul>
         <p>
-          When the Shieldwall territory is partially under storm, only the larger
-          part (upper left) counts as the stronghold.
+          When the Shieldwall territory is partially under storm, only the
+          larger part (upper left) counts as the stronghold.
         </p>
+      </Text>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue1}>Cards</Title>
+      <Text>
+        <p>
+          The game is played with multiple card decks.
+          <br />
+          These decks and their contents are outlined here:
+        </p>
+        <Definitions>
+          <dt>Storm deck</dt>
+          <dd>
+            <p>
+              6 cards numbered 1 through 6
+              <br />
+              This deck is only used if the Fremen are in play.
+            </p>
+          </dd>
+          <dt>Spice deck</dt>
+          <dd>
+            <p>
+              15 spice-blow cards.
+              <br />
+              5 spice-mine cards.
+              <br />
+              5 Shai-Halud cards.
+              <br />
+            </p>
+          </dd>
+          <dt>Fate deck</dt>
+          <dd>
+            <p>
+              6 Cards, each one mimicks a specific worthless Treachery Card.
+            </p>
+          </dd>
+          <dt>Treachery deck</dt>
+          <dd>
+            <p>
+              45 cards.
+              <br />
+              <em>These cards are explained in detail below.</em>
+            </p>
+          </dd>
+        </Definitions>
+      </Text>
+      <Title color={blue1} size="medium">
+        Treachery cards
+      </Title>
+      <Text columns={2}>
+        <ul>
+          <li>6x Worthless Cards, unique</li>
+          <li>5x Poison Weapon Cards, unique</li>
+          <li>5x Projectile Weapon Cards, unique</li>
+          <li>5x Snooper Cards, generic</li>
+          <li>5x Shield Cards, generic</li>
+          <li>3x Cheap Hero, 2 male 1 female</li>
+          <li>2x Karama Cards, generic</li>
+          <li>2x Truthtrance Cards, generic</li>
+          <li>2x Mercenaries, generic</li>
+          <li>1x Hajr</li>
+          <li>1x Weather Control</li>
+          <li>1x Tleilaxu Ghola</li>
+          <li>1x Family Atomics</li>
+          <li>1x Lasgun</li>
+          <li>1x Weirding Way</li>
+          <li>1x Chemistry</li>
+          <li>1x Orange Catholic Bible</li>
+          <li>1x Break Conditioning</li>
+          <li>1x Supplies!</li>
+        </ul>
       </Text>
     </Spaced>
   </Fragment>,
