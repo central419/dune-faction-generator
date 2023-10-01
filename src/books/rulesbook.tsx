@@ -27,71 +27,14 @@ import coverD from '../asset/cover/cover-d.svg';
 import mappy from '../asset/cover/map.svg';
 
 import { blue1 } from '../presets/colors';
-import styled from '@emotion/styled';
+import { Ball } from './blocks/Ball';
+import { WithBottom, SideBySide } from './blocks/Layouts';
 
 const factions = [emperor, guild, fremen, ixian, atreides, bg, bt, harkonnen];
 
 export const ratio = Math.sqrt(2);
 
 export const cover = <Cover background={coverB} offset={80} />;
-
-const WithBottom = styled.div({
-  display: 'flex',
-  flexDirection: 'column',
-  flex: 1,
-
-  '& > *:first-child': {
-    flex: 1,
-  },
-});
-
-const SideBySide = styled.div<{ gap?: number }>(({ gap = 4 }) => ({
-  display: 'flex',
-  gap: `${gap}vw`,
-}));
-
-const Ball = styled.div<{ borderA?: 'dashed' | 'solid'; borderB?: string }>(
-  {
-    width: '3.2vw',
-    height: '3.2vw',
-    borderRadius: '50%',
-    position: 'relative',
-    boxSizing: 'border-box',
-    boxShadow: '0 0 0 1px black',
-  },
-  ({ borderA }) =>
-    borderA
-      ? {
-          '&:after': {
-            boxSizing: 'border-box',
-            borderRadius: '50%',
-            content: '""',
-            position: 'absolute',
-            top: '6%',
-            left: '6%',
-            width: '86%',
-            height: '86%',
-            border: `1px ${borderA} black`,
-          },
-        }
-      : {},
-  ({ borderB }) =>
-    borderB
-      ? {
-          '&:before': {
-            boxSizing: 'border-box',
-            borderRadius: '50%',
-            content: '""',
-            position: 'absolute',
-            top: '0',
-            left: '0',
-            width: '100%',
-            height: '100%',
-            border: `0.7vw solid ${borderB}`,
-          },
-        }
-      : {}
-);
 
 export const pages = [
   <Fragment>
@@ -110,7 +53,7 @@ export const pages = [
               <li>Page 4</li>
               <li>Page 5</li>
               <li>Page 6</li>
-              <li>Page 7</li>
+              <li>The origin</li>
             </ol>
           </NonBreaking>
           <NonBreaking>
@@ -216,58 +159,70 @@ export const pages = [
           <dt>Sand</dt>
           <dd>
             <SideBySide gap={1}>
-              <Ball style={{ background: '#F6D979' }} />
+              <Ball style={{ color: '#000', backgroundColor: '#F6D979' }} />
               <div>Yellow</div>
+            </SideBySide>
+          </dd>
+          <dt>Imperial Basin</dt>
+          <dd>
+            <SideBySide gap={1}>
+              <Ball
+                style={{ color: '#000', backgroundColor: '#F6D979' }}
+                borderA="dashed"
+              />
+              <div>Yellow with dashed border</div>
             </SideBySide>
           </dd>
           <dt>Rock</dt>
           <dd>
             <SideBySide gap={1}>
-              <Ball style={{ background: '#67371C' }} borderA="solid" />
+              <Ball
+                style={{ color: '#000', backgroundColor: '#A67A3E' }}
+                borderA="solid"
+              />
               <div>Light brown</div>
+            </SideBySide>
+          </dd>
+          <dt>Shieldwall</dt>
+          <dd>
+            <SideBySide gap={1}>
+              <Ball
+                style={{ color: '#000', backgroundColor: '#A67A3E' }}
+                borderA="dashed"
+              />
+              <div>Light brown with dashed border</div>
             </SideBySide>
           </dd>
           <dt>Polar Sink</dt>
           <dd>
             <SideBySide gap={1}>
-              <Ball style={{ background: '#ffffff' }} borderA="solid" />
-              <div>White</div>
-            </SideBySide>
-          </dd>
-          <dt>Seitch stronghold</dt>
-          <dd>
-            <SideBySide gap={1}>
               <Ball
-                style={{ background: '#F7BA7A' }}
+                style={{ color: '#000', backgroundColor: '#ffffff' }}
                 borderA="solid"
-                borderB="#67371C"
               />
-              <div>Dark Brown, with solid border</div>
+              <div>White</div>
             </SideBySide>
           </dd>
           <dt>City stronghold</dt>
           <dd>
             <SideBySide gap={1}>
               <Ball
-                style={{ background: '#F7BA7A' }}
+                style={{ color: '#F7BA7A', backgroundColor: '#F7BA7A' }}
                 borderA="dashed"
                 borderB="#67371C"
               />
               <div>Dark Brown, with dashed border</div>
             </SideBySide>
           </dd>
-          <dt>Imperial Basin</dt>
+          <dt>Seitch stronghold</dt>
           <dd>
             <SideBySide gap={1}>
-              <Ball style={{ background: '#F6D979' }} borderA="dashed" />
-              <div>Yellow with dashed border</div>
-            </SideBySide>
-          </dd>
-          <dt>Shieldwall</dt>
-          <dd>
-            <SideBySide gap={1}>
-              <Ball style={{ background: 'red' }} borderA="dashed" />
-              <div>Light brown with dashed border</div>
+              <Ball
+                style={{ color: '#F7BA7A' }}
+                borderA="solid"
+                borderB="#67371C"
+              />
+              <div>Dark Brown, with solid border</div>
             </SideBySide>
           </dd>
         </Definitions>
