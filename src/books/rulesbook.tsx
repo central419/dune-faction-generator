@@ -338,7 +338,12 @@ export const pages = [
             <li>15 "spice blows" ranging from 6 to 12 spice.</li>
             <li>5 "spice mines" ranging from 3 to 5 spice.</li>
           </ul>
-          <p><em>TODO: the map on the left should show the locations of the spice-blows and spice-mines, clearly.</em></p>
+          <p>
+            <em>
+              TODO: the map on the left should show the locations of the
+              spice-blows and spice-mines, clearly.
+            </em>
+          </p>
         </NonBreaking>
       </Text>
       <Text>
@@ -358,7 +363,7 @@ export const pages = [
             <li>Safe from Shai-Halud.</li>
             <li>
               Safe from combat.
-              <br/>
+              <br />
               There are never battles here.
               <br />
               There is no occupancy limit for this territory.
@@ -371,39 +376,69 @@ export const pages = [
   <Fragment>
     <Spaced>
       <Text>
-        <h1>Title</h1>
+        <h1>Strongholds</h1>
       </Text>
       <Text columns={2}>
+        <p>There are 5 strongholds clearly marked on the board:</p>
+        <Definitions>
+          <dt>Arrakeen</dt>
+          <dd>
+            <p>The home-base of house Atreides.</p>
+            <p>
+              If you have forces here, you have access to "ornithopers"{' '}
+              <em>(explained further on page N)</em>.
+            </p>
+            <p>
+              If you have forces here at the collection phase, you gain 2 spice
+              from the spice bank.
+            </p>
+          </dd>
+          <dt>Carthag</dt>
+          <dd>
+            <p>The home-base of house Harkonnen.</p>
+            <p>
+              If you have forces here, you have access to "ornithopers"{' '}
+              <em>(explained further on page N)</em>.
+            </p>
+            <p>
+              If you have forces here at the collection phase, you gain 2 spice
+              from the spice bank.
+            </p>
+          </dd>
+          <dt>Seitch Tabr</dt>
+          <dd>
+            <p>The home-base of the Fremen.</p>
+          </dd>
+          <dt>Habanya Seitch</dt>
+          <dd>
+            <p>This stronghold has no special uses, but is the hardest one to reach.</p>
+          </dd>
+          <dt>Tuek's Seitch</dt>
+          <dd>
+            <p>The home-base of the Spacing Guild</p>
+            <p>
+              If you have forces here at the collection phase, you gain 1 spice
+              from the spice bank.
+            </p>
+          </dd>
+        </Definitions>
+
         <p>
-          Integer ipsum massa, dapibus non congue a, ultricies eu orci. Maecenas
-          ullamcorper tellus magna. Nunc a metus tellus. Pellentesque vitae
-          lacinia magna, eget posuere risus. Sed id metus pharetra, rhoncus
-          turpis vel, volutpat diam. Donec tristique est in ipsum cursus, sit
-          amet viverra urna bibendum. Integer at risus lobortis, faucibus nisi
-          vitae, fermentum ante. Donec pellentesque fermentum eros, id ornare
-          nisl feugiat quis. In hac habitasse platea dictumst. Ut sodales quis
-          felis et tempus. Nullam tempor odio diam, non suscipit sapien finibus
-          quis. Sed sed egestas mi, at sagittis metus. Curabitur tempus leo eget
-          mollis porta. Integer efficitur et nisi et semper. Orci varius natoque
-          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          After 4 Shai-Halud cards have been revealed, the 6th stronghold opens
+          up:
         </p>
         <p>
-          Morbi rutrum, dui vel interdum imperdiet, quam nulla condimentum
-          justo, a maximus nibh magna sed quam. Mauris lacus ipsum, venenatis ut
-          elementum et, blandit sed augue. Maecenas convallis turpis in
-          scelerisque porttitor. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus. In hac habitasse platea
-          dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Mauris et justo quis elit dapibus faucibus. Sed dapibus lacus nec diam
-          malesuada convallis. Mauris aliquet, quam ac iaculis aliquet, nunc
-          mauris egestas leo, at rutrum neque urna sit amet velit. Donec
-          lacinia, est ac luctus luctus, arcu enim vestibulum arcu, vitae
-          ultrices nibh neque ut nulla. Orci varius natoque penatibus et magnis
-          dis parturient montes, nascetur ridiculus mus. Vestibulum id est sed
-          lorem lobortis ullamcorper vel ac ex. Etiam sodales lorem suscipit,
-          iaculis erat pulvinar, vulputate metus. Nunc pharetra, nunc a porta
-          lobortis, tortor metus hendrerit elit, non varius turpis urna at
-          metus.
+          The Shieldwall territory will be a stronghold for victory purposes
+          only. This means that:
+        </p>
+        <ul>
+          <li>It still costs 2 spice per troop to ship to it.</li>
+          <li>There is no occupation limit.</li>
+          <li>It can still be blown up by Family Atomics.</li>
+        </ul>
+        <p>
+          When the Shieldwall territory is partially under storm, only the larger
+          part (upper left) counts as the stronghold.
         </p>
       </Text>
     </Spaced>
