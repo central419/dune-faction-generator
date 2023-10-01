@@ -56,7 +56,9 @@ export const normal = troop({
 export const shadam = leader({ name: 'Shadam IV', image: '', strength: '10' });
 export const sheet: Faction = {
   __typename: 'Faction',
-  description: '',
+  description: dedent`
+    The Emperor, his majesty the Padishah Emperor Shaddam IV of house Corrino — keen and efficient, yet easily lulled into complacency by his own trappings of power.
+  `,
   name: 'Emperor',
   assets: assets({
     logo: 'EMPEROR_LOGO',

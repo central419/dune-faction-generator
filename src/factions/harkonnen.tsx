@@ -53,7 +53,9 @@ export const baron = leader({
 
 export const sheet: Faction = {
   __typename: 'Faction',
-  description: '',
+  description: dedent`
+    The Harkonnens, led by the decadent Baron Vladimir Harkonnen — master of treachery and cruel deeds.
+  `,
   name: 'House Harkonnen',
   assets: assets({
     logo: 'HARKONNEN_LOGO',

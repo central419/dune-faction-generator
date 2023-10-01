@@ -26,15 +26,36 @@ import coverD from '../asset/cover/cover-d.svg';
 
 import mappy from '../asset/cover/map.svg';
 
-import { blue1 } from '../presets/colors';
+import { blue1, tint0, tint1 } from '../presets/colors';
 import { Ball } from './blocks/Ball';
 import { WithBottom, SideBySide } from './blocks/Layouts';
+import styled from '@emotion/styled';
 
 const factions = [emperor, guild, fremen, ixian, atreides, bg, bt, harkonnen];
 
 export const ratio = Math.sqrt(2);
 
 export const cover = <Cover background={coverB} offset={80} />;
+
+const FactionSynopsisBlock = styled.div<{ flip?: boolean }>(
+  {
+    display: 'flex',
+    background: tint0,
+    height: '18vw',
+  },
+  ({ flip = true }) =>
+    flip
+      ? {
+          padding: '2vw 9vw 2vw 2vw',
+          marginRight: '-4vw',
+          borderRadius: '10vw 0 0 10vw',
+        }
+      : {
+          padding: '2vw 2vw 2vw 9vw',
+          marginLeft: '-4vw',
+          borderRadius: '0 10vw 10vw 0',
+        }
+);
 
 const mapSize = { width: 487.06, height: 487.06 };
 export const pages = [
@@ -50,6 +71,7 @@ export const pages = [
               <li>Introduction</li>
               <li>The board</li>
               <li>Cards</li>
+              <li>Tech Tokens</li>
               <li>Factons</li>
               <li>Page 3</li>
               <li>Page 4</li>
@@ -70,6 +92,10 @@ export const pages = [
               The ruleset has been engineered to not only increase player
               engagement and agency but also remove as many random elements and
               heighten the skill ceiling.
+            </p>
+            <p>
+              More information about design goals etc, can be found on the last
+              page of this rulebook.
             </p>
           </NonBreaking>
         </Text>
@@ -524,6 +550,112 @@ export const pages = [
   </Fragment>,
   <Fragment>
     <Spaced>
+      <Title color={blue1} size="medium">
+        Tech tokens
+      </Title>
+      <Text columns={3}>
+        <p>Tech tokens start in a general supply at the start of the game.</p>
+        <p>
+          If you win in combat against another faction, and that faction has a
+          Tech Token; you choose which one to take if they have multiple.
+        </p>
+        <p>
+          When They do not have a tech token, but there is 1 available in the
+          supply, take 1 random tech token from the supply.
+        </p>
+        <p>
+          Once Tech Tokens are controlled, they are kept in front of shields,
+          for public view.
+        </p>
+        <p>
+          Controlling 3 Tech Tokens counts as a Stronghold for winning the game
+          (e.g., if you have forces in Arrakeen and Carthag, and 3 Tech Tokens,
+          you win the game).
+        </p>
+        <p>
+          Allies do not share control of Tech Tokens. To qualify as a
+          stronghold, a single player must control 3 Tech Tokens.
+        </p>
+        <p>
+          The fourth tech token: the Spice Mine tech token is described on house
+          Atreides&rsquo;s faction sheet and is not distributed with the others.
+        </p>
+        <p>
+          Each Tech Token that you control has a potential income from the Spice
+          Bank. Any spice gained from Tech Tokens is placed on the Tech Token
+          and then collected at the end of the current phase.
+        </p>
+      </Text>
+      <Text>
+        <Definitions>
+          <dt>AXLOTL TANKS</dt>
+          <dd>
+            <p>
+              If at least one player, including you, takes free revival, you
+              collect 1 spice for every Tech Token you control. However, if only
+              the Tleilaxu player takes free revival, you do not collect spice.
+            </p>
+          </dd>
+          <dt>HIGHLINERS</dt>
+          <dd>
+            <p>
+              If at least one player, including you, ships forces from
+              off-planet, you collect 1 spice for every Tech Token you control.
+              However, if only the Spacing Guild ships forces from off-planet,
+              you do not collect spice.
+            </p>
+          </dd>
+          <dt>SPICE PRODUCTION</dt>
+          <dd>
+            <p>
+              If at least one player, including you, takes CHOAM Charity, you
+              collect 1 spice for every Tech Token you control. However, if only
+              the Bene Gesserit take CHOAM Charity, you do not collect spice.
+            </p>
+          </dd>
+          <dt>SPICE MINING</dt>
+          <dd>
+            <p>
+              If at least one troop belonging to any player, including you,
+              returns to their reserves after getting evacuated from a spice
+              mine, you collect 1 spice for every Tech Token you control.
+            </p>
+          </dd>
+        </Definitions>
+      </Text>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue1} size="medium">
+        Miscelanous rules
+      </Title>
+      <Text columns={2}>
+        <h1>Written Records and Discard Piles</h1>
+        <p>
+          No faction other than House Atreides may keep any written notes of any
+          kind.
+        </p>
+        <p>
+          Both the treachery discard pile and spice blow discard piles are
+          public information and may be searched at any time by any faction.
+        </p>
+        <h1>Fighting Under Storm</h1>
+        <p>
+          Battles may happen under the storm, the Fremen may ship and move under
+          the Storm.
+        </p>
+        <h1>Leader Revival</h1>
+        <p>
+          When a faction has one available leader at the revival phase, they may
+          begin the process of reviving leaders by paying their leader's
+          strength in spice.
+        </p>
+      </Text>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
       <Title color={blue1}>Factions</Title>
       <Text>
         <p>Each set is composed of the following:</p>
@@ -572,24 +704,79 @@ export const pages = [
         </p>
       </Text>
       <div style={{ display: 'flex', gap: '1vw' }}>
-          {Object.entries(factions).map(([k, v]) => (
-            <Fragment key={k}>
-              <Wrapper
-                key={k}
-                isCircle={true}
-                size={size}
-                style={{ flex: 1, maxWidth: '100%' }}
-              >
-                <FactionToken
-                  color={v.sheet.assets.color}
-                  logo={v.sheet.assets.logo}
-                  pattern={v.sheet.assets.pattern}
-                />
-              </Wrapper>
-            </Fragment>
-          ))}
-        </div>
-
+        {Object.entries(factions).map(([k, v]) => (
+          <Fragment key={k}>
+            <Wrapper
+              key={k}
+              isCircle={true}
+              size={size}
+              style={{ flex: 1, maxWidth: '100%' }}
+            >
+              <FactionToken
+                color={v.sheet.assets.color}
+                logo={v.sheet.assets.logo}
+                pattern={v.sheet.assets.pattern}
+              />
+            </Wrapper>
+          </Fragment>
+        ))}
+      </div>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue1} size="medium">
+        Factions in the game
+      </Title>
+      <Text>
+        <p>You will play as one of these factions:</p>
+      </Text>
+      {factions.slice(0, 5).map((item) => (
+        <FactionSynopsisBlock>
+          <SideBySide>
+            <Wrapper
+              isCircle={true}
+              size={size}
+              style={{ flex: 'none', width: '14vw', height: '14vw' }}
+            >
+              <FactionToken
+                color={item.sheet.assets.color}
+                logo={item.sheet.assets.logo}
+                pattern={item.sheet.assets.pattern}
+              />
+            </Wrapper>
+            <Text>
+              <p>{item.sheet.description}</p>
+            </Text>
+          </SideBySide>
+        </FactionSynopsisBlock>
+      ))}
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Text>Continued list of factions.</Text>
+      {factions.slice(5, 10).map((item) => (
+        <FactionSynopsisBlock>
+          <SideBySide>
+            <Wrapper
+              isCircle={true}
+              size={size}
+              style={{ flex: 'none', width: '14vw', height: '14vw' }}
+            >
+              <FactionToken
+                color={item.sheet.assets.color}
+                logo={item.sheet.assets.logo}
+                pattern={item.sheet.assets.pattern}
+              />
+            </Wrapper>
+            <Text>
+              <p>{item.sheet.description}</p>
+            </Text>
+          </SideBySide>
+        </FactionSynopsisBlock>
+      ))}
+      <Text>There's room for more factions!</Text>
     </Spaced>
   </Fragment>,
   <Fragment>
@@ -725,59 +912,54 @@ export const pages = [
         <p>
           Dreamrules 2.0 is the brainchild of about 6-8 Dune players each of
           whom has hundreds of hours of game time under their belt.
-          <br />
-          <br />
+        </p>
+        <p>
           The original Dreamrules was for the base game and it was a rather
           simple mesh of GF9 rules and the World Boardgame Championship rules
           where we mixed aspects we liked from both and tried to limit what we
           consider broken mechanics. It was fun, but still had a few ‘flaws’
           from the original Dune and the faction changes we made were not
           balanced.
-          <br />
-          <br />
+        </p>
+        <p>
           After the Ixian & Tleilaxu expansion that version of Dreamrules was
           abandoned as we came to understand (and definitely not like) what the
           game was becoming. The release of the FAQ in 2020 also changed a lot
           of things, in our opinion not for the better. We decided that to
           continue playing Dune we would have to revive Dreamrules, but where to
           begin.
-          <br />
-          <br />
-          The Design Goals were as follows:
-          <br />
-          <ul>
-            <li>
-              Remove broken/unfun mechanics (Harkonnen Special Karama, Guild
-              Timeout Victory, certain Treachery cards)
-            </li>
-            <li>
-              Introduce aspects of WBC rules we enjoyed, Emperor subbing, Bene
-              Gesserit flipping
-            </li>
-            <li>
-              Keep aspects of the expansion we liked, Tech Tokens, certain
-              Treachery Cards
-            </li>
-            <li>Balance factions, especially the Fremen</li>
-            <li>Reduce the likelihood of Early Nexus’s</li>
-            <li>Make 10 turn games less likely</li>
-            <li>Make skirmishes outside strongholds more necessary and fun</li>
-            <li>
-              Treachery Deck balance, remove broken cards, but keep it Dune like
-              in power dynamics and excitement about certain cards
-            </li>
-          </ul>
-          <br />
-          Then as secondary goals:
-          <br />
-          <ul>
-            <li>Balance Ixians</li>
-            <li>
-              Overhaul Tleilaxu completely, we honestly didn’t know where to
-              begin
-            </li>
-          </ul>
         </p>
+        <h1>The Design Goals were as follows:</h1>
+        <ul>
+          <li>
+            Remove broken/unfun mechanics (Harkonnen Special Karama, Guild
+            Timeout Victory, certain Treachery cards)
+          </li>
+          <li>
+            Introduce aspects of WBC rules we enjoyed, Emperor subbing, Bene
+            Gesserit flipping
+          </li>
+          <li>
+            Keep aspects of the expansion we liked, Tech Tokens, certain
+            Treachery Cards
+          </li>
+          <li>Balance factions, especially the Fremen</li>
+          <li>Reduce the likelihood of Early Nexus&rsquo;s</li>
+          <li>Make 10 turn games less likely</li>
+          <li>Make skirmishes outside strongholds more necessary and fun</li>
+          <li>
+            Treachery Deck balance, remove broken cards, but keep it Dune like
+            in power dynamics and excitement about certain cards
+          </li>
+        </ul>
+        <h1>Then as secondary goals:</h1>
+        <ul>
+          <li>Balance Ixians</li>
+          <li>
+            Overhaul Tleilaxu completely, we honestly didn&rsquo;t know where to
+            begin.
+          </li>
+        </ul>
       </Text>
     </Spaced>
   </Fragment>,

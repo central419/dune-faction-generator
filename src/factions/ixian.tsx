@@ -56,7 +56,10 @@ const rombert = leader({ name: 'Prince Rombert', image: '', strength: '10' });
 
 export const sheet: Faction = {
   __typename: 'Faction',
-  description: '',
+  description: dedent`
+    The Ixians are led by the human cyborg Prince Rhombur Vernius possessing courage, a sharp mind, and technological secrets.
+    They are technocrats who specialize in production and supply chains. On Arrakis they have a movable troop platform.
+  `,
   name: 'Ixian',
   assets: assets({
     logo: 'IX_LOGO',

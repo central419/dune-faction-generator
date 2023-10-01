@@ -58,7 +58,9 @@ export const liet = leader({ name: 'Liet Kynes', image: '', strength: '10' });
 
 export const sheet: Faction = {
   __typename: 'Faction',
-  description: '',
+  description: dedent`
+    The Fremen, represented by the planetary ecologist Liet Kynes &mdash; commanding fierce hordes of natives, adept at life and travel on the planet, and dedicated to preventing any outside control while bringing about Dune&rsquo;s own natural regeneration.
+  `,
   name: 'Fremen',
   assets: {
     logo: 'FREMEN_LOGO',

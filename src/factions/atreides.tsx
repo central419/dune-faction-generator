@@ -53,7 +53,9 @@ export const normal = troop({
 export const sheet: Faction = {
   __typename: 'Faction',
   name: 'House Atreides',
-  description: '',
+  description: dedent`
+    House Atreides, led by the youthful Paul Atreides (Muad&rsquo;Dib) &mdash; rightful heir to the planet, gifted with valiant lieutenants and a strange partial awareness of the future, but beset by more powerful and treacherous opponents.
+  `,
   assets: assets({
     logo: 'ATREIDES_LOGO',
     color: '#444515',

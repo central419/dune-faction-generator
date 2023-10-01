@@ -49,7 +49,9 @@ export const eldrick = leader({ name: 'Elrich', image: '', strength: '10' });
 
 export const sheet: Faction = {
   __typename: 'Faction',
-  description: '',
+  description: dedent`
+    The Spacing Guild, represented by steersman Edric (in league with smuggler bands) — monopolist of transport, yet addicted to ever increasing spice flows.
+  `,
   name: 'Spacing Guild',
   assets: assets({
     logo: 'GUILD_LOGO',

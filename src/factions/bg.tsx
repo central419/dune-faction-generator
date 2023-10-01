@@ -56,7 +56,9 @@ export const normal = troop({
 export const sheet: Faction = {
   __typename: 'Faction',
   name: 'Bene Gesserit',
-  description: '',
+  description: dedent`
+    The Bene Gesserit Sisterhood, represented by Reverend Mother Gaius Helen Mohiam — ancient and inscrutable, carefully trained in psychological control and a genius at achieving her ends through the efforts of others.
+  `,
   assets: {
     logo: 'BG_LOGO',
     color: '#1D327B',
