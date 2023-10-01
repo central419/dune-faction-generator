@@ -26,10 +26,11 @@ import coverD from '../asset/cover/cover-d.svg';
 
 import mappy from '../asset/cover/map.svg';
 
-import { blue1, tint0, tint1 } from '../presets/colors';
+import { blue1, blue2, tint0, tint1 } from '../presets/colors';
 import { Ball } from './blocks/Ball';
 import { WithBottom, SideBySide } from './blocks/Layouts';
 import styled from '@emotion/styled';
+import { MarkdownContent } from '../components/MarkdownContent';
 
 const factions = [emperor, guild, fremen, ixian, atreides, bg, bt, harkonnen];
 
@@ -67,16 +68,16 @@ export const pages = [
           <NonBreaking>
             <h1>Table of contents:</h1>
             <ol>
-              <li>Credits</li>
+              <li>About & Credits</li>
               <li>Introduction</li>
               <li>The board</li>
               <li>Cards</li>
               <li>Tech Tokens</li>
               <li>Factons</li>
-              <li>Page 3</li>
-              <li>Page 4</li>
-              <li>Page 5</li>
-              <li>Page 6</li>
+              <li>...</li>
+              <li>...</li>
+              <li>...</li>
+              <li>FAQ</li>
               <li>The origin</li>
             </ol>
           </NonBreaking>
@@ -510,6 +511,16 @@ export const pages = [
               6 Cards, each one mimicks a specific worthless Treachery Card.
             </p>
           </dd>
+          <dt>Alliance deck</dt>
+          <dd>
+            <p>
+              1 card per faction, each detailing a specific faction's aliance
+              ability.
+              <br />
+              use these to remind who is allied tho whom, and what the faction
+              alliance ability is.
+            </p>
+          </dd>
           <dt>Treachery deck</dt>
           <dd>
             <p>
@@ -631,26 +642,38 @@ export const pages = [
         Miscelanous rules
       </Title>
       <Text columns={2}>
-        <h1>Written Records and Discard Piles</h1>
-        <p>
-          No faction other than House Atreides may keep any written notes of any
-          kind.
-        </p>
-        <p>
-          Both the treachery discard pile and spice blow discard piles are
-          public information and may be searched at any time by any faction.
-        </p>
-        <h1>Fighting Under Storm</h1>
-        <p>
-          Battles may happen under the storm, the Fremen may ship and move under
-          the Storm.
-        </p>
-        <h1>Leader Revival</h1>
-        <p>
-          When a faction has one available leader at the revival phase, they may
-          begin the process of reviving leaders by paying their leader's
-          strength in spice.
-        </p>
+        <NonBreaking>
+          <h1>Written Records and Discard Piles</h1>
+          <p>
+            No faction other than House Atreides may keep any written notes of
+            any kind.
+          </p>
+          <p>
+            Both the treachery discard pile and spice blow discard piles are
+            public information and may be searched at any time by any faction.
+          </p>
+        </NonBreaking>
+        <NonBreaking>
+          <h1>Fighting Under Storm</h1>
+          <p>
+            Battles may happen under the storm, the Fremen may ship and move
+            under the Storm.
+          </p>
+        </NonBreaking>
+        <NonBreaking>
+          <h1>Leader Revival</h1>
+          <p>
+            When a faction has one available leader at the revival phase, they
+            may begin the process of reviving leaders by paying their leader's
+            strength in spice.
+          </p>
+        </NonBreaking>
+      </Text>
+      <Text>
+        <hr/>
+      </Text>
+      <Text>
+        <p><em>TODO: These can likely be removed, considering they really should come up in the phases explanation!</em></p>
       </Text>
     </Spaced>
   </Fragment>,
@@ -746,7 +769,7 @@ export const pages = [
               />
             </Wrapper>
             <Text>
-              <p>{item.sheet.description}</p>
+              <MarkdownContent>{item.sheet.description}</MarkdownContent>
             </Text>
           </SideBySide>
         </FactionSynopsisBlock>
@@ -771,12 +794,12 @@ export const pages = [
               />
             </Wrapper>
             <Text>
-              <p>{item.sheet.description}</p>
+              <MarkdownContent>{item.sheet.description}</MarkdownContent>
             </Text>
           </SideBySide>
         </FactionSynopsisBlock>
       ))}
-      <Text>There's room for more factions!</Text>
+      <Text><em>There's room for more factions!</em></Text>
     </Spaced>
   </Fragment>,
   <Fragment>
@@ -899,6 +922,69 @@ export const pages = [
             </Fragment>
           ))}
         </div>
+      </Text>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue2}>FAQ</Title>
+      <Text columns={2} size={1.5}>
+        <NonBreaking>
+          <h2>
+            When multiple players have the game-winning number of strongholds
+            during the mentat-phase; Who wins?
+          </h2>
+          <p>
+            The normal strongholds on the board: Arrakeen, Carthag, Tabr Seitch,
+            Habanya Sietch, Tuek's Seitch; are of higher value than others
+          </p>
+          <p>
+            If there is still a tie, the Shieldwall stronghold is of higher
+            value than Tech Tokens.
+          </p>
+        </NonBreaking>
+        <NonBreaking>
+          <h2>
+            Can a Ghola card let a player revive more than one Sardaukar or
+            Fedaykin per turn?
+          </h2>
+          <p>No, This revival limit of fedeykin cannot be circomvented.</p>
+          <p>
+            The saudaukar revival limit can only be broken by Emperor's fate
+            ability, not by the Tleilaxy Ghola Treachery card.
+          </p>
+        </NonBreaking>
+        <NonBreaking>
+          <h2>How does paying for your ally’s treachery cards work?</h2>
+          <p>
+            In the Bidding phase, a player may pay for part or all of the cost
+            of a treachery card purchased by an ally.
+          </p>
+          <p>
+            The player gives this spice directly to the Emperor (or the bank if
+            the Emperor is not in the game).
+          </p>
+          <p>
+            The emperor can not pay for his ally's cards; but instead share his
+            spice with his ally freely. The ally pays for the card like normal,
+            to the Emperor.
+          </p>
+        </NonBreaking>
+        <NonBreaking>
+          <h2>How does paying for your ally’s shipment work?</h2>
+          <p>
+            During shipment a player may pay for part or all of the cost of an
+            ally’s shipment.
+          </p>
+          <p>
+            The player gives this spice directly to the Guild (or the bank if
+            the Guild is not in the game).
+          </p>
+          <p>
+            If the player giving the spice is the Spacing Guild, then the spice
+            is still given to the Spacing Guild.
+          </p>
+        </NonBreaking>
       </Text>
     </Spaced>
   </Fragment>,
