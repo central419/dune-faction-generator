@@ -57,7 +57,7 @@ const Ball = styled.div<{ borderA?: 'dashed' | 'solid'; borderB?: string }>(
     borderRadius: '50%',
     position: 'relative',
     boxSizing: 'border-box',
-    boxShadow: '0 0 0 1px black'
+    boxShadow: '0 0 0 1px black',
   },
   ({ borderA }) =>
     borderA
@@ -272,16 +272,19 @@ export const pages = [
           </dd>
         </Definitions>
       </Text>
-      <Wrapper
-        isCircle={true}
-        size={size}
-        style={{ flex: 1, maxWidth: '100%' }}
-      >
-        {/* <svg {...size}>
-          <use xlinkHref={mappy + '#root'} {...size}></use>
-        </svg> */}
-        <img src={mappy} alt="" />
-      </Wrapper>
+      <div style={{ position: 'relative', width: '100%' }}>
+        <div style={{ position: 'absolute', width: '100%' }}>
+          <Wrapper
+            isCircle={true}
+            size={size}
+            style={{ flex: 1, maxWidth: '100%' }}
+          >
+            <svg {...size}>
+              <use xlinkHref={mappy + '#root'} {...size}></use>
+            </svg>
+          </Wrapper>
+        </div>
+      </div>
     </Spaced>
   </Fragment>,
   <Fragment>
