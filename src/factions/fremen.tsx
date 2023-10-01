@@ -46,13 +46,13 @@ export const normal = troop({
   back: troopSide({
     variant: 'FREMEN_TROOP',
     name: 'fedaykin',
-    description: 'Your 3 starred forces: Fedaykin are worth 2 normal forces in battle and in taking losses. They are treated as 1 force during revival. You can only revive 1 Fedaykin per turn.',
+    description:
+      'Your 3 starred forces: Fedaykin are worth 2 normal forces in battle and in taking losses. They are treated as 1 force during revival. You can only revive 1 Fedaykin per turn.',
     modifiers: {
       star: 'l1',
     },
   }),
 });
-
 
 export const liet = leader({ name: 'Liet Kynes', image: '', strength: '10' });
 
@@ -64,7 +64,7 @@ export const sheet: Faction = {
     logo: 'FREMEN_LOGO',
     color: '#DF9B42',
     hero: liet,
-    leaders: [jamis,mapes,otheym,chani,stilgar],
+    leaders: [jamis, mapes, otheym, chani, stilgar],
     troops: [normal],
     pattern: pattern1,
     __typename: 'FactionAssets',
@@ -130,10 +130,10 @@ export const sheet: Faction = {
       }),
     ],
     fate: [
-      advantage ({
-      title: `Planetology`,
-      body: `Play your fate card during Storm Phase to add or subtract 1 from the revealed Storm Card. You may repeat this every turn for the rest of the game.`,
-    })
+      advantage({
+        title: `Planetology`,
+        body: `Play your fate card during Storm Phase to add or subtract 1 from the revealed Storm Card. You may repeat this every turn for the rest of the game.`,
+      }),
     ],
     __typename: 'FactionRules',
   },

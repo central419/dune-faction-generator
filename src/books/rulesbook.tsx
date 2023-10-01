@@ -23,6 +23,9 @@ import coverA from '../asset/cover/cover-a.svg';
 import coverB from '../asset/cover/cover-b.svg';
 import coverC from '../asset/cover/cover-c.svg';
 import coverD from '../asset/cover/cover-d.svg';
+
+import mappy from '../asset/cover/map.svg';
+
 import { blue1 } from '../presets/colors';
 import styled from '@emotion/styled';
 
@@ -139,7 +142,7 @@ export const pages = [
   <Fragment>
     <Spaced>
       <Title color={blue1}>Introduction</Title>
-      <Text columns={2}>
+      <Text>
         <NonBreaking>
           <h1>Object of the game</h1>
           <p>
@@ -157,6 +160,8 @@ export const pages = [
             advantages always have precedence over the rules.
           </p>
         </NonBreaking>
+      </Text>
+      <Text columns={2}>
         <NonBreaking>
           <h1>The board</h1>
           <p>
@@ -180,12 +185,7 @@ export const pages = [
             <dd>Light brown with dashed border</dd>
           </Definitions>
         </NonBreaking>
-      </Text>
-      <Text>
-        <img
-          src="https://cdn.vox-cdn.com/thumbor/f_OIlY3ZAfE2SfKD0cWnJRI6m-c=/0x0:2040x1360/1820x1213/filters:focal(916x674:1242x1000)/cdn.vox-cdn.com/uploads/chorus_image/image/64985739/Dune_charlie_cropped.0.jpg"
-          alt=""
-        />
+        <img src={mappy} alt="" />
       </Text>
     </Spaced>
   </Fragment>,
