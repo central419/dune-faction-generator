@@ -36,6 +36,7 @@ export const ratio = Math.sqrt(2);
 
 export const cover = <Cover background={coverB} offset={80} />;
 
+const mapSize = { width: 487.06, height: 487.06 };
 export const pages = [
   <Fragment>
     <WithBottom>
@@ -231,15 +232,115 @@ export const pages = [
         <div style={{ position: 'absolute', width: '100%' }}>
           <Wrapper
             isCircle={true}
-            size={size}
+            size={mapSize}
             style={{ flex: 1, maxWidth: '100%' }}
           >
-            <svg {...size}>
-              <use xlinkHref={mappy + '#root'} {...size}></use>
+            <svg
+              {...mapSize}
+              viewBox="0 0 487.06 487.06"
+              xmlSpace="preserve"
+              fillRule="evenodd"
+              clipRule="evenodd"
+            >
+              <use xlinkHref={mappy + '#root'}></use>
             </svg>
           </Wrapper>
         </div>
       </div>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Text columns={2}>
+        <NonBreaking>
+          <h1>Sectors</h1>
+          <p>
+            The map is also divided by longitude lines into 18 sectors which
+            extend from the edge of the Polar Sink to the horizon.
+          </p>
+          <p>Sectors are important in 3 ways:</p>
+          <ol>
+            <li>When the storm moves, it moves from sector to sector.</li>
+            <li>
+              Territories that are under storm cannot be entered or moved
+              through. When a territory is partually under storm, these parts
+              act as separate territories.
+            </li>
+            <li>
+              Spice can only be collected within the appropriate sector of a
+              territory.
+            </li>
+          </ol>
+        </NonBreaking>
+
+        <Wrapper
+          isCircle={true}
+          size={mapSize}
+          style={{ flex: 1, maxWidth: '100%' }}
+        >
+          <svg
+            {...mapSize}
+            viewBox="0 0 487.06 487.06"
+            xmlSpace="preserve"
+            fillRule="evenodd"
+            clipRule="evenodd"
+          >
+            <use xlinkHref={mappy + '#root'}></use>
+            <use
+              xlinkHref={mappy + '#sectors'}
+              fill="none"
+              stroke="black"
+              clip-rule="evenodd"
+              display="inline"
+              opacity="1"
+              fill-rule="nonzero"
+              stroke-width="7px"
+            />
+            <use
+              xlinkHref={mappy + '#sectors'}
+              fill="none"
+              stroke="white"
+              clip-rule="evenodd"
+              display="inline"
+              opacity="1"
+              fill-rule="nonzero"
+              stroke-width="4px"
+            />
+          </svg>
+        </Wrapper>
+      </Text>
+      <Text>
+        <hr />
+      </Text>
+      <Text columns={2}>
+        <Wrapper
+          isCircle={true}
+          size={mapSize}
+          style={{ flex: 1, maxWidth: '100%' }}
+        >
+          <svg
+            {...mapSize}
+            viewBox="0 0 487.06 487.06"
+            xmlSpace="preserve"
+            fillRule="evenodd"
+            clipRule="evenodd"
+          >
+            <use xlinkHref={mappy + '#root'}></use>
+          </svg>
+        </Wrapper>
+
+        <NonBreaking>
+          <h1>Spice locations</h1>
+          <p>
+            There are a total of 20 locations on the board where spice can spawn
+            and be collected.
+          </p>
+          <ul>
+            <li>15 "spice blows" ranging from 6 to 12 spice.</li>
+            <li>5 "spice mines" ranging from 3 to 5 spice.</li>
+          </ul>
+        </NonBreaking>
+      </Text>
     </Spaced>
   </Fragment>,
   <Fragment>
