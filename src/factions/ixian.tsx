@@ -3,11 +3,55 @@ import {
   advantage,
   assets,
   leader,
+  faq,
   troop,
   troopSide,
 } from '../shared/generate';
 import { pattern1 } from '../presets/patterns';
 import { Faction } from '../shared/schema';
+
+export const cammar = leader({
+  image: 'cammar.png',
+  name: 'Cammar Pilru',
+  strength: '1',
+});
+export const kailea = leader({
+  image: 'kailea.png',
+  name: 'Kailea Vernius',
+  strength: '2',
+});
+export const dominic = leader({
+  image: 'dominic.png',
+  name: 'Dominic Vernius',
+  strength: '3',
+});
+export const tessia = leader({
+  image: 'tessia.png',
+  name: 'Tessia Vernius',
+  strength: '5',
+});
+export const ctair = leader({
+  image: 'ctair.png',
+  name: 'CTair Pilru',
+  strength: '5',
+});
+
+export const normal = troop({
+  front: troopSide({
+    variant: 'IX_TROOP',
+    name: 'suboid',
+    description:
+      'Suboid forces, of strength 0.5, cannot be spice dialed.',
+  }),
+  back: troopSide({
+    variant: 'IX_TROOP',
+    name: 'cyborg',
+    description: ``,
+    modifiers: {
+      star: 'l1',
+    },
+  }),
+});
 
 const rombert = leader({ name: 'Prince Rombert', image: '', strength: '10' });
 
@@ -19,64 +63,74 @@ export const sheet: Faction = {
     logo: 'IX_LOGO',
     color: '#B9A452',
     hero: rombert,
-    leaders: [],
-    troops: [],
+    leaders: [cammar,kailea,dominic,tessia,ctair],
+    troops: [normal],
     pattern: pattern1,
   }),
   rules: {
-    startText: `6 forces (*3 cyborgs, 3 suboids*) in the HMS, 13 forces (*4 cyborgs, 11 suboids*) in reserve (*off-planet*), Start with 5 spice.`,
+    startText: `6 forces (*3 Cyborgs, 3 Suboids*) in the HMS, 14 forces (*6 Cyborgs, 8 Suboids*) in reserve (*off-planet*), Start with 10 spice.`,
     revivalText:
-      '1 force. (*no limit on amount of cyborgs you can revive per turn*)',
+      '1 force, either Suboid or Cyborg.',
     advantages: [
       advantage({ body: 'You are skilled in technology and production.' }),
       advantage({
-        title: 'start of game',
-        body: dedent`Before initial Treachery Cards are dealt, draw 1 Treachery Card for each faction in the game. Choose your starting Treachery Card, shuffle the remaining cards, and deal to the other players.`,
+        title: 'Initial Treachery Knowledge',
+        body: dedent`You look at the initial Treachery Cards in setup before they are dealt.`,
       }),
       advantage({
-        title: 'bidding',
-        body: 'At the start of the bidding phase, count how many players can bid. Draw this many Treachery Cards + 1. Choose 1 Treachery Card to place either on the top or the bottom of the Treachery Deck. Then remaining cards are shuffled and placed face-down for the bidding rounds.',
+        title: 'General Bidding Knowledge',
+        body: 'At the beginning of the Bidding phase you may look at the batch of Treachery Cards going up for bid. Then, you may split them into 2 piles, choosing which pile goes up for bid first.',
       }),
       advantage({
-        title: 'cyborgs',
-        body: 'Your 7 starred forces: Cyborgs are worth 2 normal forces in battle and in taking losses. Cyborgs can collect 3 spice per force. Cyborgs can move 2 territories. Cyborgs cost 3 spice to revive.',
+        title: 'Technology',
+        body: 'Before the first bid is placed on a card you may replace it with a card from your hand once per phase. If you split the bidding cards into piles the Atreides may see the card you get.',
       }),
       advantage({
-        title: 'suboids',
-        body: dedent`
-          Your 13 non-starred forces: Suboids are worth 0.5 normal forces in battle and in taking losses. Suboids can move 2 territories if accompanied by a Cyborg.
+        title: 'Augmented Troops',
+        body: dedent`Your 9 Cyborgs are double combat strength, can move 2 territories, collect 3 spice each, and cost 3 spice to revive. Cyborgs are immune to karama.
 
-          Suboids can be used to prevent sending Cyborgs to the Tleilaxu Tanks. After battle losses are calculated, surviving Suboid forces in that territory can be exchanged for Cyborgs forces you lost in that battle.`,
+        Your 11 Suboids can move 2 territories if accompanied by a Cyborg, cost 1 spice to revive, and are always considered half strength because they cannot be spice dialed.
+        
+        If you dial Cyborgs in a battle undialed Suboids can die in their place when calculating battle losses (step 4.4). You get 2 uses out of every suboid because if this happens the dialed Cyborgs flip to Patched Cyborgs. Patched Cyborgs can be dialed once for free, then they flip back.`,
       }),
       advantage({
-        title: 'hidden mobile stronghold',
-        body: dedent`
-          After initial storm placement at the start of the game, you place your Hidden Mobile Stronghold (HMS) in any territory not under storm, (*except for strongholds*). This stronghold counts towards the game win and is protected from storm and Shai-Halud.
-          
-          From turn 2 onwards before the storm movement is dialed/revealed - as long as Ixian forces are in the HMS - you may move the HMS up to 3 (*non-stronghold*) territories.
-          
-          When the HMS enters a territory with spice, each Ixian force inside the HMS collects 2 spice from the territory.
-          
-          No faction, other then Ixian may ship forces directly into the HMS. Other factions move use their move action to move into the HMS.`,
-      }),
-      advantage({
-        title: 'technology',
-
-        body: dedent`Once, during the bidding round, before bidding begins on a card and before Atreides gets to look at the card, you may take the Treachery Card about to be bid on, replacing it with one from your hand.`,
-      }),
-      advantage({
-        title: 'suboid strength',
-
-        body: dedent`Suboids are always considered half strength for dialing. You can’t increase the effectiveness of Suboids in battle by spending Spice.`,
+        title: 'Hidden Mobile Surveyor',
+        body: dedent`During setup place the HMS in any non-stronghold territory. It is considered a territory within that territory. No other factions can enter the HMS. You may ship to it like a stronghold (although the HMS is not a stronghold), and move into/out of it like a normal territory.
+        Troops in the HMS are safe from the Storm and Shai-Hulud.
+        
+        During Mentat phase you may move the HMS up to 3 non-stronghold territories. Troops can be picked up/dropped off along the way. (The HMS cannot pick up spice)`,
       }),
     ],
     alliance: [
       advantage({
-        body: dedent`After your ally purchased a Treachery Card during bidding, they may immediately discard their purchased card and draw a card from the top of the Treachery Deck.`,
+        title: 'Shared Treachery Cards',
+        body: dedent`Once, during the bidding round, before bidding begins on a card and before Atreides gets to look at the card, you may take the Treachery Card about to be bid on, replacing it with one from your hand.`,
       }),
     ],
-    fate: [],
+    fate: [
+      advantage ({
+        title: `Defect`,
+        body: `Play your fate card to nullify the effects of a special Treachery Card once it is played. The card is returned to the original faction and may not be used for the rest of the turn. To stop a special weapon/defense/mercenaries it must be played before battle plans are made. (Cannot be played during combat step 3)`,
+      })
+    ],
     __typename: 'FactionRules',
   },
-  faq: [],
+  faq: [
+    faq({
+      question: dedent`
+        lalala?
+      `,
+      answer: dedent`
+        lala la
+      `,
+    }),
+    faq({
+      question: dedent`
+        TBD
+      `,
+      answer: dedent`
+        TBD
+      `,
+    }),
+  ],
 };
