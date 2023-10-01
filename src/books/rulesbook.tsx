@@ -180,7 +180,7 @@ export const pages = [
                 style={{ color: '#000', backgroundColor: '#A67A3E' }}
                 borderA="solid"
               />
-              <div>Light brown</div>
+              <div>Light brown with solid border</div>
             </SideBySide>
           </dd>
           <dt>Shieldwall</dt>
@@ -188,9 +188,9 @@ export const pages = [
             <SideBySide gap={1}>
               <Ball
                 style={{ color: '#000', backgroundColor: '#A67A3E' }}
-                borderA="dashed"
+                borderA="solid"
               />
-              <div>Light brown with dashed border</div>
+              <div>Light brown with solid border</div>
             </SideBySide>
           </dd>
           <dt>Polar Sink</dt>
