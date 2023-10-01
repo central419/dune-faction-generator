@@ -40,8 +40,7 @@ export const normal = troop({
   front: troopSide({
     variant: 'IX_TROOP',
     name: 'suboid',
-    description:
-      'Suboid forces, of strength 0.5, cannot be spice dialed.',
+    description: 'Suboid forces, of strength 0.5, cannot be spice dialed.',
   }),
   back: troopSide({
     variant: 'IX_TROOP',
@@ -63,14 +62,13 @@ export const sheet: Faction = {
     logo: 'IX_LOGO',
     color: '#B9A452',
     hero: rombert,
-    leaders: [cammar,kailea,dominic,tessia,ctair],
+    leaders: [cammar, kailea, dominic, tessia, ctair],
     troops: [normal],
     pattern: pattern1,
   }),
   rules: {
     startText: `6 forces (*3 Cyborgs, 3 Suboids*) in the HMS, 14 forces (*6 Cyborgs, 8 Suboids*) in reserve (*off-planet*), Start with 10 spice.`,
-    revivalText:
-      '1 force, either Suboid or Cyborg.',
+    revivalText: '1 force, either Suboid or Cyborg.',
     advantages: [
       advantage({ body: 'You are skilled in technology and production.' }),
       advantage({
@@ -108,10 +106,10 @@ export const sheet: Faction = {
       }),
     ],
     fate: [
-      advantage ({
+      advantage({
         title: `Defect`,
         body: `Play your fate card to nullify the effects of a special Treachery Card once it is played. The card is returned to the original faction and may not be used for the rest of the turn. To stop a special weapon/defense/mercenaries it must be played before battle plans are made. (Cannot be played during combat step 3)`,
-      })
+      }),
     ],
     __typename: 'FactionRules',
   },

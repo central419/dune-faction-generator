@@ -59,7 +59,7 @@ export const sheet: Faction = {
     logo: 'HARKONNEN_LOGO',
     color: '#10100B',
     hero: baron,
-    leaders: [uman,nafud,piter,beast,feyd],
+    leaders: [uman, nafud, piter, beast, feyd],
     troops: [normal],
     pattern: pattern1,
   }),

@@ -45,10 +45,53 @@ const WithBottom = styled.div({
   },
 });
 
-const SideBySide = styled.div({
+const SideBySide = styled.div<{ gap?: number }>(({ gap = 4 }) => ({
   display: 'flex',
-  gap: '4vw',
-});
+  gap: `${gap}vw`,
+}));
+
+const Ball = styled.div<{ borderA?: 'dashed' | 'solid'; borderB?: string }>(
+  {
+    width: '3.2vw',
+    height: '3.2vw',
+    borderRadius: '50%',
+    position: 'relative',
+    boxSizing: 'border-box',
+    boxShadow: '0 0 0 1px black'
+  },
+  ({ borderA }) =>
+    borderA
+      ? {
+          '&:after': {
+            boxSizing: 'border-box',
+            borderRadius: '50%',
+            content: '""',
+            position: 'absolute',
+            top: '6%',
+            left: '6%',
+            width: '86%',
+            height: '86%',
+            border: `1px ${borderA} black`,
+          },
+        }
+      : {},
+  ({ borderB }) =>
+    borderB
+      ? {
+          '&:before': {
+            boxSizing: 'border-box',
+            borderRadius: '50%',
+            content: '""',
+            position: 'absolute',
+            top: '0',
+            left: '0',
+            width: '100%',
+            height: '100%',
+            border: `0.7vw solid ${borderB}`,
+          },
+        }
+      : {}
+);
 
 export const pages = [
   <Fragment>
@@ -59,8 +102,8 @@ export const pages = [
           <NonBreaking>
             <h1>Table of contents:</h1>
             <ol>
-              <li>Introduction</li>
               <li>Credits</li>
+              <li>Introduction</li>
               <li>Page 1</li>
               <li>Page 2</li>
               <li>Page 3</li>
@@ -161,32 +204,84 @@ export const pages = [
           </p>
         </NonBreaking>
       </Text>
-      <Text columns={2}>
+      <Text>
         <NonBreaking>
           <h1>The board</h1>
           <p>
             Printed on the board is a map of the planet Dune. The map contains
             six types of territories.
           </p>
-          <Definitions>
-            <dt>Sand</dt>
-            <dd>Yellow</dd>
-            <dt>Rock</dt>
-            <dd>Light brown</dd>
-            <dt>Polar Sink</dt>
-            <dd>White</dd>
-            <dt>Seitch stronghold</dt>
-            <dd>Dark Brown, with solid border</dd>
-            <dt>City stronghold</dt>
-            <dd>Dark Brown, with dashed border</dd>
-            <dt>Imperial Basin</dt>
-            <dd>Yellow with dashed border</dd>
-            <dt>Shieldwall</dt>
-            <dd>Light brown with dashed border</dd>
-          </Definitions>
         </NonBreaking>
-        <img src={mappy} alt="" />
+        <Definitions>
+          <dt>Sand</dt>
+          <dd>
+            <SideBySide gap={1}>
+              <Ball style={{ background: '#F6D979' }} />
+              <div>Yellow</div>
+            </SideBySide>
+          </dd>
+          <dt>Rock</dt>
+          <dd>
+            <SideBySide gap={1}>
+              <Ball style={{ background: '#67371C' }} borderA="solid" />
+              <div>Light brown</div>
+            </SideBySide>
+          </dd>
+          <dt>Polar Sink</dt>
+          <dd>
+            <SideBySide gap={1}>
+              <Ball style={{ background: '#ffffff' }} borderA="solid" />
+              <div>White</div>
+            </SideBySide>
+          </dd>
+          <dt>Seitch stronghold</dt>
+          <dd>
+            <SideBySide gap={1}>
+              <Ball
+                style={{ background: '#F7BA7A' }}
+                borderA="solid"
+                borderB="#67371C"
+              />
+              <div>Dark Brown, with solid border</div>
+            </SideBySide>
+          </dd>
+          <dt>City stronghold</dt>
+          <dd>
+            <SideBySide gap={1}>
+              <Ball
+                style={{ background: '#F7BA7A' }}
+                borderA="dashed"
+                borderB="#67371C"
+              />
+              <div>Dark Brown, with dashed border</div>
+            </SideBySide>
+          </dd>
+          <dt>Imperial Basin</dt>
+          <dd>
+            <SideBySide gap={1}>
+              <Ball style={{ background: '#F6D979' }} borderA="dashed" />
+              <div>Yellow with dashed border</div>
+            </SideBySide>
+          </dd>
+          <dt>Shieldwall</dt>
+          <dd>
+            <SideBySide gap={1}>
+              <Ball style={{ background: 'red' }} borderA="dashed" />
+              <div>Light brown with dashed border</div>
+            </SideBySide>
+          </dd>
+        </Definitions>
       </Text>
+      <Wrapper
+        isCircle={true}
+        size={size}
+        style={{ flex: 1, maxWidth: '100%' }}
+      >
+        {/* <svg {...size}>
+          <use xlinkHref={mappy + '#root'} {...size}></use>
+        </svg> */}
+        <img src={mappy} alt="" />
+      </Wrapper>
     </Spaced>
   </Fragment>,
   <Fragment>

@@ -55,7 +55,7 @@ export const sheet: Faction = {
     logo: 'GUILD_LOGO',
     color: '#C74C26',
     hero: eldrick,
-    leaders: [guildrep,soosoosook,esmar,bewt,staban],
+    leaders: [guildrep, soosoosook, esmar, bewt, staban],
     troops: [normal],
     pattern: pattern1,
   }),
@@ -71,7 +71,7 @@ export const sheet: Faction = {
       }),
       advantage({
         title: dedent`Discount Shipping`,
-        body:`You pay only half the normal fee (rounded up) when shipping your forces.
+        body: `You pay only half the normal fee (rounded up) when shipping your forces.
           
         When you ship to reserves the fee is 1 spice per 2 troops.
 
@@ -114,7 +114,7 @@ export const sheet: Faction = {
       advantage({
         title: `Battle Training`,
         body: `Play your fate card at any time before Ship & Move phase to permanently gain the ability to play two leaders per battle. (Including cheap heroes) Either leader can be called traitor. If you retreat the lowest leader is used for saving Treachery Cards. Leaders survive/die as one.`,
-      })
+      }),
     ],
     __typename: 'FactionRules',
   },

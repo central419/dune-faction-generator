@@ -14,7 +14,7 @@ export const Text = styled.div<{ columns?: number; size?: number }>(
   }),
   {
     fontFamily: 'C_Caladea',
-    overflow: 'hidden',
+    // overflow: 'hidden',
     color: '#0b0503',
 
     '& > *': {
