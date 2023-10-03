@@ -8,14 +8,6 @@ import { Wrapper } from '../components/Wrapper';
 import { FactionToken } from '../objects/disc/faction_token';
 import { size } from '../shared/disc';
 
-import * as emperor from '../factions/emperor';
-import * as guild from '../factions/guild';
-import * as fremen from '../factions/fremen';
-import * as atreides from '../factions/atreides';
-import * as ixian from '../factions/ixian';
-import * as bg from '../factions/bg';
-import * as bt from '../factions/bt';
-import * as harkonnen from '../factions/harkonnen';
 import { TroopToken } from '../objects/disc/troop_token';
 import { Cover } from '../objects/book/cover';
 
@@ -32,7 +24,7 @@ import { WithBottom, SideBySide } from './blocks/Layouts';
 import styled from '@emotion/styled';
 import { MarkdownContent } from '../components/MarkdownContent';
 
-const factions = [emperor, guild, fremen, ixian, atreides, bg, bt, harkonnen];
+import { factions } from '../presets/factions';
 
 export const ratio = Math.sqrt(2);
 
@@ -759,51 +751,55 @@ export const pages = [
       <Text>
         <p>You will play as one of these factions:</p>
       </Text>
-      {factions.slice(0, 5).map((item) => (
-        <FactionSynopsisBlock>
-          <SideBySide>
-            <Wrapper
-              isCircle={true}
-              size={size}
-              style={{ flex: 'none', width: '14vw', height: '14vw' }}
-            >
-              <FactionToken
-                color={item.sheet.assets.color}
-                logo={item.sheet.assets.logo}
-                pattern={item.sheet.assets.pattern}
-              />
-            </Wrapper>
-            <Text>
-              <MarkdownContent>{item.sheet.description}</MarkdownContent>
-            </Text>
-          </SideBySide>
-        </FactionSynopsisBlock>
-      ))}
+      {Object.values(factions)
+        .slice(0, 5)
+        .map((item) => (
+          <FactionSynopsisBlock>
+            <SideBySide>
+              <Wrapper
+                isCircle={true}
+                size={size}
+                style={{ flex: 'none', width: '14vw', height: '14vw' }}
+              >
+                <FactionToken
+                  color={item.sheet.assets.color}
+                  logo={item.sheet.assets.logo}
+                  pattern={item.sheet.assets.pattern}
+                />
+              </Wrapper>
+              <Text>
+                <MarkdownContent>{item.sheet.description}</MarkdownContent>
+              </Text>
+            </SideBySide>
+          </FactionSynopsisBlock>
+        ))}
     </Spaced>
   </Fragment>,
   <Fragment>
     <Spaced>
       <Text>Continued list of factions.</Text>
-      {factions.slice(5, 10).map((item) => (
-        <FactionSynopsisBlock>
-          <SideBySide>
-            <Wrapper
-              isCircle={true}
-              size={size}
-              style={{ flex: 'none', width: '14vw', height: '14vw' }}
-            >
-              <FactionToken
-                color={item.sheet.assets.color}
-                logo={item.sheet.assets.logo}
-                pattern={item.sheet.assets.pattern}
-              />
-            </Wrapper>
-            <Text>
-              <MarkdownContent>{item.sheet.description}</MarkdownContent>
-            </Text>
-          </SideBySide>
-        </FactionSynopsisBlock>
-      ))}
+      {Object.values(factions)
+        .slice(5, 10)
+        .map((item) => (
+          <FactionSynopsisBlock>
+            <SideBySide>
+              <Wrapper
+                isCircle={true}
+                size={size}
+                style={{ flex: 'none', width: '14vw', height: '14vw' }}
+              >
+                <FactionToken
+                  color={item.sheet.assets.color}
+                  logo={item.sheet.assets.logo}
+                  pattern={item.sheet.assets.pattern}
+                />
+              </Wrapper>
+              <Text>
+                <MarkdownContent>{item.sheet.description}</MarkdownContent>
+              </Text>
+            </SideBySide>
+          </FactionSynopsisBlock>
+        ))}
       <Text>
         <em>There's room for more factions!</em>
       </Text>
@@ -932,17 +928,36 @@ export const pages = [
       <Text columns={2}>
         <h1>Declaration</h1>
         <p>
-          Each faction must publicly reveal the number of Treachery Cards in their hands. A player can never have more than four cards in their hand at any one time. A player cannot bid for Treachery Cards if they are at their hand limits.
+          Each faction must publicly reveal the number of Treachery Cards in
+          their hands. A player can never have more than four cards in their
+          hand at any one time. A player cannot bid for Treachery Cards if they
+          are at their hand limits.
         </p>
         <h1>Dealer</h1>
         <p>
-          Count the number of factions not at their hand limits, and for each of them set aside one card from the top of the Treachery deck. If the Treachery deck has fewer cards than players who can bid, the cards remaining in the deck are set aside.  The discard pile is then shuffled together and cards equal to the difference are drawn and placed separately to the first pile. The first pile will be auctioned off first, and the second pile second.
+          Count the number of factions not at their hand limits, and for each of
+          them set aside one card from the top of the Treachery deck. If the
+          Treachery deck has fewer cards than players who can bid, the cards
+          remaining in the deck are set aside. The discard pile is then shuffled
+          together and cards equal to the difference are drawn and placed
+          separately to the first pile. The first pile will be auctioned off
+          first, and the second pile second.
         </p>
         <h1>Auction</h1>
         <p>
           The first card in the stack is now auctioned for spice.
-          <li>The first player in Storm Order will open bidding on the first card. If that player already has 4 Treachery Cards the next player who does not have 4 Treachery Cards opens bidding.</li>
-          <li>They may bid one or more spice or pass. Bidding then proceeds to the next player in Storm Order who may raise the bid or pass until all other players pass in a row. The top-bidding player then pays the number of spice they bid to the Emperor, or the Spice Bank if the Emperor is not in the game, and takes the card into their hand.</li>
+          <li>
+            The first player in Storm Order will open bidding on the first card.
+            If that player already has 4 Treachery Cards the next player who
+            does not have 4 Treachery Cards opens bidding.
+          </li>
+          <li>
+            They may bid one or more spice or pass. Bidding then proceeds to the
+            next player in Storm Order who may raise the bid or pass until all
+            other players pass in a row. The top-bidding player then pays the
+            number of spice they bid to the Emperor, or the Spice Bank if the
+            Emperor is not in the game, and takes the card into their hand.
+          </li>
         </p>
       </Text>
     </Spaced>
@@ -952,40 +967,72 @@ export const pages = [
       <Text columns={2}>
         <h1>Bid Limit</h1>
         <p>
-          No player may bid more spice than they have, except with permission from their ally if any, or the Emperor. If a faction wins the bidding, but cannot pay for the card due to not having enough spice, the bid is considered illegal and the bidding on the card in question is restarted with the same starting bidder, however the player who made the illegal bid is unable to bid on that Treachery Card.
+          No player may bid more spice than they have, except with permission
+          from their ally if any, or the Emperor. If a faction wins the bidding,
+          but cannot pay for the card due to not having enough spice, the bid is
+          considered illegal and the bidding on the card in question is
+          restarted with the same starting bidder, however the player who made
+          the illegal bid is unable to bid on that Treachery Card.
         </p>
         <h1>Next Starting Bidder</h1>
         <p>
-          In subsequent bidding during this phase, the First Player who can bid, to the right of the player who opened the bid for the previous card, begins the bidding for the next card. In this way every player who can bid gets a chance to open the bidding for a Treachery Card.
+          In subsequent bidding during this phase, the First Player who can bid,
+          to the right of the player who opened the bid for the previous card,
+          begins the bidding for the next card. In this way every player who can
+          bid gets a chance to open the bidding for a Treachery Card.
         </p>
         <h1>End of Bidding</h1>
         <p>
-          Bidding for Treachery Cards continues until all cards available for bid have been auctioned off or a card is not bid on by anyone. If a card is passed by everyone, all remaining cards are returned to the top of the Treachery Deck in the order they were dealt and the bidding round is over.
+          Bidding for Treachery Cards continues until all cards available for
+          bid have been auctioned off or a card is not bid on by anyone. If a
+          card is passed by everyone, all remaining cards are returned to the
+          top of the Treachery Deck in the order they were dealt and the bidding
+          round is over.
         </p>
         <h1>Transparency</h1>
         <p>
-          The number (not the type) of Treachery Cards each player holds must always be open to the other players during the bidding round. Nobody is allowed to hide the number of cards they hold at this time. If a player has a full hand, they must pass on all cards up for bid.
+          The number (not the type) of Treachery Cards each player holds must
+          always be open to the other players during the bidding round. Nobody
+          is allowed to hide the number of cards they hold at this time. If a
+          player has a full hand, they must pass on all cards up for bid.
         </p>
         <Outline variant="generic">
-        <h1>Bidding Etiquette</h1>
-        <p>
-          While these are not strict rules, we suggest they are complied with to keep the bidding round as short as possible
-        </p>
-        <p>
-          A pause should be taken before the use of faction powers like Ixian Deck Splitting or Atreides Prescience where they announce to the table that they are about to use them thus giving players a fair chance to use karama cards, or faction powers.
-        </p>
-        <p>
-          We suggest 30 seconds to a minute should be spent before the bidding of each card to allow the factions to make deals on card knowledge, subsidies and bidding strategy. In general, when a player is asking for subsidy from their ally or the Emperor, we recommend asking for an amount of Spice and accepting a yes or no answer to keep the round moving. This will also allow allies to share their plans on who should buy what and how much spice they can share between them. Complex deals should be saved for this time period.
-        </p>
-        <p>
-          Once bidding starts on a card, each players bid should take no more than 10 seconds. Simple deals can take part in this time however the game should not be paused to allow a complex deal to take place.
-        </p>
-        <p>
-          When it is a players turn to bid they should have priority in making simple deals. This means that other players should be quiet and interfere minimally when they make deals during their 10 seconds. 
-        </p>
-        <p>
-          We suggest that players frequently flouting these conventions be warned, with a potential limit being imposed that they may only state their bid and nothing else once bidding has started.
-        </p>
+          <h1>Bidding Etiquette</h1>
+          <p>
+            While these are not strict rules, we suggest they are complied with
+            to keep the bidding round as short as possible
+          </p>
+          <p>
+            A pause should be taken before the use of faction powers like Ixian
+            Deck Splitting or Atreides Prescience where they announce to the
+            table that they are about to use them thus giving players a fair
+            chance to use karama cards, or faction powers.
+          </p>
+          <p>
+            We suggest 30 seconds to a minute should be spent before the bidding
+            of each card to allow the factions to make deals on card knowledge,
+            subsidies and bidding strategy. In general, when a player is asking
+            for subsidy from their ally or the Emperor, we recommend asking for
+            an amount of Spice and accepting a yes or no answer to keep the
+            round moving. This will also allow allies to share their plans on
+            who should buy what and how much spice they can share between them.
+            Complex deals should be saved for this time period.
+          </p>
+          <p>
+            Once bidding starts on a card, each players bid should take no more
+            than 10 seconds. Simple deals can take part in this time however the
+            game should not be paused to allow a complex deal to take place.
+          </p>
+          <p>
+            When it is a players turn to bid they should have priority in making
+            simple deals. This means that other players should be quiet and
+            interfere minimally when they make deals during their 10 seconds.
+          </p>
+          <p>
+            We suggest that players frequently flouting these conventions be
+            warned, with a potential limit being imposed that they may only
+            state their bid and nothing else once bidding has started.
+          </p>
         </Outline>
       </Text>
     </Spaced>
@@ -997,7 +1044,9 @@ export const pages = [
       </Title>
       <Text>
         <p>
-          All revivals happen in Storm Order for purposes of the Bene Tleilaxu’s Revival Income, and the Bene Tleilaxu always revive their forces and leaders last.
+          All revivals happen in Storm Order for purposes of the Bene Tleilaxu’s
+          Revival Income, and the Bene Tleilaxu always revive their forces and
+          leaders last.
         </p>
         <h1>Force Revival</h1>
         <p>
@@ -1007,182 +1056,67 @@ export const pages = [
           <dt>Free</dt>
           <dd>
             <p>
-              A certain number of forces are revived for free as stated on the player sheet.
+              A certain number of forces are revived for free as stated on the
+              player sheet.
             </p>
           </dd>
           <dt>By Spice</dt>
           <dd>
             <p>
-              Any additional forces that may be revived must be done at a cost of 2 spice per force, or more if indicated on faction sheet. All spice expended for force revival is placed in the Spice Bank.
+              Any additional forces that may be revived must be done at a cost
+              of 2 spice per force, or more if indicated on faction sheet. All
+              spice expended for force revival is placed in the Spice Bank.
             </p>
           </dd>
           <dt>Limit</dt>
           <dd>
             <p>
-              A player can never revive more than 3 forces per turn, unless a Tleilaxu Ghola Card is played to revive troops.
+              A player can never revive more than 3 forces per turn, unless a
+              Tleilaxu Ghola Card is played to revive troops.
             </p>
           </dd>
           <dt>To Reserves</dt>
           <dd>
-            <p>
-              Revived forces must be placed in the player’s reserve.
-            </p>
+            <p>Revived forces must be placed in the player’s reserve.</p>
           </dd>
         </Definitions>
-        
+
         <h1>Leader Revival</h1>
         <p>
-        Once a player has only, or has had only 1 available leader, they may revive one leader per turn until all of their leaders have been revived.
+          Once a player has only, or has had only 1 available leader, they may
+          revive one leader per turn until all of their leaders have been
+          revived.
         </p>
         <Definitions>
           <dt>Revival Cost</dt>
           <dd>
             <p>
-              To revive a leader, a player must pay that leader’s strength in spice to the Bene Tleilaxu, or the Spice Bank if the Bene Tleilaxu is not in the game.
+              To revive a leader, a player must pay that leader’s strength in
+              spice to the Bene Tleilaxu, or the Spice Bank if the Bene Tleilaxu
+              is not in the game.
             </p>
           </dd>
           <dt>Revived Leader Status</dt>
           <dd>
             <p>
-              A revived leader can be played normally and is still subject to being a traitor.
+              A revived leader can be played normally and is still subject to
+              being a traitor.
             </p>
           </dd>
           <dt>Dead Again</dt>
           <dd>
             <p>
-              If a revived leader is killed again, place it face down in the Tleilaxu Tanks. This leader cannot be revived again until all of the player’s other revivable leaders have been revived, killed, and sent to the Tleilaxu Tanks again.
+              If a revived leader is killed again, place it face down in the
+              Tleilaxu Tanks. This leader cannot be revived again until all of
+              the player’s other revivable leaders have been revived, killed,
+              and sent to the Tleilaxu Tanks again.
             </p>
           </dd>
         </Definitions>
-        <p>
-              
-        </p>
+        <p></p>
       </Text>
     </Spaced>
   </Fragment>,
-  // <Fragment>
-  //   <Spaced>
-  //     <Text>
-  //       <table>
-  //         <thead>
-  //           <tr>
-  //             <th>a</th>
-  //             <th>b</th>
-  //             <th>c</th>
-  //           </tr>
-  //         </thead>
-  //         <tbody>
-  //           <tr>
-  //             <td>11</td>
-  //             <td>12</td>
-  //             <td>13</td>
-  //           </tr>
-  //           <tr>
-  //             <td>21</td>
-  //             <td>22</td>
-  //             <td>22</td>
-  //           </tr>
-  //           <tr>
-  //             <td>31</td>
-  //             <td>32</td>
-  //             <td>33</td>
-  //           </tr>
-  //         </tbody>
-  //       </table>
-
-  //       <Outline variant="example">
-  //         <Text>
-  //           <h1>Hi</h1>
-  //           <p>Hello</p>
-  //         </Text>
-  //       </Outline>
-  //       <Outline variant="generic">
-  //         <Text>
-  //           <h1>Hi</h1>
-  //           <p>Hello</p>
-  //         </Text>
-  //       </Outline>
-  //       <Text>
-  //         <Definitions>
-  //           <dt>Beast of Bodmin</dt>
-  //           <dd>A large feline inhabiting Bodmin Moor.</dd>
-
-  //           <dt>Morgawr</dt>
-  //           <dd>A sea serpent.</dd>
-
-  //           <dt>Owlman</dt>
-  //           <dd>
-  //             <p>A giant owl-like creature.</p>
-  //             <p>A giant owl-like creature.</p>
-  //             <p>A giant owl-like creature.</p>
-  //           </dd>
-  //         </Definitions>
-  //       </Text>
-
-  //       {Object.values(factions)
-  //         .map((f) => ({ sheet: f.sheet, tokens: f.sheet.assets.troops }))
-  //         .map(({ sheet, tokens: v }, i) => (
-  //           <Fragment key={i}>
-  //             {v.map((ii, iii) => (
-  //               <Fragment key={iii}>
-  //                 {ii.front && (
-  //                   <Fragment>
-  //                     <Wrapper
-  //                       isCircle={true}
-  //                       size={size}
-  //                       style={{ flex: 1, maxWidth: '6vw' }}
-  //                     >
-  //                       <TroopToken
-  //                         color={sheet.assets.color}
-  //                         variant={ii.front.variant}
-  //                         pattern={sheet.assets.pattern}
-  //                         modifiers={ii.front.modifiers}
-  //                       />
-  //                     </Wrapper>
-  //                   </Fragment>
-  //                 )}
-  //                 {ii.back && (
-  //                   <Fragment>
-  //                     <Wrapper
-  //                       isCircle={true}
-  //                       size={size}
-  //                       style={{ flex: 1, maxWidth: '6vw' }}
-  //                     >
-  //                       <TroopToken
-  //                         color={sheet.assets.color}
-  //                         variant={ii.back.variant}
-  //                         pattern={sheet.assets.pattern}
-  //                         modifiers={ii.back.modifiers}
-  //                       />
-  //                     </Wrapper>
-  //                   </Fragment>
-  //                 )}
-  //               </Fragment>
-  //             ))}
-  //           </Fragment>
-  //         ))}
-
-  //       <div style={{ display: 'flex', gap: '1vw' }}>
-  //         {Object.entries(factions).map(([k, v]) => (
-  //           <Fragment key={k}>
-  //             <Wrapper
-  //               key={k}
-  //               isCircle={true}
-  //               size={size}
-  //               style={{ flex: 1, maxWidth: '100%' }}
-  //             >
-  //               <FactionToken
-  //                 color={v.sheet.assets.color}
-  //                 logo={v.sheet.assets.logo}
-  //                 pattern={v.sheet.assets.pattern}
-  //               />
-  //             </Wrapper>
-  //           </Fragment>
-  //         ))}
-  //       </div>
-  //     </Text>
-  //   </Spaced>
-  // </Fragment>,
   <Fragment>
     <Spaced>
       <Title color={blue2}>Mentat Pause</Title>
