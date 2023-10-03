@@ -60,7 +60,7 @@ export const ContentArea = styled.div<{ size?: number; isFull: boolean }>(
   })
 );
 
-export const Layer = styled.div<{ img: string; recolor?: string }>(
+export const Layer = styled.div<{ img: any; recolor?: string }>(
   {
     ...size,
     overflow: 'hidden',

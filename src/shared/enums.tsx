@@ -457,6 +457,7 @@ export enum Logo_Unofficial {
 export enum Release {
   EXPANSION = Release_EXPANSION,
   HOMEBREW = Release_HOMEBREW,
+  ORIGINAL = undefined
 }
 
 export enum Troop {

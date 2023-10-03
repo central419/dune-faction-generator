@@ -47,7 +47,7 @@ export interface FrontProps {
   base: keyof typeof T.Front;
   head: keyof typeof T.Head;
   icon: keyof typeof T.Icon;
-  release: keyof typeof T.Release;
+  release?: keyof typeof T.Release;
 
   decals: DecalField[];
 

@@ -6,7 +6,8 @@ import { Outline } from '../blocks/Outline';
 import { Definitions } from '../blocks/Definitions';
 import { Wrapper } from '../components/Wrapper';
 import { FactionToken } from '../objects/disc/faction_token';
-import { size } from '../shared/disc';
+import { size as cardSize } from '../shared/card';
+import { size as discSize } from '../shared/disc';
 
 import { TroopToken } from '../objects/disc/troop_token';
 import { Cover } from '../objects/book/cover';
@@ -25,6 +26,8 @@ import styled from '@emotion/styled';
 import { MarkdownContent } from '../components/MarkdownContent';
 
 import { factions } from '../presets/factions';
+import { TreacheryCard } from '../objects/card/treachery';
+import dedent from 'ts-dedent';
 
 export const ratio = Math.sqrt(2);
 
@@ -527,6 +530,13 @@ export const pages = [
         Treachery cards
       </Title>
       <Text columns={2}>
+        <Wrapper size={cardSize}
+            style={{ flex: 1, maxWidth: '100%' }}>
+              <TreacheryCard head='GREEN' title={["Baliset", 1]} content={[dedent`
+                Play as part of your Battle Plan, in place of a weapon, defense, or both.
+                This card has no value in play, and you can discard it only by playing it in your Battle Plan.
+              `, 1]} decals={[{id: 'BALISET'}]} icon='WORTHLESS_ASTERIX' sub={["Worthless Card", 1]} release={undefined} recolor={[]}  />
+            </Wrapper>
         <ul>
           <li>6x Worthless Cards, unique</li>
           <li>5x Poison Weapon Cards, unique</li>
@@ -729,7 +739,7 @@ export const pages = [
             <Wrapper
               key={k}
               isCircle={true}
-              size={size}
+              size={discSize}
               style={{ flex: 1, maxWidth: '100%' }}
             >
               <FactionToken
@@ -758,7 +768,7 @@ export const pages = [
             <SideBySide>
               <Wrapper
                 isCircle={true}
-                size={size}
+                size={discSize}
                 style={{ flex: 'none', width: '14vw', height: '14vw' }}
               >
                 <FactionToken
@@ -785,7 +795,7 @@ export const pages = [
             <SideBySide>
               <Wrapper
                 isCircle={true}
-                size={size}
+                size={discSize}
                 style={{ flex: 'none', width: '14vw', height: '14vw' }}
               >
                 <FactionToken
