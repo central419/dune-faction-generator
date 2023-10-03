@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { Title } from './Title';
+import { factions } from '../presets/factions';
 
 export default {
   component: Title,
@@ -40,6 +41,18 @@ export const ContrastCheck = {
       <Title color={'rgb(100, 100, 100)'}>{children}</Title>
       <Title color={'rgb(50, 200, 190)'}>{children}</Title>
       <Title color={'rgb(255, 0, 255)'}>{children}</Title>
+    </Fragment>
+  ),
+};
+export const FactionContrastCheck = {
+  args: {
+    children: 'A short title',
+  },
+  render: ({ children }) => (
+    <Fragment>
+      {Object.values(factions).map((v) => (
+        <Title color={v.sheet.assets.color}>{children}</Title>
+      ))}
     </Fragment>
   ),
 };

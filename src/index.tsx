@@ -1,4 +1,4 @@
-import { Fragment, StrictMode } from 'react';
+import { Fragment, ReactNode, StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import { Index } from './components/Root';
@@ -11,7 +11,7 @@ import { FaqSheet } from './objects/sheet/faq';
 import { factions } from './presets/factions';
 import { books } from './presets/books';
 
-const contentMap = {
+const contentMap: Record<string, (id: string) => ReactNode> = {
   '/': () => <Index />,
   '/sheet': (id) => (
     <Book
