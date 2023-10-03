@@ -1,51 +1,3 @@
-import Front_DECAL from '../asset/base/decal.png';
-import Front_FULL from '../asset/base/full.png';
-
-import Layer_BACK_OVERLAY from '../asset/layer/back-overlay.png';
-import Layer_SHIELD from '../asset/layer/shield-base.png';
-import Layer_BACK_UNDERLAY from '../asset/layer/back-underlay.png';
-import Layer_FRONT_ASIDE_MASK from '../asset/layer/front-aside-mask.png';
-import Layer_FRONT_DECAL_BG from '../asset/layer/front-decal-bg.jpg';
-import Layer_FRONT_HEAD_MASK from '../asset/layer/front-head-mask.png';
-
-import Back_BLACK from '../asset/back/base-black.png';
-import Back_BLOOD from '../asset/back/base-blood.png';
-import Back_BROWN from '../asset/back/base-brown.png';
-import Back_DIRT from '../asset/back/base-dirt.png';
-import Back_FLOWER from '../asset/back/base-flower.png';
-import Back_FOREST from '../asset/back/base-forest.png';
-import Back_OCEAN from '../asset/back/base-ocean.png';
-import Back_SWAMP from '../asset/back/base-swamp.png';
-
-import Shield_FACE from '../asset/back/decal-face.png';
-import Shield_HANDSHAKE from '../asset/back/decal-handshake.png';
-import Shield_KWISATZ from '../asset/back/decal-kwisatz.png';
-import Shield_MOONS from '../asset/back/decal-moons.png';
-import Shield_SPICE1 from '../asset/back/decal-spice1.png';
-import Shield_SPICE2 from '../asset/back/decal-spice2.png';
-import Shield_WIND from '../asset/back/decal-wind.png';
-import Head_BLACK from '../asset/head/black.jpg';
-import Head_BLOOD from '../asset/head/blood.jpg';
-import Head_BROWN from '../asset/head/brown.jpg';
-import Head_GOLD from '../asset/head/gold.jpg';
-import Head_GREEN from '../asset/head/green.jpg';
-import Head_MUSH from '../asset/head/mush.jpg';
-import Head_OCEAN from '../asset/head/ocean.jpg';
-import Head_SAND from '../asset/head/sand.jpg';
-import Icon_SPECIAL_BOLT from '../asset/icon/special-bolt.png';
-import Icon_SPECIAL_HAND from '../asset/icon/special-hand.png';
-import Icon_SPECIAL_HANDSHAKE from '../asset/icon/special-handshake.png';
-import Icon_SPECIAL_KWISATZ from '../asset/icon/special-kwisatz.png';
-import Icon_SPECIAL_STORM from '../asset/icon/special-storm.png';
-import Icon_SPECIAL_TRAITOR from '../asset/icon/special-traitor.png';
-import Icon_DEFENCE_BOLT from '../asset/icon/defence-bolt.png';
-import Icon_DEFENCE_SHIELD from '../asset/icon/defence-shield.png';
-import Icon_DEFENCE_SNOOPER from '../asset/icon/defence-snooper.png';
-import Icon_WEAPON_BOLT from '../asset/icon/weapon-bolt.png';
-import Icon_WEAPON_POISON from '../asset/icon/weapon-poison.png';
-import Icon_WEAPON_PROJECTILE from '../asset/icon/weapon-projectile.png';
-import Icon_WORTHLESS_ASTERIX from '../asset/icon/worthless-asterisk.png';
-import Icon_WORTHLESS_BOLT from '../asset/icon/worthless-bolt.png';
 import Decal_Worthless_BALISET from '../asset/decal/baliset.svg';
 import Decal_Worthless_BIBLE from '../asset/decal/bible.svg';
 import Decal_Worthless_GAMOND from '../asset/decal/gamond.svg';
@@ -196,9 +148,6 @@ import Logo_Unofficial_TRISPEAR from '../asset/logo/unofficial/trispear.svg';
 import Logo_Unofficial_TRISWORDS from '../asset/logo/unofficial/triswords.svg';
 import Logo_Unofficial_TRITANT from '../asset/logo/unofficial/tritant.svg';
 
-import Release_EXPANSION from '../asset/release/expansion.png';
-import Release_HOMEBREW from '../asset/release/homebrew.png';
-
 import Troop_ATREIDES_TROOP from '../asset/troop/atreides.svg';
 import Troop_FREMEN_TROOP from '../asset/troop/fremen.svg';
 import Troop_IX_TROOP from '../asset/troop/ix.svg';
@@ -221,6 +170,101 @@ import Troop_IDUALI_TROOP from '../asset/troop/iduali.svg';
 import Troop_PEDDLERS_TROOP from '../asset/troop/peddlers.svg';
 import Troop_Stars_LEFT from '../asset/troop/star-left.svg';
 import Troop_Stars_RIGHT from '../asset/troop/star-right.svg';
+
+const Release_EXPANSION =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/release/expansion.png';
+const Release_HOMEBREW =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/release/homebrew.png';
+const Front_DECAL =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/base/decal.png';
+const Front_FULL =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/base/full.png';
+const Layer_BACK_OVERLAY =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/layer/back-overlay.png';
+const Layer_SHIELD =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/layer/shield-base.png';
+const Layer_BACK_UNDERLAY =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/layer/back-underlay.png';
+const Layer_FRONT_ASIDE_MASK =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/layer/front-aside-mask.png';
+const Layer_FRONT_DECAL_BG =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/layer/front-decal-bg.jpg';
+const Layer_FRONT_HEAD_MASK =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/layer/front-head-mask.png';
+const Back_BLACK =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/base-black.png';
+const Back_BLOOD =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/base-blood.png';
+const Back_BROWN =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/base-brown.png';
+const Back_DIRT =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/base-dirt.png';
+const Back_FLOWER =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/base-flower.png';
+const Back_FOREST =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/base-forest.png';
+const Back_OCEAN =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/base-ocean.png';
+const Back_SWAMP =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/base-swamp.png';
+const Shield_FACE =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-face.png';
+const Shield_HANDSHAKE =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-handshake.png';
+const Shield_KWISATZ =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-kwisatz.png';
+const Shield_MOONS =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-moons.png';
+const Shield_SPICE1 =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-spice1.png';
+const Shield_SPICE2 =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-spice2.png';
+const Shield_WIND =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-wind.png';
+const Head_BLACK =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/head/black.jpg';
+const Head_BLOOD =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/head/blood.jpg';
+const Head_BROWN =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/head/brown.jpg';
+const Head_GOLD =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/head/gold.jpg';
+const Head_GREEN =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/head/green.jpg';
+const Head_MUSH =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/head/mush.jpg';
+const Head_OCEAN =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/head/ocean.jpg';
+const Head_SAND =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/head/sand.jpg';
+const Icon_SPECIAL_BOLT =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/special-bolt.png';
+const Icon_SPECIAL_HAND =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/special-hand.png';
+const Icon_SPECIAL_HANDSHAKE =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/special-handshake.png';
+const Icon_SPECIAL_KWISATZ =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/special-kwisatz.png';
+const Icon_SPECIAL_STORM =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/special-storm.png';
+const Icon_SPECIAL_TRAITOR =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/special-traitor.png';
+const Icon_DEFENCE_BOLT =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/defence-bolt.png';
+const Icon_DEFENCE_SHIELD =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/defence-shield.png';
+const Icon_DEFENCE_SNOOPER =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/defence-snooper.png';
+const Icon_WEAPON_BOLT =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/weapon-bolt.png';
+const Icon_WEAPON_POISON =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/weapon-poison.png';
+const Icon_WEAPON_PROJECTILE =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/weapon-projectile.png';
+const Icon_WORTHLESS_ASTERIX =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/worthless-asterisk.png';
+const Icon_WORTHLESS_BOLT =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/worthless-bolt.png';
 
 export enum Front {
   DECAL = Front_DECAL,
