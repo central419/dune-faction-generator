@@ -22,34 +22,34 @@ export interface DecalField {
   fade?: boolean;
 }
 
-// export interface FrontProps {
-//   id?: string;
+export interface FrontProps {
+  id?: string;
 
-//   // alliance
-//   side?: {
-//     color: string;
-//     logo: keyof typeof T.Logo;
-//   };
+  // alliance
+  side?: {
+    color: string;
+    logo: keyof typeof T.Logo;
+  };
 
-//   // leader
-//   leader?: {
-//     color: string;
-//     strength: string | number;
-//     logo: keyof typeof T.Logo;
-//     image: string;
-//   };
+  // leader
+  leader?: {
+    color: string;
+    strength: string | number;
+    logo: keyof typeof T.Logo;
+    image: string;
+  };
 
-//   // content
-//   title: TextField;
-//   sub: TextField;
-//   content: TextField;
+  // content
+  title: TextField;
+  sub: TextField;
+  content: TextField;
 
-//   base: keyof typeof T.Front;
-//   head: keyof typeof T.Head;
-//   icon: keyof typeof T.Icon;
-//   release: keyof typeof T.Release;
+  base: keyof typeof T.Front;
+  head: keyof typeof T.Head;
+  icon: keyof typeof T.Icon;
+  release: keyof typeof T.Release;
 
-//   decals: DecalField[];
+  decals: DecalField[];
 
-//   recolor?: string[];
-// }
+  recolor?: string[];
+}
