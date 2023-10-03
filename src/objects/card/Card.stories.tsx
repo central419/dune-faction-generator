@@ -8,8 +8,7 @@ import { BackCard } from './back';
 
 export default {
   component: Front,
-  args: {
-  },
+  args: {},
 };
 
 export const Treachery: {
@@ -61,19 +60,19 @@ export const Alliance: {
     decals: [
       {
         id: 'BREAKCONDITIONING',
-        fade: true
+        fade: true,
       },
       {
         id: 'HARKONNEN_TROOP',
         fade: false,
-        offset: [140,70]
+        offset: [140, 70],
       },
     ],
     side: {
       color: factions.harkonnen.sheet.assets.color,
-      'logo': factions.harkonnen.sheet.assets.logo
+      logo: factions.harkonnen.sheet.assets.logo,
     },
-    content: ['Thing', 1]
+    content: ['Thing', 1],
   },
   render: (args) => <AllianceCard {...args} />,
 };
@@ -85,7 +84,7 @@ export const Back: {
   args: {
     base: 'OCEAN',
     title: 'Nexus',
-    shield: 'MOONS'
+    shield: 'MOONS',
   },
   render: (args) => <BackCard {...args} />,
 };

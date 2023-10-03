@@ -28,6 +28,15 @@ import { MarkdownContent } from '../components/MarkdownContent';
 import { factions } from '../presets/factions';
 import { TreacheryCard } from '../objects/card/treachery';
 import dedent from 'ts-dedent';
+import { Fan } from '../components/Fan';
+import {
+  baliset,
+  chaumas,
+  chemistry,
+  lasgun,
+  maulapistol,
+  weirdingway,
+} from '../presets/treachery_cards';
 
 export const ratio = Math.sqrt(2);
 
@@ -315,21 +324,21 @@ export const pages = [
               xlinkHref={mappy + '#sectors'}
               fill="none"
               stroke="black"
-              clip-rule="evenodd"
+              clipRule="evenodd"
               display="inline"
               opacity="1"
-              fill-rule="nonzero"
-              stroke-width="7px"
+              fillRule="nonzero"
+              strokeWidth="7px"
             />
             <use
               xlinkHref={mappy + '#sectors'}
               fill="none"
               stroke="white"
-              clip-rule="evenodd"
+              clipRule="evenodd"
               display="inline"
               opacity="1"
-              fill-rule="nonzero"
-              stroke-width="4px"
+              fillRule="nonzero"
+              strokeWidth="4px"
             />
           </svg>
         </Wrapper>
@@ -481,7 +490,10 @@ export const pages = [
           These decks and their contents are outlined here:
         </p>
         <Definitions>
-          <dt>Storm deck</dt>
+          <dt>
+            Storm deck
+            <br />6 cards
+          </dt>
           <dd>
             <p>
               6 cards numbered 1 through 6
@@ -489,7 +501,11 @@ export const pages = [
               This deck is only used if the Fremen are in play.
             </p>
           </dd>
-          <dt>Spice deck</dt>
+          <dt>
+            Spice deck
+            <br />
+            25 cards
+          </dt>
           <dd>
             <p>
               15 spice-blow cards.
@@ -498,9 +514,15 @@ export const pages = [
               <br />
               5 Shai-Halud cards.
               <br />
+              Tells where Spice Blows will create treasure troves of spice
+              waiting to be harvested, and when the giant sandworms known as
+              Shai-Hulud will turn up.
             </p>
           </dd>
-          <dt>Fate deck</dt>
+          <dt>
+            Fate deck
+            <br />6 cards
+          </dt>
           <dd>
             <p>
               6 Cards, each one mimicks a specific worthless Treachery Card.
@@ -516,10 +538,15 @@ export const pages = [
               alliance ability is.
             </p>
           </dd>
-          <dt>Treachery deck</dt>
+          <dt>
+            Treachery deck
+            <br />
+            45 cards
+          </dt>
           <dd>
             <p>
-              45 cards.
+              Provides weapons, defenses, tricks and tools to outmaneuver
+              opponents and win battles.
               <br />
               <em>These cards are explained in detail below.</em>
             </p>
@@ -529,20 +556,34 @@ export const pages = [
       <Title color={blue1} size="medium">
         Treachery cards
       </Title>
-      <Text columns={2}>
-        <Wrapper size={cardSize}
-            style={{ flex: 1, maxWidth: '100%' }}>
-              <TreacheryCard head='GREEN' title={["Baliset", 1]} content={[dedent`
-                Play as part of your Battle Plan, in place of a weapon, defense, or both.
-                This card has no value in play, and you can discard it only by playing it in your Battle Plan.
-              `, 1]} decals={[{id: 'BALISET'}]} icon='WORTHLESS_ASTERIX' sub={["Worthless Card", 1]} release={undefined} recolor={[]}  />
+      <Text>
+        <p>Here's an overview of all of the card in the Treachery Deck:</p>
+      </Text>
+      <Text columns={3} size={1.8}>
+        <div style={{ padding: '1vw 4vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {baliset}
             </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {baliset}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {baliset}
+            </Wrapper>
+          </Fan>
+        </div>
         <ul>
           <li>6x Worthless Cards, unique</li>
           <li>5x Poison Weapon Cards, unique</li>
           <li>5x Projectile Weapon Cards, unique</li>
           <li>5x Snooper Cards, generic</li>
           <li>5x Shield Cards, generic</li>
+          <li>1x Lasgun</li>
+          <li>1x Weirding Way</li>
+          <li>1x Chemistry</li>
+        </ul>
+        <ul>
           <li>3x Cheap Hero, 2 male 1 female</li>
           <li>2x Karama Cards, generic</li>
           <li>2x Truthtrance Cards, generic</li>
@@ -551,13 +592,303 @@ export const pages = [
           <li>1x Weather Control</li>
           <li>1x Tleilaxu Ghola</li>
           <li>1x Family Atomics</li>
-          <li>1x Lasgun</li>
-          <li>1x Weirding Way</li>
-          <li>1x Chemistry</li>
           <li>1x Orange Catholic Bible</li>
           <li>1x Break Conditioning</li>
           <li>1x Supplies!</li>
         </ul>
+      </Text>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue1} size="medium">
+        Treachery cards detailed
+      </Title>
+      <SideBySide>
+        <div style={{ padding: '2vw 6vw', width: '20vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {baliset}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {baliset}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {baliset}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {baliset}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {baliset}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {baliset}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Worthless cards</h1>
+          <p>Worthless cards can be used/discarded in one of 2 ways:</p>
+          <ol>
+            <li>Discarding them by playing them in a battle plan.</li>
+            <li>
+              Discarding them by playing your fate ability, when you have the
+              matching fate card.
+            </li>
+          </ol>
+          <blockquote>
+            <p>I love this card!</p>
+            <p style={{ float: 'right' }}>~ IhasPinecone</p>
+          </blockquote>
+        </Text>
+      </SideBySide>
+      <Title color={blue2} size="small">
+        Weapons
+      </Title>
+      <SideBySide>
+        <div style={{ padding: '2vw 6vw', width: '20vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {maulapistol}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {maulapistol}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {maulapistol}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {maulapistol}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {maulapistol}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Projectile Weapons</h1>
+          <p>
+            There are 5 standard projectile weapons in the Treachery deck:{' '}
+            <br />
+            Stunner, Slip Tip, Maula Pistol, Crysknife & Hunter seeker.
+          </p>
+          <p>
+            Playing this card in your battle plan will kill the opponent's
+            leader unless they have a projectile defense in their battle plan.
+          </p>
+          <p>
+            These cards can be voiced as "<em>projectile weapon</em>"
+          </p>
+          <blockquote>
+            <p>Fremen might want this one..</p>
+            <p style={{ float: 'right' }}>~ DeeDeeMegaDooDoo</p>
+          </blockquote>
+        </Text>
+      </SideBySide>
+      <SideBySide>
+        <div style={{ padding: '2vw 6vw', width: '20vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {chaumas}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {chaumas}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {chaumas}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {chaumas}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {chaumas}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Poison Weapons</h1>
+          <p>
+            There are 5 standard poison weapons in the Treachery deck: <br />
+            Gom Jabbar, Chaumas, Chaumurky, Basilia weapon & Elleca drug.
+          </p>
+          <p>
+            Playing this card in your battle plan will kill the opponent's
+            leader unless they have a poison defense in their battle plan.
+          </p>
+          <p>
+            These cards can be voiced as "<em>poison weapon</em>"
+          </p>
+          <blockquote>
+            <p>That's a good card!</p>
+            <p style={{ float: 'right' }}>~ Awpteamoose</p>
+          </blockquote>
+        </Text>
+      </SideBySide>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue2} size="small">
+        Unique combat cards
+      </Title>
+
+      <SideBySide>
+        <div style={{ width: '24vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {weirdingway}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Weirding way</h1>
+          <p>
+            Playing this card in your battle plan without a second weapon will
+            kill the opponent's leader unless they have a projectile defense in
+            their battle plan.
+          </p>
+          <p>
+            Playing this card in your battle plan with a second weapon protect
+            your leader from a projectile weapon.
+            <br />
+            It will not protect your leader from a lasgun.
+          </p>
+          <p>
+            Playing this with a lasgun does not cause a lasgun-shield explosion.
+          </p>
+          <p>
+            This card can be voiced as "<em>weirding way</em>"
+          </p>
+        </Text>
+      </SideBySide>
+
+      <SideBySide>
+        <div style={{ width: '24vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {lasgun}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Lasgun</h1>
+          <p>
+            Playing this card in your battle plan will kill the opponent's
+            leader.
+          </p>
+          <p>
+            If your battleplan also contains a shield, or your opponent's battle
+            plan contains a shield, a lasgun-shield explosion occurs.
+            <br />
+            All tokens in the territory, including spice, troops, leaders are
+            destroyed/killed.
+          </p>
+          <p>
+            This card can be voiced as "<em>lasgun</em>"
+          </p>
+        </Text>
+      </SideBySide>
+      <SideBySide>
+        <div style={{ width: '24vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {chemistry}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Chemistry</h1>
+          <p>
+            Playing this card in your battle plan with a second defense will
+            kill the opponent's leader unless they have a poison defense in
+            their battle plan.
+          </p>
+          <p>
+            Playing this card in your battle plan without a second defense protects
+            your leader from a poison weapon.
+          </p>
+          <p>
+            This card can be voiced as "<em>chemistry</em>"
+          </p>
+        </Text>
+      </SideBySide>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue1} size="medium">
+        Tech tokens
+      </Title>
+      <Text columns={3}>
+        <p>Tech tokens start in a general supply at the start of the game.</p>
+        <p>
+          If you win in combat against another faction, and that faction has a
+          Tech Token; you choose which one to take if they have multiple.
+        </p>
+        <p>
+          When They do not have a tech token, but there is 1 available in the
+          supply, take 1 random tech token from the supply.
+        </p>
+        <p>
+          Once Tech Tokens are controlled, they are kept in front of shields,
+          for public view.
+        </p>
+        <p>
+          Controlling 3 Tech Tokens counts as a Stronghold for winning the game
+          (e.g., if you have forces in Arrakeen and Carthag, and 3 Tech Tokens,
+          you win the game).
+        </p>
+        <p>
+          Allies do not share control of Tech Tokens. To qualify as a
+          stronghold, a single player must control 3 Tech Tokens.
+        </p>
+        <p>
+          The fourth tech token: the Spice Mine tech token is described on house
+          Atreides&rsquo;s faction sheet and is not distributed with the others.
+        </p>
+        <p>
+          Each Tech Token that you control has a potential income from the Spice
+          Bank. Any spice gained from Tech Tokens is placed on the Tech Token
+          and then collected at the end of the current phase.
+        </p>
+      </Text>
+      <Text>
+        <Definitions>
+          <dt>AXLOTL TANKS</dt>
+          <dd>
+            <p>
+              If at least one player, including you, takes free revival, you
+              collect 1 spice for every Tech Token you control. However, if only
+              the Tleilaxu player takes free revival, you do not collect spice.
+            </p>
+          </dd>
+          <dt>HIGHLINERS</dt>
+          <dd>
+            <p>
+              If at least one player, including you, ships forces from
+              off-planet, you collect 1 spice for every Tech Token you control.
+              However, if only the Spacing Guild ships forces from off-planet,
+              you do not collect spice.
+            </p>
+          </dd>
+          <dt>SPICE PRODUCTION</dt>
+          <dd>
+            <p>
+              If at least one player, including you, takes CHOAM Charity, you
+              collect 1 spice for every Tech Token you control. However, if only
+              the Bene Gesserit take CHOAM Charity, you do not collect spice.
+            </p>
+          </dd>
+          <dt>SPICE MINING</dt>
+          <dd>
+            <p>
+              If at least one troop belonging to any player, including you,
+              returns to their reserves after getting evacuated from a spice
+              mine, you collect 1 spice for every Tech Token you control.
+            </p>
+          </dd>
+        </Definitions>
       </Text>
     </Spaced>
   </Fragment>,
@@ -763,8 +1094,8 @@ export const pages = [
       </Text>
       {Object.values(factions)
         .slice(0, 5)
-        .map((item) => (
-          <FactionSynopsisBlock>
+        .map((item, i) => (
+          <FactionSynopsisBlock key={i}>
             <SideBySide>
               <Wrapper
                 isCircle={true}
@@ -790,8 +1121,8 @@ export const pages = [
       <Text>Continued list of factions.</Text>
       {Object.values(factions)
         .slice(5, 10)
-        .map((item) => (
-          <FactionSynopsisBlock>
+        .map((item, i) => (
+          <FactionSynopsisBlock key={i}>
             <SideBySide>
               <Wrapper
                 isCircle={true}

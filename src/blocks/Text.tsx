@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { blue1, blue2, tint0, tint1 } from '../presets/colors';
 
 export const Text = styled.div<{ columns?: number; size?: number }>(
   ({ columns = 1 }) =>
@@ -78,6 +79,16 @@ export const Text = styled.div<{ columns?: number; size?: number }>(
     '& h3': {
       fontFamily: 'inherit',
       textDecoration: 'underline',
+    },
+
+    '& blockquote': {
+      fontFamily: 'inherit',
+      borderLeft: `1vw solid ${tint1}`,
+      background: tint0,
+      fontStyle: 'italic',
+      padding: '1vw 4vw',
+      margin: 0,
+      display: 'block',
     },
 
     '& table': {

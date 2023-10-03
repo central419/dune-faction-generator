@@ -110,7 +110,7 @@ function FrontAside({
           </feDiffuseLighting>
         </filter>
 
-        <Mask href={''+T.Layer.FRONT_ASIDE_MASK} id={asideMask} />
+        <Mask href={'' + T.Layer.FRONT_ASIDE_MASK} id={asideMask} />
       </defs>
       <rect
         fill="hotpink"
@@ -171,7 +171,7 @@ function FrontDecals({
                   {...decalPosition}
                   {...decalSize}
                   filter="invert(100%)"
-                  xlinkHref={''+T.Placeable[d]}
+                  xlinkHref={'' + T.Placeable[d]}
                 />
               ) : (
                 <image
@@ -179,7 +179,7 @@ function FrontDecals({
                   {...add(decalPosition, d.offset)}
                   {...times(decalSize, d.scale)}
                   filter="invert(100%)"
-                  xlinkHref={''+T.Placeable[d.id]}
+                  xlinkHref={'' + T.Placeable[d.id]}
                 />
               )
             )}
@@ -368,7 +368,7 @@ function FrontHead({
   return (
     <>
       <defs>
-        <Mask href={''+T.Layer.FRONT_HEAD_MASK} id={frontHeadMask} />
+        <Mask href={'' + T.Layer.FRONT_HEAD_MASK} id={frontHeadMask} />
       </defs>
 
       <image
@@ -376,7 +376,7 @@ function FrontHead({
         mask={`url(#${frontHeadMask})`}
         style={{ filter: recolor[0] }}
         x={0}
-        xlinkHref={''+T.Head[head]}
+        xlinkHref={'' + T.Head[head]}
         y={0}
       />
     </>

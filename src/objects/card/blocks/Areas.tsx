@@ -52,11 +52,11 @@ export const ContentArea = styled.div<{ size?: number; isFull: boolean }>(
     lineHeight: '1.15em',
 
     p: {
-      margin: 0
+      margin: 0,
     },
     'P + p': {
-      marginTop: 18
-    }
+      marginTop: 18,
+    },
   })
 );
 

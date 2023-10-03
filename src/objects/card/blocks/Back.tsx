@@ -155,7 +155,7 @@ export const Back = ({
             {...size}
             mask={`url(#${textMask})`}
             x={0}
-            xlinkHref={''+T.Back[base]}
+            xlinkHref={'' + T.Back[base]}
             y={-80}
           />
         </g>
