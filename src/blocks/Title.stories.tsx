@@ -56,6 +56,10 @@ export const Sizes = {
       <Title color="#000000" size="medium">
         {children}
       </Title>
+      <hr />
+      <Title color="#000000" size="small">
+        {children}
+      </Title>
     </Fragment>
   ),
 };

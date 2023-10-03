@@ -922,7 +922,8 @@ export const pages = [
           bring their total to 2 by calling out “CHOAM Charity.”.
         </p>
         <p>
-          Players are allowed to bribe each other during the CHOAM Charity phase, to be able to use the charity.
+          Players are allowed to bribe each other during the CHOAM Charity
+          phase, to be able to use the charity.
         </p>
       </Text>
     </Spaced>

@@ -6,8 +6,8 @@ export default {
   args: {
     children: (
       <Fragment>
-        <div>A long long text</div>
-        <div>A long long text</div>
+        <p>A long long text</p>
+        <p>A long long text</p>
       </Fragment>
     ),
   },
