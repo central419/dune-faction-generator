@@ -40,6 +40,46 @@ export const maulapistol = (
   />
 );
 
+export const shield = (
+  <TreacheryCard
+    head="OCEAN"
+    title={['Shield', 1]}
+    content={[
+      dedent`
+        Play as part of your Battle Plan.
+        Protects your leader from a projectile weapon in this battle.
+        You may keep this card if you win this battle.
+      `,
+      1,
+    ]}
+    decals={[{ id: 'SHIELD' }]}
+    icon="DEFENCE_SHIELD"
+    sub={['Defense - Projectile', 1]}
+    release={undefined}
+    recolor={[]}
+  />
+);
+
+export const snooper = (
+  <TreacheryCard
+    head="OCEAN"
+    title={['Snooper', 1]}
+    content={[
+      dedent`
+        Play as part of your Battle Plan.
+        Protects your leader from a poison weapon in this battle.
+        You may keep this card if you win this battle.
+      `,
+      1,
+    ]}
+    decals={[{ id: 'SNOOPER' }]}
+    icon="DEFENCE_SNOOPER"
+    sub={['Defense - Poison', 1]}
+    release={undefined}
+    recolor={[]}
+  />
+);
+
 export const chaumas = (
   <TreacheryCard
     head="BLOOD"
@@ -71,7 +111,7 @@ export const weirdingway = (
       `,
       1,
     ]}
-    decals={[{ id: 'LASGUN' }]}
+    decals={[{ id: 'WEIRDING' }]}
     icon="WEAPON_BOLT"
     sub={['Weapon - Defense - Special', 1]}
     release={undefined}
@@ -110,9 +150,121 @@ export const chemistry = (
       `,
       1,
     ]}
-    decals={[{ id: 'CHAUMURKY' }]}
+    decals={[{ id: 'CHEMISTRY' }]}
     icon="DEFENCE_BOLT"
     sub={['Defense - Weapon - Special', 1]}
+    release={undefined}
+    recolor={[]}
+  />
+);
+export const karama = (
+  <TreacheryCard
+    head="MUSH"
+    title={['Karama', 1]}
+    content={[
+      dedent`
+        You can play this card in 1 of 3 ways:
+        
+        - During any phase of the game, you can play this card to cancel/block any **other** faction's ability listed on their faction sheet.
+        - During bidding phase, make an infinite bid for a card, take the card without paying.
+        - During **your** shipment and movement turn, your shipment cost is reduced to half of normal. Your payment for this shipment goes to the Spice Bank.
+      `,
+      1,
+    ]}
+    decals={[]}
+    icon="SPECIAL_HAND"
+    sub={['Special', 1]}
+    release={undefined}
+    recolor={[]}
+  />
+);
+
+export const truthtrance = (
+  <TreacheryCard
+    head="MUSH"
+    title={['Truth Trance', 1]}
+    content={[
+      dedent`
+        Publicly ask one other player a single yes/no question about the game that must be answered publicly. The game pauses until an answer is given.
+        The player must answer "yes" or "no" truthfully.
+      `,
+      1,
+    ]}
+    decals={[{ id: 'TRUTHTRANCE' }]}
+    icon="SPECIAL_HAND"
+    sub={['Special', 1]}
+    release={undefined}
+    recolor={[]}
+  />
+);
+export const cheaphero = (
+  <TreacheryCard
+    head="MUSH"
+    title={['Cheap Hero', 1]}
+    content={[
+      dedent`
+        Play as a leader with zero strength on your Battle Plan and discard after the battle.
+        You may also play a weapon and a defense. The cheap hero may be played in place of a leader or when you have no leaders available.
+      `,
+      1,
+    ]}
+    decals={[{ id: 'CHEAPHERO' }]}
+    icon="SPECIAL_HAND"
+    sub={['Special - Leader', 1]}
+    release={undefined}
+    recolor={[]}
+  />
+);
+export const cheapheroine = (
+  <TreacheryCard
+    head="MUSH"
+    title={['Cheap Heroine', 1]}
+    content={[
+      dedent`
+        Play as a leader with zero strength on your Battle Plan and discard after the battle.
+        You may also play a weapon and a defense. The cheap hero may be played in place of a leader or when you have no leaders available.
+      `,
+      1,
+    ]}
+    decals={[{ id: 'CHEAPHEROINE' }]}
+    icon="SPECIAL_HAND"
+    sub={['Special - Leader', 1]}
+    release={undefined}
+    recolor={[]}
+  />
+);
+export const weathercontrol = (
+  <TreacheryCard
+    head="MUSH"
+    title={['Weather Control', 1]}
+    content={[
+      dedent`
+        After the first game turn, play during the Storm Phase before the Storm Marker is moved.
+        When you play this card, you control the storm this phase and may move it from o to 10 sectors in a counterclockwise direction.
+      `,
+      1,
+    ]}
+    decals={[{ id: 'WEATHERCONTROL' }]}
+    icon="SPECIAL_HAND"
+    sub={['Special', 1]}
+    release={undefined}
+    recolor={[]}
+  />
+);
+export const familyatomics = (
+  <TreacheryCard
+    head="MUSH"
+    title={['Family Atomics', 1]}
+    content={[
+      dedent`
+        After the first game turn, play during the Storm Phase before the Storm Marker is moved.
+        When you play this card, you control the storm this phase and may move it from o to 10 sectors in a counterclockwise direction.
+      `,
+      1,
+    ]}
+    decals={[{ id: 'FAMILYATOMICS', outline: true }]}
+    icon="SPECIAL_HAND"
+    sub={['Special', 1]}
     release={undefined}
     recolor={[]}
   />

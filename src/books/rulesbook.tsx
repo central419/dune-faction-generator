@@ -32,9 +32,17 @@ import { Fan } from '../components/Fan';
 import {
   baliset,
   chaumas,
+  cheaphero,
+  cheapheroine,
   chemistry,
+  familyatomics,
+  karama,
   lasgun,
   maulapistol,
+  shield,
+  snooper,
+  truthtrance,
+  weathercontrol,
   weirdingway,
 } from '../presets/treachery_cards';
 
@@ -758,7 +766,7 @@ export const pages = [
             Playing this with a lasgun does not cause a lasgun-shield explosion.
           </p>
           <p>
-            This card can be voiced as "<em>weirding way</em>"
+            This card can be voiced as "<em>weirding way</em>".
           </p>
         </Text>
       </SideBySide>
@@ -785,7 +793,7 @@ export const pages = [
             destroyed/killed.
           </p>
           <p>
-            This card can be voiced as "<em>lasgun</em>"
+            This card can be voiced as "<em>lasgun</em>".
           </p>
         </Text>
       </SideBySide>
@@ -805,11 +813,11 @@ export const pages = [
             their battle plan.
           </p>
           <p>
-            Playing this card in your battle plan without a second defense protects
-            your leader from a poison weapon.
+            Playing this card in your battle plan without a second defense
+            protects your leader from a poison weapon.
           </p>
           <p>
-            This card can be voiced as "<em>chemistry</em>"
+            This card can be voiced as "<em>chemistry</em>".
           </p>
         </Text>
       </SideBySide>
@@ -817,79 +825,394 @@ export const pages = [
   </Fragment>,
   <Fragment>
     <Spaced>
-      <Title color={blue1} size="medium">
-        Tech tokens
+      <Title color={blue2} size="small">
+        Defenses
       </Title>
-      <Text columns={3}>
-        <p>Tech tokens start in a general supply at the start of the game.</p>
-        <p>
-          If you win in combat against another faction, and that faction has a
-          Tech Token; you choose which one to take if they have multiple.
-        </p>
-        <p>
-          When They do not have a tech token, but there is 1 available in the
-          supply, take 1 random tech token from the supply.
-        </p>
-        <p>
-          Once Tech Tokens are controlled, they are kept in front of shields,
-          for public view.
-        </p>
-        <p>
-          Controlling 3 Tech Tokens counts as a Stronghold for winning the game
-          (e.g., if you have forces in Arrakeen and Carthag, and 3 Tech Tokens,
-          you win the game).
-        </p>
-        <p>
-          Allies do not share control of Tech Tokens. To qualify as a
-          stronghold, a single player must control 3 Tech Tokens.
-        </p>
-        <p>
-          The fourth tech token: the Spice Mine tech token is described on house
-          Atreides&rsquo;s faction sheet and is not distributed with the others.
-        </p>
-        <p>
-          Each Tech Token that you control has a potential income from the Spice
-          Bank. Any spice gained from Tech Tokens is placed on the Tech Token
-          and then collected at the end of the current phase.
-        </p>
+      <SideBySide>
+        <div style={{ padding: '2vw 6vw', width: '20vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {shield}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {shield}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {shield}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {shield}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {shield}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Projectile Defenses</h1>
+          <p>
+            There are 5 standard projectile defenses called "Shield" in the
+            Treachery deck.
+          </p>
+          <p>
+            Playing this card in your battle plan will defend your leader from
+            projectile weapons in your opponent's battle plan.
+          </p>
+          <p>
+            When this card is ever played in combination with a "Lasgun" a
+            lasgun shield explosion occurs.
+            <br />
+            It does not matter if the Lasgun is in your battleplan or in your
+            opponent's.
+          </p>
+          <p>
+            These cards can be voiced as "<em>projectile defense</em>" or "
+            <em>shield</em>"
+          </p>
+          <blockquote>
+            <p>You must play a shield!</p>
+            <p style={{ float: 'right' }}>~ central419</p>
+          </blockquote>
+        </Text>
+      </SideBySide>
+      <SideBySide>
+        <div style={{ padding: '2vw 6vw', width: '20vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {snooper}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {snooper}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {snooper}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {snooper}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {snooper}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Poison Defense</h1>
+          <p>
+            There are 5 standard poison defenses called "Snooper" in the
+            Treachery deck.
+          </p>
+          <p>
+            Playing this card in your battle plan will defend your leader from
+            poison weapons in your opponent's battle plan.
+          </p>
+          <p>
+            These cards can be voiced as "<em>poison defense</em>" or "
+            <em>snooper</em>"
+          </p>
+          <blockquote>
+            <p>He has a second snooper?!</p>
+            <p style={{ float: 'right' }}>~ laurens</p>
+          </blockquote>
+        </Text>
+      </SideBySide>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue2} size="small">
+        Karama card
+      </Title>
+      <SideBySide>
+        <div style={{ padding: '1vw 2vw', width: '24vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {karama}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {karama}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }} size={1.7}>
+          <h1>Karama</h1>
+          <p>There are 2 karama cards in the Treachery Deck.</p>
+          <Outline variant="generic">
+            <p>You can play this card in 1 of 3 ways:</p>
+            <ol>
+              <li>
+                During any phase of the game, you can play this card to
+                cancel/block any <strong>other</strong> faction's ability listed
+                on their faction sheet.
+              </li>
+              <li>
+                During bidding phase, make an infinite bid for a card, take the
+                card without paying.
+              </li>
+              <li>
+                During <strong>your</strong> shipment and movement turn, your
+                shipment cost is reduced to half of normal. Your payment for
+                this shipment goes to the Spice Bank.
+              </li>
+            </ol>
+          </Outline>
+        </Text>
+      </SideBySide>
+      <Text columns={2} size={1.7}>
+        <NonBreaking>
+          <h1>Full Phase</h1>
+          <p>
+            Playing a karama to block another faction's advantage will cancel
+            this advantage for a full phase.
+          </p>
+        </NonBreaking>
+        <NonBreaking>
+          <Text>
+            <Outline variant="example">
+              <p>
+                When you play a karama to stop the Atreides bidding presience
+                advantage, the Atreides can't look at <strong>any</strong> cards
+                that bidding phase.
+              </p>
+            </Outline>
+          </Text>
+        </NonBreaking>
       </Text>
       <Text>
-        <Definitions>
-          <dt>AXLOTL TANKS</dt>
-          <dd>
-            <p>
-              If at least one player, including you, takes free revival, you
-              collect 1 spice for every Tech Token you control. However, if only
-              the Tleilaxu player takes free revival, you do not collect spice.
-            </p>
-          </dd>
-          <dt>HIGHLINERS</dt>
-          <dd>
-            <p>
-              If at least one player, including you, ships forces from
-              off-planet, you collect 1 spice for every Tech Token you control.
-              However, if only the Spacing Guild ships forces from off-planet,
-              you do not collect spice.
-            </p>
-          </dd>
-          <dt>SPICE PRODUCTION</dt>
-          <dd>
-            <p>
-              If at least one player, including you, takes CHOAM Charity, you
-              collect 1 spice for every Tech Token you control. However, if only
-              the Bene Gesserit take CHOAM Charity, you do not collect spice.
-            </p>
-          </dd>
-          <dt>SPICE MINING</dt>
-          <dd>
-            <p>
-              If at least one troop belonging to any player, including you,
-              returns to their reserves after getting evacuated from a spice
-              mine, you collect 1 spice for every Tech Token you control.
-            </p>
-          </dd>
-        </Definitions>
+        <hr />
       </Text>
+      <Text size={1.7}>
+        <h1>Karama effects</h1>
+        <p>
+          On each player's faction sheet each advantage that can be karama'd is
+          denoted by a "*"-token.
+          <br />
+          On the second page of their faction sheet is described in detail what
+          happens when this ability is blocked/cancelled.
+        </p>
+        <p>
+          Certain advantages have a narrow time-window when you can play the
+          karama to block them. This is also decribed on the second page.
+        </p>
+        <p>
+          <strong>EXAMPLES:</strong>
+        </p>
+      </Text>
+      <Text columns={2}>
+        <Outline variant="example">
+          <p>
+            When playing a karama to stop the Spacing Guild from using their
+            storm order advantage during ship and move, you must do so before
+            the Spacing Guild was supposed to take their turn.
+          </p>
+        </Outline>
+        <Outline variant="example">
+          <p>
+            When playing a karama to stop the Bene Gesserit from using their
+            voice advantage against you, you can listen to what their voice is,
+            but must play the karama before proceeding with further
+            actions/revealing.
+          </p>
+        </Outline>
+      </Text>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue2} size="small">
+        Truth Trance cards
+      </Title>
+      <SideBySide>
+        <div style={{ padding: '1vw 2vw', width: '24vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {truthtrance}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {truthtrance}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }} size={1.7}>
+          <h1>Truth Trance</h1>
+          <p>There are 2 truth trance cards in the Treachery Deck.</p>
+          <p>You can play a Truth Trance card at any time.</p>
+          <Outline variant="generic">
+            <p>
+              Publicly ask one other player a single yes/no question about the
+              game that must be answered publicly.
+            </p>
+            <p>The game pauses until an answer is given.</p>
+            <p>The player must answer "yes" or "no" truthfully.</p>
+          </Outline>
+        </Text>
+      </SideBySide>
+      <Text columns={2} size={1.7}>
+        <h1>The game pauses</h1>
+        <p>When a truth trance card is played, no game actions can happen:</p>
+        <ul>
+          <li>No binding deals can be made during this time.</li>
+          <li>No cards can be played, including other truthtrance cards.</li>
+        </ul>
+        <h1>Binding future actions</h1>
+        <p>
+          You can be asked about future actions you will perform.
+          <br />
+          You must commit to an answer and then you are not allowed to make game
+          actions that would make your answer not true.
+        </p>
+        <p>
+          To be clear: you will be locked into future actions via the answer you
+          give.
+        </p>
+        <h1>What questions are allowed?</h1>
+        <p>
+          Some player discretions is needed, it's possible for extreme toxic
+          play to happen with either deliberately unclear questions, or
+          questions that are effectively a card-blanc "you must do exactly the
+          thing i decide you must do".
+        </p>
+        <ul>
+          <li>Absolutely, no questions about future truth-trace questions.</li>
+          <li>
+            No confusing questions, if you need to explain the question, it's
+            not clear enough.
+          </li>
+          <li>No questions about undecidable future events.</li>
+        </ul>
+        <p>
+          If you asked your question and it turns out to be toxic, you must
+          discard your Truth Trance card, you do not get to ask another
+          question.
+        </p>
+      </Text>
+      <Text columns={2} size={1.7}>
+        <NonBreaking>
+          <Text>
+            <h1>Bad examples</h1>
+            <Outline variant="example">Will you win both battles?</Outline>
+            <Outline variant="example">
+              Is Hasimir Fenring anyone's Traitor?
+            </Outline>
+          </Text>
+        </NonBreaking>
+        <NonBreaking>
+          <Text>
+            <h1>Good examples</h1>
+            <Outline variant="example">
+              Do you have Stilgar as a traitor?
+            </Outline>
+            <Outline variant="example">
+              Will you play a projectile weapon, weirding way as a weapon or a
+              lasgun in the next battle?
+            </Outline>
+            <Outline variant="example">
+              Will you have more than 4 forces in Arrakeen by the end of your
+              shipment & movement turn?
+            </Outline>
+          </Text>
+        </NonBreaking>
+      </Text>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue2} size="small">
+        Special cards
+      </Title>
+      <SideBySide>
+        <div style={{ padding: '1vw 4vw', width: '22vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {cheaphero}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {cheaphero}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {cheapheroine}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Cheap hero</h1>
+          <p>
+            There are 3 Cheap Hero cards in the Treachery deck, 2 are called
+            "Cheap Hero", 1 is called "Cheap Heroine".
+            <br />
+            Play this card in your battleplan <strong>instead of</strong> a
+            leader.
+            <br />
+            <em>
+              Guild can play it along with a leader disc after having activated
+              their fate.
+            </em>
+          </p>
+          <p>
+            The leader's strength is 0.
+            <br />
+            The Cheap Hero cannot be called traitor.
+          </p>
+          <p>
+            A Cheap Hero card is always discarded after use. Unless you won with
+            Traitor, in that case you can chose to keep or discard.
+          </p>
+          <p>
+            It's not allowed to voice Cheap Hero, neither positive, nor
+            positive.
+          </p>
+          <blockquote>
+            <p>I love cheap heroine!</p>
+            <p style={{ float: 'right' }}>~ awpteamoose</p>
+          </blockquote>
+        </Text>
+      </SideBySide>
+      <SideBySide>
+        <div style={{ width: '17vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {weathercontrol}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Weather Control</h1>
+          <p>There's a single Weather Control card in the Treachery deck.</p>
+          <p>
+            You can play this card during the storm phase only, after the storm
+            calculation is complete, but before the storm is moved.
+          </p>
+          <p>You can move the storm up to 10 sectors forwards.</p>
+        </Text>
+      </SideBySide>
+      <SideBySide>
+        <div style={{ width: '17vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {familyatomics}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Family Atomics</h1>
+          <p>There's a single Family card in the Treachery deck.</p>
+          <p>
+            You can play this card during the storm phase only, after the storm
+            calculation is complete (and after Weather Control is played), but
+            before the storm is moved.
+          </p>
+          <p>
+            You can only play this card if you have at least 1 troop in an
+            territory adjecent or on the Shieldwall territory.
+            <br />
+            If the storm is in the way, you cannot use Family Atomics.
+          </p>
+          <p>After playing this card it is removed from the game.</p>
+          <blockquote>
+            <p>KA-BOOOM!</p>
+            <p style={{ float: 'right' }}>~ IhasPinecone</p>
+          </blockquote>
+        </Text>
+      </SideBySide>
     </Spaced>
   </Fragment>,
   <Fragment>
