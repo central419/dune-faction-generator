@@ -15,6 +15,7 @@ export const Page = styled.div<{
     boxSizing: 'border-box',
     display: 'flex',
     flexDirection: 'column',
+    overflow: 'hidden',
   },
   ({ ratio }) => ({
     height: `calc(100vw * ${ratio})`,

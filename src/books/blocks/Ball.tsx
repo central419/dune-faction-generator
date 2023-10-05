@@ -5,13 +5,17 @@ export const Ball = styled.div<{
   borderB?: string;
 }>(
   {
+    textAlign: 'center',
     width: '3.2vw',
     height: '3.2vw',
+    lineHeight: '3.2vw',
     borderRadius: '50%',
     position: 'relative',
     boxSizing: 'border-box',
     boxShadow: '0 0 0 1px black',
     backgroundColor: 'currentcolor',
+    fontFamily: 'C_Copperplate_Gothic',
+    fontSize: '1.6vw',
   },
   ({ borderA }) =>
     borderA

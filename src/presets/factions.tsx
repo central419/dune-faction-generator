@@ -9,13 +9,13 @@ import * as ixian from '../factions/ixian';
 import * as landsraad from '../factions/landsraad';
 
 export const factions = {
+  emperor,
+  guild,
+  fremen,
+  ixian,
   atreides,
   bg,
   bt,
-  emperor,
-  fremen,
-  guild,
   harkonnen,
-  ixian,
   landsraad,
 };
