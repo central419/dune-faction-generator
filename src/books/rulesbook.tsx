@@ -801,6 +801,11 @@ export const pages = [
           <p>
             This card can be voiced as "<em>lasgun</em>".
           </p>
+          <blockquote>
+            <p>I bindingly don't have a lasgun</p>
+            <p style={{ float: 'right' }}>~ Hoots</p>
+          </blockquote>
+
         </Text>
       </SideBySide>
       <SideBySide>
