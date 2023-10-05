@@ -35,12 +35,18 @@ import {
   cheaphero,
   cheapheroine,
   chemistry,
+  ernok,
   familyatomics,
   karama,
   lasgun,
   maulapistol,
+  mercenaries,
+  phrinepen,
   shield,
   snooper,
+  supplies,
+  supshield,
+  trishula,
   truthtrance,
   weathercontrol,
   weirdingway,
@@ -1210,6 +1216,101 @@ export const pages = [
           <blockquote>
             <p>KA-BOOOM!</p>
             <p style={{ float: 'right' }}>~ IhasPinecone</p>
+          </blockquote>
+        </Text>
+      </SideBySide>
+    </Spaced>
+  </Fragment>,
+  <Fragment>
+    <Spaced>
+      <Title color={blue2} size="small">
+        Special cards
+      </Title>
+      <SideBySide>
+        <div style={{ padding: '1vw 4vw', width: '22vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {mercenaries}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {mercenaries}
+            </Wrapper>
+          </Fan>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Mercenaries</h1>
+          <p>
+            There are 2 Mercenaries cards in the Treachery deck.
+            <br />
+            You can play this card in the battle plan, in addition to playing a
+            weapon and a defense.
+          </p>
+          <p>
+            When this card is in your battle plan, it adds 1 battle strength to
+            your battle plan.
+            <br />
+            In addition you also become the aggressor in combat, and thus win
+            ties.
+            <br />
+            If both players play Mercenaries, then storm order decides the
+            aggressor.
+          </p>
+          <p>
+            When asked for dial as Atreides combat prescience, you must answer
+            the number of your Battlewheel and must also disclose if you are
+            playing Mercenaries.
+          </p>
+          <p>This card can be voiced as "Mercenaries".</p>
+        </Text>
+      </SideBySide>
+      <SideBySide>
+        <div style={{ padding: '1vw 4vw', width: '22vw' }}>
+          <Fan size={cardSize} spacing={-3}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {supplies}
+            </Wrapper>
+          </Fan>
+          <div style={{ padding: '0 6vw', width: '14vw', marginTop: '-4vw', marginLeft: '-2vw' }}>
+            <Fan size={cardSize} spacing={-3}>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {ernok}
+              </Wrapper>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {trishula}
+              </Wrapper>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {phrinepen}
+              </Wrapper>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {supshield}
+              </Wrapper>
+            </Fan>
+          </div>
+        </div>
+        <Text style={{ flex: 1 }}>
+          <h1>Supplies!</h1>
+          <p>
+            There's 1 Supplies! card in the Treachery deck.
+          </p>
+          <p>
+            You can play this card at any time, within the following contraint:
+            <br />
+            You cannot play this between the time-window of Voice and battle plan reveal.
+            <br />
+            Effectively this means you are allowed to play it at start of combat, before any combat advantages are used.
+          </p>
+          <p>
+            When you play the Supplies! card, you discard it and take the 4 Supplies! Treachery cards from the supply, into your hand.<br/>These special Treachery cards to not count towards your hand limit.
+          </p>
+          <p>
+            The Supply! Treachery cards cannot be spited by Harkonnen.
+          </p>
+          <p>
+            The Supply! Treachery cards can be voiced, like regular Treachery cards.
+          </p>
+          <blockquote>
+            <p>Are you supplies!-ed?</p>
+            <p style={{ float: 'right' }}>~ DragonJade</p>
           </blockquote>
         </Text>
       </SideBySide>

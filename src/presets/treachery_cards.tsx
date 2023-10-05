@@ -80,6 +80,86 @@ export const snooper = (
   />
 );
 
+export const ernok = (
+  <TreacheryCard
+    head="BLOOD"
+    title={['Supplies! Ernok Seed', 1]}
+    content={[
+      dedent`
+        Play as part of your Battle Plan.
+        Kills opponent's leader before battle is resolved. Opponent may protect leader with a Poison defense.
+        You may keep this card if you win this battle.
+        Return this card to the Supplies! cache when it is lost, or at the end of the Combat phase
+      `,
+      1,
+    ]}
+    decals={[{ id: 'ZENOBIA' }]}
+    icon="WEAPON_POISON"
+    sub={['Weapon - Poison', 1]}
+    release={'HOMEBREW'}
+    recolor={[]}
+  />
+);
+export const trishula = (
+  <TreacheryCard
+    head="BLOOD"
+    title={['Supplies! Trishula', 1]}
+    content={[
+      dedent`
+        Play as part of your Battle Plan.
+        Kills opponent's leader before battle is resolved. Opponent may protect leader with a Projectile defense.
+        You may keep this card if you win this battle.
+        Return this card to the Supplies! cache when it is lost, or at the end of the Combat phase
+      `,
+      1,
+    ]}
+    decals={[{ id: 'TRISPEAR' }]}
+    icon="WEAPON_PROJECTILE"
+    sub={['Weapon - Projectile', 1]}
+    release={'HOMEBREW'}
+    recolor={[]}
+  />
+);
+export const phrinepen = (
+  <TreacheryCard
+    head="OCEAN"
+    title={['Supplies! Phrine Pen', 1]}
+    content={[
+      dedent`
+        Play as part of your Battle Plan.
+        Protects your leader from a poison weapon in this battle.
+        You may keep this card if you win this battle.
+        Return this card to the Supplies! cache when it is lost, or at the end of the Combat phase.
+      `,
+      1,
+    ]}
+    decals={[{ id: 'PORTABLESNOOPER' }]}
+    icon="DEFENCE_SNOOPER"
+    sub={['Defense - Poison', 1]}
+    release={'HOMEBREW'}
+    recolor={[]}
+  />
+);
+export const supshield = (
+  <TreacheryCard
+    head="OCEAN"
+    title={['Supplies! Shield', 0.9]}
+    content={[
+      dedent`
+        Play as part of your Battle Plan.
+        Protects your leader from a projectile weapon in this battle.
+        You may keep this card if you win this battle.
+        Return this card to the Supplies! cache when it is lost, or at the end of the Combat phase
+      `,
+      1,
+    ]}
+    decals={[{ id: 'TARGET' }]}
+    icon="DEFENCE_SHIELD"
+    sub={['Defense - Projectile', 1]}
+    release={'HOMEBREW'}
+    recolor={[]}
+  />
+);
 export const chaumas = (
   <TreacheryCard
     head="BLOOD"
@@ -266,6 +346,44 @@ export const familyatomics = (
     icon="SPECIAL_HAND"
     sub={['Special', 1]}
     release={undefined}
+    recolor={[]}
+  />
+);
+export const mercenaries = (
+  <TreacheryCard
+    head="MUSH"
+    title={['Mercenaries', 1]}
+    content={[
+      dedent`
+        Play in your Battle Plan besides weapons or defences. You may play only 1 Mercenaries per Battle Plan.
+        Add +1 to your number dialed and win ties regardless of Storm Order.
+        You may keep this card if you win the battle.
+      `,
+      1,
+    ]}
+    decals={[{ id: 'MERCENARIES', outline: true }]}
+    icon="SPECIAL_HAND"
+    sub={['Special', 1]}
+    release={'HOMEBREW'}
+    recolor={[]}
+  />
+);
+export const supplies = (
+  <TreacheryCard
+    head="MUSH"
+    title={['Supplies!', 1]}
+    content={[
+      dedent`
+        Play during a Combat Phase.
+        Until the end of his Combat Phase, you get the Supplies! tokens.
+        These may be used as treachery cards of corresponding types.
+      `,
+      1,
+    ]}
+    decals={[{ id: 'SUPPLIES', outline: true }]}
+    icon="SPECIAL_HAND"
+    sub={['Special', 1]}
+    release={'HOMEBREW'}
     recolor={[]}
   />
 );

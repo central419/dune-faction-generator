@@ -76,6 +76,7 @@ import Decal_Other_DOWN from '../asset/decal/down.svg';
 import Decal_Other_DISC from '../asset/decal/disc.svg';
 import Decal_Other_DIAMOND from '../asset/decal/diamond.svg';
 import Decal_Other_EYE from '../asset/decal/eye.svg';
+import Decal_Other_SUPPLIES from '../asset/decal/supplies.svg';
 
 import Decal_Weapon_BASILIA from '../asset/decal/basilia.svg';
 import Decal_Weapon_BLADE from '../asset/decal/blade.svg';
@@ -404,6 +405,7 @@ export enum Decal_Special {
   FAMILYATOMICS = Decal_Special_FAMILYATOMICS,
 }
 export enum Decal_Other {
+  SUPPLIES = Decal_Other_SUPPLIES,
   BALANCE = Decal_Other_BALANCE,
   BARGE = Decal_Other_BARGE,
   BRAIN = Decal_Other_BRAIN,
