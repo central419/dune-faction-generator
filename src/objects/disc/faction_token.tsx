@@ -21,7 +21,10 @@ export const FactionToken = ({
 }: Pick<FactionAssets, 'color' | 'logo' | 'pattern'> & {
   circleType?: 'ring' | 'disc';
 }) => {
-  const prefix = logo.toLocaleLowerCase().replace(/[^a-z]/gi, '');
+  const prefix = logo
+    .toString()
+    .toLocaleLowerCase()
+    .replace(/[^a-z]/gi, '');
 
   return (
     <TokenContainer color={color}>

@@ -608,7 +608,11 @@ export const Placeable = {
   ...Logo_Official,
   ...Logo_Unofficial,
   ...Troop,
-  ...Decal,
+  ...Decal_DEFENSE,
+  ...Decal_Worthless,
+  ...Decal_Special,
+  ...Decal_Other,
+  ...Decal_Weapon,
 };
 
 export const Logo = {

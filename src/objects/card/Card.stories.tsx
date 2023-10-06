@@ -25,7 +25,7 @@ export const Treachery: {
     recolor: [],
     decals: [
       {
-        id: 'BREAKCONDITIONING',
+        id: 'BREAK_CONDITIONING',
       },
     ],
   },
@@ -59,7 +59,7 @@ export const Alliance: {
     title: ['Thing', 1],
     decals: [
       {
-        id: 'BREAKCONDITIONING',
+        id: 'BREAK_CONDITIONING',
         fade: true,
       },
       {
