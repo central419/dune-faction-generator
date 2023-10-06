@@ -6,7 +6,7 @@ import { Definitions } from '../../blocks/Definitions';
 import { Wrapper } from '../../components/Wrapper';
 import { FactionToken } from '../../objects/disc/faction_token';
 import { size as discSize } from '../../shared/disc';
-import { blue1 } from '../../presets/colors';
+import * as colors from '../../presets/colors';
 import { SideBySide } from '../blocks/Layouts';
 import { MarkdownContent } from '../../components/MarkdownContent';
 import { factions } from '../../presets/factions';
@@ -16,7 +16,7 @@ export function Factions1() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue1}>Factions</Title>
+        <Title color={colors.blue1}>Factions</Title>
         <Text>
           <p>Each set is composed of the following:</p>
           <Definitions>
@@ -33,7 +33,7 @@ export function Factions1() {
             </dd>
             <dt>A Faction Sheet</dt>
             <dd>
-              <p>Describing each Faction’s Advantages.</p>
+              <p>Describing each Faction's Advantages.</p>
               <p>Reference for their troops & leader strengths.</p>
               <p>Reference for their karama effects & FAQ.</p>
             </dd>
@@ -70,7 +70,7 @@ export function Factions1() {
             </dd>
           </Definitions>
           <p>
-            All components of each player set have the same colour for easy
+            All components of each player set have the same color for easy
             identification.
           </p>
         </Text>
@@ -101,7 +101,7 @@ export function Factions2() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue1} size="medium">
+        <Title color={colors.blue1} size="medium">
           Factions in the game
         </Title>
         <Text>

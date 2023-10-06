@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { Title } from '../../blocks/Title';
 import { NonBreaking, Text } from '../../blocks/Text';
 import { Spaced } from '../../blocks/Spaced';
-import { blue1 } from '../../presets/colors';
+import * as colors from '../../presets/colors';
 import { Definitions } from '../../blocks/Definitions';
 import { Outline } from '../../blocks/Outline';
 import { WithBottom, SideBySide } from '../blocks/Layouts';
@@ -12,7 +12,7 @@ export function About_Dreams() {
     <Fragment>
       <Spaced>
         <Text>
-          <Title color={blue1}>Dreamrules 2.0</Title>
+          <Title color={colors.blue1}>Dreamrules 2.0</Title>
           <h1>The Origin!</h1>
         </Text>
         <Text>
@@ -77,7 +77,7 @@ export function About_Welcome() {
     <Fragment>
       <WithBottom>
         <Spaced>
-          <Title color={blue1}>Welcome to dune</Title>
+          <Title color={colors.blue1}>Welcome to dune</Title>
           <Text columns={2}>
             <NonBreaking>
               <h1>Table of contents:</h1>

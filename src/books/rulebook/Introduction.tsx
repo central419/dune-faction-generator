@@ -4,17 +4,18 @@ import { NonBreaking, Text } from '../../blocks/Text';
 import { Spaced } from '../../blocks/Spaced';
 import { Definitions } from '../../blocks/Definitions';
 import { Wrapper } from '../../components/Wrapper';
-import mappy from '../../asset/cover/map.svg';
-import { blue1 } from '../../presets/colors';
+import arrakis from '../../asset/cover/map.svg';
+import * as colors from '../../presets/colors';
 import { Ball } from '../blocks/Ball';
 import { SideBySide } from '../blocks/Layouts';
-import { mapSize } from './Welcome';
+
+const mapSize = { width: 487.06, height: 487.06 };
 
 export function Intro() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue1}>Introduction</Title>
+        <Title color={colors.blue1}>Introduction</Title>
         <Text>
           <NonBreaking>
             <h1>Object of the game</h1>
@@ -34,7 +35,7 @@ export function Intro() {
             </p>
           </NonBreaking>
         </Text>
-        <Title color={blue1} size="medium">
+        <Title color={colors.blue1} size="medium">
           The board
         </Title>
         <Text>
@@ -130,7 +131,7 @@ export function Intro() {
                 fillRule="evenodd"
                 clipRule="evenodd"
               >
-                <use xlinkHref={mappy + '#root'}></use>
+                <use xlinkHref={arrakis + '#root'}></use>
               </svg>
             </Wrapper>
           </div>
@@ -156,7 +157,7 @@ export function Sectors() {
               <li>When the storm moves, it moves from sector to sector.</li>
               <li>
                 Territories that are under storm cannot be entered or moved
-                through. When a territory is partually under storm, these parts
+                through. When a territory is partially under storm, these parts
                 act as separate territories.
               </li>
               <li>
@@ -178,9 +179,9 @@ export function Sectors() {
               fillRule="evenodd"
               clipRule="evenodd"
             >
-              <use xlinkHref={mappy + '#root'}></use>
+              <use xlinkHref={arrakis + '#root'}></use>
               <use
-                xlinkHref={mappy + '#sectors'}
+                xlinkHref={arrakis + '#sectors'}
                 fill="none"
                 stroke="black"
                 clipRule="evenodd"
@@ -190,7 +191,7 @@ export function Sectors() {
                 strokeWidth="7px"
               />
               <use
-                xlinkHref={mappy + '#sectors'}
+                xlinkHref={arrakis + '#sectors'}
                 fill="none"
                 stroke="white"
                 clipRule="evenodd"
@@ -218,7 +219,7 @@ export function Sectors() {
               fillRule="evenodd"
               clipRule="evenodd"
             >
-              <use xlinkHref={mappy + '#root'}></use>
+              <use xlinkHref={arrakis + '#root'}></use>
             </svg>
           </Wrapper>
           <NonBreaking>
@@ -283,7 +284,7 @@ export function Strongholds() {
             <dd>
               <p>The home-base of house Atreides.</p>
               <p>
-                If you have forces here, you have access to "ornithopers"{' '}
+                If you have forces here, you have access to "ornithopters"{' '}
                 <em>(explained further on page N)</em>.
               </p>
               <p>
@@ -295,7 +296,7 @@ export function Strongholds() {
             <dd>
               <p>The home-base of house Harkonnen.</p>
               <p>
-                If you have forces here, you have access to "ornithopers"{' '}
+                If you have forces here, you have access to "ornithopters"{' '}
                 <em>(explained further on page N)</em>.
               </p>
               <p>
@@ -307,7 +308,7 @@ export function Strongholds() {
             <dd>
               <p>The home-base of the Fremen.</p>
             </dd>
-            <dt>Habanya Seitch</dt>
+            <dt>Habbanya Seitch</dt>
             <dd>
               <p>
                 This stronghold has no special uses, but is the hardest one to

@@ -1,4 +1,5 @@
 import { FieldsSelection, Observable } from '@genql/runtime';
+import * as Enum from './enums';
 
 export type Scalars = {
   Boolean: boolean;
@@ -557,27 +558,7 @@ export interface RulesetPage {
   __typename: 'RulesetPage';
 }
 
-export type Troop =
-  | 'ATREIDES_TROOP'
-  | 'BG_TROOP'
-  | 'BLASTER_TROOP'
-  | 'BT_TROOP'
-  | 'CYMECS_TROOP'
-  | 'EMPEROR_TROOP'
-  | 'FREMEN_TROOP'
-  | 'GINAZ_TROOP'
-  | 'GUILD_TROOP'
-  | 'HAGAL_TROOP'
-  | 'HARKONNEN_TROOP'
-  | 'IDUALI_TROOP'
-  | 'IX_TROOP'
-  | 'JUGGERNAUT_TROOP'
-  | 'LANDSRAAD_TROOP'
-  | 'MORRITANI_TROOP'
-  | 'OLDIX_TROOP'
-  | 'PEDDLERS_TROOP'
-  | 'SMUGGLERS_TROOP'
-  | 'UNKNOWN_TROOP';
+export type Troop = keyof typeof Enum.Troop
 
 export interface User {
   avatar: Scalars['String'];

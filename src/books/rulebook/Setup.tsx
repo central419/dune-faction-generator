@@ -9,8 +9,8 @@ import { FactionToken } from '../../objects/disc/faction_token';
 import { size as cardSize } from '../../shared/card';
 import { size as discSize } from '../../shared/disc';
 import { TroopToken } from '../../objects/disc/troop_token';
-import tably from '../../asset/cover/table.svg';
-import { blue1, blue2 } from '../../presets/colors';
+import table from '../../asset/cover/table.svg';
+import * as colors from '../../presets/colors';
 import { Ball } from '../blocks/Ball';
 import { WithBottom } from '../blocks/Layouts';
 import { factions } from '../../presets/factions';
@@ -24,11 +24,11 @@ export function Setup_1() {
     <Fragment>
       <WithBottom>
         <Spaced>
-          <Title color={blue1}>Setup</Title>
+          <Title color={colors.blue1}>Setup</Title>
           <Text>
             <p>This section describes how to setup a game of dune.</p>
           </Text>
-          <Title color={blue2} size="small">
+          <Title color={colors.blue2} size="small">
             Setup Part 1 : Drafting
           </Title>
           <Text columns={2}>
@@ -63,7 +63,7 @@ export function Setup_1() {
               <li>
                 <p>
                   Collect all the faction-tokens from the center of the board,
-                  and shuffle them thouroughly. Place the faction-tokens as
+                  and shuffle them thoroughly. Place the faction-tokens as
                   evenly spaced as possible around the board on the storm track.
                 </p>
                 <p>
@@ -129,7 +129,7 @@ export function Setup_2() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Setup Part 2 : Table layout & Decks
         </Title>
         <Text columns={2}>
@@ -164,7 +164,7 @@ export function Setup_2() {
                     (face down) card on <strong>Pb</strong>.
                   </p>
                   <p>
-                    Finally add the remaining Sha-Halud cards and shuffle the
+                    Finally add the remaining Sha-Hulud cards and shuffle the
                     deck. Place this deck (face down) on <strong>D</strong>.
                   </p>
                 </li>
@@ -292,7 +292,7 @@ export function Setup_2() {
                 fillRule="evenodd"
                 clipRule="evenodd"
               >
-                <use xlinkHref={tably + '#root'}></use>
+                <use xlinkHref={table + '#root'}></use>
               </svg>
             </Wrapper>
           </div>
@@ -307,19 +307,19 @@ export function Setup_3() {
     <Fragment>
       <WithBottom>
         <Spaced>
-          <Title color={blue2} size="small">
+          <Title color={colors.blue2} size="small">
             Setup Part 3 : Prediction
           </Title>
           <Text>
             <p>
               If the Bene Gesserit faction is in the game, they must do their
-              prediction immmediatly before any card are distributed.
+              prediction immediately before any card are distributed.
             </p>
             <p>
               If the Bene Gesserit faction was not drafted, skip this phase.
             </p>
           </Text>
-          <Title color={blue2} size="small">
+          <Title color={colors.blue2} size="small">
             Setup Part 4 : Traitors
           </Title>
           <Text columns={2}>
@@ -414,7 +414,7 @@ export function Setup_4() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Setup Part 5 : Treachery & Fates
         </Title>
         <Text columns={2}>
@@ -459,7 +459,7 @@ export function Setup_5() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Setup Part 6 : Storm Placement
         </Title>
         <Text>
@@ -481,7 +481,7 @@ export function Setup_5() {
             </li>
           </ol>
         </Text>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Setup Part 6 : Troop Placement
         </Title>
         <Text columns={2}>

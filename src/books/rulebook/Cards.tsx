@@ -6,7 +6,7 @@ import { Outline } from '../../blocks/Outline';
 import { Definitions } from '../../blocks/Definitions';
 import { Wrapper } from '../../components/Wrapper';
 import { size as cardSize } from '../../shared/card';
-import { blue1, blue2 } from '../../presets/colors';
+import * as colors from '../../presets/colors';
 import { SideBySide } from '.././blocks/Layouts';
 import { Fan } from '../../components/Fan';
 import * as card from '../../presets/treachery_cards';
@@ -15,7 +15,7 @@ export function Cards_Intro() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue1}>Cards</Title>
+        <Title color={colors.blue1}>Cards</Title>
         <Text>
           <p>
             The game is played with multiple card decks.
@@ -86,7 +86,7 @@ export function Cards_Intro() {
             </dd>
           </Definitions>
         </Text>
-        <Title color={blue1} size="medium">
+        <Title color={colors.blue1} size="medium">
           Treachery cards
         </Title>
         <Text>
@@ -139,7 +139,7 @@ export function TreacheryCards1() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Worthless
         </Title>
         <SideBySide>
@@ -181,7 +181,7 @@ export function TreacheryCards1() {
             </blockquote>
           </Text>
         </SideBySide>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Weapons
         </Title>
         <SideBySide>
@@ -272,7 +272,7 @@ export function TreacheryCards2() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Unique combat cards
         </Title>
 
@@ -370,7 +370,7 @@ export function TreacheryCards3() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Defenses
         </Title>
         <SideBySide>
@@ -469,7 +469,7 @@ export function KaramaCard() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Karama card
         </Title>
         <SideBySide>
@@ -573,7 +573,7 @@ export function TruthTranceCard() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Truth Trance cards
         </Title>
         <SideBySide>
@@ -678,7 +678,7 @@ export function TreacheryCards4() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Special cards
         </Title>
         <SideBySide>
@@ -784,7 +784,7 @@ export function TreacheryCards5() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="small">
+        <Title color={colors.blue2} size="small">
           Special cards
         </Title>
         <SideBySide>

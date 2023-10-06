@@ -3,13 +3,13 @@ import { Title } from '../../blocks/Title';
 import { Text } from '../../blocks/Text';
 import { Spaced } from '../../blocks/Spaced';
 import { Definitions } from '../../blocks/Definitions';
-import { blue1 } from '../../presets/colors';
+import * as colors from '../../presets/colors';
 
 export function TechTokens() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue1} size="medium">
+        <Title color={colors.blue1} size="medium">
           Tech tokens
         </Title>
         <Text columns={3}>
@@ -48,7 +48,7 @@ export function TechTokens() {
         </Text>
         <Text>
           <Definitions>
-            <dt>AXLOTL TANKS</dt>
+            <dt>AXOLOTL TANKS</dt>
             <dd>
               <p>
                 If at least one player, including you, takes free revival, you

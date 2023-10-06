@@ -1,10 +1,10 @@
-import { tint0 } from '../../presets/colors';
+import * as colors from '../../presets/colors';
 import styled from '@emotion/styled';
 
 export const FactionSynopsisBlock = styled.div<{ flip?: boolean }>(
   {
     display: 'flex',
-    background: tint0,
+    background: colors.tint0,
     height: '18vw',
   },
   ({ flip = true }) =>

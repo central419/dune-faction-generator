@@ -4,13 +4,13 @@ import { NonBreaking, Text } from '../../blocks/Text';
 import { Spaced } from '../../blocks/Spaced';
 import { Outline } from '../../blocks/Outline';
 import { Definitions } from '../../blocks/Definitions';
-import { blue1, blue2 } from '../../presets/colors';
+import * as colors from '../../presets/colors';
 
 export function Phases_Intro() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue1}>Phases</Title>
+        <Title color={colors.blue1}>Phases</Title>
         <Text columns={2}>
           <NonBreaking>
             <p>DUNE is played in turns to a maximum limit of 10 turns.</p>
@@ -22,10 +22,10 @@ export function Phases_Intro() {
           <Outline variant="example">
             Note: All factions have special advantages that may contradict these
             rules.
-            <br />A faction’s particular advantages always have precedence.
+            <br />A faction's particular advantages always have precedence.
           </Outline>
         </Text>
-        <Title color={blue2} size="medium">
+        <Title color={colors.blue2} size="medium">
           Phase 1: Storm
         </Title>
         <Text columns={2}>
@@ -81,7 +81,7 @@ export function Phases_Spice() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="medium">
+        <Title color={colors.blue2} size="medium">
           Phase 2: Spice blow
         </Title>
         <Text columns={2}>
@@ -116,7 +116,7 @@ export function Phases_Spice() {
             complete Spice Deck is used.
           </p>
         </Text>
-        <Title color={blue2} size="medium">
+        <Title color={colors.blue2} size="medium">
           Phase 3: CHOAM charity
         </Title>
         <Text>
@@ -129,7 +129,7 @@ export function Phases_Spice() {
             phase, to be able to use the charity.
           </p>
         </Text>
-        <Title color={blue2} size="medium">
+        <Title color={colors.blue2} size="medium">
           Phase 4: Bidding
         </Title>
         <Text columns={2}>
@@ -260,13 +260,13 @@ export function Phases_Revival() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2} size="medium">
+        <Title color={colors.blue2} size="medium">
           Phase 5: Revival
         </Title>
         <Text>
           <p>
             All revivals happen in Storm Order for purposes of the Bene
-            Tleilaxu’s Revival Income, and the Bene Tleilaxu always revive their
+            Tleilaxu's Revival Income, and the Bene Tleilaxu always revive their
             forces and leaders last.
           </p>
           <h1>Force Revival</h1>
@@ -298,7 +298,7 @@ export function Phases_Revival() {
             </dd>
             <dt>To Reserves</dt>
             <dd>
-              <p>Revived forces must be placed in the player’s reserve.</p>
+              <p>Revived forces must be placed in the player's reserve.</p>
             </dd>
           </Definitions>
 
@@ -312,7 +312,7 @@ export function Phases_Revival() {
             <dt>Revival Cost</dt>
             <dd>
               <p>
-                To revive a leader, a player must pay that leader’s strength in
+                To revive a leader, a player must pay that leader's strength in
                 spice to the Bene Tleilaxu, or the Spice Bank if the Bene
                 Tleilaxu is not in the game.
               </p>
@@ -329,7 +329,7 @@ export function Phases_Revival() {
               <p>
                 If a revived leader is killed again, place it face down in the
                 Tleilaxu Tanks. This leader cannot be revived again until all of
-                the player’s other revivable leaders have been revived, killed,
+                the player's other revivable leaders have been revived, killed,
                 and sent to the Tleilaxu Tanks again.
               </p>
             </dd>
@@ -345,7 +345,7 @@ export function Phases_Mentat() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2}>Mentat Pause</Title>
+        <Title color={colors.blue2}>Mentat Pause</Title>
       </Spaced>
     </Fragment>
   );

@@ -5,7 +5,7 @@ import coverB from '../asset/cover/cover-b.svg';
 import coverC from '../asset/cover/cover-c.svg';
 import coverD from '../asset/cover/cover-d.svg';
 
-import { Faq } from './rulebook/Faq';
+import { Faq_1 } from './rulebook/Faq';
 import {
   Phases_Intro,
   Phases_Spice,
@@ -60,6 +60,6 @@ export const pages = [
   <Phases_Bidding />,
   <Phases_Revival />,
   <Phases_Mentat />,
-  <Faq />,
+  <Faq_1 />,
   <About_Dreams />,
 ];

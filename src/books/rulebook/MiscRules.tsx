@@ -2,14 +2,14 @@ import { Fragment } from 'react';
 import { Title } from '../../blocks/Title';
 import { NonBreaking, Text } from '../../blocks/Text';
 import { Spaced } from '../../blocks/Spaced';
-import { blue1 } from '../../presets/colors';
+import * as colors from '../../presets/colors';
 
 export function MiscRules() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue1} size="medium">
-          Miscelanous rules
+        <Title color={colors.blue1} size="medium">
+          Miscellaneous rules
         </Title>
         <Text columns={2}>
           <NonBreaking>

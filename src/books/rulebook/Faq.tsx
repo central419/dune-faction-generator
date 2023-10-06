@@ -2,13 +2,13 @@ import { Fragment } from 'react';
 import { Title } from '../../blocks/Title';
 import { NonBreaking, Text } from '../../blocks/Text';
 import { Spaced } from '../../blocks/Spaced';
-import { blue2 } from '../../presets/colors';
+import * as colors from '../../presets/colors';
 
-export function Faq() {
+export function Faq_1() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={blue2}>FAQ</Title>
+        <Title color={colors.blue2}>FAQ</Title>
         <Text columns={2} size={1.5}>
           <NonBreaking>
             <h2>
@@ -17,7 +17,7 @@ export function Faq() {
             </h2>
             <p>
               The normal strongholds on the board: Arrakeen, Carthag, Tabr
-              Seitch, Habanya Sietch, Tuek's Seitch; are of higher value than
+              Seitch, Habbanya Sietch, Tuek's Seitch; are of higher value than
               others
             </p>
             <p>
@@ -30,14 +30,14 @@ export function Faq() {
               Can a Ghola card let a player revive more than one Sardaukar or
               Fedaykin per turn?
             </h2>
-            <p>No, This revival limit of fedeykin cannot be circomvented.</p>
+            <p>No, This revival limit of Fedaykin cannot be circumvented.</p>
             <p>
-              The saudaukar revival limit can only be broken by Emperor's fate
-              ability, not by the Tleilaxy Ghola Treachery card.
+              The Sardaukar revival limit can only be broken by Emperor's fate
+              ability, not by the Tleilaxu Ghola Treachery card.
             </p>
           </NonBreaking>
           <NonBreaking>
-            <h2>How does paying for your ally’s treachery cards work?</h2>
+            <h2>How does paying for your ally's treachery cards work?</h2>
             <p>
               In the Bidding phase, a player may pay for part or all of the cost
               of a treachery card purchased by an ally.
@@ -53,10 +53,10 @@ export function Faq() {
             </p>
           </NonBreaking>
           <NonBreaking>
-            <h2>How does paying for your ally’s shipment work?</h2>
+            <h2>How does paying for your ally's shipment work?</h2>
             <p>
               During shipment a player may pay for part or all of the cost of an
-              ally’s shipment.
+              ally's shipment.
             </p>
             <p>
               The player gives this spice directly to the Guild (or the bank if
@@ -91,7 +91,7 @@ export function Faq() {
           <NonBreaking>
             <h2>
               When moving with ornithopters, can you pass THROUGH a space
-              containing your ally’s forces without ending your move there?
+              containing your ally's forces without ending your move there?
             </h2>
             <p>
               Yes, you are allowed to move over your ally's troops, but you
@@ -157,7 +157,7 @@ export function Faq() {
           </NonBreaking>
           <NonBreaking>
             <h2>
-              When Harkonnens steal a leader with their advanced ability, can
+              When Harkonnen steal a leader with their advanced ability, can
               they take a look at which leader they stole before they kill them
               or not?
             </h2>
