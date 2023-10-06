@@ -5,6 +5,25 @@ import { Spaced } from '../../blocks/Spaced';
 import { Outline } from '../../blocks/Outline';
 import { Definitions } from '../../blocks/Definitions';
 import * as colors from '../../presets/colors';
+import { size as cardSize } from '../../shared/card';
+import { nexus_1, nexus_yes } from '../../presets/nexus_cards';
+import { Fan } from '../../components/Fan';
+import { Wrapper } from '../../components/Wrapper';
+
+const order = [
+  'face_dancer',
+  'nexus',
+  'fate_swap',
+  'bidding',
+  'revival',
+  'spice_blow',
+  'shipment',
+  'battle',
+  'mentat',
+  'collection',
+  'ixian MDP',
+  'storm',
+];
 
 export function Phases_Intro() {
   return (
@@ -25,6 +44,203 @@ export function Phases_Intro() {
             <br />A faction's particular advantages always have precedence.
           </Outline>
         </Text>
+        <Title color={colors.blue2} size="medium">
+          Phase 1: Infiltration
+        </Title>
+        <Text columns={2}>
+          <Outline variant="generic">
+            <h2>Skip phase step when:</h2>
+            <ul>
+              <li>on Turn 1.</li>
+              <li>the Bene Tleilaxu faction wasn't drafted.</li>
+            </ul>
+          </Outline>
+          <p>
+            Bene Tleilaxu can discard 1 Traitor card to the Traitor discard deck
+            and draw 1 from the Traitor draw deck.
+          </p>
+
+          <p>
+            The player playing as Bene Tleilaxu can infiltrate factions by
+            revealing traitors cards from their hand of leaders in the Tleilaxu
+            Tanks.
+          </p>
+          <h2>Then, the following happens:</h2>
+          <ol>
+            <li>
+              <p>
+                The Traitor card is placed in front of the Bene Tleilaxu's
+                shield.
+              </p>
+            </li>
+            <li>
+              <p>
+                The Bene Tleilaxu places one of their leader discs on top of the
+                revealed Traitor card.
+              </p>
+            </li>
+            <li>
+              <p>
+                The faction that the Traitor card belongs to, now has a brief
+                time-window to call traitor on the Bene Tleilaxu leader placed
+                on top of the Traitor card.
+              </p>
+            </li>
+          </ol>
+          <NonBreaking>
+            <Text>
+              <p>
+                If the traitor is called, the Tleilaxu leader dies, and the
+                faction does not become infiltrated.
+              </p>
+              <h1>Infiltrated</h1>
+              <p>
+                If <strong>no</strong> traitor is called, the leader of the
+                Traitor card is revived (no cost) and return the the owner
+                faction.
+              </p>
+              <p>
+                From now on, the faction is infiltrated.
+                <br />
+                The leader of which the Traitor card is in front of the Bene
+                Tleilaxu is called the "infiltrating leader".
+              </p>
+              <hr />
+              <p>
+                When you are infiltrated, you must (whenever the Bene Tleilaxu
+                asks) provide the Bene Tleilaxu with the following information
+                (in secret):
+              </p>
+              <ul>
+                <li>Your Spice total in your personal Spice reserve.</li>
+                <li>Exactly which Treachery card you have.</li>
+                <li>
+                  The contents of your finalized battleplan before reveal.
+                </li>
+              </ul>
+              <h1>Ending infiltration</h1>
+              <p>This Infiltration lasts until the infiltrating leader dies.</p>
+              <p>
+                If an infiltrated faction wins the game Bene Tleilaxu win{' '}
+                <strong>along with</strong> them.
+              </p>
+            </Text>
+          </NonBreaking>
+        </Text>
+      </Spaced>
+    </Fragment>
+  );
+}
+
+export function Phases_Nexus() {
+  return (
+    <Fragment>
+      <Spaced>
+        <Title color={colors.blue2} size="medium">
+          Phase 2: Nexus
+        </Title>
+        <Text>
+          <Outline variant="example">
+            <p>
+              This phase is currently a work in progress. It's actively being
+              designed.
+            </p>
+          </Outline>
+        </Text>
+        <Text columns={2}>
+          <Outline variant="generic">
+            <h2>Skip this phase on Turn 1.</h2>
+          </Outline>
+          <NonBreaking>
+            <Text>
+              <h1>Nexus deck</h1>
+              <ol>
+                <li>Take 1 card from the Nexus deck.</li>
+                <li>Do what it says on the card.</li>
+              </ol>
+              <Outline variant="example">
+                <h3>No Nexus</h3>
+                <p>
+                  Draw <em>n</em> Nexus cards from the Nexus draw deck (one at a
+                  time), placing them on the Nexus discard deck.
+                </p>
+                <p>
+                  When the drawn card is titled <em>Perform Nexus</em>, then{' '}
+                  <strong>stop</strong> and perform the actions detailed on that
+                  card.
+                </p>
+              </Outline>
+              <Outline variant="example">
+                <h3>Perform Nexus</h3>
+                <ol>
+                  <li>Stop drawing cards.</li>
+                  <li>Perform a Nexus.</li>
+                  <li>
+                    Shuffle all Nexus cards back into a new Nexus draw deck
+                  </li>
+                </ol>
+              </Outline>
+              <p>The distribution of cards (total 20):</p>
+              <Definitions>
+                <dt>No Nexus</dt>
+                <dd>
+                  4 cards with the number: 4<br />
+                  5 cards with the number: 5<br />
+                  6 cards with the number: 6<br />
+                  4 cards with the number: 7<br />
+                </dd>
+                <dt>Perform Nexus</dt>
+                <dd>1 card</dd>
+              </Definitions>
+            </Text>
+          </NonBreaking>
+
+          <div style={{ padding: '0 10vw 4vw 10vw' }}>
+            <Fan size={cardSize} spacing={-20}>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {nexus_1}
+              </Wrapper>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {nexus_yes}
+              </Wrapper>
+            </Fan>
+          </div>
+          <NonBreaking>
+            <Text>
+              <h1>Forming alliances</h1>
+              <p>
+                When the card indicated there should be a Nexus, here are the
+                steps:
+              </p>
+              <ol>
+                <li>
+                  Players that are currently allied can break their alliance by
+                  returning the Alliance card they received, and taking back
+                  their own.
+                </li>
+                <li>
+                  Players can offer an alliance to 1 other player at a time.
+                  <br />
+                  They do this by offering their Alliance card.
+                </li>
+                <li>If the player choses to accept, the alliance is formed.</li>
+                <li>
+                  If the player choses to decline, they can offer to someone
+                  else.
+                </li>
+              </ol>
+            </Text>
+          </NonBreaking>
+        </Text>
+      </Spaced>
+    </Fragment>
+  );
+}
+
+export function Phases_Storm() {
+  return (
+    <Fragment>
+      <Spaced>
         <Title color={colors.blue2} size="medium">
           Phase 1: Storm
         </Title>
@@ -77,6 +293,7 @@ export function Phases_Intro() {
     </Fragment>
   );
 }
+
 export function Phases_Spice() {
   return (
     <Fragment>

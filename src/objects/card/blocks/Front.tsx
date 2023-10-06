@@ -60,12 +60,11 @@ export const Front = ({
       <Layer img={T.Layer.FRONT_DECAL_BG} />
 
       <Svg {...size}>
-        <FrontDecals {...{ decals, prefix }} />
-
         <FrontHead {...{ prefix, recolor, head }} />
 
         {side && <FrontAside {...{ prefix, ...side }} />}
         {leader && <FrontLeader {...{ prefix, ...leader }} />}
+        <FrontDecals {...{ decals, prefix }} />
       </Svg>
 
       <Layer img={T.Front[base]} />

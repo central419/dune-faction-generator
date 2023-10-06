@@ -12,6 +12,7 @@ import {
   Phases_Bidding,
   Phases_Revival,
   Phases_Mentat,
+  Phases_Nexus,
 } from './rulebook/Phases';
 import { Setup_1, Setup_2, Setup_3, Setup_4, Setup_5 } from './rulebook/Setup';
 import { Factions1, Factions2, Factions3 } from './rulebook/Factions';
@@ -56,6 +57,7 @@ export const pages = [
   <Setup_4 />,
   <Setup_5 />,
   <Phases_Intro />,
+  <Phases_Nexus />,
   <Phases_Spice />,
   <Phases_Bidding />,
   <Phases_Revival />,
