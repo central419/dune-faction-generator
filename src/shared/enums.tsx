@@ -255,7 +255,7 @@ const Shield_SPICE1 =
 const Shield_SPICE2 =
   'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-spice2.png';
 const Shield_TREACHERY =
-  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/treachery.png';
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-treachery.png';
 const Shield_WIND =
   'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-wind.png';
 const Head_BLACK =
