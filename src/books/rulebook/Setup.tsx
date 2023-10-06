@@ -15,7 +15,7 @@ import { Ball } from '../blocks/Ball';
 import { WithBottom } from '../blocks/Layouts';
 import { factions } from '../../presets/factions';
 import { Fan } from '../../components/Fan';
-import { BackCard } from '../../objects/card/back';
+import * as backs from '../../presets/back_cards';
 
 export const mapSize = { width: 487.06, height: 487.06 };
 
@@ -392,16 +392,16 @@ export function Setup_3() {
         <div style={{ width: '35vw', marginLeft: '4vw' }}>
           <Fan size={cardSize}>
             <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-              <BackCard base="BLACK" title="Traitor" shield="FACE" />
+              {backs.traitor}
             </Wrapper>
             <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-              <BackCard base="BLACK" title="Traitor" shield="FACE" />
+              {backs.traitor}
             </Wrapper>
             <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-              <BackCard base="BLACK" title="Traitor" shield="FACE" />
+              {backs.traitor}
             </Wrapper>
             <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-              <BackCard base="BLACK" title="Traitor" shield="FACE" />
+              {backs.traitor}
             </Wrapper>
           </Fan>
         </div>
@@ -412,7 +412,7 @@ export function Setup_3() {
 
 export function Setup_4() {
   return (
-    <Fragment>
+    <WithBottom>
       <Spaced>
         <Title color={colors.blue2} size="small">
           Setup Part 5 : Treachery & Fates
@@ -451,7 +451,61 @@ export function Setup_4() {
           </Text>
         </Text>
       </Spaced>
-    </Fragment>
+      <Text columns={2}>
+        <div
+          style={{
+            padding: '0 6vw',
+          }}
+        >
+          <Fan size={cardSize}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.fate}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.fate}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.fate}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.fate}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.fate}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.fate}
+            </Wrapper>
+          </Fan>
+        </div>
+        <div
+          style={{
+            padding: '0 6vw',
+          }}
+        >
+          <Fan size={cardSize}>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.treachery}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.treachery}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.treachery}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.treachery}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.treachery}
+            </Wrapper>
+            <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+              {backs.treachery}
+            </Wrapper>
+          </Fan>
+        </div>
+      </Text>
+    </WithBottom>
   );
 }
 

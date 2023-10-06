@@ -254,6 +254,8 @@ const Shield_SPICE1 =
   'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-spice1.png';
 const Shield_SPICE2 =
   'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-spice2.png';
+const Shield_TREACHERY =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/treachery.png';
 const Shield_WIND =
   'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/back/decal-wind.png';
 const Head_BLACK =
@@ -333,6 +335,7 @@ export enum Shield {
   MOONS = Shield_MOONS,
   SPICE1 = Shield_SPICE1,
   SPICE2 = Shield_SPICE2,
+  TREACHERY = Shield_TREACHERY,
   WIND = Shield_WIND,
 }
 
