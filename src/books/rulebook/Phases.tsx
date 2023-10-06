@@ -9,6 +9,7 @@ import { size as cardSize } from '../../shared/card';
 import { nexus_1, nexus_yes } from '../../presets/nexus_cards';
 import { Fan } from '../../components/Fan';
 import { Wrapper } from '../../components/Wrapper';
+import * as backs from '../../presets/back_cards';
 
 const order = [
   'face_dancer',
@@ -237,114 +238,52 @@ export function Phases_Nexus() {
   );
 }
 
-export function Phases_Storm() {
+export function Phases_Fate() {
   return (
     <Fragment>
       <Spaced>
         <Title color={colors.blue2} size="medium">
-          Phase 1: Storm
+          Phase 3: Fate swapping
         </Title>
         <Text columns={2}>
-          <p>
-            The Storm Marker is moved around the map. The faction whose Player
-            Marker the storm next approaches will be the First Player for this
-            turn.
-          </p>
-          <p>
-            In all subsequent Storm Phases, the two players who last used the
-            Battle Wheels will independently dial a whole number from 0 to 3,
-            simultaneously reveal their numbers, add them together, and then
-            advance the Storm Marker from its current position counterclockwise
-            around the map for the sum total of sectors.
-          </p>
-          <p>When both players dial 0, the storm moves 1.</p>
-          <h1>Damage</h1>
-          <p>
-            Any forces in a sector of sand territory (except the Imperial Basin)
-            over which the storm passes or stops are killed. Place these forces
-            in the Tleilaxu Tanks. Forces that are not on a sand territory are
-            protected from the storm. In addition any spice in a sector over
-            which a storm passes or stops is removed to the Spice Bank.
-          </p>
-          <h1>Obstruction</h1>
-          <p>Forces may not move into, out of, or through a sector in storm.</p>
           <Outline variant="generic">
-            <h1>First Turn</h1>
-            <p>
-              The first time the storm is moved, the Storm Marker is placed at a
-              random location along the map edge using either a D18 dice
-              (recommended) or using the following procedure:
-            </p>
-            <ol>
-              <li>
-                The two players whose player circles are nearest on either side
-                of the Storm Start Sector will secretly dial a number from 0 to
-                20 on the battle wheels.
-              </li>
-              <li>The two numbers are simultaneously revealed</li>
-              <li>
-                move Storm Marker from the Storm Start sector counterclockwise
-                around the map for the sum total of the 2 number.
-              </li>
-            </ol>
+            <h2>Skip this phase on Turn 1.</h2>
           </Outline>
-        </Text>
-      </Spaced>
-    </Fragment>
-  );
-}
-
-export function Phases_Spice() {
-  return (
-    <Fragment>
-      <Spaced>
-        <Title color={colors.blue2} size="medium">
-          Phase 2: Spice blow
-        </Title>
-        <Text columns={2}>
-          <ol>
-            <li>Reveal both card card A & B, simultaneously</li>
-            <li>Place spice / Shai-Halud tokens in the territory.</li>
-            <li>Draw & place extra a Spice Card(s) on any Shai-Halud card.</li>
-            <li>
-              Fremen may re-direct (if multiple) and ride the spawned Shai-Halud
-              tokens.
-            </li>
-            <li>
-              Set any 3rd Shai-Halud cards aside, shuffle them back into the
-              deck at the end of the phase.
-            </li>
-          </ol>
-          <Outline variant="generic">
-            <h1>First Turn</h1>
-            <p>
-              Any Shai-Halud cards that are drawn on turn 1, are set aside
-              instead.
-            </p>
-            <p>
-              They take no effect and are shuffled back into the Spice Deck at
-              the end of the phase.
-            </p>
-          </Outline>
-        </Text>
-        <Text>
           <p>
-            The Spice Deck never re-shuffles. By the end of turn 10, the
-            complete Spice Deck is used.
+            Every player may make a single 1:1 trade of a Fate card with another
+            player.
           </p>
-        </Text>
-        <Title color={colors.blue2} size="medium">
-          Phase 3: CHOAM charity
-        </Title>
-        <Text>
-          <p>
-            Any player with 0 or 1 spice can collect spice from the spice bank
-            to bring their total to 2 by calling out “CHOAM Charity.”.
-          </p>
-          <p>
-            Players are allowed to bribe each other during the CHOAM Charity
-            phase, to be able to use the charity.
-          </p>
+          <blockquote>
+            <p>You know this is a worthless card right?</p>
+            <p style={{ float: 'right' }}>~ Brodie</p>
+          </blockquote>
+          <div
+            style={{
+              padding: '0 14vw',
+              marginTop: '10vw',
+            }}
+          >
+            <Fan size={cardSize} spacing={-8}>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {backs.fate}
+              </Wrapper>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {backs.fate}
+              </Wrapper>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {backs.fate}
+              </Wrapper>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {backs.fate}
+              </Wrapper>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {backs.fate}
+              </Wrapper>
+              <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
+                {backs.fate}
+              </Wrapper>
+            </Fan>
+          </div>
         </Text>
         <Title color={colors.blue2} size="medium">
           Phase 4: Bidding
@@ -368,8 +307,8 @@ export function Phases_Spice() {
             auctioned off first, and the second pile second.
           </p>
           <h1>Auction</h1>
-          <p>
-            The first card in the stack is now auctioned for spice.
+          <p>The first card in the stack is now auctioned for spice.</p>
+          <ul>
             <li>
               The first player in Storm Order will open bidding on the first
               card. If that player already has 4 Treachery Cards the next player
@@ -383,12 +322,13 @@ export function Phases_Spice() {
               the Emperor is not in the game, and takes the card into their
               hand.
             </li>
-          </p>
+          </ul>
         </Text>
       </Spaced>
     </Fragment>
   );
 }
+
 export function Phases_Bidding() {
   return (
     <Fragment>
@@ -551,7 +491,80 @@ export function Phases_Revival() {
               </p>
             </dd>
           </Definitions>
-          <p></p>
+        </Text>
+      </Spaced>
+    </Fragment>
+  );
+}
+
+export function Phases_Spice() {
+  return (
+    <Fragment>
+      <Spaced>
+        <Title color={colors.blue2} size="medium">
+          Phase 6: Spice blow
+        </Title>
+        <Text columns={2}>
+          <ol>
+            <li>Reveal both card card A & B, simultaneously</li>
+            <li>Place spice / Shai-Halud tokens in the territory.</li>
+            <li>Draw & place extra a Spice Card(s) on any Shai-Halud card.</li>
+            <li>
+              Fremen may re-direct (if multiple) and ride the spawned Shai-Halud
+              tokens.
+            </li>
+            <li>
+              Set any 3rd Shai-Halud cards aside, shuffle them back into the
+              deck at the end of the phase.
+            </li>
+          </ol>
+          <Outline variant="generic">
+            <h1>First Turn</h1>
+            <p>
+              Any Shai-Halud cards that are drawn on turn 1, are set aside
+              instead.
+            </p>
+            <p>
+              They take no effect and are shuffled back into the Spice Deck at
+              the end of the phase.
+            </p>
+          </Outline>
+        </Text>
+        <Text>
+          <p>
+            The Spice Deck never re-shuffles. By the end of turn 10, the
+            complete Spice Deck is used.
+          </p>
+        </Text>
+      </Spaced>
+    </Fragment>
+  );
+}
+
+export function Phases_Movement() {
+  return (
+    <Fragment>
+      <Spaced>
+        <Title color={colors.blue2} size="medium">
+          Phase 7: Shipping & Movement
+        </Title>
+        <Text>
+          <p>TODO</p>
+        </Text>
+      </Spaced>
+    </Fragment>
+  );
+}
+
+export function Phases_Battle() {
+  return (
+    <Fragment>
+      <Spaced>
+        <Title color={colors.blue2} size="medium">
+          Phase 8: Battle
+        </Title>
+        <Text>
+          <p>TODO</p>
         </Text>
       </Spaced>
     </Fragment>
@@ -562,7 +575,83 @@ export function Phases_Mentat() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={colors.blue2}>Mentat Pause</Title>
+        <Title color={colors.blue2} size="medium">
+          Phase 9: Mentat Pause
+        </Title>
+        <Text>
+          <p>TODO</p>
+        </Text>
+        <Title color={colors.blue2} size="medium">
+          Phase 10: Collection
+        </Title>
+        <Text>
+          <p>Collect spice from spice-blows & strongholds.</p>
+          <p>
+            At the end on the Collection phase, in a single instant; any player
+            with 0 or 1 spice can collect spice from the spice bank to bring
+            their total to 2 by calling out “CHOAM Charity.”.
+          </p>
+          <p>
+            Players are allowed to bribe each other during the Collection phase,
+            to be able to use the charity.
+          </p>
+        </Text>
+      </Spaced>
+    </Fragment>
+  );
+}
+export function Phases_Storm() {
+  return (
+    <Fragment>
+      <Spaced>
+        <Title color={colors.blue2} size="medium">
+          Phase 11: Storm
+        </Title>
+        <Text columns={2}>
+          <p>
+            The Storm Marker is moved around the map. The faction whose Player
+            Marker the storm next approaches will be the First Player for this
+            turn.
+          </p>
+          <p>
+            In all subsequent Storm Phases, the two players who last used the
+            Battle Wheels will independently dial a whole number from 0 to 3,
+            simultaneously reveal their numbers, add them together, and then
+            advance the Storm Marker from its current position counterclockwise
+            around the map for the sum total of sectors.
+          </p>
+          <p>When both players dial 0, the storm moves 1.</p>
+          <h1>Damage</h1>
+          <p>
+            Any forces in a sector of sand territory (except the Imperial Basin)
+            over which the storm passes or stops are killed. Place these forces
+            in the Tleilaxu Tanks. Forces that are not on a sand territory are
+            protected from the storm. In addition any spice in a sector over
+            which a storm passes or stops is removed to the Spice Bank.
+          </p>
+          <h1>Obstruction</h1>
+          <p>Forces may not move into, out of, or through a sector in storm.</p>
+          <Outline variant="generic">
+            <h1>First Turn</h1>
+            <p>
+              The first time the storm is moved, the Storm Marker is placed at a
+              random location along the map edge using either a D18 dice
+              (recommended) or using the following procedure:
+            </p>
+            <ol>
+              <li>
+                The two players whose player circles are nearest on either side
+                of the Storm Start Sector will secretly dial a number from 0 to
+                20 on the battle wheels.
+              </li>
+              <li>The two numbers are simultaneously revealed</li>
+              <li>
+                move Storm Marker from the Storm Start sector counterclockwise
+                around the map for the sum total of the 2 number.
+              </li>
+            </ol>
+          </Outline>
+        </Text>
       </Spaced>
     </Fragment>
   );
