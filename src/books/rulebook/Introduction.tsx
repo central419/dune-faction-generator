@@ -29,8 +29,8 @@ export function Intro() {
             </p>
             <p>
               A faction has special advantages detailed on their faction sheets
-              that may contradict the rules. A faction&rsquo;s particular
-              advantages always have precedence over the rules.
+              that may contradict the rules. A faction's particular advantages
+              always have precedence over the rules.
             </p>
           </NonBreaking>
         </Text>

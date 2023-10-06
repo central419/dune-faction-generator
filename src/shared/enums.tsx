@@ -2,10 +2,10 @@ import Decal_Worthless_BALISET from '../asset/decal/baliset.svg';
 import Decal_Worthless_BIBLE from '../asset/decal/bible.svg';
 import Decal_Worthless_GAMOND from '../asset/decal/gamond.svg';
 import Decal_Worthless_CAMPFIRE from '../asset/decal/campfire.svg';
-import Decal_Worthless_JUBBACLOAK from '../asset/decal/jubbacloak.svg';
-import Decal_Worthless_KULLWAHAD from '../asset/decal/kullwahad.svg';
+import Decal_Worthless_JUBBA_CLOAK from '../asset/decal/jubbacloak.svg';
+import Decal_Worthless_KULL_WAHAD from '../asset/decal/kullwahad.svg';
 import Decal_Worthless_KULON from '../asset/decal/kulon.svg';
-import Decal_Worthless_SHOUTOUT from '../asset/decal/shoutout.svg';
+import Decal_Worthless_SHOUT_OUT from '../asset/decal/shoutout.svg';
 import Decal_Worthless_TRIP from '../asset/decal/trip.svg';
 import Decal_Worthless_CHICKEN from '../asset/decal/chicken.svg';
 
@@ -13,8 +13,8 @@ import Decal_Special_ARTILLERY from '../asset/decal/artillery.svg';
 import Decal_Special_BOX from '../asset/decal/box.svg';
 import Decal_Special_AMAL from '../asset/decal/amal.svg';
 import Decal_Special_ATOMICS from '../asset/decal/atomics.svg';
-import Decal_Special_CHEAPHERO from '../asset/decal/cheaphero.svg';
-import Decal_Special_CHEAPHEROINE from '../asset/decal/cheapheroine.svg';
+import Decal_Special_CHEAP_HERO from '../asset/decal/cheaphero.svg';
+import Decal_Special_CHEAP_HEROINE from '../asset/decal/cheapheroine.svg';
 import Decal_Special_HAJR from '../asset/decal/hajr.svg';
 import Decal_Special_HARVESTER1 from '../asset/decal/harvester1.svg';
 import Decal_Special_HARVESTER2 from '../asset/decal/harvester2.svg';
@@ -26,18 +26,18 @@ import Decal_Special_KARAMA2 from '../asset/decal/karama2.svg';
 import Decal_Special_KARAMA2MIN from '../asset/decal/karama2-min.svg';
 import Decal_Special_THUMPER from '../asset/decal/thumper.svg';
 import Decal_Special_THUMPER2 from '../asset/decal/thumper2.svg';
-import Decal_Special_TLEILAXUGHOLA from '../asset/decal/tleilaxughola.svg';
-import Decal_Special_TRUTHTRANCE from '../asset/decal/truthtrance.svg';
-import Decal_Special_WEATHERCONTROL from '../asset/decal/weathercontrol.svg';
+import Decal_Special_TLEILAXU_GHOLA from '../asset/decal/tleilaxughola.svg';
+import Decal_Special_TRUTH_TRANCE from '../asset/decal/truthtrance.svg';
+import Decal_Special_WEATHER_CONTROL from '../asset/decal/weathercontrol.svg';
 import Decal_Special_JUICE from '../asset/decal/juiceofsapho.svg';
 import Decal_Special_DISTRANCE from '../asset/decal/distrance.svg';
-import Decal_Special_FAMILYATOMICS from '../asset/decal/familyatomics.svg';
+import Decal_Special_FAMILY_ATOMICS from '../asset/decal/familyatomics.svg';
 
 import Decal_Other_BALANCE from '../asset/decal/balance.svg';
 import Decal_Other_BARGE from '../asset/decal/barge.svg';
 import Decal_Other_BRAIN from '../asset/decal/brain.svg';
-import Decal_Other_BREAKCONDITIONING from '../asset/decal/breakconditioning.svg';
-import Decal_Other_CHOAMSHARE from '../asset/decal/choamshare.svg';
+import Decal_Other_BREAK_CONDITIONING from '../asset/decal/breakconditioning.svg';
+import Decal_Other_CHOAM_SHARE from '../asset/decal/choamshare.svg';
 import Decal_Other_CITY from '../asset/decal/city.svg';
 import Decal_Other_FATE from '../asset/decal/fate.svg';
 import Decal_Other_DROPS from '../asset/decal/drops.svg';
@@ -51,18 +51,18 @@ import Decal_Other_MEMBRANE from '../asset/decal/membrane.svg';
 import Decal_Other_MERCENARIES from '../asset/decal/mercenaries.svg';
 import Decal_Other_ORNITHOPTER from '../asset/decal/ornithopter.svg';
 import Decal_Other_ORNITHOPTERS from '../asset/decal/ornithopters.svg';
-import Decal_Other_SHAIHALUD1 from '../asset/decal/shaihalud1.svg';
-import Decal_Other_SHAIHALUD2 from '../asset/decal/shaihalud2.svg';
-import Decal_Other_SHAIHALUD3 from '../asset/decal/shaihalud3.svg';
+import Decal_Other_SHAI_HULUD_1 from '../asset/decal/shaihalud1.svg';
+import Decal_Other_SHAI_HULUD_2 from '../asset/decal/shaihalud2.svg';
+import Decal_Other_SHAI_HULUD_3 from '../asset/decal/shaihalud3.svg';
 import Decal_Other_SILENCE from '../asset/decal/silence.svg';
 import Decal_Other_STORM1 from '../asset/decal/storm1.svg';
 import Decal_Other_STORM2 from '../asset/decal/storm2.svg';
 import Decal_Other_SUK from '../asset/decal/suk.svg';
-import Decal_Other_SWORDMASTER from '../asset/decal/swordmaster.svg';
+import Decal_Other_SWORD_MASTER from '../asset/decal/swordmaster.svg';
 import Decal_Other_TARGET from '../asset/decal/target.svg';
 import Decal_Other_TRAITOR from '../asset/decal/traitor.svg';
 import Decal_Other_TURN from '../asset/decal/turn.svg';
-import Decal_Other_WATEROFLIFE from '../asset/decal/wateroflife.svg';
+import Decal_Other_WATER_OF_LIFE from '../asset/decal/wateroflife.svg';
 import Decal_Other_CARRYALLS from '../asset/decal/carryalls.svg';
 import Decal_Other_CONE from '../asset/decal/cone.svg';
 import Decal_Other_WORTHLESS from '../asset/decal/worthless.svg';
@@ -83,7 +83,7 @@ import Decal_Weapon_BLADE from '../asset/decal/blade.svg';
 import Decal_Weapon_CHAUMAS from '../asset/decal/chaumas.svg';
 import Decal_Weapon_CRYSKNIFE from '../asset/decal/crysknife.svg';
 import Decal_Weapon_CHAUMURKY from '../asset/decal/chaumurky.svg';
-import Decal_Weapon_CUTTERRAY from '../asset/decal/cutterray.svg';
+import Decal_Weapon_CUTTER_RAY from '../asset/decal/cutterray.svg';
 import Decal_Weapon_ELLACA from '../asset/decal/ellaca.svg';
 import Decal_Weapon_FLAGELLA from '../asset/decal/flagella.svg';
 import Decal_Weapon_FLASK from '../asset/decal/flask.svg';
@@ -92,37 +92,37 @@ import Decal_Weapon_HUNTERSEEKER from '../asset/decal/hunterseeker.svg';
 import Decal_Weapon_INJECTION from '../asset/decal/injection.svg';
 import Decal_Weapon_KNIFE from '../asset/decal/knife.svg';
 import Decal_Weapon_LASGUN from '../asset/decal/lasgun.svg';
-import Decal_Weapon_LAZATIGER from '../asset/decal/lazatiger.svg';
+import Decal_Weapon_LAZA_TIGER from '../asset/decal/lazatiger.svg';
 import Decal_Weapon_LION from '../asset/decal/lion.svg';
-import Decal_Weapon_MAULAPISTOL from '../asset/decal/maulapistol.svg';
-import Decal_Weapon_POISONTOOTH from '../asset/decal/poisontooth.svg';
+import Decal_Weapon_MAULA_PISTOL from '../asset/decal/maulapistol.svg';
+import Decal_Weapon_POISON_TOOTH from '../asset/decal/poisontooth.svg';
 import Decal_Weapon_PROBE from '../asset/decal/probe.svg';
 import Decal_Weapon_SHIVE from '../asset/decal/shive.svg';
-import Decal_Weapon_STONEBURNER1 from '../asset/decal/stoneburner1.svg';
-import Decal_Weapon_STONEBURNER2 from '../asset/decal/stoneburner2.svg';
+import Decal_Weapon_STONE_BURNER_1 from '../asset/decal/stoneburner1.svg';
+import Decal_Weapon_STONE_BURNER_2 from '../asset/decal/stoneburner2.svg';
 import Decal_Weapon_STUNNER from '../asset/decal/stunner.svg';
 import Decal_Weapon_SUPPLIES from '../asset/decal/supplies.svg';
-import Decal_Weapon_SURINGE from '../asset/decal/suringe.svg';
+import Decal_Weapon_SYRINGE from '../asset/decal/suringe.svg';
 import Decal_Weapon_WIRE from '../asset/decal/wire.svg';
 import Decal_Weapon_ZENOBIA from '../asset/decal/zenobia.svg';
 import Decal_Weapon_MIRROR from '../asset/decal/mirrorweapon.svg';
 import Decal_Weapon_WEIRDING from '../asset/decal/weirdingway.svg';
 
-import Decal_Defence_BODYGUARD from '../asset/decal/bodyguard.svg';
-import Decal_Defence_FORCEDHONOUR from '../asset/decal/forcedhonour.svg';
-import Decal_Defence_SHIELD from '../asset/decal/shield.svg';
-import Decal_Defence_SHIELDSNOOPER from '../asset/decal/shieldsnooper.svg';
-import Decal_Defence_SHIRT from '../asset/decal/shirt.svg';
-import Decal_Defence_SNOOPER from '../asset/decal/snooper.svg';
-import Decal_Defence_CHEMISTRY from '../asset/decal/chemistry.svg';
-import Decal_Defence_PORTABLESNOOPER from '../asset/decal/portablesnooper.svg';
+import Decal_DEFENSE_BODYGUARD from '../asset/decal/bodyguard.svg';
+import Decal_DEFENSE_FORCED_HONOUR from '../asset/decal/forcedhonour.svg';
+import Decal_DEFENSE_SHIELD from '../asset/decal/shield.svg';
+import Decal_DEFENSE_SHIELDSNOOPER from '../asset/decal/shieldsnooper.svg';
+import Decal_DEFENSE_SHIRT from '../asset/decal/shirt.svg';
+import Decal_DEFENSE_SNOOPER from '../asset/decal/snooper.svg';
+import Decal_DEFENSE_CHEMISTRY from '../asset/decal/chemistry.svg';
+import Decal_DEFENSE_PORTABLE_SNOOPER from '../asset/decal/portablesnooper.svg';
 
 import Logo_Official_ATREIDES_LOGO from '../asset/logo/atreides.svg';
 import Logo_Official_BG_LOGO from '../asset/logo/bg.svg';
 import Logo_Official_BT_LOGO from '../asset/logo/bt.svg';
 import Logo_Official_BULL_LOGO from '../asset/logo/bull.svg';
-import Logo_Official_CEASAR_LOGO from '../asset/logo/ceasar.svg';
-import Logo_Official_CHAOM_LOGO from '../asset/logo/chaom.svg';
+import Logo_Official_CAESAR_LOGO from '../asset/logo/ceasar.svg';
+import Logo_Official_CHOAM_LOGO from '../asset/logo/chaom.svg';
 import Logo_Official_EMPEROR_LOGO from '../asset/logo/emperor.svg';
 import Logo_Official_FREMEN_LOGO from '../asset/logo/fremen.svg';
 import Logo_Official_GINAZ_LOGO from '../asset/logo/ginaz.svg';
@@ -195,7 +195,7 @@ import Troop_GUILD_TROOP from '../asset/troop/guild.svg';
 import Troop_LANDSRAAD_TROOP from '../asset/troop/landsraad.svg';
 import Troop_BT_TROOP from '../asset/troop/bt.svg';
 import Troop_HAGAL_TROOP from '../asset/troop/hagal.svg';
-import Troop_MORRITANI_TROOP from '../asset/troop/morritani.svg';
+import Troop_MORITANI_TROOP from '../asset/troop/morritani.svg';
 import Troop_UNKNOWN_TROOP from '../asset/troop/unknown.svg';
 import Troop_CYMECS_TROOP from '../asset/troop/cymecs.svg';
 import Troop_HARKONNEN_TROOP from '../asset/troop/harkonnen.svg';
@@ -284,12 +284,12 @@ const Icon_SPECIAL_STORM =
   'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/special-storm.png';
 const Icon_SPECIAL_TRAITOR =
   'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/special-traitor.png';
-const Icon_DEFENCE_BOLT =
-  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/defence-bolt.png';
-const Icon_DEFENCE_SHIELD =
-  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/defence-shield.png';
-const Icon_DEFENCE_SNOOPER =
-  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/defence-snooper.png';
+const Icon_DEFENSE_BOLT =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/DEFENSE-bolt.png';
+const Icon_DEFENSE_SHIELD =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/DEFENSE-shield.png';
+const Icon_DEFENSE_SNOOPER =
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/DEFENSE-snooper.png';
 const Icon_WEAPON_BOLT =
   'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/weapon-bolt.png';
 const Icon_WEAPON_POISON =
@@ -355,9 +355,9 @@ export enum Icon {
   SPECIAL_STORM = Icon_SPECIAL_STORM,
   SPECIAL_TRAITOR = Icon_SPECIAL_TRAITOR,
 
-  DEFENCE_BOLT = Icon_DEFENCE_BOLT,
-  DEFENCE_SHIELD = Icon_DEFENCE_SHIELD,
-  DEFENCE_SNOOPER = Icon_DEFENCE_SNOOPER,
+  DEFENSE_BOLT = Icon_DEFENSE_BOLT,
+  DEFENSE_SHIELD = Icon_DEFENSE_SHIELD,
+  DEFENSE_SNOOPER = Icon_DEFENSE_SNOOPER,
 
   WEAPON_BOLT = Icon_WEAPON_BOLT,
   WEAPON_POISON = Icon_WEAPON_POISON,
@@ -372,18 +372,18 @@ export enum Decal_Worthless {
   BIBLE = Decal_Worthless_BIBLE,
   GAMOND = Decal_Worthless_GAMOND,
   CAMPFIRE = Decal_Worthless_CAMPFIRE,
-  JUBBACLOAK = Decal_Worthless_JUBBACLOAK,
-  KULLWAHAD = Decal_Worthless_KULLWAHAD,
+  JUBBA_CLOAK = Decal_Worthless_JUBBA_CLOAK,
+  KULL_WAHAD = Decal_Worthless_KULL_WAHAD,
   KULON = Decal_Worthless_KULON,
-  SHOUTOUT = Decal_Worthless_SHOUTOUT,
+  SHOUT_OUT = Decal_Worthless_SHOUT_OUT,
   TRIP = Decal_Worthless_TRIP,
   CHICKEN = Decal_Worthless_CHICKEN,
 }
 export enum Decal_Special {
   AMAL = Decal_Special_AMAL,
   ATOMICS = Decal_Special_ATOMICS,
-  CHEAPHERO = Decal_Special_CHEAPHERO,
-  CHEAPHEROINE = Decal_Special_CHEAPHEROINE,
+  CHEAP_HERO = Decal_Special_CHEAP_HERO,
+  CHEAP_HEROINE = Decal_Special_CHEAP_HEROINE,
   HAJR = Decal_Special_HAJR,
   HARVESTER1 = Decal_Special_HARVESTER1,
   KARAMA1 = Decal_Special_KARAMA1,
@@ -392,9 +392,9 @@ export enum Decal_Special {
   KARAMA2MIN = Decal_Special_KARAMA2MIN,
   THUMPER = Decal_Special_THUMPER,
   THUMPER2 = Decal_Special_THUMPER2,
-  TLEILAXUGHOLA = Decal_Special_TLEILAXUGHOLA,
-  TRUTHTRANCE = Decal_Special_TRUTHTRANCE,
-  WEATHERCONTROL = Decal_Special_WEATHERCONTROL,
+  TLEILAXU_GHOLA = Decal_Special_TLEILAXU_GHOLA,
+  TRUTH_TRANCE = Decal_Special_TRUTH_TRANCE,
+  WEATHER_CONTROL = Decal_Special_WEATHER_CONTROL,
   ARTILLERY = Decal_Special_ARTILLERY,
   BOX = Decal_Special_BOX,
   HARVESTER2 = Decal_Special_HARVESTER2,
@@ -402,15 +402,15 @@ export enum Decal_Special {
   KARAMA = Decal_Special_KARAMA,
   JUICE = Decal_Special_JUICE,
   DISTRANCE = Decal_Special_DISTRANCE,
-  FAMILYATOMICS = Decal_Special_FAMILYATOMICS,
+  FAMILY_ATOMICS = Decal_Special_FAMILY_ATOMICS,
 }
 export enum Decal_Other {
   SUPPLIES = Decal_Other_SUPPLIES,
   BALANCE = Decal_Other_BALANCE,
   BARGE = Decal_Other_BARGE,
   BRAIN = Decal_Other_BRAIN,
-  BREAKCONDITIONING = Decal_Other_BREAKCONDITIONING,
-  CHOAMSHARE = Decal_Other_CHOAMSHARE,
+  BREAK_CONDITIONING = Decal_Other_BREAK_CONDITIONING,
+  CHOAM_SHARE = Decal_Other_CHOAM_SHARE,
   CITY = Decal_Other_CITY,
   FATE = Decal_Other_FATE,
   DROPS = Decal_Other_DROPS,
@@ -424,18 +424,18 @@ export enum Decal_Other {
   MERCENARIES = Decal_Other_MERCENARIES,
   ORNITHOPTER = Decal_Other_ORNITHOPTER,
   ORNITHOPTERS = Decal_Other_ORNITHOPTERS,
-  SHAIHALUD1 = Decal_Other_SHAIHALUD1,
-  SHAIHALUD2 = Decal_Other_SHAIHALUD2,
-  SHAIHALUD3 = Decal_Other_SHAIHALUD3,
+  SHAI_HULUD_1 = Decal_Other_SHAI_HULUD_1,
+  SHAI_HULUD_2 = Decal_Other_SHAI_HULUD_2,
+  SHAI_HULUD_3 = Decal_Other_SHAI_HULUD_3,
   SILENCE = Decal_Other_SILENCE,
   STORM1 = Decal_Other_STORM1,
   STORM2 = Decal_Other_STORM2,
   SUK = Decal_Other_SUK,
-  SWORDMASTER = Decal_Other_SWORDMASTER,
+  SWORD_MASTER = Decal_Other_SWORD_MASTER,
   TARGET = Decal_Other_TARGET,
   TRAITOR = Decal_Other_TRAITOR,
   TURN = Decal_Other_TURN,
-  WATEROFLIFE = Decal_Other_WATEROFLIFE,
+  WATER_OF_LIFE = Decal_Other_WATER_OF_LIFE,
   CARRYALLS = Decal_Other_CARRYALLS,
   CONE = Decal_Other_CONE,
   WORTHLESS = Decal_Other_WORTHLESS,
@@ -455,7 +455,7 @@ export enum Decal_Weapon {
   BLADE = Decal_Weapon_BLADE,
   CHAUMAS = Decal_Weapon_CHAUMAS,
   CHAUMURKY = Decal_Weapon_CHAUMURKY,
-  CUTTERRAY = Decal_Weapon_CUTTERRAY,
+  CUTTER_RAY = Decal_Weapon_CUTTER_RAY,
   ELLACA = Decal_Weapon_ELLACA,
   FLAGELLA = Decal_Weapon_FLAGELLA,
   FLASK = Decal_Weapon_FLASK,
@@ -465,31 +465,31 @@ export enum Decal_Weapon {
   INJECTION = Decal_Weapon_INJECTION,
   KNIFE = Decal_Weapon_KNIFE,
   LASGUN = Decal_Weapon_LASGUN,
-  LAZATIGER = Decal_Weapon_LAZATIGER,
+  LAZA_TIGER = Decal_Weapon_LAZA_TIGER,
   LION = Decal_Weapon_LION,
-  MAULAPISTOL = Decal_Weapon_MAULAPISTOL,
-  POISONTOOTH = Decal_Weapon_POISONTOOTH,
+  MAULA_PISTOL = Decal_Weapon_MAULA_PISTOL,
+  POISON_TOOTH = Decal_Weapon_POISON_TOOTH,
   PROBE = Decal_Weapon_PROBE,
   SHIVE = Decal_Weapon_SHIVE,
-  STONEBURNER1 = Decal_Weapon_STONEBURNER1,
-  STONEBURNER2 = Decal_Weapon_STONEBURNER2,
+  STONE_BURNER_1 = Decal_Weapon_STONE_BURNER_1,
+  STONE_BURNER_2 = Decal_Weapon_STONE_BURNER_2,
   STUNNER = Decal_Weapon_STUNNER,
   SUPPLIES = Decal_Weapon_SUPPLIES,
-  SURINGE = Decal_Weapon_SURINGE,
+  SYRINGE = Decal_Weapon_SYRINGE,
   WIRE = Decal_Weapon_WIRE,
   ZENOBIA = Decal_Weapon_ZENOBIA,
   MIRROR = Decal_Weapon_MIRROR,
   WEIRDING = Decal_Weapon_WEIRDING,
 }
-export enum Decal_Defence {
-  BODYGUARD = Decal_Defence_BODYGUARD,
-  FORCEDHONOUR = Decal_Defence_FORCEDHONOUR,
-  SHIELD = Decal_Defence_SHIELD,
-  SHIELDSNOOPER = Decal_Defence_SHIELDSNOOPER,
-  SHIRT = Decal_Defence_SHIRT,
-  SNOOPER = Decal_Defence_SNOOPER,
-  CHEMISTRY = Decal_Defence_CHEMISTRY,
-  PORTABLESNOOPER = Decal_Defence_PORTABLESNOOPER,
+export enum Decal_DEFENSE {
+  BODYGUARD = Decal_DEFENSE_BODYGUARD,
+  FORCED_HONOUR = Decal_DEFENSE_FORCED_HONOUR,
+  SHIELD = Decal_DEFENSE_SHIELD,
+  SHIELDSNOOPER = Decal_DEFENSE_SHIELDSNOOPER,
+  SHIRT = Decal_DEFENSE_SHIRT,
+  SNOOPER = Decal_DEFENSE_SNOOPER,
+  CHEMISTRY = Decal_DEFENSE_CHEMISTRY,
+  PORTABLE_SNOOPER = Decal_DEFENSE_PORTABLE_SNOOPER,
 }
 
 export enum Logo_Official {
@@ -497,8 +497,8 @@ export enum Logo_Official {
   BG_LOGO = Logo_Official_BG_LOGO,
   BT_LOGO = Logo_Official_BT_LOGO,
   BULL_LOGO = Logo_Official_BULL_LOGO,
-  CEASAR_LOGO = Logo_Official_CEASAR_LOGO,
-  CHAOM_LOGO = Logo_Official_CHAOM_LOGO,
+  CAESAR_LOGO = Logo_Official_CAESAR_LOGO,
+  CHOAM_LOGO = Logo_Official_CHOAM_LOGO,
   EMPEROR_LOGO = Logo_Official_EMPEROR_LOGO,
   FREMEN_LOGO = Logo_Official_FREMEN_LOGO,
   GINAZ_LOGO = Logo_Official_GINAZ_LOGO,
@@ -582,7 +582,7 @@ export enum Troop {
   LANDSRAAD_TROOP = Troop_LANDSRAAD_TROOP,
   BT_TROOP = Troop_BT_TROOP,
   HAGAL_TROOP = Troop_HAGAL_TROOP,
-  MORRITANI_TROOP = Troop_MORRITANI_TROOP,
+  MORITANI_TROOP = Troop_MORITANI_TROOP,
   UNKNOWN_TROOP = Troop_UNKNOWN_TROOP,
   CYMECS_TROOP = Troop_CYMECS_TROOP,
   HARKONNEN_TROOP = Troop_HARKONNEN_TROOP,
@@ -597,7 +597,7 @@ export enum Troop_Stars {
 }
 
 export const Decal = {
-  ...Decal_Defence,
+  ...Decal_DEFENSE,
   ...Decal_Worthless,
   ...Decal_Special,
   ...Decal_Other,

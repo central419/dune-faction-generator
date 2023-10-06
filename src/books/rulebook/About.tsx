@@ -24,7 +24,7 @@ export function About_Dreams() {
             The original Dreamrules was for the base game and it was a rather
             simple mesh of GF9 rules and the World Boardgame Championship rules
             where we mixed aspects we liked from both and tried to limit what we
-            consider broken mechanics. It was fun, but still had a few ‘flaws’
+            consider broken mechanics. It was fun, but still had a few 'flaws'
             from the original Dune and the faction changes we made were not
             balanced.
           </p>
@@ -39,7 +39,7 @@ export function About_Dreams() {
           <h1>The Design Goals were as follows:</h1>
           <ul>
             <li>
-              Remove broken/unfun mechanics (Harkonnen Special Karama, Guild
+              Remove broken/un-fun mechanics (Harkonnen Special Karama, Guild
               Timeout Victory, certain Treachery cards)
             </li>
             <li>
@@ -51,7 +51,7 @@ export function About_Dreams() {
               Treachery Cards
             </li>
             <li>Balance factions, especially the Fremen</li>
-            <li>Reduce the likelihood of Early Nexus&rsquo;s</li>
+            <li>Reduce the likelihood of Early Nexus's</li>
             <li>Make 10 turn games less likely</li>
             <li>Make skirmishes outside strongholds more necessary and fun</li>
             <li>
@@ -63,8 +63,8 @@ export function About_Dreams() {
           <ul>
             <li>Balance Ixians</li>
             <li>
-              Overhaul Tleilaxu completely, we honestly didn&rsquo;t know where
-              to begin.
+              Overhaul Tleilaxu completely, we honestly didn't know where to
+              begin.
             </li>
           </ul>
         </Text>
@@ -87,7 +87,7 @@ export function About_Welcome() {
                 <li>The board</li>
                 <li>Cards</li>
                 <li>Tech Tokens</li>
-                <li>Factons</li>
+                <li>Factions</li>
                 <li>...</li>
                 <li>...</li>
                 <li>...</li>
@@ -99,8 +99,8 @@ export function About_Welcome() {
               <h1>About dreamrules</h1>
               <p>
                 This document consists of the full rules for the Dream Rules
-                variant of Gale Force Nine&rsquo;s reprint of Dune and their
-                Ixians and Tleilaxu expansion.
+                variant of Gale Force Nine's reprint of Dune and their Ixians
+                and Tleilaxu expansion.
               </p>
               <p>Dream Rules Dune is a game best played with Six players.</p>
               <p>
@@ -146,7 +146,7 @@ export function About_Welcome() {
                         <li>let us</li>
                         <li>add</li>
                         <li>all the</li>
-                        <li>playtesters</li>
+                        <li>play-testers</li>
                         <li>here...</li>
                       </ul>
                     </div>

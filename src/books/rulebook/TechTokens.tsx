@@ -37,7 +37,7 @@ export function TechTokens() {
           </p>
           <p>
             The fourth tech token: the Spice Mine tech token is described on
-            house Atreides&rsquo;s faction sheet and is not distributed with the
+            house Atreides's faction sheet and is not distributed with the
             others.
           </p>
           <p>

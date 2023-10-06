@@ -54,7 +54,7 @@ export const sheet: Faction = {
   __typename: 'Faction',
   name: 'House Atreides',
   description: dedent`
-    House Atreides, led by the youthful Paul Atreides (Muad&rsquo;Dib) &mdash; rightful heir to the planet, gifted with valiant lieutenants and a strange partial awareness of the future, but beset by more powerful and treacherous opponents.
+    House Atreides, led by the youthful Paul Atreides (Muad'Dib) &mdash; rightful heir to the planet, gifted with valiant lieutenants and a strange partial awareness of the future, but beset by more powerful and treacherous opponents.
   `,
   assets: assets({
     logo: 'ATREIDES_LOGO',

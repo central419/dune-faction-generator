@@ -20,7 +20,7 @@ export const baliset = (
   />
 );
 
-export const maulapistol = (
+export const maula_pistol = (
   <TreacheryCard
     head="BLOOD"
     title={['Maula Pistol', 1]}
@@ -32,7 +32,7 @@ export const maulapistol = (
       `,
       1,
     ]}
-    decals={[{ id: 'MAULAPISTOL' }]}
+    decals={[{ id: 'MAULA_PISTOL' }]}
     icon="WEAPON_PROJECTILE"
     sub={['Weapon - Projectile', 1]}
     release={undefined}
@@ -53,7 +53,7 @@ export const shield = (
       1,
     ]}
     decals={[{ id: 'SHIELD' }]}
-    icon="DEFENCE_SHIELD"
+    icon="DEFENSE_SHIELD"
     sub={['Defense - Projectile', 1]}
     release={undefined}
     recolor={[]}
@@ -73,7 +73,7 @@ export const snooper = (
       1,
     ]}
     decals={[{ id: 'SNOOPER' }]}
-    icon="DEFENCE_SNOOPER"
+    icon="DEFENSE_SNOOPER"
     sub={['Defense - Poison', 1]}
     release={undefined}
     recolor={[]}
@@ -120,7 +120,7 @@ export const trishula = (
     recolor={[]}
   />
 );
-export const phrinepen = (
+export const phrine_pen = (
   <TreacheryCard
     head="OCEAN"
     title={['Supplies! Phrine Pen', 1]}
@@ -133,14 +133,14 @@ export const phrinepen = (
       `,
       1,
     ]}
-    decals={[{ id: 'PORTABLESNOOPER' }]}
-    icon="DEFENCE_SNOOPER"
+    decals={[{ id: 'PORTABLE_SNOOPER' }]}
+    icon="DEFENSE_SNOOPER"
     sub={['Defense - Poison', 1]}
     release={'HOMEBREW'}
     recolor={[]}
   />
 );
-export const supshield = (
+export const sup_shield = (
   <TreacheryCard
     head="OCEAN"
     title={['Supplies! Shield', 0.9]}
@@ -154,7 +154,7 @@ export const supshield = (
       1,
     ]}
     decals={[{ id: 'TARGET' }]}
-    icon="DEFENCE_SHIELD"
+    icon="DEFENSE_SHIELD"
     sub={['Defense - Projectile', 1]}
     release={'HOMEBREW'}
     recolor={[]}
@@ -179,7 +179,7 @@ export const chaumas = (
     recolor={[]}
   />
 );
-export const weirdingway = (
+export const weirding_way = (
   <TreacheryCard
     head="BLOOD"
     title={['Weirding Way', 1]}
@@ -231,7 +231,7 @@ export const chemistry = (
       1,
     ]}
     decals={[{ id: 'CHEMISTRY' }]}
-    icon="DEFENCE_BOLT"
+    icon="DEFENSE_BOLT"
     sub={['Defense - Weapon - Special', 1]}
     release={undefined}
     recolor={[]}
@@ -259,7 +259,7 @@ export const karama = (
   />
 );
 
-export const truthtrance = (
+export const truth_trance = (
   <TreacheryCard
     head="MUSH"
     title={['Truth Trance', 1]}
@@ -270,14 +270,14 @@ export const truthtrance = (
       `,
       1,
     ]}
-    decals={[{ id: 'TRUTHTRANCE' }]}
+    decals={[{ id: 'TRUTH_TRANCE' }]}
     icon="SPECIAL_HAND"
     sub={['Special', 1]}
     release={undefined}
     recolor={[]}
   />
 );
-export const cheaphero = (
+export const cheap_hero = (
   <TreacheryCard
     head="MUSH"
     title={['Cheap Hero', 1]}
@@ -288,14 +288,14 @@ export const cheaphero = (
       `,
       1,
     ]}
-    decals={[{ id: 'CHEAPHERO' }]}
+    decals={[{ id: 'CHEAP_HERO' }]}
     icon="SPECIAL_HAND"
     sub={['Special - Leader', 1]}
     release={undefined}
     recolor={[]}
   />
 );
-export const cheapheroine = (
+export const cheap_heroine = (
   <TreacheryCard
     head="MUSH"
     title={['Cheap Heroine', 1]}
@@ -306,14 +306,14 @@ export const cheapheroine = (
       `,
       1,
     ]}
-    decals={[{ id: 'CHEAPHEROINE' }]}
+    decals={[{ id: 'CHEAP_HEROINE' }]}
     icon="SPECIAL_HAND"
     sub={['Special - Leader', 1]}
     release={undefined}
     recolor={[]}
   />
 );
-export const weathercontrol = (
+export const weather_control = (
   <TreacheryCard
     head="MUSH"
     title={['Weather Control', 1]}
@@ -324,14 +324,14 @@ export const weathercontrol = (
       `,
       1,
     ]}
-    decals={[{ id: 'WEATHERCONTROL' }]}
+    decals={[{ id: 'WEATHER_CONTROL' }]}
     icon="SPECIAL_HAND"
     sub={['Special', 1]}
     release={undefined}
     recolor={[]}
   />
 );
-export const familyatomics = (
+export const family_atomics = (
   <TreacheryCard
     head="MUSH"
     title={['Family Atomics', 1]}
@@ -342,7 +342,7 @@ export const familyatomics = (
       `,
       1,
     ]}
-    decals={[{ id: 'FAMILYATOMICS', outline: true }]}
+    decals={[{ id: 'FAMILY_ATOMICS', outline: true }]}
     icon="SPECIAL_HAND"
     sub={['Special', 1]}
     release={undefined}
@@ -355,7 +355,7 @@ export const mercenaries = (
     title={['Mercenaries', 1]}
     content={[
       dedent`
-        Play in your Battle Plan besides weapons or defences. You may play only 1 Mercenaries per Battle Plan.
+        Play in your Battle Plan besides weapons or DEFENSEs. You may play only 1 Mercenaries per Battle Plan.
         Add +1 to your number dialed and win ties regardless of Storm Order.
         You may keep this card if you win the battle.
       `,

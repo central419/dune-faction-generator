@@ -58,13 +58,13 @@ export function Cards_Intro() {
             </dt>
             <dd>
               <p>
-                6 Cards, each one mimicks a specific worthless Treachery Card.
+                6 Cards, each one mimics a specific worthless Treachery Card.
               </p>
             </dd>
             <dt>Alliance deck</dt>
             <dd>
               <p>
-                1 card per faction, each detailing a specific faction's aliance
+                1 card per faction, each detailing a specific faction's alliance
                 ability.
                 <br />
                 use these to remind who is allied tho whom, and what the faction
@@ -119,7 +119,7 @@ export function Cards_Intro() {
           <ul>
             <li>3x Cheap Hero, 2 male 1 female</li>
             <li>2x Karama Cards, generic</li>
-            <li>2x Truthtrance Cards, generic</li>
+            <li>2x Truth Trance Cards, generic</li>
             <li>2x Mercenaries, generic</li>
             <li>1x Hajr</li>
             <li>1x Weather Control</li>
@@ -188,19 +188,19 @@ export function TreacheryCards1() {
           <div style={{ padding: '2vw 6vw', width: '20vw' }}>
             <Fan size={cardSize} spacing={-3}>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.maulapistol}
+                {card.maula_pistol}
               </Wrapper>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.maulapistol}
+                {card.maula_pistol}
               </Wrapper>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.maulapistol}
+                {card.maula_pistol}
               </Wrapper>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.maulapistol}
+                {card.maula_pistol}
               </Wrapper>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.maulapistol}
+                {card.maula_pistol}
               </Wrapper>
             </Fan>
           </div>
@@ -248,7 +248,7 @@ export function TreacheryCards1() {
             <h1>Poison Weapons</h1>
             <p>
               There are 5 standard poison weapons in the Treachery deck: <br />
-              Gom Jabbar, Chaumas, Chaumurky, Basilia weapon & Elleca drug.
+              GomJabbar, Chaumas, Chaumurky, Basilia weapon & Ellaca drug.
             </p>
             <p>
               Playing this card in your battle plan will kill the opponent's
@@ -280,7 +280,7 @@ export function TreacheryCards2() {
           <div style={{ width: '24vw' }}>
             <Fan size={cardSize} spacing={-3}>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.weirdingway}
+                {card.weirding_way}
               </Wrapper>
             </Fan>
           </div>
@@ -519,7 +519,7 @@ export function KaramaCard() {
             <Text>
               <Outline variant="example">
                 <p>
-                  When you play a karama to stop the Atreides bidding presience
+                  When you play a karama to stop the Atreides bidding prescience
                   advantage, the Atreides can't look at <strong>any</strong>{' '}
                   cards that bidding phase.
                 </p>
@@ -541,10 +541,10 @@ export function KaramaCard() {
           </p>
           <p>
             Certain advantages have a narrow time-window when you can play the
-            karama to block them. This is also decribed on the second page.
+            karama to block them. This is also described on the second page.
           </p>
           <p>
-            <strong>EXAMPLES:</strong>
+            <b>EXAMPLES:</b>
           </p>
         </Text>
         <Text columns={2}>
@@ -580,10 +580,10 @@ export function TruthTranceCard() {
           <div style={{ padding: '1vw 2vw', width: '24vw' }}>
             <Fan size={cardSize} spacing={-3}>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.truthtrance}
+                {card.truth_trance}
               </Wrapper>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.truthtrance}
+                {card.truth_trance}
               </Wrapper>
             </Fan>
           </div>
@@ -606,7 +606,7 @@ export function TruthTranceCard() {
           <p>When a truth trance card is played, no game actions can happen:</p>
           <ul>
             <li>No binding deals can be made during this time.</li>
-            <li>No cards can be played, including other truthtrance cards.</li>
+            <li>No cards can be played, including other Truth Trance cards.</li>
           </ul>
           <h1>Binding future actions</h1>
           <p>
@@ -621,7 +621,7 @@ export function TruthTranceCard() {
           </p>
           <h1>What questions are allowed?</h1>
           <p>
-            Some player discretions is needed, it's possible for extreme toxic
+            Some player discretion is needed, it's possible for extreme toxic
             play to happen with either deliberately unclear questions, or
             questions that are effectively a card-blanc "you must do exactly the
             thing i decide you must do".
@@ -685,13 +685,13 @@ export function TreacheryCards4() {
           <div style={{ padding: '1vw 4vw', width: '22vw' }}>
             <Fan size={cardSize} spacing={-3}>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.cheaphero}
+                {card.cheap_hero}
               </Wrapper>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.cheaphero}
+                {card.cheap_hero}
               </Wrapper>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.cheapheroine}
+                {card.cheap_heroine}
               </Wrapper>
             </Fan>
           </div>
@@ -732,7 +732,7 @@ export function TreacheryCards4() {
           <div style={{ width: '17vw' }}>
             <Fan size={cardSize} spacing={-3}>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.weathercontrol}
+                {card.weather_control}
               </Wrapper>
             </Fan>
           </div>
@@ -750,7 +750,7 @@ export function TreacheryCards4() {
           <div style={{ width: '17vw' }}>
             <Fan size={cardSize} spacing={-3}>
               <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                {card.familyatomics}
+                {card.family_atomics}
               </Wrapper>
             </Fan>
           </div>
@@ -764,7 +764,7 @@ export function TreacheryCards4() {
             </p>
             <p>
               You can only play this card if you have at least 1 troop in an
-              territory adjecent or on the Shieldwall territory.
+              territory adjacent or on the Shieldwall territory.
               <br />
               If the storm is in the way, you cannot use Family Atomics.
             </p>
@@ -847,10 +847,10 @@ export function TreacheryCards5() {
                   {card.trishula}
                 </Wrapper>
                 <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                  {card.phrinepen}
+                  {card.phrine_pen}
                 </Wrapper>
                 <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
-                  {card.supshield}
+                  {card.sup_shield}
                 </Wrapper>
               </Fan>
             </div>
@@ -860,7 +860,7 @@ export function TreacheryCards5() {
             <p>There's 1 Supplies! card in the Treachery deck.</p>
             <p>
               You can play this card at any time, within the following
-              contraint:
+              constraint:
               <br />
               You cannot play this between the time-window of Voice and battle
               plan reveal.
