@@ -293,12 +293,15 @@ export function Phases_Fate() {
           <p>
             Each faction must publicly reveal the number of Treachery Cards in
             their hands. A player can never have more than four cards in their
-            hand at any one time. A player cannot bid for Treachery Cards if
-            they are at their hand limits.
+            hand at any one time.
+          </p>
+          <p>
+            A player cannot bid for Treachery Cards if they are at their hand
+            limits.
           </p>
           <h1>Dealer</h1>
           <p>
-            Count the number of factions not at their hand limits, and for each
+            Count the number of factions not at their hand limit, and for each
             of them set aside one card from the top of the Treachery deck. If
             the Treachery deck has fewer cards than players who can bid, the
             cards remaining in the deck are set aside. The discard pile is then
@@ -337,12 +340,14 @@ export function Phases_Bidding() {
           <h1>Bid Limit</h1>
           <p>
             No player may bid more spice than they have, except with permission
-            from their ally if any, or the Emperor. If a faction wins the
-            bidding, but cannot pay for the card due to not having enough spice,
-            the bid is considered illegal and the bidding on the card in
-            question is restarted with the same starting bidder, however the
-            player who made the illegal bid is unable to bid on that Treachery
-            Card.
+            from their ally if any, or the Emperor.
+          </p>
+          <p>
+            If a faction wins the bidding, but cannot pay for the card due to
+            not having enough spice, the bid is considered illegal and the
+            bidding on the card in question is restarted with the same starting
+            bidder, however the player who made the illegal bid is unable to bid
+            on that Treachery Card.
           </p>
           <h1>Next Starting Bidder</h1>
           <p>
@@ -354,17 +359,21 @@ export function Phases_Bidding() {
           <h1>End of Bidding</h1>
           <p>
             Bidding for Treachery Cards continues until all cards available for
-            bid have been auctioned off or a card is not bid on by anyone. If a
-            card is passed by everyone, all remaining cards are returned to the
-            top of the Treachery Deck in the order they were dealt and the
+            bid have been auctioned off or a card is not bid on by anyone.
+          </p>
+          <p>
+            If a card is passed by everyone, all remaining cards are returned to
+            the top of the Treachery deck in the order they were dealt and the
             bidding round is over.
           </p>
           <h1>Transparency</h1>
           <p>
-            The number (not the type) of Treachery Cards each player holds must
-            always be open to the other players during the bidding round. Nobody
-            is allowed to hide the number of cards they hold at this time. If a
-            player has a full hand, they must pass on all cards up for bid.
+            The number of (not the type) Treachery cards each player holds is
+            public information during the bidding round. Nobody is allowed to
+            hide the number of cards they hold at this time.
+          </p>
+          <p>
+            If a player has a full hand, they must pass on all cards up for bid.
           </p>
           <Outline variant="generic">
             <h1>Bidding Etiquette</h1>
@@ -374,7 +383,7 @@ export function Phases_Bidding() {
             </p>
             <p>
               A pause should be taken before the use of faction powers like
-              Ixian Deck Splitting or Atreides Prescience where they announce to
+              Ixian deck Splitting or Atreides Prescience where they announce to
               the table that they are about to use them thus giving players a
               fair chance to use karama cards, or faction powers.
             </p>
@@ -525,15 +534,15 @@ export function Phases_Spice() {
               instead.
             </p>
             <p>
-              They take no effect and are shuffled back into the Spice Deck at
+              They take no effect and are shuffled back into the Spice deck at
               the end of the phase.
             </p>
           </Outline>
         </Text>
         <Text>
           <p>
-            The Spice Deck never re-shuffles. By the end of turn 10, the
-            complete Spice Deck is used.
+            The Spice deck never re-shuffles. By the end of turn 10, the
+            complete Spice deck is used.
           </p>
         </Text>
       </Spaced>

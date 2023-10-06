@@ -55,7 +55,7 @@ export function About_Dreams() {
             <li>Make 10 turn games less likely</li>
             <li>Make skirmishes outside strongholds more necessary and fun</li>
             <li>
-              Treachery Deck balance, remove broken cards, but keep it Dune like
+              Treachery deck balance, remove broken cards, but keep it Dune like
               in power dynamics and excitement about certain cards
             </li>
           </ul>

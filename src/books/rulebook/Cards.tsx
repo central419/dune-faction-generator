@@ -90,7 +90,7 @@ export function Cards_Intro() {
           Treachery cards
         </Title>
         <Text>
-          <p>Here's an overview of all of the card in the Treachery Deck:</p>
+          <p>Here's an overview of all of the card in the Treachery deck:</p>
         </Text>
         <Text columns={3} size={1.8}>
           <div style={{ padding: '1vw 4vw' }}>
@@ -485,7 +485,7 @@ export function KaramaCard() {
           </div>
           <Text style={{ flex: 1 }} size={1.7}>
             <h1>Karama</h1>
-            <p>There are 2 karama cards in the Treachery Deck.</p>
+            <p>There are 2 karama cards in the Treachery deck.</p>
             <Outline variant="generic">
               <p>You can play this card in 1 of 3 ways:</p>
               <ol>
@@ -589,7 +589,7 @@ export function TruthTranceCard() {
           </div>
           <Text style={{ flex: 1 }} size={1.7}>
             <h1>Truth Trance</h1>
-            <p>There are 2 truth trance cards in the Treachery Deck.</p>
+            <p>There are 2 truth trance cards in the Treachery deck.</p>
             <p>You can play a Truth Trance card at any time.</p>
             <Outline variant="generic">
               <p>
