@@ -316,7 +316,7 @@ export const cheap_heroine = (
 export const weather_control = (
   <TreacheryCard
     head="MUSH"
-    title={['Weather Control', 1]}
+    title={['Weather Control', 0.8]}
     content={[
       dedent`
         After the first game turn, play during the Storm phase before the Storm Marker is moved.
