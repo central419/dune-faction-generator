@@ -83,12 +83,12 @@ export const sheet: Faction = {
         body: 'You resolve disputes between the great houses.',
       }),
       advantage({
-        body: 'Your 5 peacekeepers are special forces which can be shipped and used in combat like normal troops, but they also have an additional ability:\n\nPeacekeepers can ignore strongholds limitations. (your normal forces can not).\n\nIf you have any peacekeeper forces in a territory where another faction or factions have forces; At the moment just before battle, you can offer to "keep the peace". The combatting factions do not have to accept this offer.\n\nIf both combatants accept (Landsraad itself can be one of the combatants) you must choose 1 of the combatants and move **their** forces to a neighbouring territory of your choice.\n\nWhen you move a combatant\'s forces you may additionally choose to move **your** forces to a neighbouring territory of your choice. This can be the same territory or the a different one.',
+        body: 'Your 5 peacekeepers are special forces which can be shipped and used in battle like normal troops, but they also have an additional ability:\n\nPeacekeepers can ignore strongholds limitations. (your normal forces can not).\n\nIf you have any peacekeeper forces in a territory where another faction or factions have forces; At the moment just before battle, you can offer to "keep the peace". The battling factions do not have to accept this offer.\n\nIf both parties accept (Landsraad itself can be one of the parties) you must choose 1 of the parties and move **their** forces to a neighboring territory of your choice.\n\nWhen you move a parties\'s forces you may additionally choose to move **your** forces to a neighbouring territory of your choice. This can be the same territory or the a different one.',
         karamaEffect: '',
         title: 'Peace keepers',
       }),
       advantage({
-        body: 'In your battles, if any peacekeeper forces are present, you are not required to play a leader in this battle.\n\nYou can play Treachery Cards even when not committing a leader in combat.',
+        body: 'In your battles, if any peacekeeper forces are present, you are not required to play a leader in this battle.\n\nYou can play Treachery Cards even when not committing a leader in battle.',
         karamaEffect:
           'Force the Landsraad to play a leader if they are able to.\n\nPrevent the Landsraad from playing Treachery cards if they are not able to play a leader.',
         title: 'Kanly',
@@ -96,7 +96,7 @@ export const sheet: Faction = {
       advantage({
         body: 'You choose the order in which battles are resolved.',
         karamaEffect:
-          'Combat order is as normal, the Landsraad has no influence on it at all.',
+          'Battle order is as normal, the Landsraad has no influence on it at all.',
         title: 'Master of strategy',
       }),
       advantage({

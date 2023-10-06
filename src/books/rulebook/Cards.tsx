@@ -273,7 +273,7 @@ export function TreacheryCards2() {
     <Fragment>
       <Spaced>
         <Title color={colors.blue2} size="small">
-          Unique combat cards
+          Unique Battle cards
         </Title>
 
         <SideBySide>
@@ -509,7 +509,7 @@ export function KaramaCard() {
         </SideBySide>
         <Text columns={2} size={1.7}>
           <NonBreaking>
-            <h1>Full Phase</h1>
+            <h1>Full phase</h1>
             <p>
               Playing a karama to block another faction's advantage will cancel
               this advantage for a full phase.
@@ -810,14 +810,14 @@ export function TreacheryCards5() {
               When this card is in your battle plan, it adds 1 battle strength
               to your battle plan.
               <br />
-              In addition you also become the aggressor in combat, and thus win
+              In addition you also become the aggressor in battle, and thus win
               ties.
               <br />
               If both players play Mercenaries, then storm order decides the
               aggressor.
             </p>
             <p>
-              When asked for dial as Atreides combat prescience, you must answer
+              When asked for dial as Atreides battle prescience, you must answer
               the number of your Battlewheel and must also disclose if you are
               playing Mercenaries.
             </p>
@@ -866,7 +866,7 @@ export function TreacheryCards5() {
               plan reveal.
               <br />
               Effectively this means you are allowed to play it at start of
-              combat, before any combat advantages are used.
+              battle, before any battle advantages are used.
             </p>
             <p>
               When you play the Supplies! card, you discard it and take the 4

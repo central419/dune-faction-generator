@@ -89,7 +89,7 @@ export const ernok = (
         Play as part of your Battle Plan.
         Kills opponent's leader before battle is resolved. Opponent may protect leader with a Poison defense.
         You may keep this card if you win this battle.
-        Return this card to the Supplies! cache when it is lost, or at the end of the Combat phase
+        Return this card to the Supplies! cache when it is lost, or at the end of the Battle phase
       `,
       1,
     ]}
@@ -109,7 +109,7 @@ export const trishula = (
         Play as part of your Battle Plan.
         Kills opponent's leader before battle is resolved. Opponent may protect leader with a Projectile defense.
         You may keep this card if you win this battle.
-        Return this card to the Supplies! cache when it is lost, or at the end of the Combat phase
+        Return this card to the Supplies! cache when it is lost, or at the end of the Battle phase
       `,
       1,
     ]}
@@ -129,7 +129,7 @@ export const phrine_pen = (
         Play as part of your Battle Plan.
         Protects your leader from a poison weapon in this battle.
         You may keep this card if you win this battle.
-        Return this card to the Supplies! cache when it is lost, or at the end of the Combat phase.
+        Return this card to the Supplies! cache when it is lost, or at the end of the Battle phase.
       `,
       1,
     ]}
@@ -149,7 +149,7 @@ export const sup_shield = (
         Play as part of your Battle Plan.
         Protects your leader from a projectile weapon in this battle.
         You may keep this card if you win this battle.
-        Return this card to the Supplies! cache when it is lost, or at the end of the Combat phase
+        Return this card to the Supplies! cache when it is lost, or at the end of the Battle phase
       `,
       1,
     ]}
@@ -319,7 +319,7 @@ export const weather_control = (
     title={['Weather Control', 1]}
     content={[
       dedent`
-        After the first game turn, play during the Storm Phase before the Storm Marker is moved.
+        After the first game turn, play during the Storm phase before the Storm Marker is moved.
         When you play this card, you control the storm this phase and may move it from o to 10 sectors in a counterclockwise direction.
       `,
       1,
@@ -337,7 +337,7 @@ export const family_atomics = (
     title={['Family Atomics', 1]}
     content={[
       dedent`
-        After the first game turn, play during the Storm Phase before the Storm Marker is moved.
+        After the first game turn, play during the Storm phase before the Storm Marker is moved.
         When you play this card, you control the storm this phase and may move it from o to 10 sectors in a counterclockwise direction.
       `,
       1,
@@ -374,8 +374,8 @@ export const supplies = (
     title={['Supplies!', 1]}
     content={[
       dedent`
-        Play during a Combat Phase.
-        Until the end of his Combat Phase, you get the Supplies! tokens.
+        Play any time.
+        Until the end of his Battle phase, you get the Supplies! tokens.
         These may be used as treachery cards of corresponding types.
       `,
       1,

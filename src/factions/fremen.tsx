@@ -100,7 +100,7 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'Storm Movement Knowledge',
-        body: dedent`During Storm Phase randomly determine the distance the storm will move next turn by shuffling your deck of 6 Storm Cards. You know this information.`,
+        body: dedent`During Storm phase randomly determine the distance the storm will move next turn by shuffling your deck of 6 Storm Cards. You know this information.`,
       }),
       advantage({
         title: 'Half Storm Losses',
@@ -134,7 +134,7 @@ export const sheet: Faction = {
     fate: [
       advantage({
         title: `Planetology`,
-        body: `Play your fate card during Storm Phase to add or subtract 1 from the revealed Storm Card. You may repeat this every turn for the rest of the game.`,
+        body: `Play your fate card during Storm phase to add or subtract 1 from the revealed Storm Card. You may repeat this every turn for the rest of the game.`,
       }),
     ],
     __typename: 'FactionRules',

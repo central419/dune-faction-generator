@@ -15,7 +15,7 @@ export function TechTokens() {
         <Text columns={3}>
           <p>Tech tokens start in a general supply at the start of the game.</p>
           <p>
-            If you win in combat against another faction, and that faction has a
+            If you win in battle against another faction, and that faction has a
             Tech Token; you choose which one to take if they have multiple.
           </p>
           <p>

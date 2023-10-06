@@ -88,7 +88,7 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'Augmented Troops',
-        body: dedent`Your 9 Cyborgs are double combat strength, can move 2 territories, collect 3 spice each, and cost 3 spice to revive. Cyborgs are immune to karama.
+        body: dedent`Your 9 Cyborgs are double battle strength, can move 2 territories, collect 3 spice each, and cost 3 spice to revive. Cyborgs are immune to karama.
 
         Your 11 Suboids can move 2 territories if accompanied by a Cyborg, cost 1 spice to revive, and are always considered half strength because they cannot be spice dialed.
         
@@ -111,7 +111,7 @@ export const sheet: Faction = {
     fate: [
       advantage({
         title: `Defect`,
-        body: `Play your fate card to nullify the effects of a special Treachery Card once it is played. The card is returned to the original faction and may not be used for the rest of the turn. To stop a special weapon/defense/mercenaries it must be played before battle plans are made. (Cannot be played during combat step 3)`,
+        body: `Play your fate card to nullify the effects of a special Treachery Card once it is played. The card is returned to the original faction and may not be used for the rest of the turn. To stop a special weapon/defense/mercenaries it must be played before battle plans are made. (Cannot be played during battle step 3)`,
       }),
     ],
     __typename: 'FactionRules',

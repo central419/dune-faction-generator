@@ -72,7 +72,7 @@ export const sheet: Faction = {
       advantage({
         title: 'Dishonorable',
         body: dedent`
-        You may not give/receive bribes except during Mentat Phase, or make binding deals except receiving info of cards up for bid in exchange for spice during the Bidding Phase. (You may not bindingly disclose information, including showing cards to other players.)
+        You may not give/receive bribes except during Mentat phase, or make binding deals except receiving info of cards up for bid in exchange for spice during the Bidding phase. (You may not bindingly disclose information, including showing cards to other players.)
         `,
         karamaEffect: dedent`
         TBD
@@ -83,11 +83,11 @@ export const sheet: Faction = {
         body: dedent`
         During setup after each faction has selected their traitors you randomly and secretly take one Traitor Card from each player, and return the last 2 to the traitor deck. (Take a card from the unseen traitor cards instead of taking a card from Harkonnen.) Separate one of these cards to be your traitor and the rest are your face dancers.
 
-        During Storm Phase you may place a face dancer card that matches a leader in the Tleilaxu Tanks in front of your Player Shield with one of your own leaders on top of it. Revive the dead leader and give it to its faction. That faction is now infiltrated as long as the leader remains alive and you hold the face dancer card. The leader you commit may not be used in combat until the Infiltration ends. Your leader may be called traitor by the target faction to prevent the Infiltration. In combat your leader may be called traitor in place of the target leader.
+        During Storm phase you may place a face dancer card that matches a leader in the Tleilaxu Tanks in front of your Player Shield with one of your own leaders on top of it. Revive the dead leader and give it to its faction. That faction is now infiltrated as long as the leader remains alive and you hold the face dancer card. The leader you commit may not be used in battle until the Infiltration ends. Your leader may be called traitor by the target faction to prevent the Infiltration. In battle your leader may be called traitor in place of the target leader.
         
         At any time you may look the the spice totals, Treachery Cards, and Battle Plans (step 3.2) of infiltrated factions. If an infiltrated faction wins the game you and that faction win together (instead of the faction's ally). Infiltration is ignored if the winning alliance controls 5+ strongholds.
         
-        You may discard face down and redraw one face dancer from the deck during Mentat Phase. You may at any time commit that you will reshuffle a specific face dancer during Mentat Phase and it will be binding. Whenever the Infiltration ends redraw the face dancer card and kill your impersonating leader as well as the target leader face down.
+        You may discard face down and redraw one face dancer from the deck during Mentat phase. You may at any time commit that you will reshuffle a specific face dancer during Mentat phase and it will be binding. Whenever the Infiltration ends redraw the face dancer card and kill your impersonating leader as well as the target leader face down.
         `,
         karamaEffect: dedent`
         TBD
@@ -125,7 +125,7 @@ export const sheet: Faction = {
         body: dedent`
         If Zoal is revealed in a Battle Plan (step 4.4), survives, and the opposing leader dies you may have Zoal infiltrate that faction. If so, the opponent wins the fight and loses nothing. You may keep any Treachery Cards you used. All of your troops in that territory are brought back to reserves for free. You keep any spice you used to dial.
 
-        To infiltrate set aside Zoal and the killed leader until the Storm Phase the following turn at which point put the target leader in front of its faction's Player Shield and Zoal is placed aside that faction's leaders. Zoal is considered to be the target leader in combat. Zoal or the target leader can be called traitor in combat. Otherwise follow normal Infiltration rules.
+        To infiltrate set aside Zoal and the killed leader until the Storm phase the following turn at which point put the target leader in front of its faction's Player Shield and Zoal is placed aside that faction's leaders. Zoal is considered to be the target leader in battle. Zoal or the target leader can be called traitor in battle. Otherwise follow normal Infiltration rules.
         `,
         karamaEffect: dedent`
         TBD

@@ -99,10 +99,10 @@ export const sheet: Faction = {
       advantage({
         title: 'the voice',
         body: dedent`
-          During battle (step 2.1) you may force your opponent to play/not play a Treachery Card in their Battle Plan. (Projectile Weapon, Poison Defense, Worthless Card, Mercenaries, etc) Cheap Heroes may not be voiced. Special combat cards like the Lazgun and Weirding Way are immune unless voiced by name. If you force the use of a card the opponent does not have they may silently ignore the voice.
+          During battle (step 2.1) you may force your opponent to play/not play a Treachery Card in their Battle Plan. (Projectile Weapon, Poison Defense, Worthless Card, Mercenaries, etc) Cheap Heroes may not be voiced. Special battle cards like the Lazgun and Weirding Way are immune unless voiced by name. If you force the use of a card the opponent does not have they may silently ignore the voice.
         `,
         karamaEffect: dedent`
-          You cannot use the voice in any fights during this combat phase.
+          You cannot use the voice in any fights during this battle phase.
         `,
       }),
       advantage({
@@ -110,7 +110,7 @@ export const sheet: Faction = {
         body: dedent`
           Your forces have two sides: fighters and advisors. Fighters act like normal forces. Advisors may be moved but otherwise have no effect on the game. Advisors may coexist with allied forces. The state of your troops is tracked on a per territory basis. (Ex. If advisors move to a territory with fighters they become fighters. If forces move to a territory with no other BG forces you choose what they become.) You may ship forces as fighters or advisors.
 
-          At the beginning of Ship & Move Phase you may flip any advisors to fighters, they automatically become fighters if no other factions are present. This is the only way a territory with advisors can switch to fighters.
+          At the beginning of Ship & Move phase you may flip any advisors to fighters, they automatically become fighters if no other factions are present. This is the only way a territory with advisors can switch to fighters.
           
           If a faction moves into a territory where you have fighters you may flip those fighters to advisors if that faction wasn't already in that territory. (Fighters can't become advisors when a faction reinforces a territory.)
           

@@ -103,7 +103,7 @@ export const sheet: Faction = {
         title: 'Retreat',
         body: `Once battle plans are revealed (step 4.3) you may decide to retreat. If you retreat your opponent wins the battle as if by traitor.
 
-        Your units may be shipped back to reserves at stronghold shipping rates. Your Treachery Cards can be saved by paying spice for each equal to your leader's strength. If your leader would've been killed in combat they die. Spice you use to spice dial and retreat is paid to the spice bank. You cannot retreat if the battle is resolved with a Traitor or Break Conditioning.`,
+        Your units may be shipped back to reserves at stronghold shipping rates. Your Treachery Cards can be saved by paying spice for each equal to your leader's strength. If your leader would've been killed in battle they die. Spice you use to spice dial and retreat is paid to the spice bank. You cannot retreat if the battle is resolved with a Traitor or Break Conditioning.`,
       }),
     ],
     alliance: [

@@ -92,7 +92,7 @@ export const sheet: Faction = {
       advantage({
         title: 'battle prescience',
         body: dedent`
-          During combat (step 2.2) you may force your opponent to reveal one part of their battle-plan early. (Weapon, Defense, Leader, or Dial + whether Mercenaries is being played).
+          During battle (step 2.2) you may force your opponent to reveal one part of their battle-plan early. (Weapon, Defense, Leader, or Dial + whether Mercenaries is being played).
         `,
         karamaEffect: dedent`
           Your battle prescience question can be ignored, your opponent is no longer required to do as was answered. Must be played before Battle Plans are revealed.
@@ -127,7 +127,7 @@ export const sheet: Faction = {
       advantage({
         title: 'Arrakis Fiefdom',
         body: dedent`
-          Play your fate card at any time before Ship & Move Phase to obtain the Carryall Tech Token, which you cannot lose. The token triggers when a spice mine sends troops to reserves. You may also spawn a 3 spice mine on any sand territory that doesn't have a Spice Blow marker.
+          Play your fate card at any time before Ship & Move phase to obtain the Carryall Tech Token, which you cannot lose. The token triggers when a spice mine sends troops to reserves. You may also spawn a 3 spice mine on any sand territory that doesn't have a Spice Blow marker.
         `,
       }),
     ],

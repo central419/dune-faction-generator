@@ -104,7 +104,7 @@ export const sheet: Faction = {
     fate: [
       advantage({
         title: `Blackmail`,
-        body: dedent`Play your fate card during combat (step 2.3) to force you or your ally's opponent to reveal their entire battle plan early.
+        body: dedent`Play your fate card during battle (step 2.3) to force you or your ally's opponent to reveal their entire battle plan early.
         `,
       }),
     ],

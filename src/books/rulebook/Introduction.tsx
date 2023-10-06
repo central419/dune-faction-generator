@@ -256,7 +256,7 @@ export function Sectors() {
               <li>Safe from storm.</li>
               <li>Safe from Shai-Halud.</li>
               <li>
-                Safe from combat.
+                Safe from battle.
                 <br />
                 There are never battles here.
                 <br />

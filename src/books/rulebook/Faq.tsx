@@ -119,7 +119,7 @@ export function Faq_1() {
           </NonBreaking>
           <NonBreaking>
             <h2>
-              When Harkonnen plays a captured leader in a combat and it
+              When Harkonnen plays a captured leader in a battle and it
               survives, does it return to you instantly, or is it committed to
               the battlefield, and then at Collection phase you collect it
               instead of Harkonnen?
