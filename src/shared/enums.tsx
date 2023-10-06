@@ -285,11 +285,11 @@ const Icon_SPECIAL_STORM =
 const Icon_SPECIAL_TRAITOR =
   'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/special-traitor.png';
 const Icon_DEFENSE_BOLT =
-  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/DEFENSE-bolt.png';
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/defence-bolt.png';
 const Icon_DEFENSE_SHIELD =
-  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/DEFENSE-shield.png';
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/defence-shield.png';
 const Icon_DEFENSE_SNOOPER =
-  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/DEFENSE-snooper.png';
+  'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/defence-snooper.png';
 const Icon_WEAPON_BOLT =
   'https://cdn.jsdelivr.net/gh/central419/stackblitz-starters-gejpkx@main/src/asset/icon/weapon-bolt.png';
 const Icon_WEAPON_POISON =

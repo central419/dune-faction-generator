@@ -355,7 +355,7 @@ export const mercenaries = (
     title={['Mercenaries', 1]}
     content={[
       dedent`
-        Play in your Battle Plan besides weapons or DEFENSEs. You may play only 1 Mercenaries per Battle Plan.
+        Play in your Battle Plan besides weapons or defenses. You may play only 1 Mercenaries per Battle Plan.
         Add +1 to your number dialed and win ties regardless of Storm Order.
         You may keep this card if you win the battle.
       `,
