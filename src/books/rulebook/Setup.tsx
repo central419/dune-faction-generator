@@ -551,7 +551,7 @@ export function Setup_5() {
                   Ixian (<em>place their Mobile Deployment Platform</em>)
                 </li>
                 <li>Fremen</li>
-                <li>Gene Gesserit</li>
+                <li>Bene Gesserit</li>
               </ol>
               <p>Highest priority deploys first.</p>
             </Text>
