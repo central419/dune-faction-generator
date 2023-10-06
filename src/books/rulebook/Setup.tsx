@@ -451,13 +451,14 @@ export function Setup_4() {
           </Text>
         </Text>
       </Spaced>
-      <Text columns={2}>
+      <Text>
         <div
           style={{
-            padding: '0 6vw',
+            padding: '0 33vw',
+            marginTop: '-15vw',
           }}
         >
-          <Fan size={cardSize}>
+          <Fan size={cardSize} spacing={-14}>
             <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
               {backs.fate}
             </Wrapper>
@@ -480,10 +481,11 @@ export function Setup_4() {
         </div>
         <div
           style={{
-            padding: '0 6vw',
+            padding: '0 33vw',
+            marginTop: '-30vw',
           }}
         >
-          <Fan size={cardSize}>
+          <Fan size={cardSize} spacing={-8}>
             <Wrapper size={cardSize} style={{ flex: 1, maxWidth: '100%' }}>
               {backs.treachery}
             </Wrapper>
