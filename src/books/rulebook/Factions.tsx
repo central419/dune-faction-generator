@@ -12,77 +12,7 @@ import { MarkdownContent } from '../../components/MarkdownContent';
 import { factions } from '../../presets/factions';
 import { FactionSynopsisBlock } from '../blocks/FactionSynopsisBlock';
 
-export function Faction3() {
-  return (
-    <Fragment>
-      <Spaced>
-        <Text>Continued list of factions.</Text>
-        {Object.values(factions)
-          .slice(5, 10)
-          .map((item, i) => (
-            <FactionSynopsisBlock key={i}>
-              <SideBySide>
-                <Wrapper
-                  isCircle={true}
-                  size={discSize}
-                  style={{ flex: 'none', width: '14vw', height: '14vw' }}
-                >
-                  <FactionToken
-                    color={item.sheet.assets.color}
-                    logo={item.sheet.assets.logo}
-                    pattern={item.sheet.assets.pattern}
-                  />
-                </Wrapper>
-                <Text>
-                  <MarkdownContent>{item.sheet.description}</MarkdownContent>
-                </Text>
-              </SideBySide>
-            </FactionSynopsisBlock>
-          ))}
-        <Text>
-          <em>There's room for more factions!</em>
-        </Text>
-      </Spaced>
-    </Fragment>
-  );
-}
-export function Faction2() {
-  return (
-    <Fragment>
-      <Spaced>
-        <Title color={blue1} size="medium">
-          Factions in the game
-        </Title>
-        <Text>
-          <p>You will play as one of these factions:</p>
-        </Text>
-        {Object.values(factions)
-          .slice(0, 5)
-          .map((item, i) => (
-            <FactionSynopsisBlock key={i}>
-              <SideBySide>
-                <Wrapper
-                  isCircle={true}
-                  size={discSize}
-                  style={{ flex: 'none', width: '14vw', height: '14vw' }}
-                >
-                  <FactionToken
-                    color={item.sheet.assets.color}
-                    logo={item.sheet.assets.logo}
-                    pattern={item.sheet.assets.pattern}
-                  />
-                </Wrapper>
-                <Text>
-                  <MarkdownContent>{item.sheet.description}</MarkdownContent>
-                </Text>
-              </SideBySide>
-            </FactionSynopsisBlock>
-          ))}
-      </Spaced>
-    </Fragment>
-  );
-}
-export function Factions() {
+export function Factions1() {
   return (
     <Fragment>
       <Spaced>
@@ -162,6 +92,78 @@ export function Factions() {
             </Fragment>
           ))}
         </div>
+      </Spaced>
+    </Fragment>
+  );
+}
+
+export function Factions2() {
+  return (
+    <Fragment>
+      <Spaced>
+        <Title color={blue1} size="medium">
+          Factions in the game
+        </Title>
+        <Text>
+          <p>You will play as one of these factions:</p>
+        </Text>
+        {Object.values(factions)
+          .slice(0, 5)
+          .map((item, i) => (
+            <FactionSynopsisBlock key={i}>
+              <SideBySide>
+                <Wrapper
+                  isCircle={true}
+                  size={discSize}
+                  style={{ flex: 'none', width: '14vw', height: '14vw' }}
+                >
+                  <FactionToken
+                    color={item.sheet.assets.color}
+                    logo={item.sheet.assets.logo}
+                    pattern={item.sheet.assets.pattern}
+                  />
+                </Wrapper>
+                <Text>
+                  <MarkdownContent>{item.sheet.description}</MarkdownContent>
+                </Text>
+              </SideBySide>
+            </FactionSynopsisBlock>
+          ))}
+      </Spaced>
+    </Fragment>
+  );
+}
+
+export function Factions3() {
+  return (
+    <Fragment>
+      <Spaced>
+        <Text>Continued list of factions.</Text>
+        {Object.values(factions)
+          .slice(5, 10)
+          .map((item, i) => (
+            <FactionSynopsisBlock key={i}>
+              <SideBySide>
+                <Wrapper
+                  isCircle={true}
+                  size={discSize}
+                  style={{ flex: 'none', width: '14vw', height: '14vw' }}
+                >
+                  <FactionToken
+                    color={item.sheet.assets.color}
+                    logo={item.sheet.assets.logo}
+                    pattern={item.sheet.assets.pattern}
+                  />
+                </Wrapper>
+                <Text>
+                  <MarkdownContent>{item.sheet.description}</MarkdownContent>
+                </Text>
+              </SideBySide>
+            </FactionSynopsisBlock>
+          ))}
+        <Text>
+          <em>There's room for more factions!</em>
+        </Text>
       </Spaced>
     </Fragment>
   );
