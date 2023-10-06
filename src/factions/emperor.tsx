@@ -53,7 +53,11 @@ export const normal = troop({
   }),
 });
 
-export const shadam = leader({ name: 'Shadam IV', image: '', strength: '10' });
+export const shadam = leader({
+  name: 'Shaddam IV',
+  image: 'shaddam',
+  strength: '',
+});
 export const sheet: Faction = {
   __typename: 'Faction',
   description: dedent`

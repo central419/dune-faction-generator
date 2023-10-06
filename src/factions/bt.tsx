@@ -45,11 +45,11 @@ export const normal = troop({
   }),
 });
 
-export const masters = leader({ name: 'Masters', image: '', strength: '10' });
+export const masters = leader({ name: 'Masters', image: '', strength: '' });
 export const sheet: Faction = {
   __typename: 'Faction',
   description: dedent`
-    The Bene Tleilax are led by their Masters Council. They control the Axlotl tanks used to regenerate lost individuals as gholas for other factions, and to infiltrate other factions with deadly Face Dancers.
+    The Bene Tleilaxu are led by their Masters Council. They control the Axolotl tanks used to regenerate lost individuals as Ghola for other factions, and to infiltrate other factions with deadly Face Dancers.
     Although loathed by other factions, they are tolerated because of the miracles they are able to produce.
   `,
   name: 'Bene Tleilaxu',
@@ -156,22 +156,5 @@ export const sheet: Faction = {
     revivalText: '0 forces.',
     startText: `20 forces in reserves (*off-planet*), Start with 10 spice.`,
   },
-  faq: [
-    faq({
-      question: dedent`
-        lalala?
-      `,
-      answer: dedent`
-        lala la
-      `,
-    }),
-    faq({
-      question: dedent`
-        TBD
-      `,
-      answer: dedent`
-        TBD
-      `,
-    }),
-  ],
+  faq: [],
 };

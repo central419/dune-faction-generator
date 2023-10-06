@@ -52,7 +52,7 @@ export const normal = troop({
   }),
 });
 
-const rombert = leader({ name: 'Prince Rombert', image: '', strength: '10' });
+const rhombur = leader({ name: 'Prince Rhombur', image: '', strength: '' });
 
 export const sheet: Faction = {
   __typename: 'Faction',
@@ -64,7 +64,7 @@ export const sheet: Faction = {
   assets: assets({
     logo: 'IX_LOGO',
     color: '#B9A452',
-    hero: rombert,
+    hero: rhombur,
     leaders: [cammar, kailea, dominic, tessia, ctair],
     troops: [normal],
     pattern: pattern1,
@@ -92,7 +92,7 @@ export const sheet: Faction = {
 
         Your 11 Suboids can move 2 territories if accompanied by a Cyborg, cost 1 spice to revive, and are always considered half strength because they cannot be spice dialed.
         
-        If you dial Cyborgs in a battle undialed Suboids can die in their place when calculating battle losses (step 4.4). You get 2 uses out of every suboid because if this happens the dialed Cyborgs flip to Patched Cyborgs. Patched Cyborgs can be dialed once for free, then they flip back.`,
+        If you dial Cyborgs in a battle un-dialed Suboids can die in their place when calculating battle losses (step 4.4). You get 2 uses out of every suboid because if this happens the dialed Cyborgs flip to Patched Cyborgs. Patched Cyborgs can be dialed once for free, then they flip back.`,
       }),
       advantage({
         title: 'Hidden Mobile Surveyor',
@@ -116,22 +116,5 @@ export const sheet: Faction = {
     ],
     __typename: 'FactionRules',
   },
-  faq: [
-    faq({
-      question: dedent`
-        lalala?
-      `,
-      answer: dedent`
-        lala la
-      `,
-    }),
-    faq({
-      question: dedent`
-        TBD
-      `,
-      answer: dedent`
-        TBD
-      `,
-    }),
-  ],
+  faq: [],
 };

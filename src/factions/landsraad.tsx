@@ -20,7 +20,7 @@ export const administrator = leader({
 });
 export const commisioner = leader({
   image: 'commisioner.png',
-  name: 'commisioner',
+  name: 'commissioner',
   strength: '4',
 });
 export const earl = leader({
@@ -114,8 +114,7 @@ export const sheet: Faction = {
     alliance: [
       advantage({
         body: 'Your ally is not required to play a leader in battle. They do not have to announce they are not playing a leader. They can not play Treachery cards if they play no leader.',
-        karamaEffect:
-          'This ability is tied to the Kanly ability. If the Kanly ability is karamad, so is this alliance ability.',
+        karamaEffect: `This ability is tied to the Kanly ability. If the Kanly ability is karama'd, so is this alliance ability.`,
         title: '',
       }),
     ],

@@ -139,22 +139,5 @@ export const sheet: Faction = {
     ],
     __typename: 'FactionRules',
   },
-  faq: [
-    faq({
-      question: dedent`
-        lalala?
-      `,
-      answer: dedent`
-        lala la
-      `,
-    }),
-    faq({
-      question: dedent`
-        TBD
-      `,
-      answer: dedent`
-        TBD
-      `,
-    }),
-  ],
+  faq: [],
 };

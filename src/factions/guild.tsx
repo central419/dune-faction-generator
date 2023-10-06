@@ -45,7 +45,7 @@ export const normal = troop({
   }),
 });
 
-export const eldrick = leader({ name: 'Elrich', image: '', strength: '10' });
+export const eldrick = leader({ name: 'Edric', image: '', strength: '' });
 
 export const sheet: Faction = {
   __typename: 'Faction',
@@ -120,22 +120,5 @@ export const sheet: Faction = {
     ],
     __typename: 'FactionRules',
   },
-  faq: [
-    faq({
-      question: dedent`
-        lalala?
-      `,
-      answer: dedent`
-        lala la
-      `,
-    }),
-    faq({
-      question: dedent`
-        TBD
-      `,
-      answer: dedent`
-        TBD
-      `,
-    }),
-  ],
+  faq: [],
 };

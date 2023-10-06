@@ -54,12 +54,12 @@ export const normal = troop({
   }),
 });
 
-export const liet = leader({ name: 'Liet Kynes', image: '', strength: '10' });
+export const liet = leader({ name: 'Liet Kynes', image: '', strength: '' });
 
 export const sheet: Faction = {
   __typename: 'Faction',
   description: dedent`
-    The Fremen, represented by the planetary ecologist Liet Kynes &mdash; commanding fierce hordes of natives, adept at life and travel on the planet, and dedicated to preventing any outside control while bringing about Dune's own natural regeneration.
+    The Fremen, represented by the planetary ecologist Liet Kynes commanding fierce hordes of natives, adept at life and travel on the planet, and dedicated to preventing any outside control while bringing about Dune's own natural regeneration.
   `,
   name: 'Fremen',
   assets: {
@@ -115,7 +115,7 @@ export const sheet: Faction = {
         body: dedent`Your forces do not require spice to count at their full strength.`,
       }),
       advantage({
-        title: 'Fantatical Tactics (AKA Teeth)',
+        title: 'Fanatical Tactics (AKA Teeth)',
         body: dedent`During battle (step 3.1) you may publicly show any number of weapon and/or defense Treachery Cards you are playing in the battle before Battle Plans are made. If you do those cards cannot be lost this battle unless your leader is called traitor or there is a lazgun-shield explosion.
 
         Harkonnen can only replace these with cards of the same type using Vladimir's Spite.`,
@@ -139,22 +139,5 @@ export const sheet: Faction = {
     ],
     __typename: 'FactionRules',
   },
-  faq: [
-    faq({
-      question: dedent`
-        lalala?
-      `,
-      answer: dedent`
-        lala la
-      `,
-    }),
-    faq({
-      question: dedent`
-        TBD
-      `,
-      answer: dedent`
-        TBD
-      `,
-    }),
-  ],
+  faq: [],
 };

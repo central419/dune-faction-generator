@@ -74,7 +74,7 @@ export const sheet: Faction = {
       advantage({
         title: 'bidding prescience',
         body: dedent`
-          During each bidding round you may look at each Treachery Card as it comes up for bid. You may keep records about cards. Larum ipsum dolor sit amet.
+          During each bidding round you may look at each Treachery Card as it comes up for bid. You may keep records about cards.
         `,
         karamaEffect: dedent`
           You may not look at the cards up for bid.
@@ -102,7 +102,7 @@ export const sheet: Faction = {
         title: 'kwisatz haderach',
         body: dedent`
           Once you have lost 7 or more total forces in battles you gain a token that can be played alongside leaders in battles in one territory per turn to add +2 strength to those leaders and they cannot be called traitor.
-          The token can only be lost in a lazgun-shield explosion, and can be revived like a normal leader.
+          The token can only be lost in a Lasgun-Shield explosion, and can be revived like a normal leader.
         `,
         karamaEffect: dedent`
           You may not use the Kwisatz Haderach token in 1 of your battles. Must be done before the Battle Plans are revealed
@@ -132,30 +132,5 @@ export const sheet: Faction = {
       }),
     ],
   },
-  faq: [
-    faq({
-      question: dedent`
-        Is ridwan nice?
-      `,
-      answer: dedent`
-        Sometimes.
-      `,
-    }),
-    faq({
-      question: dedent`
-        This is a really long question, with loads of ifs and elses and all sorts of sub question relly difficult to answer, luckily there's this answer given here.
-      `,
-      answer: dedent`
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet venenatis condimentum. Nunc laoreet, diam eget cursus pretium, lacus orci sollicitudin eros, sit amet vulputate sapien lacus quis lorem. Proin pharetra sit amet tellus at tristique. Nulla facilisi. Suspendisse eget sapien eget turpis luctus tempor non quis ipsum. Phasellus gravida egestas ullamcorper. Integer sit amet magna neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a enim at risus ultricies interdum et hendrerit leo.
-      `,
-    }),
-    faq({
-      question: dedent`
-        This is a really long question, with loads of ifs and elses and all sorts of sub question relly difficult to answer, luckily there's this answer given here.
-      `,
-      answer: dedent`
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet venenatis condimentum. Nunc laoreet, diam eget cursus pretium, lacus orci sollicitudin eros, sit amet vulputate sapien lacus quis lorem. Proin pharetra sit amet tellus at tristique. Nulla facilisi. Suspendisse eget sapien eget turpis luctus tempor non quis ipsum. Phasellus gravida egestas ullamcorper. Integer sit amet magna neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi a enim at risus ultricies interdum et hendrerit leo.
-      `,
-    }),
-  ],
+  faq: [],
 };

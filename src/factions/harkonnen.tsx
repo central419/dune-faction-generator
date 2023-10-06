@@ -3,7 +3,6 @@ import {
   advantage,
   assets,
   leader,
-  faq,
   troop,
   troopSide,
 } from '../shared/generate';
@@ -46,7 +45,7 @@ export const normal = troop({
 });
 
 export const baron = leader({
-  name: 'Baron Vladamir',
+  name: 'Baron Vladimir',
   image: '',
   strength: '10',
 });
@@ -54,7 +53,7 @@ export const baron = leader({
 export const sheet: Faction = {
   __typename: 'Faction',
   description: dedent`
-    The Harkonnens, led by the decadent Baron Vladimir Harkonnen — master of treachery and cruel deeds.
+    House Harkonnen, led by the decadent Baron Vladimir Harkonnen — master of treachery and cruel deeds.
   `,
   name: 'House Harkonnen',
   assets: assets({
@@ -111,22 +110,5 @@ export const sheet: Faction = {
     ],
     __typename: 'FactionRules',
   },
-  faq: [
-    faq({
-      question: dedent`
-        lalala?
-      `,
-      answer: dedent`
-        lala la
-      `,
-    }),
-    faq({
-      question: dedent`
-        TBD
-      `,
-      answer: dedent`
-        TBD
-      `,
-    }),
-  ],
+  faq: [],
 };
