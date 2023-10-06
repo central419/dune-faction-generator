@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
-import { Title } from '../blocks/Title';
-import { Text } from '../blocks/Text';
-import { Spaced } from '../blocks/Spaced';
-import { blue1 } from '../presets/colors';
+import { Title } from '../../blocks/Title';
+import { Text } from '../../blocks/Text';
+import { Spaced } from '../../blocks/Spaced';
+import { blue1 } from '../../presets/colors';
 
 export function AboutDreams() {
   return (

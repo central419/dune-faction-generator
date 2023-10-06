@@ -1,16 +1,16 @@
 import { Fragment } from 'react';
-import { Title } from '../blocks/Title';
-import { Text } from '../blocks/Text';
-import { Spaced } from '../blocks/Spaced';
-import { Definitions } from '../blocks/Definitions';
-import { Wrapper } from '../components/Wrapper';
-import { FactionToken } from '../objects/disc/faction_token';
-import { size as discSize } from '../shared/disc';
-import { blue1 } from '../presets/colors';
-import { SideBySide } from './blocks/Layouts';
-import { MarkdownContent } from '../components/MarkdownContent';
-import { factions } from '../presets/factions';
-import { FactionSynopsisBlock } from './blocks/FactionSynopsisBlock';
+import { Title } from '../../blocks/Title';
+import { Text } from '../../blocks/Text';
+import { Spaced } from '../../blocks/Spaced';
+import { Definitions } from '../../blocks/Definitions';
+import { Wrapper } from '../../components/Wrapper';
+import { FactionToken } from '../../objects/disc/faction_token';
+import { size as discSize } from '../../shared/disc';
+import { blue1 } from '../../presets/colors';
+import { SideBySide } from '../blocks/Layouts';
+import { MarkdownContent } from '../../components/MarkdownContent';
+import { factions } from '../../presets/factions';
+import { FactionSynopsisBlock } from '../blocks/FactionSynopsisBlock';
 
 export function Faction3() {
   return (

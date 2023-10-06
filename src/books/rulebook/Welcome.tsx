@@ -1,15 +1,15 @@
 import { Fragment } from 'react';
-import { Title } from '../blocks/Title';
-import { NonBreaking, Text } from '../blocks/Text';
-import { Spaced } from '../blocks/Spaced';
-import { Outline } from '../blocks/Outline';
-import { Definitions } from '../blocks/Definitions';
-import { Wrapper } from '../components/Wrapper';
-import mappy from '../asset/cover/map.svg';
-import { blue1 } from '../presets/colors';
-import { Ball } from './blocks/Ball';
-import { WithBottom, SideBySide } from './blocks/Layouts';
-import { mapSize } from './rulesbook';
+import { Title } from '../../blocks/Title';
+import { NonBreaking, Text } from '../../blocks/Text';
+import { Spaced } from '../../blocks/Spaced';
+import { Outline } from '../../blocks/Outline';
+import { Definitions } from '../../blocks/Definitions';
+import { Wrapper } from '../../components/Wrapper';
+import mappy from '../../asset/cover/map.svg';
+import { blue1 } from '../../presets/colors';
+import { Ball } from '../blocks/Ball';
+import { WithBottom, SideBySide } from '../blocks/Layouts';
+import { mapSize } from '../rulesbook';
 
 export function Strongholds() {
   return (

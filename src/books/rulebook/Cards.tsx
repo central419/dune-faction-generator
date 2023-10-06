@@ -1,14 +1,14 @@
 import { Fragment } from 'react';
-import { Title } from '../blocks/Title';
-import { NonBreaking, Text } from '../blocks/Text';
-import { Spaced } from '../blocks/Spaced';
-import { Outline } from '../blocks/Outline';
-import { Definitions } from '../blocks/Definitions';
-import { Wrapper } from '../components/Wrapper';
-import { size as cardSize } from '../shared/card';
-import { blue1, blue2 } from '../presets/colors';
-import { SideBySide } from './blocks/Layouts';
-import { Fan } from '../components/Fan';
+import { Title } from '../../blocks/Title';
+import { NonBreaking, Text } from '../../blocks/Text';
+import { Spaced } from '../../blocks/Spaced';
+import { Outline } from '../../blocks/Outline';
+import { Definitions } from '../../blocks/Definitions';
+import { Wrapper } from '../../components/Wrapper';
+import { size as cardSize } from '../../shared/card';
+import { blue1, blue2 } from '../../presets/colors';
+import { SideBySide } from '.././blocks/Layouts';
+import { Fan } from '../../components/Fan';
 import {
   baliset,
   chaumas,
@@ -30,7 +30,7 @@ import {
   truthtrance,
   weathercontrol,
   weirdingway,
-} from '../presets/treachery_cards';
+} from '../../presets/treachery_cards';
 
 export function SpecialCards2() {
   return (

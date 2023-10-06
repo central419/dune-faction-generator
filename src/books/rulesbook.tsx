@@ -7,18 +7,18 @@ import coverD from '../asset/cover/cover-d.svg';
 
 import { tint1 } from '../presets/colors';
 
-import { AboutDreams } from './AboutDreams';
-import { Faq } from './Faq';
+import { AboutDreams } from './rulebook/AboutDreams';
+import { Faq } from './rulebook/Faq';
 import {
   Phases,
   PhasesSpice,
   PhasesBidding,
   PhasesRevival,
   PhasesMentat,
-} from './Phases';
-import { Setup, SetupLayout, Setup2, Setup3, Setup4 } from './Setup';
-import { Factions, Faction2, Faction3 } from './Factions';
-import { TechTokens } from './TechTokens';
+} from './rulebook/Phases';
+import { Setup, SetupLayout, Setup2, Setup3, Setup4 } from './rulebook/Setup';
+import { Factions, Faction2, Faction3 } from './rulebook/Factions';
+import { TechTokens } from './rulebook/TechTokens';
 import {
   Cards,
   TreacheryCards,
@@ -28,9 +28,9 @@ import {
   TruthTranceCard,
   SpecialCards,
   SpecialCards2,
-} from './Cards';
-import { Welcome, Intro, Sectors, Strongholds } from './Welcome';
-import { MiscRules } from './MiscRules';
+} from './rulebook/Cards';
+import { Welcome, Intro, Sectors, Strongholds } from './rulebook/Welcome';
+import { MiscRules } from './rulebook/MiscRules';
 
 export const ratio = Math.sqrt(2);
 

@@ -1,22 +1,22 @@
 import { Fragment } from 'react';
-import { Title } from '../blocks/Title';
-import { NonBreaking, Text } from '../blocks/Text';
-import { Spaced } from '../blocks/Spaced';
-import { Outline } from '../blocks/Outline';
-import { Definitions } from '../blocks/Definitions';
-import { Wrapper } from '../components/Wrapper';
-import { FactionToken } from '../objects/disc/faction_token';
-import { size as cardSize } from '../shared/card';
-import { size as discSize } from '../shared/disc';
-import { TroopToken } from '../objects/disc/troop_token';
-import tably from '../asset/cover/table.svg';
-import { blue1, blue2 } from '../presets/colors';
-import { Ball } from './blocks/Ball';
-import { WithBottom } from './blocks/Layouts';
-import { factions } from '../presets/factions';
-import { Fan } from '../components/Fan';
-import { BackCard } from '../objects/card/back';
-import { mapSize } from './rulesbook';
+import { Title } from '../../blocks/Title';
+import { NonBreaking, Text } from '../../blocks/Text';
+import { Spaced } from '../../blocks/Spaced';
+import { Outline } from '../../blocks/Outline';
+import { Definitions } from '../../blocks/Definitions';
+import { Wrapper } from '../../components/Wrapper';
+import { FactionToken } from '../../objects/disc/faction_token';
+import { size as cardSize } from '../../shared/card';
+import { size as discSize } from '../../shared/disc';
+import { TroopToken } from '../../objects/disc/troop_token';
+import tably from '../../asset/cover/table.svg';
+import { blue1, blue2 } from '../../presets/colors';
+import { Ball } from '../blocks/Ball';
+import { WithBottom } from '../blocks/Layouts';
+import { factions } from '../../presets/factions';
+import { Fan } from '../../components/Fan';
+import { BackCard } from '../../objects/card/back';
+import { mapSize } from '../rulesbook';
 
 export function Setup4() {
   return (

@@ -1,10 +1,10 @@
 import { Fragment } from 'react';
-import { Title } from '../blocks/Title';
-import { NonBreaking, Text } from '../blocks/Text';
-import { Spaced } from '../blocks/Spaced';
-import { Outline } from '../blocks/Outline';
-import { Definitions } from '../blocks/Definitions';
-import { blue1, blue2 } from '../presets/colors';
+import { Title } from '../../blocks/Title';
+import { NonBreaking, Text } from '../../blocks/Text';
+import { Spaced } from '../../blocks/Spaced';
+import { Outline } from '../../blocks/Outline';
+import { Definitions } from '../../blocks/Definitions';
+import { blue1, blue2 } from '../../presets/colors';
 
 export function PhasesMentat() {
   return (
