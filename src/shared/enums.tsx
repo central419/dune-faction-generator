@@ -70,6 +70,8 @@ import Decal_Other_UP from '../asset/decal/up.svg';
 import Decal_Other_WATER from '../asset/decal/water.svg';
 import Decal_Other_TREACHERY from '../asset/decal/treachery.svg';
 import Decal_Other_SNOWMAN from '../asset/decal/snowman.svg';
+import Decal_Other_SPICE_MINE from '../asset/decal/spice-mine.svg';
+import Decal_Other_SPICE from '../asset/decal/spice.svg';
 import Decal_Other_SNAKE from '../asset/decal/snake.svg';
 import Decal_Other_HAND from '../asset/decal/hand.svg';
 import Decal_Other_DOWN from '../asset/decal/down.svg';
@@ -446,6 +448,8 @@ export enum Decal_Other {
   WATER = Decal_Other_WATER,
   TREACHERY = Decal_Other_TREACHERY,
   SNOWMAN = Decal_Other_SNOWMAN,
+  SPICE_MINE = Decal_Other_SPICE_MINE,
+  SPICE = Decal_Other_SPICE,
   SNAKE = Decal_Other_SNAKE,
   HAND = Decal_Other_HAND,
   DOWN = Decal_Other_DOWN,

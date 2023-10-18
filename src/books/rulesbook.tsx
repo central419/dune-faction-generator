@@ -17,6 +17,8 @@ import {
   Phases_Battle,
   Phases_Movement,
   Phases_Storm,
+  Phases_BattleOrder,
+  Phases_BattleResolve,
 } from './rulebook/Phases';
 import { Setup_1, Setup_2, Setup_3, Setup_4, Setup_5 } from './rulebook/Setup';
 import { Factions1, Factions2, Factions3 } from './rulebook/Factions';
@@ -68,6 +70,8 @@ export const pages = [
   <Phases_Spice />,
   <Phases_Movement />,
   <Phases_Battle />,
+  <Phases_BattleOrder />,
+  <Phases_BattleResolve />,
   <Phases_Mentat />,
   <Phases_Storm />,
   <Faq_1 />,

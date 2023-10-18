@@ -10,6 +10,7 @@ import { nexus_1, nexus_yes } from '../../presets/nexus_cards';
 import { Fan } from '../../components/Fan';
 import { Wrapper } from '../../components/Wrapper';
 import * as backs from '../../presets/back_cards';
+import { WithBottom } from '../blocks/Layouts';
 
 const order = [
   'face_dancer',
@@ -572,14 +573,248 @@ export function Phases_Battle() {
         <Title color={colors.blue2} size="medium">
           Phase 8: Battle
         </Title>
-        <Text>
-          <p>TODO</p>
+        <Text columns={2}>
+          <NonBreaking>
+            <Text>
+              <h1>Detecting battles</h1>
+              <p>You can recognize battle locations, using these rules:</p>
+              <ul>
+                <li>
+                  At least 2 (non-allied) factions have troop tokens in the same
+                  territory during the battle phase.
+                </li>
+                <li>
+                  The Bene Gesserit advisors never participate in battles.
+                </li>
+                <li>
+                  There are never any battles in the Polar Sink territory.
+                </li>
+                <li>
+                  When the territory is split by the storm and troops tokens are
+                  not in the same sector, then those troops do not battle each
+                  other.
+                </li>
+              </ul>
+            </Text>
+          </NonBreaking>
+          <NonBreaking>
+            <Text>
+              <h1>Order of battles</h1>
+              <p>
+                From the storm marker onwards, check if the first player is in
+                any battles. If they are they become the aggressor.
+              </p>
+              <h2>The aggressors will:</h2>
+              <ul>
+                <li>Choose which combat they are in will be resolved next.</li>
+                <li>Win battle in the case of a tie in battle-strength.</li>
+              </ul>
+              <p>
+                When all the battles of the first player are resolved, the next
+                player becomes the aggressor. Repeat this process until all
+                battles are resolved.
+              </p>
+            </Text>
+          </NonBreaking>
+          <NonBreaking>
+            <Text>
+              <h1>Winning a battle</h1>
+              <p>The winner of the battle is the player that:</p>
+              <ul>
+                <li>Was not called Traitor upon.</li>
+                <li>
+                  Had a battle strength that was higher than the opponent, or
+                  was the aggressor in case of a tie.
+                </li>
+              </ul>
+              <p>
+                There are exactly 0 winners in a Battle when any of these
+                conditions are true:
+              </p>
+              <ul>
+                <li>
+                  A lasgun and shield were revealed (it does not not need to be
+                  from the same battle-plan).
+                </li>
+                <li>Both players call Traitor.</li>
+              </ul>
+              <p>
+                The winning player loses the troop tokens they dialed in battle,
+                as well as the spice they used.
+              </p>
+              <p>
+                The spice for all killed leaders is collected by the winner.
+              </p>
+            </Text>
+          </NonBreaking>
+          <NonBreaking>
+            <Text>
+              <h1>Losing a battle</h1>
+              <p>
+                The losing player loses all the forces they had in the territory
+                and must discard every Treachery Card they used in their
+                battle-plan.
+              </p>
+              <p>
+                Fremen can choose to keep Treachery cards they played as
+                Fanatical Tactics.
+              </p>
+              <p>
+                Spacing Guild can keep Treachery cards they played when they
+                retreat, and pay the appropriate amount of spice (the strength
+                of the leader they played times the number of Treachery cards)
+              </p>
+              <Outline variant="generic">
+                Note that the loser does not lose their leader as a result of
+                battle. Leaders are killed only by weapon Treachery Cards.
+              </Outline>
+            </Text>
+          </NonBreaking>
         </Text>
+        <Text></Text>
       </Spaced>
     </Fragment>
   );
 }
 
+export function Phases_BattleOrder() {
+  return (
+    <WithBottom>
+      <Spaced>
+        <Title color={colors.blue1} size="small">
+          Battle Sub-Phases
+        </Title>
+        <Text>
+          <Definitions>
+            <dt>Step 1</dt>
+            <dd>
+              <p>Aggressor pick the battle location and opponent.</p>
+            </dd>
+            <dt>Step 2</dt>
+            <dd>
+              <p>Player declare when they have no leaders to play.</p>
+            </dd>
+            <dt>Step 3</dt>
+            <dd>
+              <p>Last option of playing Supplies! Treachery card.</p>
+              <p>Last option of playing Ixian alliance ability.</p>
+              <p>Last option of playing Bene Tleilaxu Fate.</p>
+              <p>Last option of playing Guild Fate.</p>
+              <p>Last option of playing Bene Gesserit Fate.</p>
+            </dd>
+            <dt>Step 4</dt>
+            <dd>
+              <p>Bene Gesserit Voice.</p>
+            </dd>
+            <dt>Step 5</dt>
+            <dd>
+              <p>Atreides Battle Prescience.</p>
+            </dd>
+            <dt>Step 6</dt>
+            <dd>
+              <p>Harkonnen Fate ability.</p>
+            </dd>
+            <dt>Step 7</dt>
+            <dd>
+              <p>
+                Bene Tleilaxu can look at infiltrated faction's committed
+                battleplan.
+              </p>
+            </dd>
+            <dt>Step 8</dt>
+            <dd>
+              <p>Last option of playing TruthTrance Treachery cards.</p>
+              <p>Fremen Fanatical Tactics.</p>
+            </dd>
+            <dt>Step 9</dt>
+            <dd>
+              <p>Reveal & Resolve battle-plans.</p>
+            </dd>
+            <dt>Step 10</dt>
+            <dd>
+              <p>
+                Option of discarding or using Break Conditioning Treachery card.
+              </p>
+            </dd>
+            <dt>Step 11</dt>
+            <dd>
+              <p>Traitor calls. (this trumps Break Conditioning if played).</p>
+            </dd>
+            <dt>Step 12</dt>
+            <dd>
+              <p>Guild retreat ability.</p>
+            </dd>
+          </Definitions>
+        </Text>
+      </Spaced>
+      <Text>
+        <blockquote style={{ marginLeft: '16vw' }}>
+          <p>
+            I find that rolling dice and going up a ladder is great fun and a
+            great feeling whilst sliding down a snake is not fun but theres
+            always hope you might climb a ladder and still win objectively
+            snakes are worse than ladders but without them the ladders feel
+            pointless if you want a highly competitive game where the smart ass
+            always wins play dream rules
+          </p>
+          <p style={{ float: 'right' }}>~ Eichmal</p>
+        </blockquote>
+      </Text>
+    </WithBottom>
+  );
+}
+
+export function Phases_BattleResolve() {
+  return (
+    <Fragment>
+      <Spaced>
+        <Title color={colors.blue1} size="small">
+          Battle Plans & Resolving battles
+        </Title>
+        <Text columns={2}>
+          <p>
+            To resolve a battle, each player must secretly formulate a Battle
+            Plan.
+          </p>
+          <p>
+            A Battle Plan <strong>MUST</strong> include:
+          </p>
+          <ul>
+            <li>
+              A Battle Wheel with a dialed number, representing the number of
+              forces's strength.
+            </li>
+            <li>
+              A Leader disc or Cheap Hero Treachery card. (unless the player has
+              neither available)
+            </li>
+          </ul>
+          <p>
+            And it <strong>MAY</strong> include:
+          </p>
+          <ul>
+            <li>1 weapon Treachery card.</li>
+            <li>1 defense Treachery card.</li>
+            <li>1 Mercenaries Treachery card.</li>
+            <li>A number of spice token.</li>
+          </ul>
+          <h1>Battle wheels</h1>
+          <p>
+            Each player picks up a Battle Wheel and secretly dials a number from
+            zero to the number of forces they have in the disputed territory.
+            Both players will lose the number of forces dialed on the Battle
+            Wheel.
+          </p>
+          <h1>Treachery Cards</h1>
+          <p>
+            You are only allowed to play Treachery cards, if you play either a
+            Leader disc or Cheap Hero Treachery card in your battle plan.
+          </p>
+        </Text>
+      </Spaced>
+    </Fragment>
+  );
+}
 export function Phases_Mentat() {
   return (
     <Fragment>
