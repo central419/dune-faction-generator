@@ -825,42 +825,71 @@ export function Phases_Mentat() {
         <Title color={colors.blue2} size="medium">
           Phase 9: Mentat Pause
         </Title>
-        <Text columns={2}>
+        <Text>
           <p>
             During this phase players check if any of the players meet the
             conditions for winning the game.
           </p>
           <Definitions>
-            <dd>Strongholds</dd>
-            <dt>
-              Having Troop tokens in any of the strongholds
-              <br />
-              awards 1,2 Victory Points per Stronghold.
-            </dt>
-            <dd>Shieldwall</dd>
-            <dt>
-              Having Troop tokens on the North-West sector of Shieldwall
-              <br />(<em>after Shieldwall has been activated</em>),
-              <br />
-              awards 1,1 Victory Points.
-            </dt>
-            <dd>Tech Tokens</dd>
-            <dt>
-              Having 3 or more Tech tokens,
-              <br />
-              awards 1 Victory Point.
-            </dt>
+            <dt>Strongholds</dt>
+            <dd>
+              Having Troop tokens in any of the strongholds{' '}
+              <strong>awards 1⅓ Victory Points per Stronghold</strong>.
+            </dd>
+            <dt>Shieldwall</dt>
+            <dd>
+              Having Troop tokens on the North-West sector of Shieldwall (
+              <em>after Shieldwall has been activated</em>),{' '}
+              <strong>awards 1¼ Victory Points</strong>.
+            </dd>
+            <dt>Tech Tokens</dt>
+            <dd>
+              Having 3 or more Tech tokens,{' '}
+              <strong>awards 1 Victory Point</strong>.
+            </dd>
           </Definitions>
-          <h1>Non-allied players</h1>
-          <p>
-            Players that do not have an ally, will win the game if they have at
-            least 3 Victory Points.
-          </p>
-          <h1>Allied players</h1>
-          <p>
-            Players that do have an ally, will win the game if they have at
-            least 4 Victory Points.
-          </p>
+        </Text>
+        <Text>
+          <hr />
+        </Text>
+        <Text columns={2}>
+          <NonBreaking>
+            <Text>
+              <h1>Non-allied players</h1>
+              <p>
+                Players that do not have an ally, will win the game if they have
+                at least 3 Victory Points.
+              </p>
+              <h1>Allied players</h1>
+              <p>
+                Players that do have an ally, will win the game if they have at
+                least 4 Victory Points.
+              </p>
+            </Text>
+          </NonBreaking>
+          <NonBreaking>
+            <Outline variant="generic">
+              <Text>
+                <h1>On Turn 10</h1>
+                <p>In the final turn of the game, check for the following:</p>
+                <ol>
+                  <li>
+                    If fremen are in the game, and they (and their ally) have 3
+                    or more Victory Points, Fremen and their ally win.
+                  </li>
+                  <li>
+                    If fremen are in the game, but they (and their ally) do not
+                    have 3 or more Victory Points, Fremen win.
+                  </li>
+                  <li>
+                    If fremen are not in the game, then the player (not
+                    alliance) with the most Victory Points wins. If there is a
+                    tie, the player first in storm order wins.
+                  </li>
+                </ol>
+              </Text>
+            </Outline>
+          </NonBreaking>
         </Text>
         <Title color={colors.blue2} size="medium">
           Phase 10: Collection
