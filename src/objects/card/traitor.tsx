@@ -15,9 +15,9 @@ const text = dedent`
   
   You immediately win this battle and lose nothing (even if a Lasgun and Shield are revealed).
   
-  Enemy leader is killed and you receive its fighting strength in spice.
+  Enemy leader is killed and you receive its fighting strength in Spice.
 
-  Both players lose if their leaders are traitors, and neither player gets any spice.
+  Both players lose if their leaders are traitors, and neither player gets any Spice.
 `;
 
 export const TraitorCard = (props: Props) => {

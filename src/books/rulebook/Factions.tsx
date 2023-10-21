@@ -52,12 +52,12 @@ export function Factions1() {
             <dd>
               <p>A total of 20 tokens.</p>
               <p>Troops tokens can be multi-sided.</p>
-              <p>Some factions have multiple types of troop tokens.</p>
+              <p>Some factions have multiple types of Troop tokens.</p>
             </dd>
-            <dt>Starting spice</dt>
+            <dt>Starting Spice</dt>
             <dd>
               <p>
-                This should match the starting spice specified on the faction
+                This should match the starting Spice specified on the faction
                 sheet.
               </p>
             </dd>

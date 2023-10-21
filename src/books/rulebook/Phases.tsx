@@ -311,7 +311,7 @@ export function Phases_Fate() {
             auctioned off first, and the second pile second.
           </p>
           <h1>Auction</h1>
-          <p>The first card in the stack is now auctioned for spice.</p>
+          <p>The first card in the stack is now auctioned for Spice.</p>
           <ul>
             <li>
               The first player in Storm Order will open bidding on the first
@@ -319,10 +319,10 @@ export function Phases_Fate() {
               who does not have 4 Treachery Cards opens bidding.
             </li>
             <li>
-              They may bid one or more spice or pass. Bidding then proceeds to
+              They may bid one or more Spice or pass. Bidding then proceeds to
               the next player in Storm Order who may raise the bid or pass until
               all other players pass in a row. The top-bidding player then pays
-              the number of spice they bid to the Emperor, or the Spice Bank if
+              the number of Spice they bid to the Emperor, or the Spice Bank if
               the Emperor is not in the game, and takes the card into their
               hand.
             </li>
@@ -340,12 +340,12 @@ export function Phases_Bidding() {
         <Text columns={2}>
           <h1>Bid Limit</h1>
           <p>
-            No player may bid more spice than they have, except with permission
+            No player may bid more Spice than they have, except with permission
             from their ally if any, or the Emperor.
           </p>
           <p>
             If a faction wins the bidding, but cannot pay for the card due to
-            not having enough spice, the bid is considered illegal and the
+            not having enough Spice, the bid is considered illegal and the
             bidding on the card in question is restarted with the same starting
             bidder, however the player who made the illegal bid is unable to bid
             on that Treachery Card.
@@ -395,7 +395,7 @@ export function Phases_Bidding() {
               player is asking for subsidy from their ally or the Emperor, we
               recommend asking for an amount of Spice and accepting a yes or no
               answer to keep the round moving. This will also allow allies to
-              share their plans on who should buy what and how much spice they
+              share their plans on who should buy what and how much Spice they
               can share between them. Complex deals should be saved for this
               time period.
             </p>
@@ -434,7 +434,7 @@ export function Phases_Revival() {
           <p>
             All revivals happen in Storm Order for purposes of the Bene
             Tleilaxu's Revival Income, and the Bene Tleilaxu always revive their
-            forces and leaders last.
+            Troop tokens and leaders last.
           </p>
           <h1>Force Revival</h1>
           <p>
@@ -444,28 +444,31 @@ export function Phases_Revival() {
             <dt>Free</dt>
             <dd>
               <p>
-                A certain number of forces are revived for free as stated on the
-                player sheet.
+                A certain number of Troop tokens are revived for free as stated
+                on the player sheet.
               </p>
             </dd>
             <dt>By Spice</dt>
             <dd>
               <p>
-                Any additional forces that may be revived must be done at a cost
-                of 2 spice per force, or more if indicated on faction sheet. All
-                spice expended for force revival is placed in the Spice Bank.
+                Any additional Troop tokens that may be revived must be done at
+                a cost of 2 Spice per force, or more if indicated on faction
+                sheet. All Spice expended for force revival is placed in the
+                Spice Bank.
               </p>
             </dd>
             <dt>Limit</dt>
             <dd>
               <p>
-                A player can never revive more than 3 forces per turn, unless a
-                Tleilaxu Ghola Card is played to revive troops.
+                A player can never revive more than 3 Troop tokens per turn,
+                unless a Tleilaxu Ghola Card is played to revive troops.
               </p>
             </dd>
             <dt>To Reserves</dt>
             <dd>
-              <p>Revived forces must be placed in the player's reserve.</p>
+              <p>
+                Revived Troop tokens must be placed in the player's reserve.
+              </p>
             </dd>
           </Definitions>
 
@@ -480,7 +483,7 @@ export function Phases_Revival() {
             <dd>
               <p>
                 To revive a leader, a player must pay that leader's strength in
-                spice to the Bene Tleilaxu, or the Spice Bank if the Bene
+                Spice to the Bene Tleilaxu, or the Spice Bank if the Bene
                 Tleilaxu is not in the game.
               </p>
             </dd>
@@ -517,7 +520,7 @@ export function Phases_Spice() {
         <Text columns={2}>
           <ol>
             <li>Reveal both card card A & B, simultaneously</li>
-            <li>Place spice / Shai-Halud tokens in the territory.</li>
+            <li>Place Spice / Shai-Halud tokens in the territory.</li>
             <li>Draw & place extra a Spice Card(s) on any Shai-Halud card.</li>
             <li>
               Fremen may re-direct (if multiple) and ride the spawned Shai-Halud
@@ -580,7 +583,7 @@ export function Phases_Battle() {
               <p>You can recognize battle locations, using these rules:</p>
               <ul>
                 <li>
-                  At least 2 (non-allied) factions have troop tokens in the same
+                  At least 2 (non-allied) factions have Troop tokens in the same
                   territory during the battle phase.
                 </li>
                 <li>
@@ -639,11 +642,11 @@ export function Phases_Battle() {
                 <li>Both players call Traitor.</li>
               </ul>
               <p>
-                The winning player loses the troop tokens they dialed in battle,
-                as well as the spice they used.
+                The winning player loses the Troop tokens they dialed in battle,
+                as well as the Spice they used.
               </p>
               <p>
-                The spice for all killed leaders is collected by the winner.
+                The Spice for all killed leaders is collected by the winner.
               </p>
             </Text>
           </NonBreaking>
@@ -651,9 +654,9 @@ export function Phases_Battle() {
             <Text>
               <h1>Losing a battle</h1>
               <p>
-                The losing player loses all the forces they had in the territory
-                and must discard every Treachery Card they used in their
-                battle-plan.
+                The losing player loses all the Troop tokens they had in the
+                territory and must discard every Treachery Card they used in
+                their battle-plan.
               </p>
               <p>
                 Fremen can choose to keep Treachery cards they played as
@@ -661,7 +664,7 @@ export function Phases_Battle() {
               </p>
               <p>
                 Spacing Guild can keep Treachery cards they played when they
-                retreat, and pay the appropriate amount of spice (the strength
+                retreat, and pay the appropriate amount of Spice (the strength
                 of the leader they played times the number of Treachery cards)
               </p>
               <Outline variant="generic">
@@ -782,7 +785,7 @@ export function Phases_BattleResolve() {
           <ul>
             <li>
               A Battle Wheel with a dialed number, representing the number of
-              forces's strength.
+              Troop tokens's strength.
             </li>
             <li>
               A Leader disc or Cheap Hero Treachery card. (unless the player has
@@ -796,14 +799,14 @@ export function Phases_BattleResolve() {
             <li>1 weapon Treachery card.</li>
             <li>1 defense Treachery card.</li>
             <li>1 Mercenaries Treachery card.</li>
-            <li>A number of spice token.</li>
+            <li>A number of Spice token.</li>
           </ul>
           <h1>Battle wheels</h1>
           <p>
             Each player picks up a Battle Wheel and secretly dials a number from
-            zero to the number of forces they have in the disputed territory.
-            Both players will lose the number of forces dialed on the Battle
-            Wheel.
+            zero to the number of Troop tokens they have in the disputed
+            territory. Both players will lose the number of Troop tokens dialed
+            on the Battle Wheel.
           </p>
           <h1>Treachery Cards</h1>
           <p>
@@ -822,17 +825,51 @@ export function Phases_Mentat() {
         <Title color={colors.blue2} size="medium">
           Phase 9: Mentat Pause
         </Title>
-        <Text>
-          <p>TODO</p>
+        <Text columns={2}>
+          <p>
+            During this phase players check if any of the players meet the
+            conditions for winning the game.
+          </p>
+          <Definitions>
+            <dd>Strongholds</dd>
+            <dt>
+              Having Troop tokens in any of the strongholds
+              <br />
+              awards 1,2 Victory Points per Stronghold.
+            </dt>
+            <dd>Shieldwall</dd>
+            <dt>
+              Having Troop tokens on the North-West sector of Shieldwall
+              <br />(<em>after Shieldwall has been activated</em>),
+              <br />
+              awards 1,1 Victory Points.
+            </dt>
+            <dd>Tech Tokens</dd>
+            <dt>
+              Having 3 or more Tech tokens,
+              <br />
+              awards 1 Victory Point.
+            </dt>
+          </Definitions>
+          <h1>Non-allied players</h1>
+          <p>
+            Players that do not have an ally, will win the game if they have at
+            least 3 Victory Points.
+          </p>
+          <h1>Allied players</h1>
+          <p>
+            Players that do have an ally, will win the game if they have at
+            least 4 Victory Points.
+          </p>
         </Text>
         <Title color={colors.blue2} size="medium">
           Phase 10: Collection
         </Title>
         <Text>
-          <p>Collect spice from spice-blows & strongholds.</p>
+          <p>Collect Spice from Spice-blows & strongholds.</p>
           <p>
             At the end on the Collection phase, in a single instant; any player
-            with 0 or 1 spice can collect spice from the spice bank to bring
+            with 0 or 1 Spice can collect Spice from the Spice bank to bring
             their total to 2 by calling out “CHOAM Charity.”.
           </p>
           <p>
@@ -867,11 +904,12 @@ export function Phases_Storm() {
           <p>When both players dial 0, the storm moves 1.</p>
           <h1>Damage</h1>
           <p>
-            Any forces in a sector of sand territory (except the Imperial Basin)
-            over which the storm passes or stops are killed. Place these forces
-            in the Tleilaxu Tanks. Forces that are not on a sand territory are
-            protected from the storm. In addition any spice in a sector over
-            which a storm passes or stops is removed to the Spice Bank.
+            Any Troop tokens in a sector of sand territory (except the Imperial
+            Basin) over which the storm passes or stops are killed. Place these
+            forces in the Tleilaxu Tanks. Forces that are not on a sand
+            territory are protected from the storm. In addition any Spice in a
+            sector over which a storm passes or stops is removed to the Spice
+            Bank.
           </p>
           <h1>Obstruction</h1>
           <p>Forces may not move into, out of, or through a sector in storm.</p>

@@ -41,7 +41,7 @@ export const normal = troop({
     variant: 'BG_TROOP',
     name: 'forces',
     description:
-      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+      'Normal Troops, of strength 0.5, which can be spiced to a strength of 1',
   }),
   back: troopSide({
     variant: 'BG_TROOP',
@@ -69,7 +69,7 @@ export const sheet: Faction = {
     __typename: 'FactionAssets',
   },
   rules: {
-    startText: `1 force in the polar sink, 1 force in an unoccupied territory or the polar sink, 18 forces in reserves. Start with 5 spice.`,
+    startText: `1 force in the polar sink, 1 force in an unoccupied territory or the polar sink, 18 Troop tokens in reserves. Start with 5 Spice.`,
     revivalText: '1 force.',
 
     advantages: [
@@ -85,7 +85,7 @@ export const sheet: Faction = {
       }),
       advantage({
         title: `Worthless Karama`,
-        body: 'You may use worthless cards as Karamas. (Play to either stop the use of a faction advantage, ship forces at half price and the spice going to the Spice Bank, or purchase a Treachery Card without paying for it)',
+        body: 'You may use worthless cards as Karamas. (Play to either stop the use of a faction advantage, ship Troop tokens at half price and the Spice going to the Spice Bank, or purchase a Treachery Card without paying for it)',
         karamaEffect: dedent`
           You cannot play worthless cards as karamas.
         `,
@@ -108,7 +108,7 @@ export const sheet: Faction = {
       advantage({
         title: 'spiritual advisors',
         body: dedent`
-          Your forces have two sides: fighters and advisors. Fighters act like normal forces. Advisors may be moved but otherwise have no effect on the game. Advisors may coexist with allied forces. The state of your troops is tracked on a per territory basis. (Ex. If advisors move to a territory with fighters they become fighters. If forces move to a territory with no other BG forces you choose what they become.) You may ship forces as fighters or advisors.
+          Your Troop tokens have two sides: fighters and advisors. Fighters act like normal Troops. Advisors may be moved but otherwise have no effect on the game. Advisors may coexist with allied Troop tokens. The state of your troops is tracked on a per territory basis. (Ex. If advisors move to a territory with fighters they become fighters. If Troop tokens move to a territory with no other BG Troop tokens you choose what they become.) You may ship Troop tokens as fighters or advisors.
 
           At the beginning of Ship & Move phase you may flip any advisors to fighters, they automatically become fighters if no other factions are present. This is the only way a territory with advisors can switch to fighters.
           

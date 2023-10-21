@@ -41,13 +41,13 @@ export const normal = troop({
     variant: 'FREMEN_TROOP',
     name: 'forces',
     description:
-      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+      'Normal Troops, of strength 0.5, which can be spiced to a strength of 1',
   }),
   back: troopSide({
     variant: 'FREMEN_TROOP',
     name: 'fedaykin',
     description:
-      'Your 3 starred forces: Fedaykin are worth 2 normal forces in battle and in taking losses. They are treated as 1 force during revival. You can only revive 1 Fedaykin per turn.',
+      'Your 3 starred Troops: Fedaykin are worth 2 normal Troop tokens in battle and in taking losses. They are treated as 1 force during revival. You can only revive 1 Fedaykin per turn.',
     modifiers: {
       star: 'l1',
     },
@@ -73,8 +73,8 @@ export const sheet: Faction = {
   },
   rules: {
     startText:
-      '10 forces distributed between Sietch Tabr, False Wall South, and False Wall West. 10 in reserves. Start with 3 spice.',
-    revivalText: '3 forces.',
+      '10 Troop tokens distributed between Sietch Tabr, False Wall South, and False Wall West. 10 in reserves. Start with 3 Spice.',
+    revivalText: '3 Troops.',
     advantages: [
       advantage({ body: 'You are native to Dune and know its ways.' }),
       advantage({
@@ -83,20 +83,20 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'Free Spice Dialing',
-        body: dedent`Your forces do not require spice to count at their full strength.`,
+        body: dedent`Your Troop tokens do not require Spice to count at their full strength.`,
       }),
       advantage({
         title: 'Native Movement',
-        body: dedent`Your forces may move two territories instead of one.`,
+        body: dedent`Your Troop tokens may move two territories instead of one.`,
       }),
       advantage({
         title: 'Worm Riding',
         body: dedent`
-        Shai-Hulud will not devour your forces. Instead, after alliances are made those forces can move to any other territory. When worm riding forces/spice at the final destination are not eaten. If more than one Shai-Hulud appear during the Spice Blow phase you may choose where every worm after the second appears. Shai Huluds appearing on strongholds or rock territories will not eat forces, but your forces can ride them. If you play a thumper token the same phase a Shai Hulud card is flipped you choose where that Shai Hulud appears.`,
+        Shai-Hulud will not devour your Troops tokens. Instead, after alliances are made those Troop tokens can move to any other territory. When worm riding Troops/Spice at the final destination are not eaten. If more than one Shai-Hulud appear during the Spice Blow phase you may choose where every worm after the second appears. Shai-Hulud appearing on strongholds or rock territories will not eat Troops tokens, but your Troop tokens can ride them. If you play a thumper token the same phase a Shai-Hulud card is flipped you choose where that Shai-Hulud appears.`,
       }),
       advantage({
         title: 'Thumpers',
-        body: dedent`You start the game with two thumper tokens. After a Spice Blow Card is flipped you may discard a token to summon a riding worm to any sand or polar territory where you have forces. Riding worms don't cause a nexus and don't eat troops. You can only play one thumper per turn.`,
+        body: dedent`You start the game with two thumper tokens. After a Spice Blow Card is flipped you may discard a token to summon a riding worm to any sand or polar territory where you have Troops tokens. Riding worms don't cause a nexus and don't eat troops. You can only play one thumper per turn.`,
       }),
       advantage({
         title: 'Storm Movement Knowledge',
@@ -104,15 +104,15 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'Half Storm Losses',
-        body: dedent`If your forces are caught in storm you may have only half of them killed (all fractions rounded up). You may ship and move into/through storm by taking half losses.`,
+        body: dedent`If your Troop tokens are caught in storm you may have only half of them killed (all fractions rounded up). You may ship and move into/through storm by taking half losses.`,
       }),
       advantage({
         title: 'Fedaykin',
-        body: dedent`Your 3 starred forces: Fedaykin are worth 2 normal forces in battle and in taking losses. They are treated as 1 force during revival. You can only revive 1 Fedaykin per turn.`,
+        body: dedent`Your 3 starred Troops: Fedaykin are worth 2 normal Troop tokens in battle and in taking losses. They are treated as 1 force during revival. You can only revive 1 Fedaykin per turn.`,
       }),
       advantage({
         title: 'battles',
-        body: dedent`Your forces do not require spice to count at their full strength.`,
+        body: dedent`Your Troop tokens do not require Spice to count at their full strength.`,
       }),
       advantage({
         title: 'Fanatical Tactics (AKA Teeth)',
@@ -128,7 +128,7 @@ export const sheet: Faction = {
     alliance: [
       advantage({
         title: `Desert Power`,
-        body: dedent`Whenever your ally spice dials they may place the spice into their Bribes instead of the Spice Bank. Your ally's forces are not devoured by Shai-Hulud (Forces are always devoured after alliances are made/broken).`,
+        body: dedent`Whenever your ally Spice dials they may place the Spice into their Bribes instead of the Spice Bank. Your ally's Troop tokens are not devoured by Shai-Hulud (Forces are always devoured after alliances are made/broken).`,
       }),
     ],
     fate: [

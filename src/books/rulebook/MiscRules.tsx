@@ -19,7 +19,7 @@ export function MiscRules() {
               any kind.
             </p>
             <p>
-              Both the treachery discard pile and spice blow discard piles are
+              Both the treachery discard pile and Spice blow discard piles are
               public information and may be searched at any time by any faction.
             </p>
           </NonBreaking>
@@ -35,7 +35,7 @@ export function MiscRules() {
             <p>
               When a faction has one available leader at the revival phase, they
               may begin the process of reviving leaders by paying their leader's
-              strength in spice.
+              strength in Spice.
             </p>
           </NonBreaking>
         </Text>

@@ -40,7 +40,7 @@ export const normal = troop({
     variant: 'HARKONNEN_TROOP',
     name: 'forces',
     description:
-      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+      'Normal Troops, of strength 0.5, which can be spiced to a strength of 1',
   }),
 });
 
@@ -66,8 +66,8 @@ export const sheet: Faction = {
   }),
   rules: {
     startText:
-      '10 forces in Carthag and 10 in reserve (*off planet*). Start with 10 spice.',
-    revivalText: '2 forces.',
+      '10 Troop tokens in Carthag and 10 in reserve (*off planet*). Start with 10 Spice.',
+    revivalText: '2 Troops.',
     advantages: [
       advantage({ body: 'You excel in treachery.' }),
       advantage({
@@ -86,7 +86,7 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'Captured Leaders',
-        body: dedent`Whenever you win a battle (step 4.7) you may randomly select 1 of the loser's leaders. Leaders already used in battles elsewhere this turn are exempt. Secretly look at the leader and either put it face down in the Tleilaxu Tanks for 2 spice or keep them. You may use a kept leader once in battle after which they are returned if alive. If you own no Harkonnen leaders all captured leaders are returned.`,
+        body: dedent`Whenever you win a battle (step 4.7) you may randomly select 1 of the loser's leaders. Leaders already used in battles elsewhere this turn are exempt. Secretly look at the leader and either put it face down in the Tleilaxu Tanks for 2 Spice or keep them. You may use a kept leader once in battle after which they are returned if alive. If you own no Harkonnen leaders all captured leaders are returned.`,
       }),
       advantage({
         title: `Vladimir's Spite`,

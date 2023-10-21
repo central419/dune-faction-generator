@@ -40,7 +40,7 @@ export const normal = troop({
   front: troopSide({
     variant: 'IX_TROOP',
     name: 'suboid',
-    description: 'Suboid forces, of strength 0.5, cannot be spice dialed.',
+    description: 'Suboid Troops, of strength 0.5, cannot be Spice dialed.',
   }),
   back: troopSide({
     variant: 'IX_TROOP',
@@ -70,7 +70,7 @@ export const sheet: Faction = {
     pattern: pattern1,
   }),
   rules: {
-    startText: `6 forces (*3 Cyborgs, 3 Suboids*) in the HMS, 14 forces (*6 Cyborgs, 8 Suboids*) in reserve (*off-planet*), Start with 10 spice.`,
+    startText: `6 Troop tokens (*3 Cyborgs, 3 Suboids*) in the HMS, 14 Troop tokens (*6 Cyborgs, 8 Suboids*) in reserve (*off-planet*), Start with 10 Spice.`,
     revivalText: '1 force, either Suboid or Cyborg.',
     advantages: [
       advantage({ body: 'You are skilled in technology and production.' }),
@@ -88,9 +88,9 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'Augmented Troops',
-        body: dedent`Your 9 Cyborgs are double battle strength, can move 2 territories, collect 3 spice each, and cost 3 spice to revive. Cyborgs are immune to karama.
+        body: dedent`Your 9 Cyborgs are double battle strength, can move 2 territories, collect 3 Spice each, and cost 3 Spice to revive. Cyborgs are immune to karama.
 
-        Your 11 Suboids can move 2 territories if accompanied by a Cyborg, cost 1 spice to revive, and are always considered half strength because they cannot be spice dialed.
+        Your 11 Suboids can move 2 territories if accompanied by a Cyborg, cost 1 Spice to revive, and are always considered half strength because they cannot be Spice dialed.
         
         If you dial Cyborgs in a battle un-dialed Suboids can die in their place when calculating battle losses (step 4.4). You get 2 uses out of every suboid because if this happens the dialed Cyborgs flip to Patched Cyborgs. Patched Cyborgs can be dialed once for free, then they flip back.`,
       }),

@@ -41,7 +41,7 @@ export const normal = troop({
     variant: 'EMPEROR_TROOP',
     name: 'forces',
     description:
-      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+      'Normal Troops, of strength 0.5, which can be spiced to a strength of 1',
   }),
   back: troopSide({
     variant: 'EMPEROR_TROOP',
@@ -73,7 +73,8 @@ export const sheet: Faction = {
     pattern: pattern1,
   }),
   rules: {
-    startText: '20 forces in reserve (*off-planet*), Start with 10 spice.',
+    startText:
+      '20 Troop tokens in reserve (*off-planet*), Start with 10 Spice.',
     revivalText: '1 force.',
 
     advantages: [
@@ -82,21 +83,21 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'Bidding Payments',
-        body: 'When another faction pays for a Treachery Card they pay the spice to you.',
+        body: 'When another faction pays for a Treachery Card they pay the Spice to you.',
       }),
       advantage({
         title: `Shaddam's Favor (AKA Subsidy)`,
-        body: dedent`When another non-ally faction buys a Treachery Card you may place any amount of spice in front of your Player Shield to discount the bidding payment by that amount. Factions may bid more than their spice reserves if you make a deal to use this ability if the bid is successful. You collect all spice placed in front of your Player Shield this way at the end of the Bidding phase.`,
+        body: dedent`When another non-ally faction buys a Treachery Card you may place any amount of Spice in front of your Player Shield to discount the bidding payment by that amount. Factions may bid more than their Spice reserves if you make a deal to use this ability if the bid is successful. You collect all Spice placed in front of your Player Shield this way at the end of the Bidding phase.`,
       }),
       advantage({
         title: 'Sardaukar',
-        body: 'Your five starred forces are double battle strength. Only one Sardaukar can be revived per turn. Sardaukar are considered normal forces against Fremen.',
+        body: 'Your five starred Troop tokens are double battle strength. Only one Sardaukar can be revived per turn. Sardaukar are considered normal Troop tokens against Fremen.',
       }),
     ],
     alliance: [
       advantage({
         title: `Golden Lion Throne`,
-        body: dedent`You may share your great wealth with you ally at any time. You can pay to revive 3 additional troop forces for your ally, during the Revival phase.`,
+        body: dedent`You may share your great wealth with you ally at any time. You can pay to revive 3 additional troop Troop tokens for your ally, during the Revival phase.`,
       }),
     ],
     fate: [

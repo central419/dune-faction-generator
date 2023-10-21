@@ -207,7 +207,7 @@ export const lasgun = (
         Play as part of your Battle Plan.
         Automatically kills opponent's leader regardless of defense card used.
         You may keep this card if you win this battle.
-        If anyone plays a Shield in this battle, all forces, leaders, and spice in this battle's territory are lost to the Tleilaxu Tanks and Spice Bank. Both players lose this battle, no spice is paid for leaders, and all cards played are discarded.
+        If anyone plays a Shield in this battle, all Troops tokens, Leaders, and Spice in this battle's territory are lost to the Tleilaxu Tanks and Spice Bank. Both players lose this battle, no Spice is paid for leaders, and all cards played are discarded.
       `,
       1,
     ]}

@@ -225,17 +225,17 @@ export function Sectors() {
           <NonBreaking>
             <h1>Spice locations</h1>
             <p>
-              There are a total of 20 locations on the board where spice can
+              There are a total of 20 locations on the board where Spice can
               spawn and be collected.
             </p>
             <ul>
-              <li>15 "spice blows" ranging from 6 to 12 spice.</li>
-              <li>5 "spice mines" ranging from 3 to 5 spice.</li>
+              <li>15 "Spice blows" ranging from 6 to 12 Spice.</li>
+              <li>5 "Spice mines" ranging from 3 to 5 Spice.</li>
             </ul>
             <p>
               <em>
                 TODO: the map on the left should show the locations of the
-                spice-blows and spice-mines, clearly.
+                Spice-blows and Spice-mines, clearly.
               </em>
             </p>
           </NonBreaking>
@@ -284,24 +284,24 @@ export function Strongholds() {
             <dd>
               <p>The home-base of house Atreides.</p>
               <p>
-                If you have forces here, you have access to "ornithopters"{' '}
+                If you have Troop tokens here, you have access to "ornithopters"{' '}
                 <em>(explained further on page N)</em>.
               </p>
               <p>
-                If you have forces here at the collection phase, you gain 2
-                spice from the spice bank.
+                If you have Troop tokens here at the collection phase, you gain
+                2 Spice from the Spice bank.
               </p>
             </dd>
             <dt>Carthag</dt>
             <dd>
               <p>The home-base of house Harkonnen.</p>
               <p>
-                If you have forces here, you have access to "ornithopters"{' '}
+                If you have Troop tokens here, you have access to "ornithopters"{' '}
                 <em>(explained further on page N)</em>.
               </p>
               <p>
-                If you have forces here at the collection phase, you gain 2
-                spice from the spice bank.
+                If you have Troop tokens here at the collection phase, you gain
+                2 Spice from the Spice bank.
               </p>
             </dd>
             <dt>Seitch Tabr</dt>
@@ -319,8 +319,8 @@ export function Strongholds() {
             <dd>
               <p>The home-base of the Spacing Guild</p>
               <p>
-                If you have forces here at the collection phase, you gain 1
-                spice from the spice bank.
+                If you have Troop tokens here at the collection phase, you gain
+                1 Spice from the Spice bank.
               </p>
             </dd>
           </Definitions>
@@ -334,7 +334,7 @@ export function Strongholds() {
             only. This means that:
           </p>
           <ul>
-            <li>It still costs 2 spice per troop to ship to it.</li>
+            <li>It still costs 2 Spice per Troop to ship to it.</li>
             <li>There is no occupation limit.</li>
             <li>It can still be blown up by Family Atomics.</li>
           </ul>

@@ -46,7 +46,7 @@ export const normal = troop({
     variant: 'ATREIDES_TROOP',
     name: 'forces',
     description:
-      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+      'Normal Troop tokens, of strength 0.5, which can be spiced to a strength of 1',
   }),
 });
 
@@ -67,8 +67,8 @@ export const sheet: Faction = {
   rules: {
     __typename: 'FactionRules',
     startText:
-      '10 forces in Arrakeen and 10 in reserves (*off planet*). Start with 10 spice.',
-    revivalText: '2 forces.',
+      '10 Troop tokens in Arrakeen and 10 in reserves (*off planet*). Start with 10 Spice.',
+    revivalText: '2 Troops.',
     advantages: [
       advantage({ body: 'You have limited prescience.' }),
       advantage({
@@ -83,10 +83,10 @@ export const sheet: Faction = {
       advantage({
         title: 'spice prescience',
         body: dedent`
-          During/After Ship & Move phase you may look at the next card for spice blow A and B.
+          During/After Ship & Move phase you may look at the next card for Spice blow A and B.
         `,
         karamaEffect: dedent`
-          You are not allowed to look at the spice prescience cards. (this lasts until the card is revealed during the spice-blow phase)
+          You are not allowed to look at the Spice prescience cards. (this lasts until the card is revealed during the Spice-blow phase)
         `,
       }),
       advantage({
@@ -101,7 +101,7 @@ export const sheet: Faction = {
       advantage({
         title: 'kwisatz haderach',
         body: dedent`
-          Once you have lost 7 or more total forces in battles you gain a token that can be played alongside leaders in battles in one territory per turn to add +2 strength to those leaders and they cannot be called traitor.
+          Once you have lost 7 or more total Troop tokens in battles you gain a token that can be played alongside leaders in battles in one territory per turn to add +2 strength to those leaders and they cannot be called traitor.
           The token can only be lost in a Lasgun-Shield explosion, and can be revived like a normal leader.
         `,
         karamaEffect: dedent`
@@ -111,7 +111,7 @@ export const sheet: Faction = {
       advantage({
         title: `Leto's Tithe`,
         body: dedent`
-          During Spice Collection phase take 2 spice from the Spice Bank if you control one stronghold. Take 3 instead if you control at least two strongholds. You permanently lose this advantage once you gain the Kwisatz Haderach token.`,
+          During Spice Collection phase take 2 Spice from the Spice Bank if you control one stronghold. Take 3 instead if you control at least two strongholds. You permanently lose this advantage once you gain the Kwisatz Haderach token.`,
         karamaEffect: dedent`
           TBD
         `,
@@ -127,7 +127,7 @@ export const sheet: Faction = {
       advantage({
         title: 'Arrakis Fiefdom',
         body: dedent`
-          Play your fate card at any time before Ship & Move phase to obtain the Carryall Tech Token, which you cannot lose. The token triggers when a spice mine sends troops to reserves. You may also spawn a 3 spice mine on any sand territory that doesn't have a Spice Blow marker.
+          Play your fate card at any time before Ship & Move phase to obtain the Carryall Tech Token, which you cannot lose. The token triggers when a Spice mine sends troops to reserves. You may also spawn a 3 Spice mine on any sand territory that doesn't have a Spice Blow marker.
         `,
       }),
     ],

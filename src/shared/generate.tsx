@@ -64,7 +64,7 @@ export const troopSide = (
   __typename: 'FactionTroopSide',
   name: 'forces',
   description:
-    'normal forces, of strength 0.5, which can be spiced to a strength of 1',
+    'normal Troops, of strength 0.5, which can be spiced to a strength of 1',
   variant: 'ATREIDES_TROOP',
 
   ...props,

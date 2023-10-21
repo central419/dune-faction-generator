@@ -41,7 +41,7 @@ export const normal = troop({
     variant: 'BT_TROOP',
     name: 'forces',
     description:
-      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+      'Normal Troops, of strength 0.5, which can be spiced to a strength of 1',
   }),
 });
 
@@ -72,7 +72,7 @@ export const sheet: Faction = {
       advantage({
         title: 'Dishonorable',
         body: dedent`
-        You may not give/receive bribes except during Mentat phase, or make binding deals except receiving info of cards up for bid in exchange for spice during the Bidding phase. (You may not bindingly disclose information, including showing cards to other players.)
+        You may not give/receive bribes except during Mentat phase, or make binding deals except receiving info of cards up for bid in exchange for Spice during the Bidding phase. (You may not bindingly disclose information, including showing cards to other players.)
         `,
         karamaEffect: dedent`
         TBD
@@ -85,7 +85,7 @@ export const sheet: Faction = {
 
         During Storm phase you may place a face dancer card that matches a leader in the Tleilaxu Tanks in front of your Player Shield with one of your own leaders on top of it. Revive the dead leader and give it to its faction. That faction is now infiltrated as long as the leader remains alive and you hold the face dancer card. The leader you commit may not be used in battle until the Infiltration ends. Your leader may be called traitor by the target faction to prevent the Infiltration. In battle your leader may be called traitor in place of the target leader.
         
-        At any time you may look the the spice totals, Treachery Cards, and Battle Plans (step 3.2) of infiltrated factions. If an infiltrated faction wins the game you and that faction win together (instead of the faction's ally). Infiltration is ignored if the winning alliance controls 5+ strongholds.
+        At any time you may look the the Spice totals, Treachery Cards, and Battle Plans (step 3.2) of infiltrated factions. If an infiltrated faction wins the game you and that faction win together (instead of the faction's ally). Infiltration is ignored if the winning alliance controls 5+ strongholds.
         
         You may discard face down and redraw one face dancer from the deck during Mentat phase. You may at any time commit that you will reshuffle a specific face dancer during Mentat phase and it will be binding. Whenever the Infiltration ends redraw the face dancer card and kill your impersonating leader as well as the target leader face down.
         `,
@@ -96,7 +96,7 @@ export const sheet: Faction = {
       advantage({
         title: 'Revival Income',
         body: dedent`
-        Take one spice for every non-BT force revived. You collect all spice from non-BT revived leaders. You may set prices to revive any one leader per faction per turn. You may also increase any faction's troop revival limit from 3 to 5.
+        Take one Spice for every non-BT force revived. You collect all Spice from non-BT revived leaders. You may set prices to revive any one leader per faction per turn. You may also increase any faction's troop revival limit from 3 to 5.
         `,
         karamaEffect: dedent`
         TBD
@@ -114,7 +114,7 @@ export const sheet: Faction = {
       advantage({
         title: 'Synthetic Spice',
         body: dedent`
-        Whenever you ship you may kill your forces in reserves to pay for the shipment. Each troop is worth one spice, which is taken from the Spice Bank to pay for the shipment.
+        Whenever you ship you may kill your Troop tokens in reserves to pay for the shipment. Each troop is worth one Spice, which is taken from the Spice Bank to pay for the shipment.
         `,
         karamaEffect: dedent`
         TBD
@@ -123,7 +123,7 @@ export const sheet: Faction = {
       advantage({
         title: 'zoal',
         body: dedent`
-        If Zoal is revealed in a Battle Plan (step 4.4), survives, and the opposing leader dies you may have Zoal infiltrate that faction. If so, the opponent wins the fight and loses nothing. You may keep any Treachery Cards you used. All of your troops in that territory are brought back to reserves for free. You keep any spice you used to dial.
+        If Zoal is revealed in a Battle Plan (step 4.4), survives, and the opposing leader dies you may have Zoal infiltrate that faction. If so, the opponent wins the fight and loses nothing. You may keep any Treachery Cards you used. All of your troops in that territory are brought back to reserves for free. You keep any Spice you used to dial.
 
         To infiltrate set aside Zoal and the killed leader until the Storm phase the following turn at which point put the target leader in front of its faction's Player Shield and Zoal is placed aside that faction's leaders. Zoal is considered to be the target leader in battle. Zoal or the target leader can be called traitor in battle. Otherwise follow normal Infiltration rules.
         `,
@@ -141,7 +141,7 @@ export const sheet: Faction = {
       advantage({
         title: 'Shared Revival Discount',
         body: dedent`
-        Your ally may revive their forces and leaders at Tleilaxu Revival prices.
+        Your ally may revive their Troop tokens and leaders at Tleilaxu Revival prices.
         `,
       }),
     ],
@@ -149,12 +149,12 @@ export const sheet: Faction = {
       advantage({
         title: 'Stone Burner',
         body: dedent`
-        Play your fate card during battle (before step 3) to make all forces in a territory unable to be spice dialed this phase (Including Fremen).
+        Play your fate card during battle (before step 3) to make all Troop tokens in a territory unable to be Spice dialed this phase (Including Fremen).
         `,
       }),
     ],
-    revivalText: '0 forces.',
-    startText: `20 forces in reserves (*off-planet*), Start with 10 spice.`,
+    revivalText: '0 Troops.',
+    startText: `20 Troop tokens in reserves (*off-planet*), Start with 10 Spice.`,
   },
   faq: [],
 };

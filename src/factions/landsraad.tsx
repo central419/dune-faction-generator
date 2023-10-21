@@ -83,12 +83,12 @@ export const sheet: Faction = {
         body: 'You resolve disputes between the great houses.',
       }),
       advantage({
-        body: 'Your 5 peacekeepers are special forces which can be shipped and used in battle like normal troops, but they also have an additional ability:\n\nPeacekeepers can ignore strongholds limitations. (your normal forces can not).\n\nIf you have any peacekeeper forces in a territory where another faction or factions have forces; At the moment just before battle, you can offer to "keep the peace". The battling factions do not have to accept this offer.\n\nIf both parties accept (Landsraad itself can be one of the parties) you must choose 1 of the parties and move **their** forces to a neighboring territory of your choice.\n\nWhen you move a parties\'s forces you may additionally choose to move **your** forces to a neighbouring territory of your choice. This can be the same territory or the a different one.',
+        body: 'Your 5 peacekeepers are special Troop tokens which can be shipped and used in battle like normal troops, but they also have an additional ability:\n\nPeacekeepers can ignore strongholds limitations. (your normal Troop tokens can not).\n\nIf you have any peacekeeper Troop tokens in a territory where another faction or factions have Troops tokens; At the moment just before battle, you can offer to "keep the peace". The battling factions do not have to accept this offer.\n\nIf both parties accept (Landsraad itself can be one of the parties) you must choose 1 of the parties and move **their** Troop tokens to a neighboring territory of your choice.\n\nWhen you move a parties\'s Troop tokens you may additionally choose to move **your** Troop tokens to a neighbouring territory of your choice. This can be the same territory or the a different one.',
         karamaEffect: '',
         title: 'Peace keepers',
       }),
       advantage({
-        body: 'In your battles, if any peacekeeper forces are present, you are not required to play a leader in this battle.\n\nYou can play Treachery Cards even when not committing a leader in battle.',
+        body: 'In your battles, if any peacekeeper Troop tokens are present, you are not required to play a leader in this battle.\n\nYou can play Treachery Cards even when not committing a leader in battle.',
         karamaEffect:
           'Force the Landsraad to play a leader if they are able to.\n\nPrevent the Landsraad from playing Treachery cards if they are not able to play a leader.',
         title: 'Kanly',
@@ -100,13 +100,13 @@ export const sheet: Faction = {
         title: 'Master of strategy',
       }),
       advantage({
-        body: "When a faction doesn't play any Treachery cards in a battle, collect 1 spice from the Spice bank.",
+        body: "When a faction doesn't play any Treachery cards in a battle, collect 1 Spice from the Spice bank.",
         karamaEffect:
-          'The Landsraad collects no spice when a faction does not play any Treachery cards in a battle.',
+          'The Landsraad collects no Spice when a faction does not play any Treachery cards in a battle.',
         title: 'Peace Tax',
       }),
       advantage({
-        body: "For factions to form an alliance, they must request this alliance through you.\nThey tell you who they'd like to offer an alliance, and the amount of the spice reward.\n\nYou can choose 1 of these options:\n\n- **Reject**, Landsraad must pay the requester the spice reward.\n  Requester can not offer the same alliance again this turn.\n- **Proceed**, give the alliance offer to the faction it's meant for. \n  - If the offer is accepted, the spice reward is collect by the Landsraad.\n  - If the player declines, the requester pays 1 spice to the Landsraad.\n- **Enforce**, the Landsraad creates an alliance with themselves and the requester.",
+        body: "For factions to form an alliance, they must request this alliance through you.\nThey tell you who they'd like to offer an alliance, and the amount of the Spice reward.\n\nYou can choose 1 of these options:\n\n- **Reject**, Landsraad must pay the requester the Spice reward.\n  Requester can not offer the same alliance again this turn.\n- **Proceed**, give the alliance offer to the faction it's meant for. \n  - If the offer is accepted, the Spice reward is collect by the Landsraad.\n  - If the player declines, the requester pays 1 Spice to the Landsraad.\n- **Enforce**, the Landsraad creates an alliance with themselves and the requester.",
         karamaEffect: '',
         title: 'Alliance arbitrage',
       }),
@@ -126,7 +126,7 @@ export const sheet: Faction = {
     ],
     revivalText: '1 normal force, 1 peace keeper.',
     startText:
-      '5 normal forces in Polar Sink and 10 normal forces + 5 peacekeepers in reserve (*off planet*). Start with 5 spice.',
+      '5 normal Troop tokens in Polar Sink and 10 normal Troop tokens + 5 peacekeepers in reserve (*off planet*). Start with 5 Spice.',
   },
   faq: [],
 };

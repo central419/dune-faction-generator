@@ -43,12 +43,12 @@ export function Faq_1() {
               of a treachery card purchased by an ally.
             </p>
             <p>
-              The player gives this spice directly to the Emperor (or the bank
+              The player gives this Spice directly to the Emperor (or the bank
               if the Emperor is not in the game).
             </p>
             <p>
               The emperor can not pay for his ally's cards; but instead share
-              his spice with his ally freely. The ally pays for the card like
+              his Spice with his ally freely. The ally pays for the card like
               normal, to the Emperor.
             </p>
           </NonBreaking>
@@ -59,12 +59,12 @@ export function Faq_1() {
               ally's shipment.
             </p>
             <p>
-              The player gives this spice directly to the Guild (or the bank if
+              The player gives this Spice directly to the Guild (or the bank if
               the Guild is not in the game).
             </p>
             <p>
-              If the player giving the spice is the Spacing Guild, then the
-              spice is still given to the Spacing Guild.
+              If the player giving the Spice is the Spacing Guild, then the
+              Spice is still given to the Spacing Guild.
             </p>
           </NonBreaking>
           <NonBreaking>
@@ -91,7 +91,8 @@ export function Faq_1() {
           <NonBreaking>
             <h2>
               When moving with ornithopters, can you pass THROUGH a space
-              containing your ally's forces without ending your move there?
+              containing your ally's Troop tokens without ending your move
+              there?
             </h2>
             <p>
               Yes, you are allowed to move over your ally's troops, but you

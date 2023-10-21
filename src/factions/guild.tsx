@@ -41,7 +41,7 @@ export const normal = troop({
     variant: 'GUILD_TROOP',
     name: 'forces',
     description:
-      'Normal forces, of strength 0.5, which can be spiced to a strength of 1',
+      'Normal Troops, of strength 0.5, which can be spiced to a strength of 1',
   }),
 });
 
@@ -50,7 +50,7 @@ export const eldrick = leader({ name: 'Edric', image: '', strength: '' });
 export const sheet: Faction = {
   __typename: 'Faction',
   description: dedent`
-    The Spacing Guild, represented by steersman Edric (in league with smuggler bands) — monopolist of transport, yet addicted to ever increasing spice flows.
+    The Spacing Guild, represented by steersman Edric (in league with smuggler bands) — monopolist of transport, yet addicted to ever increasing Spice flows.
   `,
   name: 'Spacing Guild',
   assets: assets({
@@ -62,22 +62,22 @@ export const sheet: Faction = {
     pattern: pattern1,
   }),
   rules: {
-    startText: `5 forces in Tuek's Seitch, 15 in reserve (*off-planet*), Start with 5 spice.`,
+    startText: `5 Troop tokens in Tuek's Seitch, 15 in reserve (*off-planet*), Start with 5 Spice.`,
     revivalText: '1 force.',
 
     advantages: [
       advantage({ body: 'You control all shipment unto and off Arrakis.' }),
       advantage({
         title: 'Shipping Payments',
-        body: 'When other factions pay to ship they pay the spice to you.',
+        body: 'When other factions pay to ship they pay the Spice to you.',
       }),
       advantage({
         title: dedent`Discount Shipping`,
-        body: `You pay only half the normal fee (rounded up) when shipping your forces.
+        body: `You pay only half the normal fee (rounded up) when shipping your Troops.
           
-        When you ship to reserves the fee is 1 spice per 2 troops.
+        When you ship to reserves the fee is 1 Spice per 2 troops.
 
-        Cross-shipping into strongholds costs 1 spice per 2 troops, Cross-shipping anywhere else costs 1 spice per 1 troop`,
+        Cross-shipping into strongholds costs 1 Spice per 2 troops, Cross-shipping anywhere else costs 1 Spice per 1 troop`,
       }),
       advantage({
         title: 'Three Types of Shipment',
@@ -86,7 +86,7 @@ export const sheet: Faction = {
   
           - **Option 1**: Ship normally from off-planet reserves to any 1 territory on the board.
           - **Option 2**: Cross-ship from 1 territory to any 1 other territory on the board.
-          - **Option 3**: Ship forces from 1 territory on the board back to your reserves.
+          - **Option 3**: Ship Troop tokens from 1 territory on the board back to your reserves.
         `,
         karamaEffect: dedent`
           You can only ship normally`,
@@ -103,13 +103,13 @@ export const sheet: Faction = {
         title: 'Retreat',
         body: `Once battle plans are revealed (step 4.3) you may decide to retreat. If you retreat your opponent wins the battle as if by traitor.
 
-        Your units may be shipped back to reserves at stronghold shipping rates. Your Treachery Cards can be saved by paying spice for each equal to your leader's strength. If your leader would've been killed in battle they die. Spice you use to spice dial and retreat is paid to the spice bank. You cannot retreat if the battle is resolved with a Traitor or Break Conditioning.`,
+        Your units may be shipped back to reserves at stronghold shipping rates. Your Treachery Cards can be saved by paying Spice for each equal to your leader's strength. If your leader would've been killed in battle they die. Spice you use to Spice dial and retreat is paid to the Spice bank. You cannot retreat if the battle is resolved with a Traitor or Break Conditioning.`,
       }),
     ],
     alliance: [
       advantage({
         title: `Shared Shipping Advantage`,
-        body: dedent`Your ally may use Discount Shipping. You may allow your ally to ship using Three Types of Shipment (including Fremen). You may also reveal spice from your hidden area to pay for an ally's shipment. (You don't lose the spice)`,
+        body: dedent`Your ally may use Discount Shipping. You may allow your ally to ship using Three Types of Shipment (including Fremen). You may also reveal Spice from your hidden area to pay for an ally's shipment. (You don't lose the spice)`,
       }),
     ],
     fate: [

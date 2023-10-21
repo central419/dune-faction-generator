@@ -28,8 +28,8 @@ export function TechTokens() {
           </p>
           <p>
             Controlling 3 Tech Tokens counts as a Stronghold for winning the
-            game (e.g., if you have forces in Arrakeen and Carthag, and 3 Tech
-            Tokens, you win the game).
+            game (e.g., if you have Troop tokens in Arrakeen and Carthag, and 3
+            Tech Tokens, you win the game).
           </p>
           <p>
             Allies do not share control of Tech Tokens. To qualify as a
@@ -42,7 +42,7 @@ export function TechTokens() {
           </p>
           <p>
             Each Tech Token that you control has a potential income from the
-            Spice Bank. Any spice gained from Tech Tokens is placed on the Tech
+            Spice Bank. Any Spice gained from Tech Tokens is placed on the Tech
             Token and then collected at the end of the current phase.
           </p>
         </Text>
@@ -52,35 +52,35 @@ export function TechTokens() {
             <dd>
               <p>
                 If at least one player, including you, takes free revival, you
-                collect 1 spice for every Tech Token you control. However, if
+                collect 1 Spice for every Tech Token you control. However, if
                 only the Tleilaxu player takes free revival, you do not collect
-                spice.
+                Spice.
               </p>
             </dd>
             <dt>HIGHLINERS</dt>
             <dd>
               <p>
-                If at least one player, including you, ships forces from
-                off-planet, you collect 1 spice for every Tech Token you
-                control. However, if only the Spacing Guild ships forces from
-                off-planet, you do not collect spice.
+                If at least one player, including you, ships Troop tokens from
+                off-planet, you collect 1 Spice for every Tech Token you
+                control. However, if only the Spacing Guild ships Troop tokens
+                from off-planet, you do not collect Spice.
               </p>
             </dd>
             <dt>SPICE PRODUCTION</dt>
             <dd>
               <p>
                 If at least one player, including you, takes CHOAM Charity, you
-                collect 1 spice for every Tech Token you control. However, if
+                collect 1 Spice for every Tech Token you control. However, if
                 only the Bene Gesserit take CHOAM Charity, you do not collect
-                spice.
+                Spice.
               </p>
             </dd>
             <dt>SPICE MINING</dt>
             <dd>
               <p>
-                If at least one troop belonging to any player, including you,
-                returns to their reserves after getting evacuated from a spice
-                mine, you collect 1 spice for every Tech Token you control.
+                If at least one Troop belonging to any player, including you,
+                returns to their reserves after getting evacuated from a Spice
+                mine, you collect 1 Spice for every Tech Token you control.
               </p>
             </dd>
           </Definitions>

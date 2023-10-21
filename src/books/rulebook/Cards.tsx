@@ -41,13 +41,13 @@ export function Cards_Intro() {
             </dt>
             <dd>
               <p>
-                15 spice-blow cards.
+                15 Spice-blow cards.
                 <br />
-                5 spice-mine cards.
+                5 Spice-mine cards.
                 <br />
                 5 Shai-Halud cards.
                 <br />
-                Tells where Spice Blows will create treasure troves of spice
+                Tells where Spice Blows will create treasure troves of Spice
                 waiting to be harvested, and when the giant sandworms known as
                 Shai-Hulud will turn up.
               </p>
@@ -325,7 +325,7 @@ export function TreacheryCards2() {
               If your battleplan also contains a shield, or your opponent's
               battle plan contains a shield, a lasgun-shield explosion occurs.
               <br />
-              All tokens in the territory, including spice, troops, leaders are
+              All tokens in the territory, including Spice, Troops, Leaders are
               destroyed/killed.
             </p>
             <p>
@@ -663,8 +663,8 @@ export function TruthTranceCard() {
                 lasgun in the next battle?
               </Outline>
               <Outline variant="example">
-                Will you have more than 4 forces in Arrakeen by the end of your
-                shipment & movement turn?
+                Will you have more than 4 Troop tokens in Arrakeen by the end of
+                your shipment & movement turn?
               </Outline>
             </Text>
           </NonBreaking>
@@ -763,8 +763,8 @@ export function TreacheryCards4() {
               played), but before the storm is moved.
             </p>
             <p>
-              You can only play this card if you have at least 1 troop in an
-              territory adjacent or on the Shieldwall territory.
+              You can only play this card if you have at least 1 Troop token in
+              an territory adjacent or on the Shieldwall territory.
               <br />
               If the storm is in the way, you cannot use Family Atomics.
             </p>
