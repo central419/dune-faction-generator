@@ -36,6 +36,7 @@ import {
 import { About_Welcome, About_Dreams } from './rulebook/About';
 import { Intro, Sectors, Strongholds } from './rulebook/Introduction';
 import { MiscRules } from './rulebook/MiscRules';
+import { Deals } from './rulebook/Deals';
 
 export const ratio = Math.sqrt(2);
 export const cover = <Cover background={coverB} offset={80} />;
@@ -74,6 +75,7 @@ export const pages = [
   <Phases_BattleResolve />,
   <Phases_Mentat />,
   <Phases_Storm />,
+  <Deals />,
   <Faq_1 />,
   <About_Dreams />,
 ];
