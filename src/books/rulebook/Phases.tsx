@@ -897,13 +897,16 @@ export function Phases_Mentat() {
         <Text>
           <p>Collect Spice from Spice-blows & strongholds.</p>
           <p>
-            At the end on the Collection phase, in a single instant; any player
-            with 0 or 1 Spice can collect Spice from the Spice bank to bring
-            their total to 2 by calling out “CHOAM Charity.”.
+            Any player with 0 or 1 Spice can collect Spice from the Spice bank
+            to bring their total to 2, by collecting Spice from the Spice bank.
           </p>
           <p>
             Players are allowed to bribe each other during the Collection phase,
             to be able to use the charity.
+          </p>
+          <p>
+            All collection, (<em>including from Choam charity & Bribe piles</em>
+            ) happens as a single instant for all players at the same time.
           </p>
         </Text>
       </Spaced>

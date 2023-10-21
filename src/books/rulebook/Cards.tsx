@@ -509,10 +509,10 @@ export function KaramaCard() {
         </SideBySide>
         <Text columns={2} size={1.7}>
           <NonBreaking>
-            <h1>Full phase</h1>
+            <h1>Full turn</h1>
             <p>
               Playing a karama to block another faction's advantage will cancel
-              this advantage for a full phase.
+              this advantage for the rest of the current turn.
             </p>
           </NonBreaking>
           <NonBreaking>
