@@ -88,9 +88,8 @@ export function About_Welcome() {
                 <li>Cards</li>
                 <li>Tech Tokens</li>
                 <li>Factions</li>
-                <li>...</li>
-                <li>...</li>
-                <li>...</li>
+                <li>Phases</li>
+                <li>Deals</li>
                 <li>FAQ</li>
                 <li>The origin</li>
               </ol>

@@ -645,15 +645,6 @@ export function TruthTranceCard() {
         <Text columns={2} size={1.7}>
           <NonBreaking>
             <Text>
-              <h1>Bad examples</h1>
-              <Outline variant="example">Will you win both battles?</Outline>
-              <Outline variant="example">
-                Is Hasimir Fenring anyone's Traitor?
-              </Outline>
-            </Text>
-          </NonBreaking>
-          <NonBreaking>
-            <Text>
               <h1>Good examples</h1>
               <Outline variant="example">
                 Do you have Stilgar as a traitor?
@@ -665,6 +656,15 @@ export function TruthTranceCard() {
               <Outline variant="example">
                 Will you have more than 4 Troop tokens in Arrakeen by the end of
                 your shipment & movement turn?
+              </Outline>
+            </Text>
+          </NonBreaking>
+          <NonBreaking>
+            <Text>
+              <h1>Bad examples</h1>
+              <Outline variant="example">Will you win both battles?</Outline>
+              <Outline variant="example">
+                Is Hasimir Fenring anyone's Traitor?
               </Outline>
             </Text>
           </NonBreaking>
