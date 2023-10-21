@@ -4,12 +4,26 @@ import { NonBreaking, Text } from '../../blocks/Text';
 import { Spaced } from '../../blocks/Spaced';
 import * as colors from '../../presets/colors';
 
+// This is a trick to get the text to flow around the worm.
+function FloatingInset() {
+  const style = {
+    cssFloat: 'left',
+    height: 'calc(100vh - 160px)', 
+    display: 'flex',
+    alignItems: 'flex-end',
+    shapeOutside: 'inset(calc(100% - 150px) 0 0)',
+    width: '150px',
+  };
+
+  return <div style={style}></div>;
+}
 export function Faq_1() {
   return (
     <Fragment>
       <Spaced>
         <Title color={colors.blue2}>FAQ</Title>
-        <Text columns={2} size={1.5}>
+        <Text className='text-columns' columns={2} size={1.5} style={{position: "relative"}}>
+          <FloatingInset/> 
           <NonBreaking>
             <h2>
               When multiple players have the game-winning number of strongholds
@@ -77,6 +91,7 @@ export function Faq_1() {
               Hero.
             </p>
           </NonBreaking>
+          {/* <ColumnBreak /> */}
           <NonBreaking>
             <h2>Can non-allies have secret communications?</h2>
             <p>
