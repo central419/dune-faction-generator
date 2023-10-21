@@ -4,7 +4,7 @@ import { NonBreaking, Text } from '../../blocks/Text';
 import { Spaced } from '../../blocks/Spaced';
 import * as colors from '../../presets/colors';
 
-// This is a tricv to get the text to flow around the worm.
+// This is a trick to get the text to flow around the worm.
 function FloatingInset() {
   const style = {
     cssFloat: 'left',
