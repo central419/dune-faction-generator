@@ -894,7 +894,7 @@ export function Phases_Mentat() {
         <Title color={colors.blue2} size="medium">
           Phase 10: Collection
         </Title>
-        <Text>
+        <Text columns={2}>
           <p>Collect Spice from Spice-blows & strongholds.</p>
           <p>
             Any player with 0 or 1 Spice can collect Spice from the Spice bank
@@ -906,7 +906,8 @@ export function Phases_Mentat() {
           </p>
           <p>
             All collection, (<em>including from Choam charity & Bribe piles</em>
-            ) happens as a single instant for all players at the same time.
+            ) happens as{' '}
+            <strong>a single instant for all players, at the same time</strong>.
           </p>
         </Text>
       </Spaced>
