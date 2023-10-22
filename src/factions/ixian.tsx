@@ -71,7 +71,7 @@ export const sheet: Faction = {
   }),
   rules: {
     startText: `6 Troop tokens (*3 Cyborgs, 3 Suboids*) in the HMS, 14 Troop tokens (*6 Cyborgs, 8 Suboids*) in reserve (*off-planet*), Start with 10 Spice.`,
-    revivalText: '1 force, either Suboid or Cyborg.',
+    revivalText: '1 Troop token, either Suboid or Cyborg.',
     advantages: [
       advantage({ body: 'You are skilled in technology and production.' }),
       advantage({

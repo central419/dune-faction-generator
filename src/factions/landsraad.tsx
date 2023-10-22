@@ -124,7 +124,7 @@ export const sheet: Faction = {
         title: '',
       }),
     ],
-    revivalText: '1 normal force, 1 peace keeper.',
+    revivalText: '1 normal Troop token, 1 peace keeper.',
     startText:
       '5 normal Troop tokens in Polar Sink and 10 normal Troop tokens + 5 peacekeepers in reserve (*off planet*). Start with 5 Spice.',
   },

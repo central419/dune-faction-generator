@@ -47,7 +47,7 @@ export const normal = troop({
     variant: 'FREMEN_TROOP',
     name: 'fedaykin',
     description:
-      'Your 3 starred Troops: Fedaykin are worth 2 normal Troop tokens in battle and in taking losses. They are treated as 1 force during revival. You can only revive 1 Fedaykin per turn.',
+      'Your 3 starred Troops: Fedaykin are worth 2 normal Troop tokens in battle and in taking losses. They are treated as 1 Troop token during revival. You can only revive 1 Fedaykin per turn.',
     modifiers: {
       star: 'l1',
     },
@@ -108,7 +108,7 @@ export const sheet: Faction = {
       }),
       advantage({
         title: 'Fedaykin',
-        body: dedent`Your 3 starred Troops: Fedaykin are worth 2 normal Troop tokens in battle and in taking losses. They are treated as 1 force during revival. You can only revive 1 Fedaykin per turn.`,
+        body: dedent`Your 3 starred Troops: Fedaykin are worth 2 normal Troop tokens in battle and in taking losses. They are treated as 1 Troop token during revival. You can only revive 1 Fedaykin per turn.`,
       }),
       advantage({
         title: 'battles',

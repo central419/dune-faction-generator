@@ -63,7 +63,7 @@ export const sheet: Faction = {
   }),
   rules: {
     startText: `5 Troop tokens in Tuek's Seitch, 15 in reserve (*off-planet*), Start with 5 Spice.`,
-    revivalText: '1 force.',
+    revivalText: '1 Troop token.',
 
     advantages: [
       advantage({ body: 'You control all shipment unto and off Arrakis.' }),

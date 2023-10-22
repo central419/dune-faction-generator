@@ -96,7 +96,7 @@ export const sheet: Faction = {
       advantage({
         title: 'Revival Income',
         body: dedent`
-        Take one Spice for every non-BT force revived. You collect all Spice from non-BT revived leaders. You may set prices to revive any one leader per faction per turn. You may also increase any faction's troop revival limit from 3 to 5.
+        Take one Spice for every non-BT Troop tokens revived. You collect all Spice from non-BT revived leaders. You may set prices to revive any one leader per faction per turn. You may also increase any faction's troop revival limit from 3 to 5.
         `,
         karamaEffect: dedent`
         TBD

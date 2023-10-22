@@ -75,7 +75,7 @@ export const sheet: Faction = {
   rules: {
     startText:
       '20 Troop tokens in reserve (*off-planet*), Start with 10 Spice.',
-    revivalText: '1 force.',
+    revivalText: '1 Troop token.',
 
     advantages: [
       advantage({

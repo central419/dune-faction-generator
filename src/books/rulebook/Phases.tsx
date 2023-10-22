@@ -452,9 +452,9 @@ export function Phases_Revival() {
             <dd>
               <p>
                 Any additional Troop tokens that may be revived must be done at
-                a cost of 2 Spice per force, or more if indicated on faction
-                sheet. All Spice expended for force revival is placed in the
-                Spice Bank.
+                a cost of 2 Spice per Troop token, or more if indicated on
+                faction sheet. All Spice expended for Troop token revival is
+                placed in the Spice Bank.
               </p>
             </dd>
             <dt>Limit</dt>

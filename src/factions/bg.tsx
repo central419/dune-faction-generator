@@ -69,8 +69,8 @@ export const sheet: Faction = {
     __typename: 'FactionAssets',
   },
   rules: {
-    startText: `1 force in the polar sink, 1 force in an unoccupied territory or the polar sink, 18 Troop tokens in reserves. Start with 5 Spice.`,
-    revivalText: '1 force.',
+    startText: `1 Troop tokens in the polar sink, 1 Troop tokens in an unoccupied territory or the polar sink, 18 Troop tokens in reserves. Start with 5 Spice.`,
+    revivalText: '1 Troop token.',
 
     advantages: [
       advantage({
@@ -99,7 +99,7 @@ export const sheet: Faction = {
       advantage({
         title: 'the voice',
         body: dedent`
-          During battle (step 2.1) you may force your opponent to play/not play a Treachery Card in their Battle Plan. (Projectile Weapon, Poison Defense, Worthless Card, Mercenaries, etc) Cheap Heroes may not be voiced. Special battle cards like the Lazgun and Weirding Way are immune unless voiced by name. If you force the use of a card the opponent does not have they may silently ignore the voice.
+          During battle (step 2.1) you may Troop tokens your opponent to play/not play a Treachery Card in their Battle Plan. (Projectile Weapon, Poison Defense, Worthless Card, Mercenaries, etc) Cheap Heroes may not be voiced. Special battle cards like the Lasgun and Weirding Way are immune unless voiced by name. If you force the use of a card the opponent does not have they may silently ignore the voice.
         `,
         karamaEffect: dedent`
           You cannot use the voice in any fights during this battle phase.

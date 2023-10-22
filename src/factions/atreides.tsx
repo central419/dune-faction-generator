@@ -92,7 +92,7 @@ export const sheet: Faction = {
       advantage({
         title: 'battle prescience',
         body: dedent`
-          During battle (step 2.2) you may force your opponent to reveal one part of their battle-plan early. (Weapon, Defense, Leader, or Dial + whether Mercenaries is being played).
+          During battle (step 2.2) you may Troop token your opponent to reveal one part of their battle-plan early. (Weapon, Defense, Leader, or Dial + whether Mercenaries is being played).
         `,
         karamaEffect: dedent`
           Your battle prescience question can be ignored, your opponent is no longer required to do as was answered. Must be played before Battle Plans are revealed.
