@@ -780,21 +780,19 @@ export function Phases_BattleOrder() {
               </p>
             </dd>
           </Definitions>
+          <blockquote>
+            <p>
+              I find that rolling dice and going up a ladder is great fun and a
+              great feeling whilst sliding down a snake is not fun but theres
+              always hope you might climb a ladder and still win objectively
+              snakes are worse than ladders but without them the ladders feel
+              pointless if you want a highly competitive game where the smart
+              ass always wins play dream rules
+            </p>
+            <p style={{ float: 'right' }}>~ Eichmal</p>
+          </blockquote>
         </Text>
       </Spaced>
-      <Text>
-        <blockquote style={{ marginLeft: '16vw' }}>
-          <p>
-            I find that rolling dice and going up a ladder is great fun and a
-            great feeling whilst sliding down a snake is not fun but theres
-            always hope you might climb a ladder and still win objectively
-            snakes are worse than ladders but without them the ladders feel
-            pointless if you want a highly competitive game where the smart ass
-            always wins play dream rules
-          </p>
-          <p style={{ float: 'right' }}>~ Eichmal</p>
-        </blockquote>
-      </Text>
     </WithBottom>
   );
 }
