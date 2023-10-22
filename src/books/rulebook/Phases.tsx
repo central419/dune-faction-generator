@@ -549,6 +549,31 @@ export function Phases_Spice() {
             complete Spice deck is used.
           </p>
         </Text>
+        <Title color={colors.blue2} size="medium">
+          Phase 7: Shipping & Movement
+        </Title>
+        <Text>
+          <h1>Storm Order</h1>
+          <p>
+            Shipment and Movement happens in Storm Order by default. Each
+            player's turn consists of one shipment and one movement. If the
+            Spacing Guild is in the game, their Ship When You Wish advantage
+            takes precedence to Storm Order. After the Spacing Guild has used
+            this advantage, Shipment and Movement proceeds in strict Storm Order
+            until all factions have had a chance to Ship and Move.
+          </p>
+          <h1>Shipment</h1>
+          <p>
+            A player may make one shipment of any number of tokens from their
+            reserves to any one territory on the map. A player must pay spice to
+            the spice bank for their shipment or to the Guild if they are in the
+            game. The cost of shipping off-planet reserves is one spice per
+            token shipped into any stronghold or city, and two spice per token
+            shipped to any other territory. The Fremen player does not have to
+            pay as their reserves are on the far side of Dune, see their faction
+            sheet for details.
+          </p>
+        </Text>
       </Spaced>
     </Fragment>
   );
@@ -558,11 +583,68 @@ export function Phases_Movement() {
   return (
     <Fragment>
       <Spaced>
-        <Title color={colors.blue2} size="medium">
-          Phase 7: Shipping & Movement
+        <Title color={colors.blue1} size="small">
+          Movement
         </Title>
-        <Text>
-          <p>TODO</p>
+
+        <Text columns={2}>
+          <h1>Restrictions</h1>
+          <p>
+            No player may ship into a sector in storm or a stronghold already
+            occupied by two other players. Otherwise, shipments may be placed in
+            any territory. No player except the Spacing Guild and their ally may
+            ship tokens from the board back to their reserves.{' '}
+          </p>
+
+          <p>
+            The Stronghold Shield Wall counts as a Rock Territory in terms of
+            Shipment, Movement and occupation limits.
+          </p>
+
+          <p>
+            Each player may move, as a stack, any number of their Troop tokens
+            from one territory into one other territory. The default move limit
+            is one Territory.
+          </p>
+
+          <h1>Ornithopters</h1>
+          <p>
+            When a player has any amount of Troop tokens in Arrakeen or Carthag
+            has access to ornithopters. If the faction shipped forces into
+            Arrakeen or Carthag, they immediately gain access to Ornithopters
+            for their movement.
+          </p>
+          <NonBreaking>
+            <Text>
+              <h1>Movement</h1>
+              <p>
+                Each player may make only one move per turn. Sectors have no
+                effect on movement, i.e., tokens can move into or through a
+                territory ignoring all sectors. As sector's only function is to
+                regulate the movement and coverage of the storm and spice
+                collection. No token except for the Fremen’s may move into, out
+                of, or through a sector in storm (including non-sand
+                territories). If a factions forces are split into 2 or more
+                sectors of the same territory, they may all leave the territory
+                with one movement action as a stack. To recombine these forces
+                into one stack while remaining in that territory requires one
+                movement action.
+              </p>
+              <p>
+                Many territories occupy several sectors, so that a player may
+                move into and out of a territory which is partly in the storm
+                and part out, so long as the group does not pass through the
+                part covered by the storm. When ending a move in a territory
+                lying in several sectors, a player must make clear in which
+                sector of the territory they choose to leave their tokens. The
+                polar sink is never in storm. Tokens do not block movement with
+                one exception: Like shipment, tokens cannot be moved into or
+                through a stronghold if tokens of two other players are already
+                there. Otherwise, tokens are free to move into, out of, or
+                through any territory occupied by any number of tokens.
+              </p>
+            </Text>
+          </NonBreaking>
         </Text>
       </Spaced>
     </Fragment>
