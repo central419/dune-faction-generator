@@ -744,11 +744,40 @@ export function Phases_BattleOrder() {
             </dd>
             <dt>Step 11</dt>
             <dd>
-              <p>Traitor calls. (this trumps Break Conditioning if played).</p>
+              <p>
+                Traitor calls. (
+                <em>this trumps Break Conditioning if played</em>).
+              </p>
             </dd>
             <dt>Step 12</dt>
             <dd>
-              <p>Guild retreat ability.</p>
+              <p>
+                Guild retreat ability. (<em></em>)
+              </p>
+            </dd>
+            <dt>Step 13</dt>
+            <dd>
+              <p>
+                Apply the weapon and defense Treachery cards to send Leader
+                discs to the Tleilaxu Tanks.
+              </p>
+              <p>Set Spice aside for killed leaders.</p>
+            </dd>
+            <dt>Step 14</dt>
+            <dd>
+              <p>
+                For both players count their total battle strength by adding:
+              </p>
+              <ul>
+                <li>
+                  The Leader strength (<em>if not killed</em>)
+                </li>
+                <li>The dial on the battle-wheel</li>
+                <li>Add 1¼ if Mercenaries was added</li>
+              </ul>
+              <p>
+                The player with the highest total battle strength is the winner.
+              </p>
             </dd>
           </Definitions>
         </Text>
@@ -775,7 +804,7 @@ export function Phases_BattleResolve() {
     <Fragment>
       <Spaced>
         <Title color={colors.blue1} size="small">
-          Battle Plans & Resolving battles
+          Battle Plans
         </Title>
         <Text columns={2}>
           <p>
@@ -813,19 +842,67 @@ export function Phases_BattleResolve() {
                 disputed territory. Both players will lose the number of Troop
                 tokens dialed on the Battle Wheel.
               </p>
+              <p>
+                The maximum dial is 20, even if you have more Troop tokens or if
+                Troops add more strength.
+              </p>
+            </Text>
+          </NonBreaking>
+          <NonBreaking>
+            <Text>
               <h1>Treachery Cards</h1>
               <p>
                 You are only allowed to play Treachery cards, if you play either
                 a Leader disc or Cheap Hero Treachery card in your battle plan.
               </p>
+            </Text>
+          </NonBreaking>
+          <NonBreaking>
+            <Text>
               <h1>Leader disc</h1>
               <p>You must play a Leader disc in your battle plan, if able.</p>
               <p>
                 You may play a Cheap Hero Treachery card in place of a Leader
                 disc.
               </p>
+              <p>
+                If you have neither available, you must declare so in Battle
+                phase - step 2.
+              </p>
             </Text>
           </NonBreaking>
+          <h1>Traitors</h1>
+          <p>
+            Both player may choose if they call Traitor on the opponent's leader
+            (<em>if they can</em>). When both pass and Harkonnen is allied to 1
+            of the 2 players, ask Harkonnen if they call Traitor.
+          </p>
+          <p>
+            Harkonnen can only reveal the Traitor card of the Leader disc played
+            by their ally's opponent. If harkonnen choses to do so, it is as if
+            the ally played the Traitor card.
+          </p>
+          <p>
+            When a Traitor card is revealed that matches the Leader disc played
+            by their opponent, the the player that called Traitor:
+          </p>
+          <ul>
+            <li>wins the fight.</li>
+            <li>does not lose the Spice they dialed.</li>
+            <li>does not lose any Troop tokens, even if dialed.</li>
+            <li>their leader lives, irregardless of Treachery cards played.</li>
+            <li>
+              the opponent leader is killed, irregardless of Treachery cards
+              played.
+            </li>
+          </ul>
+          <h1>Double Traitors</h1>
+          <p>
+            When both players reveal a Traitor card card matching the opponent's
+            leader, both leaders are killed, all Spice dialed is lose, all Troop
+            tokens are send to the Tleilaxu Tanks.
+          </p>
+          <p>Both player lose, there is no winner.</p>
         </Text>
       </Spaced>
     </Fragment>

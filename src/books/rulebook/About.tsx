@@ -141,12 +141,12 @@ export function About_Welcome() {
                   <SideBySide>
                     <div>
                       <ul>
-                        <li>please</li>
-                        <li>let us</li>
-                        <li>add</li>
-                        <li>all the</li>
-                        <li>play-testers</li>
-                        <li>here...</li>
+                        <li>Whimsies</li>
+                        <li>Clockworked</li>
+                        <li>KKT2002</li>
+                        <li>Brodie</li>
+                        <li>omegas2</li>
+                        <li>Laurens</li>
                       </ul>
                     </div>
                     <div>
