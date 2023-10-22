@@ -322,7 +322,7 @@ export function TreacheryCards2() {
               leader.
             </p>
             <p>
-              If your battleplan also contains a shield, or your opponent's
+              If your battle-plan also contains a shield, or your opponent's
               battle plan contains a shield, a lasgun-shield explosion occurs.
               <br />
               All tokens in the territory, including Spice, Troops, Leaders are
@@ -407,7 +407,7 @@ export function TreacheryCards3() {
               When this card is ever played in combination with a "Lasgun" a
               lasgun shield explosion occurs.
               <br />
-              It does not matter if the Lasgun is in your battleplan or in your
+              It does not matter if the Lasgun is in your battle-plan or in your
               opponent's.
             </p>
             <p>
@@ -701,7 +701,7 @@ export function TreacheryCards4() {
               There are 3 Cheap Hero cards in the Treachery deck, 2 are called
               "Cheap Hero", 1 is called "Cheap Heroine".
               <br />
-              Play this card in your battleplan <strong>instead of</strong> a
+              Play this card in your battle-plan <strong>instead of</strong> a
               leader.
               <br />
               <em>

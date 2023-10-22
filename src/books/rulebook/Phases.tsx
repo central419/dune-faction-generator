@@ -117,7 +117,7 @@ export function Phases_Intro() {
                 <li>Your Spice total in your personal Spice reserve.</li>
                 <li>Exactly which Treachery card you have.</li>
                 <li>
-                  The contents of your finalized battleplan before reveal.
+                  The contents of your finalized battle-plan before reveal.
                 </li>
               </ul>
               <h1>Ending infiltration</h1>
@@ -695,7 +695,10 @@ export function Phases_BattleOrder() {
             </dd>
             <dt>Step 2</dt>
             <dd>
-              <p>Player declare when they have no leaders to play.</p>
+              <p>
+                Either player declares they have no leader leaders to play, if
+                they do not.
+              </p>
             </dd>
             <dt>Step 3</dt>
             <dd>
@@ -721,7 +724,7 @@ export function Phases_BattleOrder() {
             <dd>
               <p>
                 Bene Tleilaxu can look at infiltrated faction's committed
-                battleplan.
+                battle-plan.
               </p>
             </dd>
             <dt>Step 8</dt>
@@ -799,20 +802,30 @@ export function Phases_BattleResolve() {
             <li>1 weapon Treachery card.</li>
             <li>1 defense Treachery card.</li>
             <li>1 Mercenaries Treachery card.</li>
-            <li>A number of Spice token.</li>
+            <li>A number of Spice tokens.</li>
           </ul>
-          <h1>Battle wheels</h1>
-          <p>
-            Each player picks up a Battle Wheel and secretly dials a number from
-            zero to the number of Troop tokens they have in the disputed
-            territory. Both players will lose the number of Troop tokens dialed
-            on the Battle Wheel.
-          </p>
-          <h1>Treachery Cards</h1>
-          <p>
-            You are only allowed to play Treachery cards, if you play either a
-            Leader disc or Cheap Hero Treachery card in your battle plan.
-          </p>
+          <NonBreaking>
+            <Text>
+              <h1>Battle wheel</h1>
+              <p>
+                Each player picks up a Battle Wheel and secretly dials a number
+                from zero to the number of Troop tokens they have in the
+                disputed territory. Both players will lose the number of Troop
+                tokens dialed on the Battle Wheel.
+              </p>
+              <h1>Treachery Cards</h1>
+              <p>
+                You are only allowed to play Treachery cards, if you play either
+                a Leader disc or Cheap Hero Treachery card in your battle plan.
+              </p>
+              <h1>Leader disc</h1>
+              <p>You must play a Leader disc in your battle plan, if able.</p>
+              <p>
+                You may play a Cheap Hero Treachery card in place of a Leader
+                disc.
+              </p>
+            </Text>
+          </NonBreaking>
         </Text>
       </Spaced>
     </Fragment>
@@ -828,26 +841,38 @@ export function Phases_Mentat() {
         <Text>
           <p>
             During this phase players check if any of the players meet the
-            conditions for winning the game.
+            following conditions for winning the game:
           </p>
           <Definitions>
-            <dt>Strongholds</dt>
+            <dt>
+              Strongholds
+              <br />
+              <em>1¼ Victory Points, per Stronghold</em>
+            </dt>
             <dd>
-              Having Troop tokens in any of the strongholds{' '}
-              <strong>awards 1⅓ Victory Points per Stronghold</strong>.
+              Having Troop tokens in any of the strongholds awards 1¼ Victory
+              Points, per Stronghold.
             </dd>
-            <dt>Shieldwall</dt>
+            <dt>
+              Shieldwall
+              <br />
+              <em>1⅕ Victory Points</em>
+            </dt>
             <dd>
               Having Troop tokens on the North-West sector of Shieldwall (
-              <em>after Shieldwall has been activated</em>),{' '}
-              <strong>awards 1¼ Victory Points</strong>.
+              <em>after Shieldwall has been activated</em>), awards 1⅕ Victory
+              Points.
             </dd>
-            <dt>Tech Tokens</dt>
+            <dt>
+              Tech Tokens
+              <br />
+              <em>1 Victory Point</em>
+            </dt>
             <dd>
-              Having 3 or more Tech tokens,{' '}
-              <strong>awards 1 Victory Point</strong>.
+              Having 3 or more Tech tokens, <>awards 1 Victory Point</>.
             </dd>
           </Definitions>
+          <p>The fractions are purely for tie-breaking purposes.</p>
         </Text>
         <Text>
           <hr />
@@ -871,15 +896,14 @@ export function Phases_Mentat() {
             <Outline variant="generic">
               <Text>
                 <h1>On Turn 10</h1>
-                <p>In the final turn of the game, check for the following:</p>
                 <ol>
                   <li>
                     If fremen are in the game, and they (and their ally) have 3
-                    or more Victory Points, Fremen and their ally win.
+                    or more Victory Points, Fremen plus their ally win.
                   </li>
                   <li>
                     If fremen are in the game, but they (and their ally) do not
-                    have 3 or more Victory Points, Fremen win.
+                    have 3 or more Victory Points, Fremen win alone.
                   </li>
                   <li>
                     If fremen are not in the game, then the player (not
@@ -927,6 +951,7 @@ export function Phases_Storm() {
             Marker the storm next approaches will be the First Player for this
             turn.
           </p>
+          <h1>Storm calculation</h1>
           <p>
             In all subsequent Storm Phases, the two players who last used the
             Battle Wheels will independently dial a whole number from 0 to 3,
@@ -935,17 +960,35 @@ export function Phases_Storm() {
             around the map for the sum total of sectors.
           </p>
           <p>When both players dial 0, the storm moves 1.</p>
-          <h1>Damage</h1>
-          <p>
-            Any Troop tokens in a sector of sand territory (except the Imperial
-            Basin) over which the storm passes or stops are killed. Place these
-            forces in the Tleilaxu Tanks. Forces that are not on a sand
-            territory are protected from the storm. In addition any Spice in a
-            sector over which a storm passes or stops is removed to the Spice
-            Bank.
-          </p>
-          <h1>Obstruction</h1>
-          <p>Forces may not move into, out of, or through a sector in storm.</p>
+          <Outline variant="generic">
+            <h1>With Fremen drafted</h1>
+            <p>
+              When the Fremen are in the game, Storm calculation happens via the
+              Storm deck instead.
+            </p>
+            <p>
+              The player playing as the Fremen draws 1 random card from the
+              Storm deck, and reveals that card during the Storm phase. Then
+              immediately draws a new card for next turn.
+            </p>
+          </Outline>
+          <NonBreaking>
+            <h1>Damage</h1>
+            <p>
+              Any Troop tokens in a sector of sand territory (except the
+              Imperial Basin) over which the storm passes or stops are killed.
+              Place these forces in the Tleilaxu Tanks. Forces that are not on a
+              sand territory are protected from the storm. In addition any Spice
+              in a sector over which a storm passes or stops is removed to the
+              Spice Bank.
+            </p>
+          </NonBreaking>
+          <NonBreaking>
+            <h1>Obstruction</h1>
+            <p>
+              Forces may not move into, out of, or through a sector in storm.
+            </p>
+          </NonBreaking>
           <Outline variant="generic">
             <h1>First Turn</h1>
             <p>
