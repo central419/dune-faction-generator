@@ -4,6 +4,7 @@ import coverA from '../asset/cover/cover-a.svg';
 import coverB from '../asset/cover/cover-b.svg';
 import coverC from '../asset/cover/cover-c.svg';
 import coverD from '../asset/cover/cover-d.svg';
+import coverE from '../asset/cover/cover-e.svg';
 
 import { Faq_1 } from './rulebook/Faq';
 import {
@@ -39,7 +40,7 @@ import { MiscRules } from './rulebook/MiscRules';
 import { Deals } from './rulebook/Deals';
 
 export const ratio = Math.sqrt(2);
-export const cover = <Cover background={coverB} offset={80} />;
+export const cover = <Cover background={coverE} offset={80} />;
 export const pages = [
   <About_Welcome />,
   <Intro />,
